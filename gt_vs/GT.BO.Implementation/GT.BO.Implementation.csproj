@@ -1,0 +1,183 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{617DFA8A-90CA-4255-A245-6A4865343D63}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GT.BO.Implementation</RootNamespace>
+    <AssemblyName>GT.BO.Implementation</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Threading, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\Microsoft Reactive Extensions\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebMoney.XmlInterfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\WebMoneyInterfaces\WebMoney.XmlInterfaces.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BillingSystem\BillingSystemFacade.cs" />
+    <Compile Include="BillingSystem\RealMoneySource.cs" />
+    <Compile Include="BillingSystem\Transfer.cs" />
+    <Compile Include="BillingSystem\TransferFactory.cs" />
+    <Compile Include="BillingSystem\TransferParticipant.cs" />
+    <Compile Include="BillingSystem\WebMoneyTransfer.cs" />
+    <Compile Include="BillingSystem\WebMoneyTransferFacade.cs" />
+    <Compile Include="Helpers\DateTimeHelper.cs" />
+    <Compile Include="Helpers\MoneyHelper.cs" />
+    <Compile Include="MessageSystem\MessageFactory.cs" />
+    <Compile Include="MessageSystem\Message.cs" />
+    <Compile Include="MessageSystem\MessageType.cs" />
+    <Compile Include="MessageSystem\MessageFacade.cs" />
+    <Compile Include="MessageSystem\MessageSearchFilter.cs" />
+    <Compile Include="News\News.cs" />
+    <Compile Include="News\NewsFacade.cs" />
+    <Compile Include="Notification\INotificationSender.cs" />
+    <Compile Include="Offers\BaseOffer.cs" />
+    <Compile Include="Offers\BuyingFacade.cs" />
+    <Compile Include="Offers\Buying.cs" />
+    <Compile Include="Offers\SearchFilters\BaseSearchFilter.cs" />
+    <Compile Include="Offers\SearchFilters\BuyingSearchFilter.cs" />
+    <Compile Include="Offers\SearchFilters\SellingSearchFilter.cs" />
+    <Compile Include="Offers\Selling.cs" />
+    <Compile Include="Offers\SellingFacade.cs" />
+    <Compile Include="Offers\SellingImage.cs" />
+    <Compile Include="Payments\BasePaymentSystem.cs" />
+    <Compile Include="Payments\Configuration\WebMoneySectionHandler.cs" />
+    <Compile Include="Payments\WebMoneyManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistic\GameServerStatistic.cs" />
+    <Compile Include="Statistic\GameStat.cs" />
+    <Compile Include="Statistic\GameStatistic.cs" />
+    <Compile Include="Statistic\StatisticFacade.cs" />
+    <Compile Include="Support\SupportFacade.cs" />
+    <Compile Include="Support\SupportFeedback.cs" />
+    <Compile Include="UserRating\SearchFilters\FeedbackSearchFilter.cs" />
+    <Compile Include="UserRating\Feedback.cs" />
+    <Compile Include="UserRating\FeedbackFactory.cs" />
+    <Compile Include="UserRating\UnusedFeedback.cs" />
+    <Compile Include="UserRating\UserRatingFacade.cs" />
+    <Compile Include="Users\UserDynamics.cs" />
+    <Compile Include="Users\UsersFacade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GT.BO\GT.BO.csproj">
+      <Project>{60D3833E-FCDA-466B-A944-AD4ECAD1E3ED}</Project>
+      <Name>GT.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GT.Common.Web\GT.Common.Web.csproj">
+      <Project>{B869C9C8-C89C-4A17-93D2-0DE256CABE46}</Project>
+      <Name>GT.Common.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GT.Common\GT.Common.csproj">
+      <Project>{3849E310-BB64-49BE-AFF9-62CD6300FB46}</Project>
+      <Name>GT.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GT.DA\GT.DA.csproj">
+      <Project>{7C9D235A-B41E-4148-A79C-B87EBE6AB96D}</Project>
+      <Name>GT.DA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GT.Global\GT.Global.csproj">
+      <Project>{60A5CDB0-6A0C-4BD7-BADB-68115DAB98AD}</Project>
+      <Name>GT.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GT.Web.Security\GT.Web.Security.csproj">
+      <Project>{05C6E044-8774-493B-B4F6-EB05395D23AF}</Project>
+      <Name>GT.Web.Security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>powershell.exe "&amp;'$(SolutionDir)BuildScripts\PreBuild.ps1' '$(SolutionDir)' 'ConfigurationName=$(ConfigurationName);TargetPath=$(TargetPath)'"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

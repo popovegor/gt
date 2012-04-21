@@ -1,0 +1,53 @@
+﻿div#buyingmanager div#legend
+{
+    margin-top : 1em;
+    float : left;
+    clear : left;
+}
+
+div#buyingmanager div#legend h2
+{
+    margin-bottom : 1em;
+}
+
+div#buyingmanager div#legend div.legend
+{
+    float:left;
+    clear:left;
+}
+
+div#buyingmanager div#statelegend
+{
+    float : left;
+    margin-top : 1em;
+    clear : left;
+}
+
+div#buyingmanager div#statelegend h2
+{
+    margin-bottom : 1em;
+}
+
+div#buyingmanager div#statelegend div.legend
+{
+    margin-bottom : 1em;
+}
+
+div#buyingmanager div.helpInfoLink
+{
+    font-size : 1.2em;
+    padding-top : 1em;
+    padding-bottom : 0.5em;
+    float : left;
+    clear : left;
+}
+
+div#buyingmanager div#errSelling
+{
+    color : Red;
+}
+
+div#buyingmanager div#buyinggrid
+{
+    margin-bottom : 1.5em;
+}

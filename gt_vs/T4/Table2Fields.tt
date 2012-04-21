@@ -1,0 +1,85 @@
+﻿<#@ assembly name="Microsoft.Practices.EnterpriseLibrary.Data.dll" #>
+<#@ assembly name="System.Data.dll" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="Microsoft.Practices.EnterpriseLibrary.Data" #>
+<#+ 
+public class Table2Fields : Template
+{
+	public string ClassName = string.Empty;
+	public string TableName = string.Empty;
+	public string NamespaceName = string.Empty;
+	public ConfigurationAccessor Config = null;
+	
+	public override string TransformText()
+	{
+		/*if(string.IsNullOrEmpty(ClassName) == true)
+		{
+			Error("ClassName is empty.");
+		}*/
+		if(string.IsNullOrEmpty(TableName) == true)
+		{
+			Error("TableName is empty.");
+		}
+		if(Config == null)
+		{
+			Error("Config is null");
+		}
+		/*if(string.IsNullOrEmpty(NamespaceName) == true)
+		{
+			Error("NamespaceName is empty");
+		}*/
+		
+		using (var con = new System.Data.SqlClient.SqlConnection(Config.GtConnectionString))
+		{
+			if (con.State == ConnectionState.Closed)
+			{
+				con.Open();
+			}
+			var sql = string.Format(@"SELECT c.[name], ISNULL(ep.value, 'False') AS Localizable FROM  sys.[columns] AS c
+				OUTER APPLY  sys.fn_listextendedproperty (N'Localizable', 
+					'SCHEMA',
+					'dbo', 
+					'TABLE',
+					OBJECT_NAME(c.[object_id]), 
+					'COLUMN',
+					c.[name]) AS ep
+				WHERE c.[object_id] = OBJECT_ID('{0}')
+				ORDER BY c.[column_id] asc", TableName);
+			
+			using (var cmd = new System.Data.SqlClient.SqlCommand(sql, con))
+			{
+				using (var a = new SqlDataAdapter(cmd))
+				{
+					var ds = new DataSet();
+					a.Fill(ds);
+					if(ds.Tables[0].Rows.Count <= 0)
+					{
+						Error("No data in the table");
+					}
+					var dt = ds.Tables[0];
+					var count = dt.Rows.Count;
+					PushIndent("\t\t");
+					for (int i = 0; i < count; i++)
+					{
+						var dr = dt.Rows[i];
+						var name = dr["name"].ToString();
+						var localizable = bool.Parse(dr["Localizable"].ToString());
+
+						WriteLine("public const string {0} = \"{0}\";", name); 
+
+						if(localizable == true)
+						{
+							WriteLine("public static string Localized{0}", name);
+							WriteLine("{");
+							WriteLine("\tget {{return Localizator.GetLocalizedFieldName(\"{0}\");}}", name); 
+							WriteLine("}");
+						}
+					}
+					PopIndent();
+				}
+			}
+		}	
+        return this.GenerationEnvironment.ToString();
+	}
+}
+#>

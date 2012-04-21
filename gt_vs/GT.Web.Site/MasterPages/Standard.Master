@@ -1,0 +1,89 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Standard.Master.cs" EnableViewState="true" Inherits="GT.Web.Site.MasterPages.Standard" MasterPageFile="~/MasterPages/Base.Master" %>
+
+
+<%@ Register Src="~/Menu/MainMenu.ascx" TagPrefix="gt" TagName="MainMenu" %>
+<%@ Register Src="~/Support/Feedback.ascx" TagPrefix="gt" TagName="Feedback" %>
+<%@ Register Src="~/Controls/LanguageSwitcher.ascx" TagPrefix="gt" TagName=
+"LanguageSwitcher" %>
+<%@ Register Src="~/Controls/Caption.ascx" TagName="Caption" TagPrefix="gt" %>
+<%@ Import Namespace="GT.Localization.Resources" %>
+<%@ Import Namespace="GT.Global.Localization" %>
+<%@ Import Namespace="GT.Web.UI.SiteMap" %>
+
+<asp:Content ID="cntStandardMain" ContentPlaceHolderID="cphBase" runat="server">
+  <asp:ScriptManagerProxy runat="server" />
+  <asp:SiteMapDataSource ID="dsSiteMap" runat="server" ShowStartingNode="false" SiteMapProvider="CustomSiteMapProvider" />
+  <div id="wrapper">
+    <div id="upper">
+      <div class="up-index">
+        <span><%= CommonResources.Index %></span>
+      </div>
+      <div class="up-sys">
+        <div class="up-home">
+          <%if(Request.Url.AbsolutePath.Equals("/Default.aspx", StringComparison.InvariantCultureIgnoreCase)) { %>
+            <span title="<%= (SiteMap.RootNode as CustomSiteMapNode).Title %>" class="up-home-current"></span>
+          <%} else { %>
+         
+          <a href="/" title="<%= (SiteMap.RootNode as CustomSiteMapNode).Title %>" target="_self"></a>
+          <%} %>
+        </div>
+        <div class="up-lang">
+         <gt:LanguageSwitcher runat="server" ID="ls" />
+        </div>
+        <div class="up-feedback">
+          <div class="up-feedback-title">
+            <%= CommonResources.OurContacts %>:</div>
+          <ul>
+            <li class="up-icq"><a title="ICQ" href="http://www.icq.com/people/610359499/" target="_blank"></a></li>
+            <li class="up-skype"><a href='<%= string.Format("callto:{0}", GT.Localization.Resources.CommonResources.Default_Skype) %>' title="Skype"></a></li>
+            <li class="up-vk"><a title="<%= CommonResources.VK %>" href="http://vkontakte.ru/club19929212" target="_blank"></a></li>
+            <li class="up-email"><a title="<%= CommonResources.Email %>" href='<%# string.Format("mailto:{0}", GT.Localization.Resources.CommonResources.Default_Email) %>' target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <%-- top header --%>
+    <div id="header">
+      <%--<div class="header-ls">--%>
+        <%if(Request.Url.AbsolutePath.Equals("/Default.aspx", StringComparison.InvariantCultureIgnoreCase)) { %>
+       <span class="logo" title="<%= (SiteMap.RootNode as CustomSiteMapNode).Title %>"></span>
+        <%} else {%>
+           <a href="/" class="logo" title="<%= (SiteMap.RootNode as CustomSiteMapNode).Title %>"></a>
+        <% } %>
+      <%--</div>--%>
+      <div class="header-menu">
+        <gt:MainMenu ID="menu" runat="server" />
+      </div>
+       <%--<%if(Request.Url.AbsolutePath.Equals("/Default.aspx", StringComparison.InvariantCultureIgnoreCase)) { %>--%>
+      <span class="pers" title="<%= SiteMap.RootNode.Title %>"></span> 
+      <%--<% } else { %>
+      <a href="/" class="pers" title="<%= SiteMap.RootNode.Title %>" target="_self"></a>  
+      <% } %>--%>
+    </div>
+    <%-- end of top header --%>
+    <%-- page title and breadcrumbs --%>
+    <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+      <gt:Caption runat="server" ID="cap" />
+    </asp:ContentPlaceHolder>
+    <%-- end of page title and breadcrumbs --%>
+    <%-- main --%>
+    <div id="content">
+      <asp:ContentPlaceHolder runat="server" ID="cphContent" />
+    </div>
+    <%-- end of main --%>
+    <div id="push">
+    </div>
+  </div>
+  <%-- footer --%>
+  <div id="footer">
+    <div class="copyright">
+      <%= CommonResources.Copyright %>
+    </div>
+    <div class="banners-bottom">
+      <a href="http://www.megastock.ru/" target="_blank">
+      <img src="http://www.megastock.ru/Doc/88x31_accept/brown_rus.gif" alt="www.megastock.ru" border="0" /></a>
+    </div>
+  </div>
+  <%-- end of footer --%>
+  <gt:Feedback runat="server" ID="fbck" />
+</asp:Content>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RefactoringOperation Name="Rename Refactor" MachineName="POPOVEGOR-PC" UserName="popovegor">
+	<Project>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\GT.Database.dbproj</Project>
+	<Filename>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Programmability\Stored Procedures\dbo.p_MessageSystem_GetConversationForUser.proc.sql</Filename>
+	<ElementName>[dbo].[p_MessageSystem_GetConversationForUser]</ElementName>
+	<ElementType>ISql100Procedure</ElementType>
+	<ParentElementName>[dbo]</ParentElementName>
+	<ParentElementType>ISql90Schema</ParentElementType>
+	<NewName>[p_MessageSystem_GetConversation]</NewName>
+	<PropagateRefactoringOperation>
+		<SchemaObjectReferences>
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Programmability\Stored Procedures\dbo.p_MessageSystem_GetConversationForUser.proc.sql" ElementName="[dbo].[p_MessageSystem_GetConversationForUser]" ElementType="ISql100Procedure" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Programmability\Stored Procedures\dbo.p_MessageSystem_GetConversationForUser.proc.sql" ElementName="[dbo].[p_MessageSystem_GetConversationForUser]" ElementType="ISql100Procedure" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Programmability\Stored Procedures\dbo.p_MessageSystem_GetConversationForUser.proc.sql" ElementName="[dbo].[p_MessageSystem_GetConversationForUser]" ElementType="ISql100Procedure" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Programmability\Stored Procedures\dbo.p_MessageSystem_GetConversationForUser.proc.sql" ElementName="[dbo].[p_MessageSystem_GetConversationForUser]" ElementType="ISql100Procedure" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Programmability\Stored Procedures\dbo.p_MessageSystem_GetConversationForUser.proc.sql" ElementName="[dbo].[p_MessageSystem_GetConversationForUser]" ElementType="ISql100Procedure" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Programmability\Stored Procedures\dbo.p_MessageSystem_GetConversationForUser.proc.sql" ElementName="[dbo].[p_MessageSystem_GetConversationForUser]" ElementType="ISql100Procedure" />
+		</SchemaObjectReferences>
+		<SchemaObjectReferences />
+		<SchemaObjectReferences />
+		<ScriptReferences />
+		<UnitTestReferences />
+		<DataGeneratorReferences />
+	</PropagateRefactoringOperation>
+</RefactoringOperation>

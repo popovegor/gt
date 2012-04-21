@@ -1,0 +1,72 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StandardPage.Master.cs" EnableViewState="true" Inherits="GT.Web.Site.MasterPages.StandardPage" MasterPageFile="~/MasterPages/BasePage.Master" %>
+
+<%@ Register Src="~/Authentication/SignInControl.ascx" TagPrefix="gt" TagName="login" %>
+<%@ Register Src="~/Controls/MainMenu.ascx" TagPrefix="gt" TagName="MainMenu" %>
+<%@ Import Namespace="Resources" %>
+<asp:Content ID="cntStandardMain" ContentPlaceHolderID="cphBase" runat="server">
+  <asp:ScriptManagerProxy runat="server" />
+  <asp:SiteMapDataSource ID="dsSiteMap" runat="server" ShowStartingNode="false" SiteMapProvider="CustomSiteMapProvider" />
+  <div id="wrapper">
+    <%-- top header --%>
+    <div id="header" class="standardHeader">
+      <div id="headerLeft" class="headerTop">
+        <asp:HyperLink runat="server" ID="imgPers" ToolTip="<%$ Resources:CommonResources,MasterPages_StandardPage_Pers %>" SkinID="hplPersSkin" AlternateText="<%$ Resources:CommonResources,MasterPages_StandardPage_Pers %>" NavigateUrl="~/" />
+        <asp:HyperLink runat="server" ID="hplGisM" SkinID="hplGisMSkin" ToolTip="<%$ Resources:CommonResources,MasterPages_StandardPage_GisM %>" AlternateText="<%$ Resources:CommonResources,MasterPages_StandardPage_GisM %>" NavigateUrl="~/" />
+        <asp:HyperLink runat="server" ID="hplGameIsMoney" SkinID="hplGameIsMoneySkin"  ToolTip="<%$ Resources:CommonResources,MasterPages_StandardPage_GameIsMoney %>" AlternateText="<%$ Resources:CommonResources,MasterPages_StandardPage_GameIsMoney %>"  NavigateUrl="~/" Text="GAME IS MONEY" />
+      </div>
+      <div id="headerRight" class="headerTop">
+        <div id="languages">
+          <asp:HyperLink ID="ru" runat="server" ImageUrl="/App_Themes/Tutynin/Images/ru.png" Text="<%$ Resources:CommonResources, Russian %>" ToolTip="<%$ Resources:CommonResources, Russian %>" NavigateUrl='<%# String.Concat(GetLanguageUrl(), "ru") %>'></asp:HyperLink>
+          <asp:HyperLink ID="en" runat="server" ImageUrl="/App_Themes/Tutynin/Images/en.png" Text="<%$ Resources:CommonResources, English %>" ToolTip="<%$ Resources:CommonResources, English %>" NavigateUrl='<%# String.Concat(GetLanguageUrl(), "en") %>'></asp:HyperLink>
+          <asp:HyperLink ID="cn" runat="server" ImageUrl="/App_Themes/Tutynin/Images/cn.png" AlternateText="<%$ Resources:CommonResources, Chinise %>" ToolTip="<%$ Resources:CommonResources, Chinise %>" NavigateUrl='<%# String.Concat(GetLanguageUrl(), "cn") %>'></asp:HyperLink>
+        </div>
+        <div id="headerLogin">
+          <gt:login ID="login" runat="server" CssClass="header" />
+        </div>
+      </div>
+      <gt:MainMenu ID="menu" runat="server" />
+    </div>
+    <%-- end of top header --%>
+    <%-- page title and breadcrumbs --%>
+    <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+      <div id="caption">
+        <div id="title">
+          <h1>
+            <asp:SiteMapPath ID="smpCaption" ParentLevelsDisplayed="0" SkinID="SMTitle" runat="server"></asp:SiteMapPath>
+          </h1>
+        </div>
+        <div id="breadcrumbs">
+          <asp:SiteMapPath ID="smpBreadcrumbs" ParentLevelsDisplayed="3" runat="server">
+            <CurrentNodeStyle CssClass="currentNode" />
+          </asp:SiteMapPath>
+        </div>
+      </div>
+    </asp:ContentPlaceHolder>
+    <%-- end of page title and breadcrumbs --%>
+    <%-- main --%>
+    <div id="content">
+      <div id="sidebar">
+        <asp:ContentPlaceHolder runat="server" ID="cphSidebar" />
+      </div>
+      <div id="main">
+        <asp:ContentPlaceHolder runat="server" ID="cphContent" />
+      </div>
+    </div>
+    <%-- end of main --%>
+    <div id="push">
+    </div>
+  </div>
+  <%-- footer --%>
+  <div id="footer">
+    <div id="footerGradient">
+      <span>&nbsp;</span></div>
+    <div id="banners_bottom">
+      <a href="http://www.megastock.ru/" target="_blank">
+        <img src="http://www.megastock.ru/Doc/88x31_accept/brown_rus.gif" alt="www.megastock.ru" border="0"></a>
+    </div>
+    <div id="copyright">
+      <%= CommonResources.Copyright %>
+    </div>
+  </div>
+  <%-- end of footer --%>
+</asp:Content>

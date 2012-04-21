@@ -1,0 +1,5 @@
+<#@ dte processor="T4Toolbox.DteProcessor" #>
+<#@ TransformationContext processor="T4Toolbox.TransformationContextProcessor" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="EnvDTE" #>
+<#@ import namespace="T4Toolbox" #>

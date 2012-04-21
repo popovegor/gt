@@ -1,0 +1,23 @@
+﻿a
+{
+  color: #3a5c7c;
+  white-space: normal;
+  /*border-bottom:1px solid #645A36;*/
+}
+
+a:hover
+{
+  color:#ff2929;
+}
+
+div#office div.sales-block a.title:hover
+, div.officeMenu li a:hover
+, div#office div.purchases-block a.title:hover
+, div#header div.main-menu ul li a.current
+, div#offersFilter div.offer-controls a:hover
+, div.newsletters a.archive-title:hover
+/*, div#header ul#menu li a.current*/
+/*, div#home div.sell-buy div.sell div.content div.inner a:hover*/
+{
+  color: #ff2929 !important;
+}

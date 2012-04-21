@@ -1,0 +1,264 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  color: #636363;
+}
+
+body
+{
+  background: #FFFFFF none repeat scroll 0 0;
+  font-family: Palatino Linotype,sans-serif;
+  font-size: 0.8125em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1em;
+  overflow: visible;
+}
+
+p
+{
+  margin-bottom: 1em;
+}
+
+a
+{
+  border-bottom:solid 1px #AA3F04;
+  color:#AA3F04;
+  text-decoration:none;
+}
+
+body a:link, a:visited
+{
+  line-height: 1.25em;
+}
+
+body a:hover
+{
+}
+
+div#footer
+{
+  height: 50px;
+  background-color: #e5f7fd;
+  clear: both;
+  margin: 0 0 0 0;
+}
+
+div#caption
+{
+  padding: 1em 1em 3em 1em; /*border-bottom: solid 1px #B2B2B2;*/
+}
+
+div#caption div#title
+{
+  width: 50%;
+  float: left;
+  text-align: left;
+  font-size: 1.8em;
+}
+
+div#caption div#title span, div#caption div#breadcrumbs .currentNode
+{
+  color: #00a0df !important;
+}
+
+div#caption div#breadcrumbs
+{
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+div#wrapper
+{
+  min-width: 950px;
+}
+
+div#content
+{
+  float: left;
+  padding: 0 0 20px 0;
+  width: 100%;
+  min-height:500px;
+}
+
+div#content div#main
+{
+  float: none;
+  padding: 0 10px 0 10px;
+  overflow: hidden;
+}
+
+div#content div#sidebar
+{
+  float: left;
+  display: inline;
+  padding: 0 0 0 20px;
+  width: 150px;
+}
+
+div#header
+{
+  height: 70px;
+  background-color: #31291e;/*#e5f7fd;*/
+  border-bottom: solid 5px #7fd7f7;
+  /*border-top: solid 5px #7fd7f7;*/
+  overflow:visible;
+  text-align:center;
+}
+
+div#logo
+{
+  font-family: Ravie,sans-serif;
+  font-size: 3em;
+  position:absolute;
+  left:10px;
+  top:10px;
+}
+
+div#logo span.game
+{
+  color: #f89b1b;
+}
+
+div#logo span.eq
+{
+  color: #00aeef;
+}
+
+div#logo span.money
+{
+  color: #5cc151;
+}
+
+div#logo a
+{
+  border: 0px;
+}
+
+div#menu
+{
+  font-size:2em;
+  font-weight:bold;
+  text-align:center;
+  float:left;
+  position:relative;
+  padding-left:400px;
+  padding-top:38px;
+}
+
+div#menu a
+{
+  border:0px;
+}
+
+div#menu a span
+{
+  color:#ffffff !important;
+}
+
+div#menu ul
+{
+  float:left;
+  list-style-type:none;
+  list-style-position:outside;
+  list-style-image:none;
+  height:100%;
+  width:100%;
+  margin:0 0 0 0;
+}
+
+div#menu ul li
+{
+  float:left;
+  display:block;
+  /*padding-top:2px;*/
+  /*border-top:solid 5px #e5f7fd;*/
+}
+
+div#menu ul li a:hover
+{
+  background-color:#b1ddf6;
+  -moz-border-radius-topleft:8px;
+  -moz-border-radius-topright:8px;
+}
+
+div#menu ul li a
+{
+  padding:0 20px 0 20px;
+  float:left;
+}
+
+div#menu ul li.current a
+{
+  background-color:#7fd7f7;
+  -moz-border-radius-topleft:8px;
+  -moz-border-radius-topright:8px;
+}
+
+div#menu ul li.current a span
+{
+  color:#ffffff;
+}
+
+div#menu ul li.current a:hover
+{
+  background-color:#7fd7f7;
+}
+
+table.gridView
+{
+  width: 100%;
+  border: 0px;
+}
+
+table.gridView th
+{
+  text-align: left;
+  padding: 3px 10px 5px 10px;
+  color:#ffffff;
+  font-size:1.5em;
+  background-color:#305a93;/*#6699cc;*/
+  vertical-align:middle;
+  border-right:solid 2px #ffffff;
+}
+
+table.gridView th.left
+{
+  background-image:url(/App_Themes/Default/Images/grid_left_corner.png);
+  background-position:left;
+  background-repeat:no-repeat;
+}
+
+
+table.gridView th.right
+{
+  background-image:url(/App_Themes/Default/Images/grid_right_corner.png);
+  background-position:right;
+  background-repeat:no-repeat;
+}
+
+
+table.gridView td
+{
+  padding: 5px 10px 5px 10px;
+  text-align:left;
+}
+
+table.gridView tr.alternative
+{
+  background-color:#f8f6f7;
+}
+
+table.gridView tr.noData
+{
+  font-size:1.5em;
+}
+
+table.gridView tr.noData td
+{
+  text-align:center !important;
+}

@@ -1,0 +1,38 @@
+﻿/*#menu .mmi*/
+/*, #homeSidebar .top-games-title*/
+/*, #home .news dt*/
+/*, div#caption .breadcrumbs*/
+#homeSidebar .top-games-title
+, #homeSidebar .top-games li
+{
+  /*font-family: Trebuchet MS, Sans Serif;*/
+  /*font-family:MS Sans Serif;*/
+}
+
+#homeSidebar .wants
+, #home .o-items-all
+{
+  font-family:Impact, Impact5, Charcoal6, sans-serif;
+}
+
+/*#homeSidebar .wants
+{
+  font-family:Courier New, Courier New, monospace;
+}*/
+
+/*#homeSidebar .want-to-sell a, #homeSidebar .want-to-buy a*/
+#home .news-date
+/*, #home .news dt
+, #homeSidebar .top-games-title*/
+/*, #home .so-item-desc, #home .bo-item-desc*/
+/*, #user-card .uc-title-name
+, #user-card .uc-title-date*/
+, #home .so-item-price, #home .bo-item-price
+, ul.submenu li.current
+/*, div#user-card .entry-value*/
+, table.newsEntry td.date span
+
+{
+  font-family:Georgia;
+}
+

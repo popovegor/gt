@@ -1,0 +1,66 @@
+div#login
+{
+}
+
+div#signOut
+{
+	margin-top:1em;
+}
+
+div#login dl
+{
+	margin-bottom:1em;
+}
+
+div#login p input[type="checkbox"]
+{
+	margin-right:0.5em;	
+}
+
+p#signUp
+{
+	margin-top:1em;
+}
+
+div#confirmation
+{	
+	width:60em;
+}
+
+div#confirmation dl dt 
+{
+	white-space:normal !important;	
+	margin-bottom:0.5em;
+}
+
+div#signIn table, div#signIn td, div#signIn tr
+{
+	border: 0px !important;
+	padding:0;
+}
+
+div#signUp table, div#signUp tr, div#signUp td
+{
+	border-style:none !important;
+}
+
+div#createUser
+{	
+}
+
+/*div#createUser dl dt
+{
+	margin-bottom:0.5em;
+	margin-top:0.5em;	
+}*/
+
+
+div#login.header dl
+{
+  float:left;
+  margin:0 1em 0 0 !important;
+}
+
+
+
+

@@ -1,0 +1,1272 @@
+﻿*
+{
+  padding: 0;
+  margin: 0;
+}
+
+input, select
+{
+  font-family:Verdana !important;
+  font-size:1em !important;
+}
+
+input[type="checkbox"]
+{
+  margin-right:0.5em;
+}
+
+input[type="button"], input[type="submit"]
+{
+  padding:0 0.5em;
+  height:22px !important;
+}
+
+form
+{
+  height: 100%;
+}
+
+html
+{
+  height: 100%;
+}
+
+body, td, p, ul li, ol li
+{
+  height: 100%;  
+  font-size:12px !important;
+  font-family:Verdana, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  line-height:1.2em;
+  font-weight: normal;
+  /*word-spacing: 0.05em;*/
+}
+
+textarea
+{
+  font-size:1em;
+  /*font-family:Verdana,sans-serif;*/
+  font-family: Verdana, Sans-Serif;
+}
+
+dl dt
+{
+  font-weight: bold;
+}
+
+dl dd
+{
+  margin: 0 0 0.5em 0;
+}
+
+h1
+{
+    font-size: 2em;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: normal;
+    margin:0.5em 0 0.5em;
+    line-height:1.4em;
+}
+
+h2
+{
+  font-size:1.6em;
+  font-weight:normal;
+  margin:0.5em 0 0.3em;
+  font-variant:normal;
+  line-height:1.4em;
+  /*font-weight:bold;*/
+}
+
+h3
+{
+  font-size:1.4em;
+  font-weight:normal;
+  line-height:1.4em;
+  margin:0.5em 0 0.2em;
+}
+
+ul, ol, p
+{
+  margin:0.5em 0;
+}
+
+input[type="text"], select, textarea, input[type="password"]
+{
+  padding: 0.1em; /*border-top:solid 1px #44473d;*/
+}
+
+table, table tr, table tr td, table tbody
+{
+  border-collapse: collapse;
+  border:0px;
+}
+
+img
+{
+  border:0px none;
+}
+
+q:lang(en)
+{
+  quotes:"“" "”";
+}
+
+q:lang(ru)
+{
+  quotes:"«" "»";
+}
+
+
+span.comment
+{
+  font-style: italic;
+}
+
+#upper
+{
+  /*background: none repeat scroll 0 0 #F9F7F1;*/
+ height: 1.5em;
+    padding: 0.5em 1em;
+}
+
+#upper .up-index
+{
+  font-family: georgia;
+  font-size: 1.1em;
+  font-style: italic;
+  float:left;
+}
+
+#upper .up-sys
+{
+   float:right;
+}
+
+#upper .up-lang
+{
+  float:left;
+  margin-right: 2em;
+}
+
+#upper .up-feedback
+{
+  float:left;
+}
+
+#upper .up-feedback-title
+{
+  margin:0 0 0 0;
+  float:left;
+  border-bottom:dotted 1px;
+}
+
+
+#upper .up-feedback ul
+{
+  float:left;
+  list-style-type:none;
+  margin:0;
+}
+
+#upper .up-feedback ul li
+{
+  float:left;
+  margin-left:1em;
+}
+
+#upper .up-feedback ul li a
+, #upper .up-home a
+, #upper .up-home .up-home-current
+{
+  background: transparent url("images/pictograms-min.png") no-repeat scroll 20px 20px;
+  display:block;
+  height:20px;
+  width:17px;
+}
+
+#upper .up-home
+{
+  float:left;
+  margin-right:1em;
+}
+
+#upper .up-home a
+{
+  background-position:0px -529px !important;
+}
+
+#upper .up-home a:hover
+, #upper .up-home .up-home-current
+{
+  background-position:0px -549px !important;
+}
+
+#upper .up-icq a
+{
+  background-position:0px -470px !important;
+}
+
+#upper .up-icq a:hover
+{
+  background-position:0px -379px !important;
+}
+
+#upper .up-skype a
+{
+   background-position:0px -426px !important;
+}
+
+#upper .up-skype a:hover
+{
+   background-position:0px -170px !important;
+}
+
+#upper .up-vk a
+{
+   background-position:0px -448px !important;
+}
+
+#upper .up-vk a:hover
+{
+   background-position:0px -212px !important;
+}
+
+#upper .up-email a
+{
+   background-position:0px -402px !important;
+}
+
+#upper .up-email a:hover
+{
+   background-position:0px -192px !important;
+}
+
+
+div#push
+{
+  clear: both;
+  height: 73px;
+}
+
+div#caption
+{
+    height: 2.5em;
+    margin: 1em 1em 1.5em;
+    padding: 0.1em 0;
+    width: auto;
+}
+
+div#caption h1
+{
+  margin:0 !important;
+  /*border-bottom:dotted 1px;*/
+  line-height:1.2em !important;
+}
+
+div#caption table
+{
+  width:100%;
+  height:100%;
+}
+
+div#caption .line
+{
+  width:auto;
+}
+
+div#caption .title
+{
+  text-align:left;
+  text-align: left;
+  vertical-align:middle;
+  float:left;
+}
+
+/*div#caption div#title span, div#caption div#breadcrumbs .currentNode
+{
+  color: #ff2929;
+}*/
+
+div#caption .breadcrumbs
+{
+    float: right;
+    padding: 0.5em 0 0;
+    vertical-align: middle;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    text-align: right;
+    font-weight:normal;
+    line-height:1.4em;
+}
+
+div#caption .breadcrumbs .currentNode
+{
+  /*border-bottom:1px dotted;*/
+}
+
+div#caption .breadcrumbs-separator
+{
+  word-spacing:-1px;
+}
+
+div#wrapper
+{
+  min-width: 960px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 0 -75px 0;
+}
+
+div#content
+{
+  float: none;
+  margin: 0 1em;
+  width: auto;
+  clear:both;
+}
+
+div#content div#main
+{
+  float:none;
+  margin-left:19em;
+}
+
+div#content div#sidebar
+{
+  float: left;
+  width: 17em;
+  height:auto;
+  padding-right:2em;
+  padding-top:0em;
+}
+
+div#popupWrapper
+{
+  min-width: 300px;
+}
+
+div.popupHeader
+{
+  height: 80px;
+}
+
+div#popupTitle h1
+{
+  color:#FF2929;
+  font-size:1.5em;
+  font-style:oblique;
+  margin-left:0.5em;
+  margin-top:1.5em;
+  white-space:nowrap;
+}
+
+div#popupBody
+{
+  margin: 0.5em 1em 0.5em 0.5em;
+}
+
+div#popupBody div.actions
+{
+  width: 100%;
+  float: left;
+  margin-top: 0.5em; /*border-top:solid 1px #44473d;   padding-top:0.5em;*/
+}
+
+div#footer div.header-bottom
+{ 
+  
+}
+
+
+span.user-card
+{
+  background: transparent url("images/pictograms-min.png") no-repeat scroll 0px -279px;
+  display:inline;
+  height:15px;
+  padding-top:0px;
+  padding-left:13px;
+  font-weight:normal;
+  font-size:1em;  
+}
+
+span.user, a.user
+{
+  font-weight:normal;
+  font-size:1em;
+}
+
+div.fastOfferSearch
+{
+  /*width:400px;*/
+}
+
+div.fastOfferSearch div.value
+{
+}
+
+div.fastOfferSearch div.actions
+{
+  padding-top: 0.5em;
+}
+
+.textBoxWatermark
+{
+  font-style: italic;
+  color: #7D694D;
+}
+
+div#headerLogin
+{
+  margin-top: 0.2em;
+  float: right;
+  /*width: 260px;*/
+  clear:right;
+  display:none;
+}
+
+.error, .attention, .required-field
+{
+  color: #F00000 !important;
+}
+
+p.attention
+{
+  text-align:justify;
+}
+
+
+div.leftSide
+{
+  width: 200px;
+  float: left;
+}
+
+div.rightSide
+{
+  width: 200px;
+  float: right;
+}
+
+div#popSellers
+{
+  width: 300px;
+  float: left;
+  margin-top : 1em;
+  padding : 10px 10px 10px 10px;
+  clear : left;
+}
+
+div#popBuyers
+{
+  width: 300px;
+  float: left;
+  margin-top: 1em;
+  padding : 10px 10px 10px 10px;
+}
+
+div#dealSellers
+{
+    float: left;
+}
+
+div#dealBuyers
+{
+    float: left;
+}
+
+div#welcome
+{
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+  display: none;
+}
+
+
+div.centerContent
+{
+  margin: 0 200px 0 200px;
+  text-align: center;
+}
+
+div.leftSide div.boxPopGames div.title *, div.rightSide div.boxPopServers div.title *, div#popSellers div.boxPopSellers div.title *, div#popBuyers div.boxPopBuyers div.title *
+{
+  color: #ffffff;
+}
+
+div#errorPage
+{
+  padding: 0.5em;
+  text-align: center;
+}
+
+.errorText
+{
+  font-size: 1.2em;
+  color: #9e1307;
+}
+
+.faq dt
+{
+  font-weight: bold;
+}
+
+.faq dd
+{
+  margin-bottom: 1em;
+}
+
+.faq li
+{
+  margin-left: 2em;
+}
+
+img.uploading
+{
+  height: 22px;
+}
+
+dl.edit dt
+{
+  font-weight:bold;
+  font-size:1.1em;
+}
+
+dl.edit dd
+{
+  margin:0.3em 0 1.5em 0;
+}
+
+pre {
+    white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+    white-space: -pre-wrap; /* Opera */
+    white-space: -o-pre-wrap; /* Opera */
+    white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    word-wrap: break-word; /* IE 5.5+ */
+}
+
+div#vk_groups
+{
+  margin-top: 1em;
+}
+
+div.groupsMain
+{
+  border-color:#aaaaaa #aaaaaa -moz-use-text-color !important;
+}
+
+div#signIn table, div#signIn td, div#signIn tr
+{
+	border: 0px !important;
+	padding:0;
+}
+
+div#createUser
+{
+}
+
+div.signIn div.accessDenied
+{
+  margin-top:1em;
+}
+
+div.signIn div.accessDenied span
+{
+  color:#F00000 !important;
+  line-height:1.1em;
+}
+
+.boxCorrespondence
+{
+  width: 100%;
+}
+
+.boxCorrespondence .title span
+{
+  color: #ffffff;
+}
+
+table.gridCorrespondence
+{
+  width: 100%;
+}
+
+table.gridCorrespondence tr.message
+{
+  border-bottom: dashed 1px #7D694D;
+}
+
+table.gridCorrespondence tr.message td.direction
+{
+  width: 39px;
+  padding: 0 0.5em 0 0;
+}
+
+table.gridCorrespondence tr.message td.data
+{
+  padding: 0.5em 0 0 0;
+  margin-bottom: 0.5em;
+}
+
+
+table.gridCorrespondence tr.message dl dt
+{
+  float: left; /*font-weight: bold;*/
+  padding-right: 0.5em;
+}
+
+table.gridCorrespondence tr.gridEmpty td, table.gridFeedbacks tr.gridEmpty
+{
+  font-size: 1em;
+}
+
+table.gridCorrespondence tr.message dl dd.body div.createdDate, table.gridCorrespondence tr.message dl dd.subject div.number
+{
+  float: right;
+  font-style: italic;
+  font-size: 0.85em;
+  color: #7D694D;
+}
+
+div.deleteImage
+{
+  margin: 0.5em 0 0 0;
+  display: inline;
+  vertical-align: top;
+}
+
+div.deleteImage input
+{
+  cursor: pointer;
+  vertical-align: top;
+}
+
+div.viewImage
+{
+  margin-top: 0.5em;
+}
+
+div.image
+{
+  margin: 0.5em 0 0 0;
+  display: inline;
+}
+
+div.fileUploaderContainer
+{
+  margin: 0 0 0.5em 0;
+}
+
+
+div.fileUploaderContainer span.fileUploader
+{
+  float: left;
+  margin-right: 0.5em;
+}
+
+div.fileUploaderContainer span.imageValidationMessage
+{
+  display: block;
+}
+
+/*Authentication popup*/
+div.authenticationPopup
+{
+  margin-top: 1em;
+  display:none;
+}
+
+div.authenticationPopup div.signIn
+{
+  /*display: none;*/
+  /*width:350px;*/
+}
+
+div.authenticationPopup div.signIn dl dt, div.authenticationPopup div.signUp dl dt
+{
+  float:left;
+  width: 170px;
+}
+
+div.authenticationPopup div.signIn dl dd input[type="text"], div.authenticationPopup div.signUp dl dd input[type="text"], div.authenticationPopup div.signIn dl dd input[type="password"], div.authenticationPopup div.signUp dl dd input[type="password"]
+{
+  width:160px;
+}
+
+div.authenticationPopup div.signIn dl dd.remember label
+{
+  margin-left: 0.5em;
+}
+
+div.authenticationPopup div.signIn div.error span, div.authenticationPopup div.signUp div.error span
+{
+  color: #f00000;
+}
+
+div.authenticationPopup div.signIn div.error, div.authenticationPopup div.signUp div.error
+{
+  display: none;
+  margin-top: 0.5em;
+}
+
+div.authenticationPopup div.signUp
+{
+  display:none;
+}
+
+div.authenticationPopup div.sign
+{
+}
+
+div.authenticationPopup div.waiting, div.offerFilterPopup div.waiting
+{
+  display:none;
+  padding-top:15%;
+  text-align:center;
+}
+
+div.authenticationPopup div.toggle
+{
+  padding-bottom:0.5em;
+  padding-right:1em;
+  padding-top:1em;
+  /*text-align:center;*/
+  /*width:100%;*/
+}
+
+div.authenticationPopup div.toggle a
+{
+  text-decoration:none;
+  color:#9E1307 !important
+}
+
+a.buyingSearch:hover
+, a.sellingSearch:hover
+, a.buyingSearch:focus
+, a.sellingSearch:focus
+, div.box div.title div.titleInner div a:hover
+, div.button div.conteiner input:focus
+{
+  color: #ff2929 !important;
+}
+
+
+/*Offer Filter Popup*/
+div.offerFilterPopup
+{
+  margin: 0.5em 0 0.5em 0;
+  /*margin-bottom:0.5em;*/
+  display:none;
+}
+
+div.offerFilterPopup dl dt
+{
+  /*display:inline-block;
+  width:100px;*/
+  padding:0em 0 0em 0;
+}
+
+div.offerFilterPopup dl dd
+{
+  /*display:inline-block;*/
+  padding-top:0.3em;
+}
+
+div.offerFilterPopup dl dd select
+{
+  width:320px;
+}
+
+div.offerFilterPopup div.searchControls
+{
+  padding-top:0.5em;
+}
+
+div.addBid
+{
+  clear: both;
+  padding-top: 65px;
+  text-align: center;
+}
+
+div.addBid span
+{
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+
+div.officeMenu li.bids a
+{
+  font-weight:bold;
+}
+
+div#offersFilter
+{
+  margin: 0 0 0 0;
+  /*padding-right:10%;*/
+}
+
+div#offersFilter div.searchByGame, div#offersFilter div.searchByServer
+{
+  float: left;
+  padding-right: 1.5em;
+}
+
+div#offersFilter div.searchByGame select, div#offersFilter div.searchByServer select
+{
+  width: 230px;
+}
+
+div#offersFilter div.searchByValue
+{
+  float: left;
+  margin: 0 2em 0 2em;
+  padding: 0 2em 0 2em;
+  border-right: #b2b2b2 0.1em dashed;
+  border-left: #b2b2b2 0.1em dashed;
+  display: none;
+}
+
+div#offersFilter div.searchByValue input[type="text"]
+{
+  width: 250px;
+}
+
+div#offersFilter div.searchControls
+{
+  float: left;
+  margin-top:1.65em;
+}
+
+div#offersFilter dl dt
+{
+  font-weight: bold;
+}
+
+div#offersFilter dl dd
+{
+  margin: 0.3em 0 0.5em 0;
+}
+
+div#offersFilter div.offer-controls
+{
+  float:right;
+  margin-top:1.7em;
+  text-align:right;
+}
+
+div#offersFilter div.offer-controls a
+{
+  font-size:1.2em;
+  font-weight:bold;
+}
+
+div#headerMenu
+{
+  /*padding:0 322px 0 322px;*/
+  text-align: center;
+  clear: both;
+}
+
+
+/*=====================  stuff   =========================*/
+
+div.correspondence
+{
+  padding-top: 1em;
+}
+
+.boxUserDeals
+{
+  width: 190px;
+  margin-top: 1em;
+  margin-right: 1em;
+  float: left;
+}
+
+.boxUserDeals dl dt
+{
+  padding-right: 0.5em;
+  float: left;
+}
+
+.boxUserDeals dl dd
+{
+  text-align: right;
+  padding-right: 0.5em;
+}
+
+
+
+table.conversations tr th.participant , table.messages tr td.participant
+{
+  width:150px;
+}
+
+table.conversations tr td.participant
+{
+  vertical-align:top;
+}
+
+table.conversations td.participant ul
+{
+  list-style-type:none;
+}
+
+table.conversations td.participant ul li
+{
+  padding-bottom:0.5em;
+}
+
+table.conversations li.new
+{
+  /*list-style-image:url(/App_Themes/Tutynin/Images/actions/mail.png);
+  list-style-position:inside;*/
+}
+
+table.conversations li.new a
+{
+  display:inline-block;
+  height:15px;
+  padding-top:2px;
+  padding-left:20px;
+  font-weight:bold;
+  text-decoration:none !important;
+  font-size:0.85em;
+}
+
+table.conversations tr th.conversation , table.messages tr td.conversation
+{
+  width:450px;
+}
+
+table.conversations li.message
+{
+  /*padding-top: 0.5em;*/
+  padding-bottom:1em;
+}
+
+table.conversations li.message div.sender
+{
+  /*padding-bottom:0.1em;*/
+  text-align:right;
+}
+
+table.conversations li.message div.sender span
+{
+  font-style:italic;
+  font-family:Georgia,serif;
+  font-weight:normal;
+}
+
+table.conversations li.message div.sender span.user
+{
+  float:left;
+}
+
+table.conversations li.message div.sender span.user a
+{
+  font-style:italic;
+  font-family:Georgia,serif;
+}
+
+table.conversations li.message div.body
+{
+  padding-bottom:1em;
+  border-bottom:dashed 1px #cfc7a9;
+}
+
+table.conversations li.all
+{
+  padding-top:0.5em;
+}
+
+table.conversations ul
+{
+  list-style-type:none;
+}
+
+table.conversations th.actions
+{
+  width:160px;
+}
+
+table.conversations td.actions
+{
+  vertical-align:top;
+}
+
+
+div.messageFilter
+{
+  width:200px;
+}
+
+.offerbtns
+{
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+
+.offerbtns input
+{
+  margin: 0 0.25em 0 0.25em;
+}
+
+table.validatorCalloutExtender
+{
+  z-index: 40000 !important;
+}
+
+.boxRating
+{
+  width: 175px;
+  margin-left:1em;
+  margin-bottom:1em;
+  float:left;
+}
+
+.boxBalance
+{
+  width: 175px;
+  margin-bottom:1em;
+  float:left;
+}
+
+.boxDeals
+{
+  width: 185px;
+  margin-bottom:1em;
+  margin-left:1em;
+  float:left;
+}
+
+.boxLastFeedbacks, .boxUnapprovedFeedbacks, .boxLastMessages
+{
+  clear:left;
+  margin-top:1em;
+  width:100%;
+}
+
+.boxBalance dl
+{
+  height:78px;
+}
+
+.boxRating dl, .boxDeals dl
+{
+}
+
+table.gridLastMessages tr td dl.message, table.gridLastFeedbacks tr td dl.feedback, table.gridUnapprovedFeedbacks tr td dl.feedback
+{
+  border-bottom:dashed 1px;
+  border-color:#7D694D;
+  margin-bottom:0.5em;
+}
+
+div.boxBalance dl dt, div.boxRating dl dt, div.boxDeals dl dt
+{
+  float: left;
+  padding-right: 0.5em;
+}
+
+div.boxBalance dl dd, div.boxRating dl dd, div.boxDeals dl dd
+{
+  text-align:right;
+}
+
+
+/*=======================   messages  ==========================*/
+div.messages
+{
+  /*padding-right:10%;*/
+  max-width: 1100px;
+  min-width: 600px;
+}
+
+div.messages table.in tr.separator td.separator, table.conversation tr.separator td.separator, div#user-card div.feedbacks tr.separator td.separator, table.grid tr.separator td.separator
+{
+  border-bottom:1px solid #F2F3EE
+}
+
+div.messages table.in
+{
+  width:100%;
+}
+
+div.messages table.in th.user
+{
+  width:100px;
+}
+
+div.messages table.in td.user
+{
+  
+}
+
+div.messages table.in td.user p, table.conversation td.sender p, div#user-card div.feedbacks tr td.user p, div#feedbacks table.feedbacks td.user p
+{
+  padding-bottom:0.5em;
+  white-space:nowrap;
+}
+
+div.messages table.in td.user p.date, table.conversation td.sender p.date, div#user-card div.feedbacks tr td.user p.date, div#feedbacks table.feedbacks td.user p.date
+{
+  font-size:0.9em !important;
+}
+
+div.messages table.in th.message, div.messages table.in td.message, table.conversation td.message, table.conversation th.message, div#user-card div.feedbacks tr td.comment
+{
+  min-width:300px;
+  padding-left:3em;
+  padding-right:3em;
+  max-width:700px;
+}
+
+div.messages table.in td.actions
+{
+   width:130px;
+   /*vertical-align:middle;*/
+}
+
+div.messages table.in td.actions p
+{
+  padding-bottom:0.5em;
+}
+
+div.messages table.in td.actions p a
+{
+  /*background-position:left center;
+  background-repeat:no-repeat;
+  display:inline-block;*/
+  font-size:0.9em;
+  font-weight:bold;
+  /*height:16px;
+  padding-left:20px;*/
+  text-decoration:none !important;
+  white-space:nowrap;
+}
+
+div.messages td.message div.new
+{
+  display:none;
+}
+
+div.messages td.message div.new textarea
+{
+  margin-top:0.5em;
+}
+
+div.messages td.message div.new textarea
+{
+  width:99%;
+  height:12em;
+}
+
+div.messages td.message div.new div
+{
+  padding:0.5em 0 1em;
+  text-align:right;
+}
+
+#header
+{
+  height: 133px;
+  background:url("Images/header-footer.png") scroll 0px 0px repeat-x;
+  padding:0 0;
+  width:100%;
+  position: relative;
+}
+
+#header .pers
+{
+  background: url("Images/header/logo-pers.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: right;
+    height: 113px;
+    position: absolute;
+    right: 2%;
+    text-decoration: none;
+    top: 1em;
+    width: 122px;
+}
+
+#header .pers img
+{
+  /*left:10px;
+  top:10px;*/
+  padding:0.5em 0.5em 0 0;
+  height:110px;
+  /*position:absolute;*/
+}
+
+#header .header-ls
+{
+   float: left;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 19%;
+}
+
+#header .logo
+{
+    background: url("Images/header/logo-pers.png") no-repeat scroll 0 -145px transparent;
+    display: block;
+    height: 45px;
+    text-decoration: none;
+    width: 165px;
+    /*margin-top:10px;*/
+    position:absolute;
+    left: 2em;
+    top: 45px;
+}
+
+#header .header-menu
+{
+   float: none;
+    margin: 0 8% 0 20em;
+    padding-left: 0;
+    width: auto;
+}
+
+#header .header-right
+{
+ float: right;
+ height: 100%;
+ margin-right: 1%;
+ position: relative;
+ text-align: right;
+}
+
+div#footer
+{
+  background: url("Images/header-footer.png") repeat scroll 0 -136px;
+    height: 75px;
+    min-width: 960px;
+    margin-top: 65px;
+    
+}
+
+div#footer div.banners-bottom
+{
+  /*float: left;*/
+  padding:0 0 0 2em;
+}
+
+div#footer div.copyright
+{
+  text-align: center;
+  color: #ffffff;
+  font-size:0.9em;
+  padding-top:1em;
+}

@@ -1,0 +1,72 @@
+﻿#sign-in
+{
+  /*border-radius:1em;
+  -moz-border-radius:1em; 
+  -webkit-border-radius:1em;*/
+  /*background-color: #fff8e8;*/
+  margin: 0 auto;
+  width: 35em;
+  /*background:url(images/sign-in.png) no-repeat center 0;*/
+  /*border:solid 1px;*/
+}
+
+.sign-in-cnt
+{
+  padding:2em 6em;
+  position:relative;
+}
+
+
+
+.sign-in table.key-value
+{
+}
+
+.sign-in table td.key
+{
+  width:40%;
+}
+
+.sign-in table td.value
+{
+ width:60%;
+}
+
+.sign-in table td.value input
+{
+  width:96%; 
+}
+
+.sign-in table .login
+{
+  text-align: right;
+}
+
+.sign-in table .remember-me
+{
+  text-align: left;
+}
+
+.sign-in .register
+{
+  margin-top:1em;
+  text-align:center;
+}
+
+.sign-in .register a
+{
+  font-size:1.7em;
+  font-weight:normal;
+  line-height:1.6em;
+}
+
+.sign-in .recovery
+{
+  margin-top:1.5em;
+  text-align:center;
+}
+
+.sign-in .failure
+{
+  text-align:center;
+}

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RefactoringOperation Name="Rename Refactor" MachineName="POPOVEGOR-PC" UserName="popovegor">
+	<Project>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\GT.Database.dbproj</Project>
+	<Filename>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\dbo.Notification_Messages.table.sql</Filename>
+	<ElementName>[dbo].[Notification_Messages]</ElementName>
+	<ElementType>ISql100Table</ElementType>
+	<ParentElementName>[dbo]</ParentElementName>
+	<ParentElementType>ISql90Schema</ParentElementType>
+	<NewName>[Notification_MessageSystem]</NewName>
+	<PropagateRefactoringOperation>
+		<SchemaObjectReferences>
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\Keys\dbo.Notification_Messages.FK_Notification_Messages_UserId.fkey.sql" ElementName="[dbo].[FK_Notification_Messages_UserId]" ElementType="ISql90ForeignKeyConstraint" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\dbo.Notification_Messages.table.sql" ElementName="" ElementType="ISqlIndexedColumnSpecification" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\Keys\dbo.Notification_Messages.FK_Notification_Messages_UserId.fkey.sql" ElementName="[dbo].[FK_Notification_Messages_UserId]" ElementType="ISql90ForeignKeyConstraint" />
+		</SchemaObjectReferences>
+		<SchemaObjectReferences />
+		<SchemaObjectReferences />
+		<ScriptReferences />
+		<UnitTestReferences />
+		<DataGeneratorReferences />
+	</PropagateRefactoringOperation>
+</RefactoringOperation>

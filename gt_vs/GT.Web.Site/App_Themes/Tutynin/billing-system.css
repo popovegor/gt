@@ -1,0 +1,68 @@
+﻿div#topup .description
+{
+  margin:1em 0 0 0;
+  max-width:700px;
+  /*font-style:italic;*/
+}
+
+div#topup .currency
+{
+  margin-left:0.3em;
+}
+
+div#topup .topup
+{
+  margin-left:3em; 
+}
+
+div#drawout .drawout
+{
+  /*margin-left:1em; */
+}
+
+
+div#drawout .description
+{
+  margin:1em 0 0 0;
+  max-width:700px;
+  /*font-style:italic;  */
+}
+
+
+/*=================    transfers   ============*/
+
+div#transfers table.transfers
+{
+  width:auto !important;
+}
+
+div#transfers table.transfers th.date
+{
+  width:115px;
+}
+
+
+div#transfers table.transfers th.status
+{
+  width:100px;
+}
+
+div#transfers table.transfers th.amount
+{
+  width:100px;
+}
+
+div#transfers table.transfers th.from
+, div#transfers table.transfers th.to
+{
+  width:170px;
+}
+
+div.webmoney-certified a
+{
+   background: url("images/wm_cert5.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+    padding-top: 80px;
+    width: 135px; 
+} 

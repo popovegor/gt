@@ -1,0 +1,100 @@
+div#offersFilter
+{
+	margin: 0 0 0 1.5em;
+}
+
+div#offersFilter div.searchByDictionaries
+{
+	float: left;
+}
+
+div#offersFilter div.searchByDictionaries select
+{
+	width: 250px;
+}
+div#offersFilter div.searchByValue
+{
+	float: left;
+	margin: 0 2em 0 2em;
+	padding: 0 2em 0 2em;
+	border-right: #b2b2b2 0.1em dashed;
+	border-left: #b2b2b2 0.1em dashed;
+}
+
+div#offersFilter div.searchByValue input[type="text"]
+{
+	width: 250px;
+}
+
+div#offersFilter div.controls
+{
+	float: left;
+}
+
+div#offersFilter dl dt
+{
+  font-weight:bold;
+}
+
+div#offersFilter dl dd
+{
+  margin:0.3em 0 0.5em 0;
+}
+
+div#offers
+{
+	padding-top: 1em;
+	float: left;
+	width:100%;
+}
+
+table.offers
+{
+}
+
+table.offers th.game, table.offers th.server
+{
+	width: 200px;
+}
+
+table.offers th.title
+{
+	min-width: 200px;
+}
+
+table.offers th.date
+{
+	width: 150px;
+}
+
+table.offers th.seller
+{
+	width: 150px;
+}
+
+table.offers th.buyer
+{
+	width: 150px;
+}
+
+table.offers th.price
+{
+	width: 30px;
+}
+
+table.offers th.delivery
+{
+	width:20px;
+}
+
+.offerbtns
+{
+    width : 100%;
+    float : right;
+    text-align : right;
+}
+
+.offerbtns input
+{
+    margin : 0 0.25em 0 0.25em;
+}

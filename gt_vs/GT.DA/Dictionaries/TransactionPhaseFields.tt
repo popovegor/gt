@@ -1,0 +1,28 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" language="C#v3.5" debug="true" hostSpecific="true" #>
+<#@ output extension=".cs" #>
+<#@ include file="T4Toolbox.tt" #>
+<#@ include file="..\..\T4\Table2Fields.tt" #>
+<#@ include file="..\..\T4\ConfigurationAccessor.tt" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ Assembly Name="System.Windows.Forms.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #> 
+using GT.Global.Localization;
+
+namespace GT.DA.Dictionaries
+{
+	public static class TransactionPhaseFields
+	{
+<#
+	Table2Fields t = new Table2Fields();
+	t.TableName = "Dictionaries_TransactionPhases";
+	t.Config = new ConfigurationAccessor((IServiceProvider)this.Host);
+	t.Render();
+#>
+	}
+}

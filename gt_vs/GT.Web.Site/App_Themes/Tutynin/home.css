@@ -1,0 +1,428 @@
+﻿#home
+{
+  float: none;
+  padding:1em 0 0 0;
+}
+
+#home div.welcome
+{
+  text-align: center; /*background-color: #f8f7f5;*/
+  margin-bottom: 2%;
+  padding: 0 5% 1% 5%;
+  text-align: center;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+
+h1.title
+{
+  margin: 0em 0 0 0em !important;
+  text-align: left;
+  line-height:1.2em;
+  word-spacing: -2px;
+}
+
+
+#homeSidebar
+{
+  padding:1.3em 0 0 0;
+}
+
+#homeSidebar .top-games
+{
+  margin-top:0.4em;
+}
+
+#homeSidebar .top-games dd
+{
+  margin: 1em 0 0 0.5em;
+}
+
+#homeSidebar .top-games .top-games-items
+{
+  list-style-position:outside;
+  list-style-type:none;
+}
+
+#homeSidebar .top-games-counter
+{
+  word-spacing:3px;
+}
+
+
+#homeSidebar .top-games-items li
+{
+  margin:0.7em 0 0.7em 0;
+  line-height:1.2em;
+  list-style-type:none;
+  /*font-size:1.1em !important;*/
+}
+
+#homeSidebar .top-games-title, #home .news dt span
+{
+    
+}
+
+#homeSidebar .top-games-title
+, #home .news dt span
+{
+  font-weight:bold;
+  border-bottom:0px dotted;
+}
+
+#home .news dt span
+{
+  font-size:1em;
+  font-style:normal;
+  font-weight:bold;
+}
+
+/*============================ news ======================*/
+
+
+#home .news
+{
+  margin-top: 0em;
+}
+
+#home .sell-buy
+{
+    padding-top: 1em;
+    width: 53em;
+}
+
+#home .sell-buy div.hero
+{
+   background: url("/App_Themes/Tutynin/Images/home/buy-sell.png") no-repeat scroll center 0 transparent;
+    height: 290px;
+    left: 150px;
+    margin: 0;
+    position: relative;
+    width: 350px;
+}
+
+
+#home .sell-buy .hero .sell
+{
+  background: url("images/home/buy-sell.png") no-repeat scroll left -305px transparent;
+  display: block;
+  height: 200px;
+  left: -150px;
+  position: absolute;
+  top: 127px;
+  width: 210px; /*float:left;*/
+}
+
+
+#home div.sell-buy div.hero .sell.active
+{
+  background-position: -4px -768px !important;
+}
+
+#home div.sell-buy div.hero .sell a
+{
+   font-family: georgia;
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: normal;
+    left: 2em;
+    line-height: 1.2em;
+    position: absolute;
+    text-align: center;
+    top: -3em;
+    width: 6em;
+}
+
+#home div.sell-buy div.hero .buy
+{
+  background: url("/App_Themes/Tutynin/Images/home/buy-sell.png") no-repeat scroll left -517px transparent;
+  display: block;
+  height: 205px;
+  left: 299px;
+  position: absolute;
+  top: 127px;
+  width: 210px;
+}
+
+#home div.sell-buy div.hero .buy.active
+{
+  background-position: -5px -970px;
+}
+
+#home div.sell-buy div.hero .buy a
+{
+  font-family: georgia;
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: normal;
+    left: 0;
+    line-height: 1.2em;
+    position: absolute;
+    text-align: center;
+    top: -3em;
+    width: 7em;
+}
+
+#homeSidebar .wants-buy
+{
+  margin:0.5em 0 0 0;
+}
+
+#homeSidebar .wants
+{
+   font-size: 1.3em;
+   font-style: normal;
+   font-variant: normal;
+   font-weight: normal;
+   letter-spacing: 1px;
+   line-height: 1.3em;
+   margin-top: 1.5em;
+   text-align: left;
+   word-spacing:2px;
+}
+
+#homeSidebar .wants-sell
+{
+  /*font-size:1.2em;*/
+  letter-spacing:0.3px;
+  /*font-weight:bold;
+  letter-spacing:0.5px;*/ 
+}
+
+ #homeSidebar .wants-buy
+ {
+  letter-spacing:0.8px;
+ }
+
+#homeSidebar .wants-separator
+{
+  /*word-spacing:0px;*/
+  font-size: 0.9em;
+  
+}
+
+#home .left-side
+{
+  float: left;
+  margin: 0 3em 0 0;
+  width: 64%;
+}
+
+#home .right-side
+{
+  float: left;
+    padding: 0.8em 0 0;
+    text-align: left;
+    width: 30%;
+}
+
+#home .news dd
+{
+   margin: 0.9em 0.3em 0;
+}
+
+#home .news dd ul
+{
+  list-style-type:disc;
+  list-style-position:outside;
+}
+
+#home .news .news-entry
+{
+  margin:0em 0 1em 0;
+}
+
+#home .news-date
+{
+  font-weight:normal;
+  font-size:1.1em;
+  font-style:italic;
+}
+
+#home .news-title
+{
+  padding-left:0.5em;
+  font-weight:bold;
+  font-size:0.9em;
+}
+
+
+#home .news-msg
+{
+  font-size:0.9em !important;
+  margin-top:0.4em;
+  line-height:1.2em;
+}
+
+#home .news-msg br
+{
+  line-height:0.5em;
+}
+
+#home .offers
+{
+  margin:2em 0 0 0;
+}
+
+#home .selling-offers
+{
+  clear:both;
+  margin:0em 0 0 0;
+  position: relative;
+}
+
+#home .buying-offers
+{
+  clear:both;
+  margin:3em 0 0 0;
+  position:relative;
+}
+
+#home .o-items-all
+{
+  font-size: 1.2em !important;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0em 0.8em 0 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0.1em;
+    height:2em;
+    letter-spacing:0.5px;
+    word-spacing:2px;
+}
+
+#home .so-items
+{
+  margin: 0em 0em;
+}
+
+#home .o-item
+{
+    margin: 1.5em 1em 2em 1em;
+}
+
+#home .o-item-game-category
+{
+  font-size: 1em !important;
+  font-weight: normal;
+  text-align:left;
+  vertical-align:top;
+  width:auto;
+  line-height:1.3em;
+}
+
+#home .o-item-game
+{
+}
+
+#home .o-item-more
+{
+  font-size: 0.8em !important;
+    padding-left: 0;
+    text-align: right;
+    vertical-align: middle;
+    width: 11em;
+    padding-left:2em;
+}
+
+#home .o-item-desc
+{
+    /*font-size: 1.1em !important;*/
+    font-style: normal;
+    line-height:1.4em;
+    clear:both;
+    padding:0.2em 1em 0 0;
+    vertical-align:top;
+    
+}
+
+#home .o-item-date
+{
+   font-size: 0.8em !important;
+    padding-top: 0.5em !important;
+    text-align: right;
+    vertical-align: top;
+    width: 11em;
+    padding-left:2em;
+}
+
+#home .so-item-price, #home .bo-item-price
+{
+    font-size: 1.3em !important;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.1em;
+    margin: 0;
+    padding-right: 0em;
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 7em;
+}
+
+#home .o-item-currency
+{
+  font-size:0.8em;
+  font-weight:normal;
+}
+
+
+
+
+/*===============guarantee==============*/
+
+.guarantee
+{
+ margin: 2.5em 10em 0;
+    text-align: center;
+    top: 2em;
+    
+}
+
+div.guarantee h2
+{
+  display: inline;
+  font-size: 1.6em;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1.2em;
+}
+
+div.guarantee a
+{
+  font-size: 2.3em;
+  text-decoration: none;
+}
+
+
+#home .site-description
+{
+  padding-top: 1em;
+}
+
+#home .site-description p
+{
+  /*text-indent:1em;*/
+  text-align: left;
+  margin-bottom: 0.5em;
+  padding: 0 0;
+  font-size: 1.1em !important;
+  line-height:1.3em;
+}
+
+
+#home .news-archive
+{
+  margin:3em 0 0 0;
+  text-align:right;
+}
+
+#home .news-archive a
+{
+  font-style:normal;
+  font-size:1.1em;
+   font-weight:bold;
+}

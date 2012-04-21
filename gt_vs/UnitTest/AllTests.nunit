@@ -1,0 +1,12 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Default" appbase=".." />
+  <Config name="Default" binpathtype="Auto" configfile=".\UnitTest\AllTests.config">
+    <assembly path="GT.Common.Test\bin\Debug\GT.Common.Test.dll" />
+    <assembly path="GT.BO.Implementation.Test\bin\Debug\GT.BO.Implementation.Test.dll" />
+    <assembly path="GT.BO.Test\bin\Debug\GT.BO.Test.dll" />
+    <assembly path="GT.Common.Web.Test\bin\Debug\GT.Common.Web.Test.dll" />
+    <assembly path="GT.DA.Test\bin\Debug\GT.DA.Test.dll" />
+    <assembly path="GT.Web.Security.Test\bin\Debug\GT.Web.Security.Test.dll" />
+    <assembly path="GT.Web.Site.Test\bin\Debug\GT.Web.Site.Test.dll" />
+  </Config>
+</NUnitProject>

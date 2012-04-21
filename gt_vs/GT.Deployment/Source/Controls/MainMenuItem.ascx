@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MainMenuItem.ascx.cs" Inherits="GT.Web.Site.Controls.MainMenuItem" %>
+ <asp:HyperLink runat="server" ID="hplMainMenuItem" NavigateUrl="<%# SiteMapNode.Url %>" Text="<%# SiteMapNode.Title %>" Target="_self"  CssClass='<%# IsCurrent ? "current" : string.Empty %>' />

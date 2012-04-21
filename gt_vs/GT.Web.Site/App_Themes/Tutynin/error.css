@@ -1,0 +1,30 @@
+﻿div#error-page
+{
+  text-align:center;
+}
+
+div#error-page .logo-gray
+{
+  padding-top: 10%;
+}
+
+div#error-page .logo-gray a
+{
+   background: url("images/error/logo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 45px;
+    margin: 0em auto;
+    width: 164px;
+}
+
+
+div#error-page .error-sorry
+{ 
+  margin-top:1em;
+}
+
+div#error-page  .error-actions
+{
+ font-size: 1.2em;
+ margin-top: 1em; 
+}

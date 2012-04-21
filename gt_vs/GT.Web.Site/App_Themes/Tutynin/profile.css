@@ -1,0 +1,37 @@
+﻿div.profile
+{
+  /*padding-left:50%;*/
+}
+
+div.profile .key
+{
+  width:13%;
+}
+
+div.profile .value
+{
+  /*width:40%;*/
+}
+
+a.new-window
+{
+ background:transparent url("images/pictograms-min.png") no-repeat scroll 0px -236px;
+  padding:0 17px 0 0px;
+  text-decoration:none;
+}
+
+a.new-window:hover
+{
+  background-position:0px -255px !important;
+}
+
+.field-description
+{
+  color:#9C9B9B;
+  font-size:0.9em;
+}
+
+.profile .actions
+{
+  margin:1em 0;
+}

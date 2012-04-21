@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RefactoringOperation Name="Rename Refactor" MachineName="POPOVEGOR-PC" UserName="popovegor">
+	<Project>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\GT.Database.dbproj</Project>
+	<Filename>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\Constraints\dbo.UserRating_UnapprovedFeedbacks.DF_UserRating_UnapprovedFeedbacks_CreateDate.defconst.sql</Filename>
+	<ElementName>[dbo].[DF_UserRating_UnapprovedFeedbacks_CreateDate]</ElementName>
+	<ElementType>ISql90DefaultConstraint</ElementType>
+	<ParentElementName>[dbo].[UserRating_UnusedFeedbacks]</ParentElementName>
+	<ParentElementType>ISql100Table</ParentElementType>
+	<NewName>[DF_UserRating_UnusedFeedbacks_CreateDate]</NewName>
+	<PropagateRefactoringOperation>
+		<SchemaObjectReferences />
+		<SchemaObjectReferences />
+		<SchemaObjectReferences />
+		<ScriptReferences />
+		<UnitTestReferences />
+		<DataGeneratorReferences />
+	</PropagateRefactoringOperation>
+</RefactoringOperation>

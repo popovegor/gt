@@ -1,0 +1,22 @@
+﻿div.addFeedback
+{
+}
+
+div.addFeedback table.type
+{
+  border-width: 0 !important;
+}
+
+div.addFeedback table.type *
+{
+  border-width: 0 !important;
+}
+
+div.addFeedback table.type td
+{
+  padding-left:0em !important;
+}
+
+div.addFeedback .comment *
+{
+}

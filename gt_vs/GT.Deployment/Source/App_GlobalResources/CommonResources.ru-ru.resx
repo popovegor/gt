@@ -1,0 +1,1379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Msg_OfferSubmittedBody" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebServices_Ajax_BuyingService_UpsertBuyingFailure" xml:space="preserve">
+    <value>Произошла ошибка. Пожалуйста, проверьте что все поля заполнены верно и повторите попытку.</value>
+  </data>
+  <data name="PersonalAccount_Office_ChangeEmail" xml:space="preserve">
+    <value>Сменить эл. адрес</value>
+  </data>
+  <data name="SignInFailure" xml:space="preserve">
+    <value>Не удалось войти. Проверьте правильность введенного пароля и имени и повторите попытку.</value>
+  </data>
+  <data name="PersonalAccount_Office_ChangePassword" xml:space="preserve">
+    <value>Сменить пароль</value>
+  </data>
+  <data name="Controls_SignIn" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="Messages_Viewer_All" xml:space="preserve">
+    <value>[Все]</value>
+  </data>
+  <data name="SelectGame" xml:space="preserve">
+    <value>[Выберете игру]</value>
+  </data>
+  <data name="SelectServer" xml:space="preserve">
+    <value>[Выберете сервер]</value>
+  </data>
+  <data name="LoadingGameList" xml:space="preserve">
+    <value>[Загрузка списка игр...]</value>
+  </data>
+  <data name="LoadingServerList" xml:space="preserve">
+    <value>[Загрузка списка серверов...]</value>
+  </data>
+  <data name="DeliveryTemplate" xml:space="preserve">
+    <value>{0} дней</value>
+  </data>
+  <data name="SignUpInvalidEmail" xml:space="preserve">
+    <value>'E-mail' неправильный.</value>
+  </data>
+  <data name="PasswordRecoveryMailSubject" xml:space="preserve">
+    <value>GameIsMoney.Ru Восстановление пароля</value>
+  </data>
+  <data name="RegistrationEmailSubject" xml:space="preserve">
+    <value>GameIsMoney.Ru Регистрация</value>
+  </data>
+  <data name="ChangeEmailEmailSubject" xml:space="preserve">
+    <value>GameIsMoney.Ru Смена E-mail</value>
+  </data>
+  <data name="PersonalAccount_Profile_ICQ" xml:space="preserve">
+    <value>ICQ</value>
+  </data>
+  <data name="PersonalAccount_Profile_Skype" xml:space="preserve">
+    <value>Skype:</value>
+  </data>
+  <data name="AddMessageNoRecipient" xml:space="preserve">
+    <value>There is no a passed recipient '{0}'.</value>
+  </data>
+  <data name="SignUpDuplicateEmail" xml:space="preserve">
+    <value>This 'E-mail' уже используется.</value>
+  </data>
+  <data name="PersonalAccount_Profile_Address" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="PersonalAccount_Office_DealsActive" xml:space="preserve">
+    <value>Активных</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Английский</value>
+  </data>
+  <data name="PersonalAccount_Office_Balance" xml:space="preserve">
+    <value>Баланс</value>
+  </data>
+  <data name="PersonalAccount_Office_BalanceBlocked" xml:space="preserve">
+    <value>Блокировано</value>
+  </data>
+  <data name="DrawOutDescription" xml:space="preserve">
+    <value>В настоящий момент мы осуществляем вывод только на кошельки веб-мани.  В ближайшее время станут доступны другие платежные системы.</value>
+  </data>
+  <data name="TopUpDescription" xml:space="preserve">
+    <value>В настоящий момент мы принимаем к оплате только веб-мани. В ближайшее время станут доступны другие платежные системы.</value>
+  </data>
+  <data name="RecoveryQuestion" xml:space="preserve">
+    <value>Ваш вопрос:</value>
+  </data>
+  <data name="RecoveryAnswer" xml:space="preserve">
+    <value>Ваш ответ:</value>
+  </data>
+  <data name="PersonalAccount_Profile_OnSaveSuccess" xml:space="preserve">
+    <value>Ваш профиль был успешно сохранен.</value>
+  </data>
+  <data name="ChangeEmailOldMail" xml:space="preserve">
+    <value>Ваш текущий E-mail:</value>
+  </data>
+  <data name="PersonalAccount_Office_LastMessagesForYou" xml:space="preserve">
+    <value>ваших последних сообщений</value>
+  </data>
+  <data name="SignUpCaptchText" xml:space="preserve">
+    <value>Введите номер, нарисованный на картинке ниже:</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Верно</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>Восстановить</value>
+  </data>
+  <data name="RecoveryUserNameTitle" xml:space="preserve">
+    <value>Восстановление пароля</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_All" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingTotal" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="PersonalAccount_Office_DealsTotal" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="PersonalAccount_Office_BalanceTotal" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyTotal" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="TotalBuys" xml:space="preserve">
+    <value>Всего заявок:</value>
+  </data>
+  <data name="TotalSells" xml:space="preserve">
+    <value>Всего предложений:</value>
+  </data>
+  <data name="SignedIn" xml:space="preserve">
+    <value>Вы вошли как </value>
+  </data>
+  <data name="OfferPostSelect" xml:space="preserve">
+    <value>Вы выбрали покупателя. Пожалуйста, подождите, пока покупатель оплатит товар.</value>
+  </data>
+  <data name="PasswordRecoveryMailBody" xml:space="preserve">
+    <value>Вы запросили регистрационную информацию.</value>
+  </data>
+  <data name="NoMyBuyOffers" xml:space="preserve">
+    <value>Вы ничего не покупаете.</value>
+  </data>
+  <data name="NoMySellOffers" xml:space="preserve">
+    <value>Вы ничего не продаете.</value>
+  </data>
+  <data name="OfferPostDecline" xml:space="preserve">
+    <value>Вы отказали покупателю.</value>
+  </data>
+  <data name="OfferPostRefuse" xml:space="preserve">
+    <value>Вы отказались от предложения.</value>
+  </data>
+  <data name="RespondDemandMsg" xml:space="preserve">
+    <value>Вы откликнулись на заявку.</value>
+  </data>
+  <data name="OfferPostAccept" xml:space="preserve">
+    <value>Вы приняли предложение. Дальнейшие действия станут доступны после того, как продавец выберет вас в качестве своего покупателя.</value>
+  </data>
+  <data name="DemandPostAccept" xml:space="preserve">
+    <value>Вы приняли предложение. Пожалуйста, перейдите в Управление сделками для продлджения.</value>
+  </data>
+  <data name="OfferCancelConfirmation" xml:space="preserve">
+    <value>Вы уверены, что не хотите участвовать в этом предложение?</value>
+  </data>
+  <data name="OfferSelectConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите выбрать этого покупателя?</value>
+  </data>
+  <data name="DrawOutConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите вывести  {0} на кошелек R{1}?</value>
+  </data>
+  <data name="WindowCloseConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите закрыть окно?</value>
+  </data>
+  <data name="OfferPayConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите оплатить это предложение?</value>
+  </data>
+  <data name="OfferDeclineConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите отказать этому пользователю?</value>
+  </data>
+  <data name="DemandDeclineConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите отказаться от этого предложения?</value>
+  </data>
+  <data name="OfferRefuseConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите отказаться от этого предложения?</value>
+  </data>
+  <data name="OfferConflictConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите перевести это предложение в конфликтное состояние?</value>
+  </data>
+  <data name="OfferSubmitConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите подтвердить получение товара?</value>
+  </data>
+  <data name="DemandAcceptConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите принять это предложение?</value>
+  </data>
+  <data name="Offers_EditSelling_DeleteImageConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить изображение?</value>
+  </data>
+  <data name="OfferDeleteConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить предложение?</value>
+  </data>
+  <data name="DeleteMessageConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить сообщение?</value>
+  </data>
+  <data name="DemandDeleteConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить эту заявку?</value>
+  </data>
+  <data name="OfferAcceptConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите участвовать в этом предложении?</value>
+  </data>
+  <data name="ChooseExisngMsg" xml:space="preserve">
+    <value>Выберете существующее предложение или создайте новое.</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Выбрать</value>
+  </data>
+  <data name="PersonalAccount_Office_DrawOut" xml:space="preserve">
+    <value>Вывести</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="UpdatedOn" xml:space="preserve">
+    <value>Дата изменения</value>
+  </data>
+  <data name="PersonalAccount_Office_CreatedAt" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="Controls_UserCorrespondence_CreatedAt" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="CreatedOn" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="Controls_UserFeedbacks_CreatedAt" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_CreatedAt" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyTransfers" xml:space="preserve">
+    <value>Денежные переводы</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>день(дней)</value>
+  </data>
+  <data name="PersonalAccount_Office_Money" xml:space="preserve">
+    <value>Деньги</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_ForUser" xml:space="preserve">
+    <value>Для пользователя</value>
+  </data>
+  <data name="ChangeEmailTemplateBody" xml:space="preserve">
+    <value>Для смены E-mail, пожалуйста, перейдите на</value>
+  </data>
+  <data name="Messages_AddMessage_Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="PersonalAccount_Office_AddNewDemand" xml:space="preserve">
+    <value>Добавить заявку</value>
+  </data>
+  <data name="PersonalAccount_Office_AddOffer" xml:space="preserve">
+    <value>Добавить предложение</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Добро пожаловать на Game Is Money - самый крупный сервис игровой торговли.
+Здесь Вы можете купить или продать товары из ваших любимых игр.</value>
+  </data>
+  <data name="SignInWelcome" xml:space="preserve">
+    <value>Добро пожаловать! Зарегестрируйтесь </value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>Доставка</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyAvailable" xml:space="preserve">
+    <value>Доступно</value>
+  </data>
+  <data name="PersonalAccount_Office_BalanceAvailable" xml:space="preserve">
+    <value>Доступно</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_ForOthers" xml:space="preserve">
+    <value>Другим пользователям</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyBlocked" xml:space="preserve">
+    <value>Заблокировано</value>
+  </data>
+  <data name="SignInForgot" xml:space="preserve">
+    <value>Забыли пароль</value>
+  </data>
+  <data name="Forgot" xml:space="preserve">
+    <value>Забыли?</value>
+  </data>
+  <data name="BillingSystem_TransferViewer_ComplitionDate" xml:space="preserve">
+    <value>Завершен в</value>
+  </data>
+  <data name="PersonalAccount_Office_DealsFinish" xml:space="preserve">
+    <value>Завершенных</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Messages_AddMessage_Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>Заплатить</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Запомнить</value>
+  </data>
+  <data name="Registred" xml:space="preserve">
+    <value>Зарегестрирован:</value>
+  </data>
+  <data name="BuyingOfferNotFound" xml:space="preserve">
+    <value>Заявка не найдена.</value>
+  </data>
+  <data name="NoBuyingOffersFound" xml:space="preserve">
+    <value>Заявки не найдены. Измените настройки поискового фильтра и попробуйте снова.</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="Game" xml:space="preserve">
+    <value>Игра</value>
+  </data>
+  <data name="GameNotSelected" xml:space="preserve">
+    <value>Игра не выбрана.</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="WebServices_Ajax_SellingService_DeleteImageSuccess" xml:space="preserve">
+    <value>Изображание было удалено.</value>
+  </data>
+  <data name="Offers_EditSelling_Image" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="DetailsInfo_OfferInfo_Image" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="SignInSignIn" xml:space="preserve">
+    <value>или войдите на сайт.</value>
+  </data>
+  <data name="PersonalAccount_Profile_FirstName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="SignUpInvalidUserName" xml:space="preserve">
+    <value>'Имя пользователя' неправильное.</value>
+  </data>
+  <data name="SignUpDuplicateUserName" xml:space="preserve">
+    <value>'Имя пользователя' уже используется.</value>
+  </data>
+  <data name="SignUpUserName" xml:space="preserve">
+    <value>Имя пользователя:</value>
+  </data>
+  <data name="BuyingOfferInfoTitle" xml:space="preserve">
+    <value>Информация о заявке</value>
+  </data>
+  <data name="UserInfoTitle" xml:space="preserve">
+    <value>Информация о пользователе</value>
+  </data>
+  <data name="UserInfoUnavailable" xml:space="preserve">
+    <value>Информация о пользователе недоступна.</value>
+  </data>
+  <data name="OfferInfoTitle" xml:space="preserve">
+    <value>Информация о предложении</value>
+  </data>
+  <data name="GameServerInfoTitle" xml:space="preserve">
+    <value>Информация о сервере</value>
+  </data>
+  <data name="GameServerInfoUnavailable" xml:space="preserve">
+    <value>Информация о сервере недоступна.</value>
+  </data>
+  <data name="GameInfoTitle" xml:space="preserve">
+    <value>Информация об игре</value>
+  </data>
+  <data name="GameInfoUnavailable" xml:space="preserve">
+    <value>Информация об игре недоступна.</value>
+  </data>
+  <data name="SearchInBuying" xml:space="preserve">
+    <value>Найти заявки</value>
+  </data>
+  <data name="SearchInSelling" xml:space="preserve">
+    <value>Найти предложения</value>
+  </data>
+  <data name="Expired" xml:space="preserve">
+    <value>Истекло</value>
+  </data>
+  <data name="Office" xml:space="preserve">
+    <value>Кабинет</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_AsBuyer" xml:space="preserve">
+    <value>Как покупателю</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_AsSeller" xml:space="preserve">
+    <value>Как продавцу</value>
+  </data>
+  <data name="DrawOutTitle" xml:space="preserve">
+    <value>Какую сумму вы хотите вывести?</value>
+  </data>
+  <data name="Chinise" xml:space="preserve">
+    <value>Китайский</value>
+  </data>
+  <data name="Key" xml:space="preserve">
+    <value>Ключ</value>
+  </data>
+  <data name="UserRating_AddFeedback_Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="PersonalAccount_Office_Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="Controls_UserFeedbacks_Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Кому</value>
+  </data>
+  <data name="PersonalAccount_Office_DealsConflicted" xml:space="preserve">
+    <value>Конфликтных</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Копирайт © 2010 GAME IS MONEY. Все права защищены.</value>
+  </data>
+  <data name="Purse" xml:space="preserve">
+    <value>Кошелек</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Купить</value>
+  </data>
+  <data name="Default_Buy" xml:space="preserve">
+    <value>Купить</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Логин</value>
+  </data>
+  <data name="RecoveryComplete" xml:space="preserve">
+    <value>Логин и пароль были отправлены Вам на E-mail.</value>
+  </data>
+  <data name="SignUpSending" xml:space="preserve">
+    <value>Логин и пароль были отправлены на Ваш e-mail адрес. Пожалуйста, подтвердите их.</value>
+  </data>
+  <data name="TopBuyers" xml:space="preserve">
+    <value>Лучшие покупатели</value>
+  </data>
+  <data name="TopSellers" xml:space="preserve">
+    <value>Лучшие продавцы</value>
+  </data>
+  <data name="BestSeller" xml:space="preserve">
+    <value>Лучший покупатель:</value>
+  </data>
+  <data name="BestBuyer" xml:space="preserve">
+    <value>Лучший продавец:</value>
+  </data>
+  <data name="PersonalAccount_Profile_MobilePhone" xml:space="preserve">
+    <value>Мобильный телефон</value>
+  </data>
+  <data name="PersonalAccount_Office_MyDemands" xml:space="preserve">
+    <value>Мои заявки</value>
+  </data>
+  <data name="MyDemands" xml:space="preserve">
+    <value>Мои заявки:</value>
+  </data>
+  <data name="PersonalAccount_Office_MyDeals" xml:space="preserve">
+    <value>Мои сделки</value>
+  </data>
+  <data name="PersonalAccount_Office_MyProfile" xml:space="preserve">
+    <value>Мой профиль</value>
+  </data>
+  <data name="TopUpTitle" xml:space="preserve">
+    <value>На какую сумму Вы хотите пополнить свой счет?</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="GameName" xml:space="preserve">
+    <value>Название игры:</value>
+  </data>
+  <data name="Controls_UserFeedbacks_DealTitle" xml:space="preserve">
+    <value>Название сделки</value>
+  </data>
+  <data name="PersonalAccount_Office_DealTitle" xml:space="preserve">
+    <value>Название сделки</value>
+  </data>
+  <data name="GameServerName" xml:space="preserve">
+    <value>Название сервера:</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Не верно</value>
+  </data>
+  <data name="PaymentAmountError" xml:space="preserve">
+    <value>Неверная сумма. Сумма должна быть больше {0}.</value>
+  </data>
+  <data name="RecoveyUserNameError" xml:space="preserve">
+    <value>Неверное имя пользователя!</value>
+  </data>
+  <data name="SignUpCaptchaError" xml:space="preserve">
+    <value>Неверный номер!</value>
+  </data>
+  <data name="RecoveryQuestionInvalid" xml:space="preserve">
+    <value>Неверный ответ!</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingNeutral" xml:space="preserve">
+    <value>Нейтральных</value>
+  </data>
+  <data name="PasswordInvalid" xml:space="preserve">
+    <value>Неправильный пароль.</value>
+  </data>
+  <data name="NoUnreadMessages" xml:space="preserve">
+    <value>Нет непрочитанных сообщений.</value>
+  </data>
+  <data name="PersonalAccount_Office_NoLastFeedbacks" xml:space="preserve">
+    <value>Нет отзывов</value>
+  </data>
+  <data name="Controls_UserFeedbacks_NoFeedbacks" xml:space="preserve">
+    <value>Нет отзывов.</value>
+  </data>
+  <data name="NoFeedbacks" xml:space="preserve">
+    <value>Нет отзывов.</value>
+  </data>
+  <data name="PersonalAccount_Office_NoLastMessages" xml:space="preserve">
+    <value>Нет сообщений</value>
+  </data>
+  <data name="Controls_UserCorrespondence_NoCorrespondence" xml:space="preserve">
+    <value>Нет сообщений или Вы не авторизованы.</value>
+  </data>
+  <data name="PersonalAccount_Profile_Nickname" xml:space="preserve">
+    <value>Никнейм</value>
+  </data>
+  <data name="ConfirmationDefault" xml:space="preserve">
+    <value>Но подтверждено!</value>
+  </data>
+  <data name="NewDemand" xml:space="preserve">
+    <value>Новая заявка</value>
+  </data>
+  <data name="NewOffer" xml:space="preserve">
+    <value>Новое предложение</value>
+  </data>
+  <data name="DetailsInfo_UserInfo_NewMessage" xml:space="preserve">
+    <value>Новое сообщение</value>
+  </data>
+  <data name="ChangeEmailDupError" xml:space="preserve">
+    <value>'Новый E-mail' точно такой же.</value>
+  </data>
+  <data name="ChangeEmailNewMail" xml:space="preserve">
+    <value>Новый E-mail:</value>
+  </data>
+  <data name="ChangePasswordNewPswInvalid" xml:space="preserve">
+    <value>'Новый пароль' не верен.</value>
+  </data>
+  <data name="ChangePasswordDupError" xml:space="preserve">
+    <value>'Новый пароль' такой же</value>
+  </data>
+  <data name="ChangePasswordNewPsw" xml:space="preserve">
+    <value>Новый пароль:</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="UpdateDemandTitle" xml:space="preserve">
+    <value>Обновление заявки</value>
+  </data>
+  <data name="UpdateOfferTitle" xml:space="preserve">
+    <value>Обновление предложения</value>
+  </data>
+  <data name="CurrentDealBalance" xml:space="preserve">
+    <value>Общий баланс текущих сделок</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="OfferPostPay" xml:space="preserve">
+    <value>Оплата прошла успешно. Пожалуйста, свяжитесь с продавцом через систему сообщений сервиса и договоритесь о передаче товара. При передаче товара в игре, скажите продавцу секретный ключ сделки, чтобы он мог вас опознать. Не забывайте делать скриншоты передачи товара в игре. После получения товара, потдвердите это, нажав на соответсвующую кнопку в предложении.</value>
+  </data>
+  <data name="PersonalAccount_Office_Leave" xml:space="preserve">
+    <value>Оставить отзыв</value>
+  </data>
+  <data name="PersonalAccount_Office_LeaveFeedback" xml:space="preserve">
+    <value>Оставить отзыв</value>
+  </data>
+  <data name="DeliveryTemplate2" xml:space="preserve">
+    <value>Осталось {0} дней</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="Messages_Viewer_From" xml:space="preserve">
+    <value>От кого:</value>
+  </data>
+  <data name="Controls_UserFeedbacks_FromBuyer" xml:space="preserve">
+    <value>От покупателя</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_FromUser" xml:space="preserve">
+    <value>От пользователя</value>
+  </data>
+  <data name="PersonalAccount_Office_FromUser" xml:space="preserve">
+    <value>От пользователя</value>
+  </data>
+  <data name="Controls_UserFeedbacks_FromSeller" xml:space="preserve">
+    <value>От продавца</value>
+  </data>
+  <data name="SignUpInvalidAnswer" xml:space="preserve">
+    <value>'Ответ на секретный вопрос' неправильный.</value>
+  </data>
+  <data name="SignUpSecurityAnswer" xml:space="preserve">
+    <value>Ответ на секретный вопрос:</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Reply" xml:space="preserve">
+    <value>Ответить</value>
+  </data>
+  <data name="AddFeedbackSuccess" xml:space="preserve">
+    <value>Отзыв добавлен.</value>
+  </data>
+  <data name="PersonalAccount_Office_Feedbacks" xml:space="preserve">
+    <value>Отзывы</value>
+  </data>
+  <data name="Controls_UserFeedbacks_AsBuyer" xml:space="preserve">
+    <value>Отзывы как покупателю</value>
+  </data>
+  <data name="Controls_UserFeedbacks_AsSeller" xml:space="preserve">
+    <value>Отзывы как продавцу</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Отказать</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Messages_MessageViewer_Sender" xml:space="preserve">
+    <value>Отправитель</value>
+  </data>
+  <data name="PersonalAccount_Office_Sender" xml:space="preserve">
+    <value>Отправитель</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Sender" xml:space="preserve">
+    <value>Отправитель</value>
+  </data>
+  <data name="Controls_UserCorrespondence_Sender" xml:space="preserve">
+    <value>Отправитель</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingNegative" xml:space="preserve">
+    <value>Отрицательных</value>
+  </data>
+  <data name="OfficialGameSite" xml:space="preserve">
+    <value>Официальный сайт игры:</value>
+  </data>
+  <data name="AddFeedbackFailure" xml:space="preserve">
+    <value>Ошибка при добавлении. Пожалуйста, проверьте что все поля заполнены верно и повторите попытку.</value>
+  </data>
+  <data name="AddOfferFailure" xml:space="preserve">
+    <value>Ошибка при добавлении. Пожалуйста, проверьте что все поля заполнены верно и повторите попытку.</value>
+  </data>
+  <data name="UpdateOfferFailure" xml:space="preserve">
+    <value>Ошибка при обновлении. Пожалуйста, убедитесь, что все поля заполнены правильно и повторите попытку.</value>
+  </data>
+  <data name="PersonalAccount_Profile_OnSaveFialure" xml:space="preserve">
+    <value>Ошибка при сохранении. Пожалуйста, проверьте что все поля заполнены верно и повторите попытку.</value>
+  </data>
+  <data name="OldDataError" xml:space="preserve">
+    <value>Ошибка. Информация на странице устарела. Обновите, пожалуйста, страницу.</value>
+  </data>
+  <data name="NotEnougtMoney" xml:space="preserve">
+    <value>Ошибка. У Вас недостаточно денег.</value>
+  </data>
+  <data name="Psw" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="SignUpInvalidPassword" xml:space="preserve">
+    <value>'Пароль' неправильный.</value>
+  </data>
+  <data name="ChangePasswordComplete" xml:space="preserve">
+    <value>Пароль успешно изменен.</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="NoTransfersFound" xml:space="preserve">
+    <value>Нет переводов.</value>
+  </data>
+  <data name="Controls_UserCorrespondence_Correspondence" xml:space="preserve">
+    <value>Переписка</value>
+  </data>
+  <data name="MasterPages_StandardPage_Pers" xml:space="preserve">
+    <value>Персонаж</value>
+  </data>
+  <data name="PaymentSuccessful" xml:space="preserve">
+    <value>Платеж выполнен успешно.</value>
+  </data>
+  <data name="PaymentFail" xml:space="preserve">
+    <value>Платеж не выполнен.</value>
+  </data>
+  <data name="SignUpConfirm" xml:space="preserve">
+    <value>Подтвердите пароль:</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Подтвердить</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Подтверждение</value>
+  </data>
+  <data name="ChangeEmailComplete" xml:space="preserve">
+    <value>Подтверждение было отправлено на Ваш e-mail. Пожалуйста, подтвердите его.</value>
+  </data>
+  <data name="RecoveryQuestionTitle" xml:space="preserve">
+    <value>Подтверждение личности</value>
+  </data>
+  <data name="TitleEmpty" xml:space="preserve">
+    <value>Пое  'Название' пустое.</value>
+  </data>
+  <data name="Complain" xml:space="preserve">
+    <value>Пожаловаться</value>
+  </data>
+  <data name="RecoveryMail" xml:space="preserve">
+    <value>Пожалуйста, введите Ваш E-mail:</value>
+  </data>
+  <data name="RecoveryUserNameInstruction" xml:space="preserve">
+    <value>Пожалуйста, введите Ваше имя пользователя:</value>
+  </data>
+  <data name="RecoveryQuestionInstruction" xml:space="preserve">
+    <value>Пожалуйста, введите ответ на следующий вопрос</value>
+  </data>
+  <data name="SignUpDescription" xml:space="preserve">
+    <value>Пожалуйста, заполните следующие поля. Поля отмеченные * обязательны для заполнения.</value>
+  </data>
+  <data name="OfferPostSubmit" xml:space="preserve">
+    <value>Поздравляем! Сделка завершена. Не забудьте оставить свой отзыв.</value>
+  </data>
+  <data name="Messages_Viewer_Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Default_FastSearchTitle" xml:space="preserve">
+    <value>Поиск предложений для покупки или заявок для продажи</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Show" xml:space="preserve">
+    <value>Показать</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_ShowBody" xml:space="preserve">
+    <value>Показать сообщение</value>
+  </data>
+  <data name="Messages_Viewer_ShowBody" xml:space="preserve">
+    <value>Показать сообщение</value>
+  </data>
+  <data name="Buyer" xml:space="preserve">
+    <value>Покупатель</value>
+  </data>
+  <data name="Buying" xml:space="preserve">
+    <value>Покупка</value>
+  </data>
+  <data name="SignUpErrorEmptyEmail" xml:space="preserve">
+    <value>Поле 'E-mail' пустое.</value>
+  </data>
+  <data name="SignUpErrorUserName" xml:space="preserve">
+    <value>Поле 'Имя пользователя' пустое.</value>
+  </data>
+  <data name="UserRating_AddFeedback_Comment_Error" xml:space="preserve">
+    <value>Поле 'Комментарий' пустое.</value>
+  </data>
+  <data name="PurseInvalid" xml:space="preserve">
+    <value>Поле 'Кошелек' задано неверно</value>
+  </data>
+  <data name="PurseEmpty" xml:space="preserve">
+    <value>Поле 'Кошелек' пустое.</value>
+  </data>
+  <data name="SignUpErrorEmptyAnswer" xml:space="preserve">
+    <value>Поле 'Ответ на секретный вопрос' пустое.</value>
+  </data>
+  <data name="SignUpErrorEmptyPsw" xml:space="preserve">
+    <value>Поле 'Пароль' пустое.</value>
+  </data>
+  <data name="SignUpErrorEmptyConfirm" xml:space="preserve">
+    <value>Поле 'Подтвердите пароль' пустое.</value>
+  </data>
+  <data name="Messages_AddMessage_RecipientError" xml:space="preserve">
+    <value>Поле 'Получатель' пустое.</value>
+  </data>
+  <data name="SignUpErrorEmptyQuestion" xml:space="preserve">
+    <value>Поле 'Секретный вопрос' пустое.</value>
+  </data>
+  <data name="BodyEmpty" xml:space="preserve">
+    <value>Поле 'Сообщение' не задано.</value>
+  </data>
+  <data name="AmountEmpty" xml:space="preserve">
+    <value>Поле 'Сумма' пустое.</value>
+  </data>
+  <data name="SubjectEmpty" xml:space="preserve">
+    <value>Поле 'Тема' пустое.</value>
+  </data>
+  <data name="Messages_AddMessage_SubjectError" xml:space="preserve">
+    <value>Поле 'Тема' пустое.</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingPositive" xml:space="preserve">
+    <value>Положительных</value>
+  </data>
+  <data name="Recipient" xml:space="preserve">
+    <value>Получатель</value>
+  </data>
+  <data name="RecipientEmpty" xml:space="preserve">
+    <value>Получатель не задан.</value>
+  </data>
+  <data name="NoRecipientsFound" xml:space="preserve">
+    <value>получатель не найден</value>
+  </data>
+  <data name="Messages_AddMessage_Recipient" xml:space="preserve">
+    <value>Получатель:</value>
+  </data>
+  <data name="UserRating_AddFeedback_User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="PersonalAccount_Office_ToUser" xml:space="preserve">
+    <value>Пользователю</value>
+  </data>
+  <data name="PersonalAccount_Office_LeaveFeedback_ToUser" xml:space="preserve">
+    <value>Пользователю</value>
+  </data>
+  <data name="SignUpErrorConfirmPsw" xml:space="preserve">
+    <value>Поля 'Пароль' и 'Подтвердите пароль' не совпадают.</value>
+  </data>
+  <data name="TopUpPaymentDescription" xml:space="preserve">
+    <value>Пополнение счета GameIsMoney</value>
+  </data>
+  <data name="PersonalAccount_Office_TopUp" xml:space="preserve">
+    <value>Пополнить</value>
+  </data>
+  <data name="Messages_MessageViewer_Last" xml:space="preserve">
+    <value>Последние</value>
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>Последний</value>
+  </data>
+  <data name="LastVisit" xml:space="preserve">
+    <value>Последний раз был:</value>
+  </data>
+  <data name="Messages_Viewer_Last" xml:space="preserve">
+    <value>Последний:</value>
+  </data>
+  <data name="PersonalAccount_Office_LastFeedbacks" xml:space="preserve">
+    <value>последних отзывов</value>
+  </data>
+  <data name="PersonalAccount_Office_LastFeedbacksForYou" xml:space="preserve">
+    <value>последних отзывов о Вас</value>
+  </data>
+  <data name="PersonalAccount_Office_LastMessages" xml:space="preserve">
+    <value>последних сообщений</value>
+  </data>
+  <data name="PotentialBuyers" xml:space="preserve">
+    <value>Потенциальные покупатели</value>
+  </data>
+  <data name="SignUpActTitle" xml:space="preserve">
+    <value>Правила пользования сервисом GameIsMoney</value>
+  </data>
+  <data name="AddOfferSuccess" xml:space="preserve">
+    <value>Предложение было успешно добавлено.</value>
+  </data>
+  <data name="OfferNotFound" xml:space="preserve">
+    <value>Предложение не найдено.</value>
+  </data>
+  <data name="UpdateOfferSuccess" xml:space="preserve">
+    <value>Предложение успешно обновлено.</value>
+  </data>
+  <data name="NoOffersFound" xml:space="preserve">
+    <value>Предложения не найдены. Измените настройки поискового фильтра и попробуйте снова.</value>
+  </data>
+  <data name="SuggestedOffer" xml:space="preserve">
+    <value>Предложенная сделка</value>
+  </data>
+  <data name="SuggestedOffers" xml:space="preserve">
+    <value>Предложенные сделки</value>
+  </data>
+  <data name="ToOffer" xml:space="preserve">
+    <value>Предложить</value>
+  </data>
+  <data name="Messages_Viewer_Apply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="BillingSystem_TransferViewer_Note" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="PersonalAccount_Profile_Note" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Принять</value>
+  </data>
+  <data name="Validate" xml:space="preserve">
+    <value>Проверить</value>
+  </data>
+  <data name="Seller" xml:space="preserve">
+    <value>Продавец</value>
+  </data>
+  <data name="Selling" xml:space="preserve">
+    <value>Продажа</value>
+  </data>
+  <data name="Default_Sell" xml:space="preserve">
+    <value>Продать</value>
+  </data>
+  <data name="Sell" xml:space="preserve">
+    <value>Продать</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Продолжить</value>
+  </data>
+  <data name="PersonalAccount_Profile" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+  <data name="RegistrationInfo" xml:space="preserve">
+    <value>Регистрационная информация</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="SignUpAct" xml:space="preserve">
+    <value>Регистрируясь и/или используя сервис GameIsMoney Вы соглашаетесь с тем, что Вы прочитали и поняли данное Соглашение, а также с тем, что Вы безусловно принимаете нижележащие правила.&lt;br&gt;
+Сервис GameIsMoney сохраняет за собой право вносить любые изменения в данные правила без предварительного уведомления пользователей сервиса,  Вы должны самостоятельно отслеживать изменения в данном 
+Соглашении. &lt;br&gt;&lt;br&gt;
+&lt;dl&gt;&lt;dt&gt;&lt;b&gt;1.	Описание сервиса&lt;/b&gt;&lt;/dt&gt;
+&lt;dd&gt;
+По средствам данного сайта сервис GameIsMoney предоставляет вам доступ к различным услугам, включающим покупку и продажу виртуальных товаров. Под виртуальным товаром сервис GameIsMoney понимает виртуальную сущность, обладающую относительной ценностью внутри компьютерной игры. 
+&lt;br&gt;
+Данный сервис может также содержать ссылки на сторонние сайты.  Сервси GameIsMoney не несет ответственность за содержание  данных сайтов и за предлагаемые ими услуги/продукты.
+&lt;br&gt;
+Содержание данного сайта и любых сторонних сайтов публикуется в автоматическом режиме “as is” . Третьи лица (отправители информации) остаются ответственными за любые последствия и нарушения 
+законодательства, причиненные предоставлением и публикацией такой информации.
+&lt;br&gt;
+Сервис GameIsMoney не предоставляет и не требует названия учетных записей (аккаунтов) или виртуальных товаров, покупаемых или продаваемых через этот сервис.  К нам никоим образом не относятся издатели и разработчики компьютерных игр. 
+&lt;/dd&gt;&lt;br&gt;
+&lt;dt&gt;&lt;b&gt;2.	Покупка и продажа&lt;/b&gt;&lt;/dt&gt;
+&lt;dd&gt;
+	В процессе покупки или продажи виртуального товара пользователь становится участником сделки, соответственно либо в роли покупателя, либо в роли продавца. Сделки могут осуществляться только 
+между зарегистрированными пользователями сервиса. Чтобы стать участником сделки, пользователь должен либо создать предложение о продаже виртуального товара, либо принять уже существующее 
+предложение другого пользователя. Принимая или создавая предложение, пользователь(покупатель/продавец) соглашается с его условиями, описанными в описании предложения.&lt;br&gt;   
+	После принятия предложения покупатель и продавец становятся участниками сделки, которая находится в фазе оплаты. Покупателю требуется произвести оплату товара. Для этого необходимо иметь 
+денежные средства на своем счету GameIsMoney. Если средств на счету покупателя достаточно, он может оплатить виртуальный товар. После оплаты виртуального товара его стоимость(указанная в 
+предложении о продаже) списывается со счета покупателя, а продавец видит факт оплаты товара, но денежные средства на этом этапе к продавцу на счет не поступают. Важно! До момента оплаты вы можете 
+отказаться от сделки, после оплаты покупатель отказаться от сделки уже не сможет, потребуется перевод ее в конфликтное состояние.&lt;br&gt; 
+	После оплаты сделка переходит в фазу обмена. Продавец должен в обозначенный им срок, указанный в предложении о продаже, осуществить передачу товара покупателю, после чего покупатель должен 
+подтвердить факт получения товара. После подтверждения факта получения товара, продавец получает на свой счет GameIsMoney денежные средства в размере стоимости товара, указанной в предложении о 
+продаже. &lt;br&gt;
+При передаче товара в компьютерной игре рекомендуется пользоваться системой подтверждающего кода. У каждой сделки в фазе обмена появляется уникальный код, предоставляемый покупателю.  Покупатель 
+обязан сообщить код продавцу в компьютерной игре перед передачей виртуального товара. Продавец должен проверить правильность полученного кода с помощью сервиса GameIsMoney и, лишь убедившись, что 
+код верный, осуществить передачу товара.&lt;br&gt;
+После подтверждения факта получения товара любые претензии со стороны покупателя о не доставленном товаре, доставленном не в полном объеме товаре, об изменении реквизитов игрового аккаунта, 
+блокировке игрового аккаунта, несанкционированной передаче виртуальных предметов с игрового аккаунта сервисом GameIsMoney не принимаются.&lt;br&gt;
+ВАЖНО!
+В случае возникновения конфликтных ситуаций (отказе подтверждения получения товара или отказе в передачи товара в установленный срок), необходимо перевести сделку в конфликтную фазу и связаться с 
+администрацией сервиса GameIsMoney в течение 3 рабочих дней с момента перевода сделки в конфликтную фазу.  При конфликтных ситуациях в качестве доказательств будут рассматриваться:&lt;br&gt;
+&amp;nbsp; - Cервисные логи и переписка, осуществляемая через сервис GameIsMoney&lt;br&gt;
+&amp;nbsp; - Cсылки на логи на сервере компьютерной игры&lt;br&gt;
+Сервис GameIsMoney не несет ответственность за действия пользователей, любые обмены вы осуществляете на свой страх и риск. Мы лишь стараемся минимизировать ваши риски и помочь в спорных 
+ситуациях.&lt;/dd&gt;&lt;br&gt;
+&lt;dt&gt;&lt;b&gt;
+3.	Ввод и вывод денежных средств&lt;/b&gt;&lt;/dt&gt;&lt;dd&gt;
+Ввод и вывод денежных средств со счетов GameIsMoney осуществляется через платежную систему WebMoney &lt;a target='blank' href='http://www.webmoney.ru'&gt;http://www.webmoney.ru&lt;/a&gt; с рублевыми кошельками 
+WMR. Сервис GameIsMoney имеет персональный аттестат в системе, тем самым гарантирует надежность и качество переводов. На счет зачисляются средства без комиссии. Вывод средств со счета 
+осуществляется с комиссией равной комиссии переводов платежной системы WebMoney на день вывода.  Максимальный срок вывода составляет три рабочих дня. Сервис GameIsMoney не несет ответственность за 
+задержки вызванные платежной системой.
+&lt;/dd&gt;&lt;br&gt;
+&lt;dt&gt;&lt;b&gt;4.	Отказ в обслуживании&lt;/b&gt;&lt;/dt&gt;&lt;dd&gt;
+Сервис GameIsMoney оставляет за собой право без предварительного оповещения заблокировать пользователя (временно или перманентно) по одной из следующих причин:&lt;br&gt;
+&amp;nbsp; - Участник конфликтной ситуации не реагирует на запросы ни другого участника сделки, ни администрации в течение 7 дней с момента перехода сделки в конфликтную фазу&lt;br&gt;
+&amp;nbsp; - Пользователь “накручивает” рейтинг, искусственно увеличивая количество завершенных сделок и положительных отзывов&lt;br&gt;
+&amp;nbsp; - Пользователь неоднократно становился участником конфликтных ситуаций, разрешавшихся не в его пользу&lt;br&gt;
+В течение всего периода блокировки средства пользователя недоступны для вывода со счетов GameIsMoney.
+&lt;/dd&gt;&lt;br&gt;
+&lt;dt&gt;&lt;b&gt;5.	Правила размещения предложений о покупке и продаже виртуального товара&lt;/b&gt;&lt;/dt&gt;&lt;dd&gt;
+&amp;nbsp; - Обязательно должно быть указано описание товара, оно должно соответствовать продаваемому товару и максимально точно его описывать&lt;br&gt;
+&amp;nbsp; - В описании товара не допускается размещение какой-либо информации, не относящейся непосредственно к товару (контактной информации, информации о процессе обмена, ссылки)&lt;br&gt;
+&amp;nbsp; - Не допускается размещение двух или более предложений с  одинаковым товаром.&lt;/dd&gt;&lt;/dl&gt;</value>
+  </data>
+  <data name="EditOffer" xml:space="preserve">
+    <value>Редакитироване предложения</value>
+  </data>
+  <data name="EditDemand" xml:space="preserve">
+    <value>Редактирование заявки</value>
+  </data>
+  <data name="PersonalAccount_Office_Rating" xml:space="preserve">
+    <value>Рейтинг</value>
+  </data>
+  <data name="Controls_UserFeedbacks_Rating" xml:space="preserve">
+    <value>Оценка</value>
+  </data>
+  <data name="UserRating_AddFeedback_Rating" xml:space="preserve">
+    <value>Оценка</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_Rating" xml:space="preserve">
+    <value>Оценка</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Рейтинг:</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="NoCorrespondence" xml:space="preserve">
+    <value>С данным пользователем переписка отсутствует.</value>
+  </data>
+  <data name="GameServerSite" xml:space="preserve">
+    <value>Сайт сервера:</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="Messages_Viewer_Reset" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="OfferPostCancel" xml:space="preserve">
+    <value>Сделка отменена и начата заново.</value>
+  </data>
+  <data name="OfferPostConflict" xml:space="preserve">
+    <value>Сделка переходит в конфликтную фазу. Связитесь с администратором.</value>
+  </data>
+  <data name="SignUpInvalidQuestion" xml:space="preserve">
+    <value>'Секретный вопрос' неправильный.</value>
+  </data>
+  <data name="SignUpSecurityQuestion" xml:space="preserve">
+    <value>Секретный вопрос:</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Сервер</value>
+  </data>
+  <data name="ServerNotSelected" xml:space="preserve">
+    <value>Сервер не выбран.</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>Согласен</value>
+  </data>
+  <data name="ErrorMain" xml:space="preserve">
+    <value>Сожалеем. Пожалуйста, свяжитесь с администратором сайта, чтобы решить эту проблему.</value>
+  </data>
+  <data name="SellerHasDeclineYouMsg" xml:space="preserve">
+    <value>Сожалеем. Продавец отказал Вам по этому предложению.</value>
+  </data>
+  <data name="CreateNewAccount" xml:space="preserve">
+    <value>Создайте новый аккаунт</value>
+  </data>
+  <data name="CreateDemandTitle" xml:space="preserve">
+    <value>Создание заявки</value>
+  </data>
+  <data name="CreateOfferTitle" xml:space="preserve">
+    <value>Создание предложения</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="CreateForDemand" xml:space="preserve">
+    <value>Создать для заявки</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Body" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="Controls_UserCorrespondence_Body" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="PersonalAccount_Office_Body" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Message" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="AddMessageSuccess" xml:space="preserve">
+    <value>Сообщение было успешно добавлено.</value>
+  </data>
+  <data name="Messages_AddMessage_BodyError" xml:space="preserve">
+    <value>Сообщение пустое.</value>
+  </data>
+  <data name="EmptyMessageObject" xml:space="preserve">
+    <value>Сообщение пустое.</value>
+  </data>
+  <data name="Messages_AddMessage_Body" xml:space="preserve">
+    <value>Сообщение:</value>
+  </data>
+  <data name="PersonalAccount_Office_Messages" xml:space="preserve">
+    <value>Сообщения</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Сообщения</value>
+  </data>
+  <data name="NoMessagesFound" xml:space="preserve">
+    <value>Сообщения не найдены. Измените настройки поискового фильтра и попробуйте снова.</value>
+  </data>
+  <data name="NoMessages" xml:space="preserve">
+    <value>Сообщения не найдены. Измените настройки поискового фильтра и попробуйте снова.</value>
+  </data>
+  <data name="PersonalAccount_Profile_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="ConfirmationResultAprove" xml:space="preserve">
+    <value>Спасибо за подтверждение! Ваша учетная запись активирована.</value>
+  </data>
+  <data name="ConfirmationResultChangeMail" xml:space="preserve">
+    <value>Спасибо за подтверждение. Ваш E-mail был изменен на {0}.</value>
+  </data>
+  <data name="SignUpThanks" xml:space="preserve">
+    <value>Спасибо за регистрацию!</value>
+  </data>
+  <data name="RegistrationEmailBody" xml:space="preserve">
+    <value>Спасибо за регистрацию. Ваш логин и пароль ниже. Для подтверждения регистрации перейдите по</value>
+  </data>
+  <data name="DeliveryTime" xml:space="preserve">
+    <value>Срок доставки</value>
+  </data>
+  <data name="RegistrationEmailLink" xml:space="preserve">
+    <value>ссылке</value>
+  </data>
+  <data name="ChangeEmailOldMailError" xml:space="preserve">
+    <value>Старый E-mail не верен.</value>
+  </data>
+  <data name="ChangePasswordOldPsw" xml:space="preserve">
+    <value>Старый пароль:</value>
+  </data>
+  <data name="PersonalAccount_Office_StatisticsAsBuyer" xml:space="preserve">
+    <value>Статистика покупателя</value>
+  </data>
+  <data name="PersonalAccount_Office_StatisticsAsSeller" xml:space="preserve">
+    <value>Статистика продавца</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="BillingSystem_TransferViewer_Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="PersonalAccount_Office_DealStatus" xml:space="preserve">
+    <value>Статус сделки</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="PersonalAccount_Profile_Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="PersonalAccount_Office_Subject" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="Controls_UserCorrespondence_Subject" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Subject" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="AddMessageFieldParams" xml:space="preserve">
+    <value>Тема, сообщение или получатель не задано.</value>
+  </data>
+  <data name="Messages_AddMessage_Subject" xml:space="preserve">
+    <value>Тема:</value>
+  </data>
+  <data name="GoodsGot" xml:space="preserve">
+    <value>Товар получен</value>
+  </data>
+  <data name="OnlyIn" xml:space="preserve">
+    <value>Только в</value>
+  </data>
+  <data name="Messages_Viewer_UnreadOnly" xml:space="preserve">
+    <value>Только непрочитанные</value>
+  </data>
+  <data name="UnreadOnly" xml:space="preserve">
+    <value>Только непрочитанные</value>
+  </data>
+  <data name="TopGames" xml:space="preserve">
+    <value>Топ игр</value>
+  </data>
+  <data name="TopServers" xml:space="preserve">
+    <value>Топ серверов</value>
+  </data>
+  <data name="NoProfile" xml:space="preserve">
+    <value>У Вас до сих пор нет персонального профайла.</value>
+  </data>
+  <data name="NoMyDemands" xml:space="preserve">
+    <value>У Вас нет заявок на покупку.</value>
+  </data>
+  <data name="DemandsNotFound" xml:space="preserve">
+    <value>У Вас нет заявок.</value>
+  </data>
+  <data name="SuitableOffersMsg" xml:space="preserve">
+    <value>У Вас нет подходящего предложения. Создайте новое.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Controls_SellingImageViewer_DeleteImage" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Messages_Viewer_Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="PersonalAccount_Profile_LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="SignUpErrorEmailFormat" xml:space="preserve">
+    <value>Формат поля 'E-mail' неправильный.</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="PriceEmpty" xml:space="preserve">
+    <value>Цена не задана.</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>ЧаВо</value>
+  </data>
+  <data name="Abandon" xml:space="preserve">
+    <value>Отказаться</value>
+  </data>
+  <data name="PersonalAccount_Profile_TimeZone" xml:space="preserve">
+    <value>Часовой пояс</value>
+  </data>
+  <data name="DrawOutFact" xml:space="preserve">
+    <value>Фактическая сумма - {0} wmr. (с вычетом комиссии перевода webmoney {1}%)</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Подробнее</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Новости</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Архив</value>
+  </data>
+  <data name="NewsNotFound" xml:space="preserve">
+    <value>Новость не найдена.</value>
+  </data>
+  <data name="NoNewsFound" xml:space="preserve">
+    <value>Новости не найдены</value>
+  </data>
+</root>

@@ -1,0 +1,82 @@
+﻿<#@ assembly name="Microsoft.Practices.EnterpriseLibrary.Data.dll" #>
+<#@ assembly name="System.Data.dll" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="Microsoft.Practices.EnterpriseLibrary.Data" #>
+<#+
+
+public class Dictionary2Enum : Template
+{
+	public string EnumName = string.Empty;
+	public string TableName = string.Empty;
+	public string NameFieldName = string.Empty;
+	public string IdFieldName = string.Empty;
+	public string NamespaceName = string.Empty;
+	
+	public ConfigurationAccessor Config = null;
+	
+	public override string TransformText()
+	{
+		if(string.IsNullOrEmpty(TableName) == true)
+		{
+			Error("TableName is empty.");
+		}
+		/*if(string.IsNullOrEmpty(EnumName) == true)
+		{
+			Error("EnumName is empty.");
+		}*/
+		if(string.IsNullOrEmpty(NameFieldName) == true)
+		{
+			Error("NameField is empty.");
+		}
+		if(string.IsNullOrEmpty(IdFieldName) == true)
+		{
+			Error("IdField is empty.");
+		}
+		if(Config == null)
+		{
+			Error("Config is null");
+		}
+		/*if(string.IsNullOrEmpty(NamespaceName) == true)
+		{
+			Error("NamespaceName is empty");
+		}*/
+		
+		PushIndent("\t\t");
+		Write("None = 0");
+		
+		using (var con = new System.Data.SqlClient.SqlConnection(Config.GtConnectionString))
+		{
+			if (con.State == ConnectionState.Closed)
+			{
+				con.Open();
+			}
+			using (var cmd = new System.Data.SqlClient.SqlCommand(string.Format("SELECT * FROM dbo.{0}", TableName), con))
+			{
+				using (var a = new SqlDataAdapter(cmd))
+				{
+					var ds = new DataSet();
+					a.Fill(ds);
+					if(ds.Tables[0].Rows.Count <= 0)
+					{
+						Error("No data in the table");
+					}
+					var dt = ds.Tables[0];
+					var count = dt.Rows.Count;
+					for (int i = 0; i < count; i++)
+					{
+						var dr = dt.Rows[i];
+						if(i != count) 
+						{
+							WriteLine(",");
+						}
+						Write("{0} = {1}", dr[NameFieldName], dr[IdFieldName]);
+					}
+				}
+			}
+		}
+		PopIndent();
+		WriteLine("");
+        return this.GenerationEnvironment.ToString();
+	}
+}
+#>

@@ -1,0 +1,93 @@
+﻿#help
+{
+  overflow:visible !important;
+}
+
+div#help .help-menu 
+{
+  vertical-align: top;
+  white-space: nowrap;
+  width: 17%;
+  float:left;
+}
+
+div#help table td
+{
+  vertical-align:top;
+}
+
+div#help .help-text
+{
+  text-align:left;
+  width:80%;
+  /*max-width: 1100px;*/
+  vertical-align:top;
+  padding: 0 0 0 0;
+  float:left;
+}
+
+div#help .help-contacts
+{
+  vertical-align: top;
+  width: 17%;
+  float:right;
+  display:none;
+}
+
+div#help h2, div#confirmation h2
+{
+  margin: 1em 0 0.3em;
+  /*display:inline;*/
+  line-height:1em;
+}
+
+div#help h2.first, div#confirmation h2.first
+{
+  margin-top: 0 !important;
+}
+
+div#help p, div#confirmation p
+{
+  text-indent:0em;
+  /*margin-top:0.3em;*/
+  font-size: 1.1em !important;
+  line-height:1.3em;
+}
+
+div#help ul.list, div#confirmation ul.list
+{
+  list-style-position:inside;
+  text-indent:3em;
+}
+
+div#help ul.list li, div#confirmation ul.list li
+{
+  margin:0 0 0.5em 0;
+  line-height:1.3em;
+}
+
+div#help ol.how-to-buy li
+, div#help ol.how-to-sell li
+, ol.rules .rules-item
+{
+  font-size:1.5em !important;
+  font-weight:normal;
+  vertical-align:top;
+  list-style-position: inside;
+}
+
+ol.how-to-buy li h2
+, ol.how-to-sell li h2
+, ol.rules li h2
+{
+  font-size:1em;
+}
+
+div#help ol.how-to-buy li p
+, div#help ol.how-to-sell li p
+, ol.rules li p
+, ol.rules li ul li
+{
+  /*font-size:12px;*/
+  font-weight:normal;
+}

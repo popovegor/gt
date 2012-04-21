@@ -1,0 +1,284 @@
+﻿div.offers div.filter
+{
+  width:100%;
+  height:56px;
+  position: relative;
+}
+
+div.offers div.filter div.search
+{
+  float: none;
+  height: 100%;
+  margin: 0 200px 0 auto;
+  width: auto;
+}
+
+div#selling div.filter div.search
+{
+  background: transparent url("images/offers/filter.png") no-repeat scroll right -178px;
+}
+
+div#buying div.filter div.search
+{
+  background: transparent url("images/offers/filter.png") no-repeat scroll right -59px;
+}
+
+div.offers div.filter div.search div.content
+{
+  margin-right:14px;
+  height:100%;
+}
+
+#buying div.filter div.search div.content
+{
+  background-image:url(images/offers/filter.png);
+  background-position:0px 0px;
+  background-repeat:repeat-x;
+}
+
+#selling div.filter div.search div.content
+{
+  background-image:url(images/offers/filter.png);
+  background-position:0px -118px;
+  background-repeat:repeat-x;
+}
+
+div.offers div.filter div.search div.content div
+{
+  display:inline-block;
+  float:left;
+  /*padding-right:1em;*/
+  padding-top:1.5em;
+  padding-left:1%;
+}
+
+div.offers div.filter div.add
+{
+   float: right;
+   height: 100%;
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 200px;
+}
+
+div#selling div.filter div.add
+{
+  background: transparent url("images/offers/filter.png") no-repeat scroll left -178px;
+}
+
+div#buying div.filter div.add
+{
+  background: transparent url("Images/offers/filter.png") no-repeat scroll left -59px;
+}
+
+div.offers div.filter div.add div.content
+{
+   text-align:center;
+   margin-left:0px;
+   /*background-color:#99ff94;*/
+   height:100%;
+}
+
+div#selling div.filter div.add div.content
+{
+  border-right:solid 2px;
+  background-color:transparent !important;
+}
+
+div#buying div.filter div.add div.content
+{
+  border-right:solid 2px;
+  background-color:transparent !important;
+}
+
+div.offers div.filter div.add div.content div
+{
+  padding-top:1.5em;
+}
+
+div.offers div.filter div.add a
+{
+  font-size:1.3em;
+  font-weight:normal;
+  line-height:1.2em;
+}
+
+div.offers-items table.entries tr.grid-empty td
+{
+  padding-left:1em;
+}
+
+
+/*================= grid ============*/
+div.offers
+{
+  /*padding-top: 2em;*/
+  float: left;
+  width: 100%;
+}
+
+div.offers table.entries
+{
+  width:100%;
+  margin-top:2em;
+}
+
+div.offers table.entries th.game, div.offers table.entries th.server
+{
+  width: 120px;
+}
+
+div.offers table.entries th.title
+{
+  width: auto;
+}
+
+
+table.entries td.title a
+{
+  /*display:inline-block;
+  background-image:url("/App_Themes/Tutynin/images/actions/info.png");
+  background-position:right center;
+  background-repeat:no-repeat;
+  padding-right:3em;
+  height:24px;
+  padding-top:1em;*/
+}
+
+div.offers table.entries th.date
+{
+  width: 115px;
+}
+
+div.offers table.entries th.seller
+{
+  width: 120px;
+}
+
+div.offers table.entries th.buyer
+{
+  width: 120px;
+}
+
+div.offers table.entries th.date
+{
+  width: 115px;
+}
+
+div.offers table.entries th.price
+{
+   width:90px;
+}
+
+div.offers table.entries td.price
+{
+  text-align:center;
+}
+
+div.offers table.entries th.delivery
+{
+  width: 20px;
+}
+
+div.offers .product-category
+{
+  /*vertical-align:top;*/
+  font-size:0.9em;
+  /*float:right;*/
+  /*margin-right:1em;*/
+}
+
+div.offers p.details
+{
+  margin-top:0em;
+  font-size:0.9em;
+}
+
+div.offers .description-short
+{
+  font-weight:bold;
+  font-size:1em;
+}
+
+/*================== want to sell / buy ==============*/
+div.want-to h2
+{
+  margin:0 0 0.5em 0;
+}
+
+div.want-to div.second-way
+{
+  margin:2.5em 0 0 0;
+}
+
+div.want-to p
+{
+  font-size:1.1em;
+  line-height:1.6em;
+  text-indent:1em;
+  width:70%;
+}
+
+div.want-to div.first-way
+{
+  margin:1em 0 0 0;
+}
+
+
+/*=============edit-offer===============*/
+div.edit-offer .description textarea
+{
+  width: 600px;
+}
+
+div.edit-offer .description p
+{
+  margin-top:0.5em;
+  width:600px;
+  text-align:justify;
+  font-size:0.9em !important;
+}
+
+div.edit-offer .notification p
+{
+  margin-top:0.5em;
+  font-size:0.9em;
+}
+
+div.edit-offer .actions
+{
+  clear:both;
+  padding:1em 0;
+}
+
+div.edit-offer .actions .button
+{
+  margin-right:1em;
+}
+
+table.offers a.edit
+{
+  
+}
+
+table.offers
+{
+  width:100%;
+}
+
+div.edit-offer .key-value td.key
+{
+  width:200px;
+  font-weight:bold;
+}
+
+div.edit-offer .key-value .value
+{
+}
+
+
+div.edit-offer .key-value .value.product-category input
+{
+  width:235px;
+}

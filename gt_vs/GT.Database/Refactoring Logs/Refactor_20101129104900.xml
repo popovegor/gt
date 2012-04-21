@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RefactoringOperation Name="Rename Refactor" MachineName="POPOVEGOR-PC" UserName="popovegor">
+	<Project>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\GT.Database.dbproj</Project>
+	<Filename>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\Constraints\dbo.UserRating_UnapprovedFeedbacks.CK_UserRating_UnapprovedFeedbacks.chkconst.sql</Filename>
+	<ElementName>[dbo].[CK_UserRating_UnapprovedFeedbacks]</ElementName>
+	<ElementType>ISql90CheckConstraint</ElementType>
+	<ParentElementName>[dbo].[UserRating_UnusedFeedbacks]</ParentElementName>
+	<ParentElementType>ISql100Table</ParentElementType>
+	<NewName>[CK_UserRating_UnusedFeedbacks]</NewName>
+	<PropagateRefactoringOperation>
+		<SchemaObjectReferences>
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\Constraints\dbo.UserRating_UnapprovedFeedbacks.CK_UserRating_UnapprovedFeedbacks.chkconst.sql" ElementName="[dbo].[CK_UserRating_UnapprovedFeedbacks]" ElementType="ISql90CheckConstraint" />
+		</SchemaObjectReferences>
+		<SchemaObjectReferences />
+		<SchemaObjectReferences />
+		<ScriptReferences />
+		<UnitTestReferences />
+		<DataGeneratorReferences />
+	</PropagateRefactoringOperation>
+</RefactoringOperation>

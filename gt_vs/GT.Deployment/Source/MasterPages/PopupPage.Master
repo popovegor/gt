@@ -1,0 +1,19 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PopupPage.Master.cs" Inherits="GT.Web.Site.MasterPages.PopupPage" MasterPageFile="~/MasterPages/BasePage.Master" %>
+
+<asp:Content ID="cntPopupMain" ContentPlaceHolderID="cphBase" runat="server">
+  <div id="popupWrapper">
+    <div id="header" class="popupHeader">
+      <%--<div id="headerRight" class="headerTop">
+      </div>--%>
+      <div id="popupTitle">
+        <h1>
+          <%= CurrentNode.Title %></h1>
+      </div>
+    </div>
+    <div id="shadow">
+      &nbsp;</div>
+    <div id="popupBody">
+      <asp:ContentPlaceHolder ID="cphContent" runat="server"></asp:ContentPlaceHolder>
+    </div>
+  </div>
+</asp:Content>

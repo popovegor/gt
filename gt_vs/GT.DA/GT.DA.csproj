@@ -1,0 +1,383 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C9D235A-B41E-4148-A79C-B87EBE6AB96D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GT.DA</RootNamespace>
+    <AssemblyName>GT.DA</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BillingSystem\TransferFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransferFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillingSystem\WebMoneyDataAdapter.cs" />
+    <Compile Include="BillingSystem\WebMoneyFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebMoneyFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Caching\Configuration\CacheConfigurationManager.cs" />
+    <Compile Include="Caching\Configuration\CacheConfigurationNotFoundException.cs" />
+    <Compile Include="Caching\Configuration\CacheConfigurator.cs" />
+    <Compile Include="Caching\DataSource\CacheDatabaseBrokerProvider.cs" />
+    <Compile Include="Caching\DataSource\CacheDatabaseProvider.cs" />
+    <Compile Include="Caching\DataSource\FakeCacheDatabaseProvider.cs" />
+    <Compile Include="BillingSystem\BillingSystemDataAdapter.cs" />
+    <Compile Include="Dictionaries\BuyerStatusFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyerStatusFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\ProductCategoryFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductCategoryFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\TimeZoneFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeZoneFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\Dictionaries.cs" />
+    <Compile Include="Dictionaries\DictionariesCacheDatabaseProvider.cs" />
+    <Compile Include="DatabaseConfiguration\DatabaseSectionHandler.cs" />
+    <Compile Include="DatabaseConfiguration\DBConfigElement.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="DBUtils.cs" />
+    <Compile Include="Dictionaries\DictionaryTypes.cs" />
+    <Compile Include="Dictionaries\FeedbackTypeFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeedbackTypeFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\GameFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\GameServerFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameServerFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\MessageTemplateFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageTemplateFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\RealMoneySourceFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealMoneySourceFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\TransactionPhaseFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionPhaseFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\TransferStatusFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransferStatusFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\WebMoneyMessageFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebMoneyMessageFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\WebMoneyMessageTypeFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebMoneyMessageTypeFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageSystem\MessageFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="News\NewsDataAdapter.cs" />
+    <Compile Include="News\NewsFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Offers\BuyingDataAdapter.cs" />
+    <Compile Include="Offers\BuyingOfferFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyingOfferFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Offers\SellingDataAdapter.cs" />
+    <Compile Include="MessageSystem\MessageDataAdapter.cs" />
+    <Compile Include="Offers\SellingImageFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SellingImageFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Offers\SellingOfferFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SellingOfferFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMap\SiteMap.cs" />
+    <Compile Include="SiteMap\SiteMapCacheDatabaseProvider.cs" />
+    <Compile Include="Statistics\Statistics.cs" />
+    <Compile Include="Statistics\StatisticsCacheDatabaseProvider.cs" />
+    <Compile Include="Statistics\StatisticsFields.cs" />
+    <Compile Include="Statistics\StatisticTypes.cs" />
+    <Compile Include="Support\SupportDataAdapter.cs" />
+    <Compile Include="Support\SupportFeedbackFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupportFeedbackFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRating\FeedbackFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeedbackFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRating\UnusedFeedbackFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnusedFeedbackFields.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRating\UserRatingDataAdapter.cs" />
+    <Compile Include="Users\UserDataAdapter..cs" />
+    <Compile Include="Users\UserDynamicsFields.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDynamicsFields.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GT.BO\GT.BO.csproj">
+      <Project>{60D3833E-FCDA-466B-A944-AD4ECAD1E3ED}</Project>
+      <Name>GT.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GT.Common\GT.Common.csproj">
+      <Project>{3849E310-BB64-49BE-AFF9-62CD6300FB46}</Project>
+      <Name>GT.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GT.Global\GT.Global.csproj">
+      <Project>{60A5CDB0-6A0C-4BD7-BADB-68115DAB98AD}</Project>
+      <Name>GT.Global</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BillingSystem\TransferFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TransferFields.cs</LastGenOutput>
+    </None>
+    <None Include="BillingSystem\WebMoneyFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>WebMoneyFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\BuyerStatusFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BuyerStatusFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\ProductCategoryFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ProductCategoryFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\TimeZoneFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TimeZoneFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\FeedbackTypeFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FeedbackTypeFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\GameFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GameFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\GameServerFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GameServerFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\MessageTemplateFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MessageTemplateFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\RealMoneySourceFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>RealMoneySourceFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\TransactionPhaseFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TransactionPhaseFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\TransferStatusFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TransferStatusFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\WebMoneyMessageFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>WebMoneyMessageFields.cs</LastGenOutput>
+    </None>
+    <None Include="Dictionaries\WebMoneyMessageTypeFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>WebMoneyMessageTypeFields.cs</LastGenOutput>
+    </None>
+    <None Include="MessageSystem\MessageFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MessageFields.cs</LastGenOutput>
+    </None>
+    <None Include="News\NewsFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>NewsFields.cs</LastGenOutput>
+    </None>
+    <None Include="Offers\BuyingOfferFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BuyingOfferFields.cs</LastGenOutput>
+    </None>
+    <None Include="Offers\SellingImageFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SellingImageFields.cs</LastGenOutput>
+    </None>
+    <None Include="Offers\SellingOfferFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SellingOfferFields.cs</LastGenOutput>
+    </None>
+    <None Include="Support\SupportFeedbackFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SupportFeedbackFields.cs</LastGenOutput>
+    </None>
+    <None Include="UserRating\FeedbackFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FeedbackFields.cs</LastGenOutput>
+    </None>
+    <None Include="UserRating\UnusedFeedbackFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UnusedFeedbackFields.cs</LastGenOutput>
+    </None>
+    <None Include="Users\UserDynamicsFields.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UserDynamicsFields.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>powershell.exe "&amp;'$(SolutionDir)BuildScripts\PreBuild.ps1' '$(SolutionDir)' 'ConfigurationName=$(ConfigurationName);TargetPath=$(TargetPath)'"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,15 @@
+================
+NUnit Extensions
+================
+
+Place your NUnit extension assemblies in a directory
+called 'addins' next to this file. If the extension
+references 'nunit.core' make sure that it's compiled
+against the same version of 'nunit.core' that's in
+the parent directory.
+
+For an example extension see the NUnit source distribution:
+src\samples\Extensibility\Core\CoreExtensibility.sln
+
+Please direct questions to the 'nunit-developer' list:
+http://sourceforge.net/mail?group_id=10749

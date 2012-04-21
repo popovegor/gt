@@ -1,0 +1,122 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Base.Master.cs" Inherits="GT.Web.Site.MasterPages.Base" %>
+
+<%--<%@ Register Src="~/Controls/AuthenticationPopup.ascx" TagPrefix="gt" TagName="AuthenticationPopup" %>--%>
+<%@ Import Namespace="GT.Common.Web.Cookie" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" profile="http://www.w3.org/2005/10/profile">
+  <title>Base Master</title>
+  <meta name="description" content="" id="description" runat="server" />
+  <meta name="keywords" content="" runat="server" id="keywords" />
+  <meta name='yandex-verification' content='4b26537a0b85294a' />
+  <meta name='yandex-verification' content='764721dd9bd5ff50' />
+  <meta name='yandex-verification' content='792c1f292614f54f' />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  <script type="text/javascript">
+    //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17365626-1']);
+
+    _gaq.push(['_addOrganic', 'nova.rambler.ru', 'query']);
+    _gaq.push(['_addOrganic', 'a.ua', 's']);
+    _gaq.push(['_addOrganic', 'akavita.by', 'z']);
+    _gaq.push(['_addOrganic', 'all.by', 'query']);
+    _gaq.push(['_addOrganic', 'aport.ru', 'r']);
+    _gaq.push(['_addOrganic', 'bigmir.net', 'q']);
+    _gaq.push(['_addOrganic', 'blogs.yandex.ru', 'text']);
+    _gaq.push(['_addOrganic', 'gde.ru', 'keywords']);
+    _gaq.push(['_addOrganic', 'gogo.ru', 'q']);
+    _gaq.push(['_addOrganic', 'i.ua', 'q']);
+    _gaq.push(['_addOrganic', 'km.ru', 'sq']);
+    _gaq.push(['_addOrganic', 'liveinternet.ru', 'ask']);
+    _gaq.push(['_addOrganic', 'yandex.ru', 'query']);
+    _gaq.push(['_addOrganic', 'images.yandex.ru', 'text']);
+    _gaq.push(['_addOrganic', 'blogs.yandex.ru', 'text']);
+    _gaq.push(['_addOrganic', 'video.yandex.ru', 'text']);
+    _gaq.push(['_addOrganic', 'go.mail.ru', 'q']);
+    _gaq.push(['_addOrganic', 'mail.ru', 'q']);
+    _gaq.push(['_addOrganic', 'google.com.ua', 'q']);
+    _gaq.push(['_addOrganic', 'images.google.ru', 'q']);
+    _gaq.push(['_addOrganic', 'meta.ua', 'q']);
+    _gaq.push(['_addOrganic', 'nigma.ru', 's']);
+    _gaq.push(['_addOrganic', 'online.ua', 'q']);
+    _gaq.push(['_addOrganic', 'poisk.ru', 'text']);
+    _gaq.push(['_addOrganic', 'quintura.ru', 'request']);
+    _gaq.push(['_addOrganic', 'rambler.ru', 'words']);
+    _gaq.push(['_addOrganic', 'search.com.ua', 'q']);
+    _gaq.push(['_addOrganic', 'search.ua', 'query']);
+    _gaq.push(['_addOrganic', 'tut.by', 'query']);
+    _gaq.push(['_addOrganic', 'ukr.net', 'search_query']);
+    _gaq.push(['_addOrganic', 'webalta.ru', 'q']);
+    
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    //]]>
+  </script>
+
+</head>
+<body>
+  <!-- Yandex.Metrika counter -->
+  <div style="display: none;">
+
+    <script type="text/javascript">
+(function(w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter1216969 = new Ya.Metrika(1216969);
+             yaCounter1216969.clickmap(true);
+        
+        } catch(e) {}
+    });
+})(window, 'yandex_metrika_callbacks');
+    </script>
+  </div>
+  <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+  <noscript>
+    <div style="position: absolute">
+      <img src="//mc.yandex.ru/watch/1216969" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <form id="frmBasePage" runat="server">
+  <ajaxToolkit:ToolkitScriptManager ID="scmBase" CombineScripts="true" EnablePartialRendering="true" runat="Server" LoadScriptsBeforeUI="true" EnablePageMethods="false" CombineScriptsHandlerUrl="~/CombineScriptHandler.ashx">
+    <CompositeScript>
+      <Scripts>
+        <asp:ScriptReference Path="~/Scripts/jquery-1.4.2.min.js" />
+        <asp:ScriptReference Path="~/Scripts/jqModal.js" />
+        <asp:ScriptReference Path="~/Scripts/Common.js" />
+        <asp:ScriptReference Path="~/Scripts/PopupManager.js" />
+        <asp:ScriptReference Path="~/Scripts/ControlValidator.js" />
+        <asp:ScriptReference Path="~/Scripts/textLimitCount.js" />
+      </Scripts>
+    </CompositeScript>
+    <Services>
+      <asp:ServiceReference Path="~/WebServices/Ajax/UsersService.asmx" InlineScript="true" />
+    </Services>
+    <%--<ProfileService Path="~/WebServices/Ajax/ProfilesService.asmx" />--%>
+  </ajaxToolkit:ToolkitScriptManager>
+  <asp:ContentPlaceHolder ID="cphBase" runat="server"></asp:ContentPlaceHolder>
+  <%--<microsoft:ScriptReferenceProfiler runat="server" />--%>
+  <%--  <gt:AuthenticationPopup runat="server" ID="sip" Visible="true" />--%>
+  <% if (string.IsNullOrEmpty(Context.GetTimeZoneId()) == true)
+     { %>
+
+  <script type="text/javascript" language="javascript">
+    //<![CDATA[
+    (function() {
+      window.setTimeZone();
+    })();
+    //]]>
+  </script>
+
+  <% }%>
+  </form>
+</body>
+</html>

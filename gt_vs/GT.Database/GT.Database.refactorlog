@@ -1,0 +1,864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations>
+  <Operation Name="Rename Refactor" Key="7da23a40-697c-4c12-995f-a2ae0ef7bbba" ChangeDateTime="12/09/2009 11:54:33">
+    <Property Name="ElementName" Value="[dbo].[Offers_Buying].[BuyingId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_Buying]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[BuyingOfferId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dcb2fdd0-31b1-4ce7-ad9a-91e635d887f5" ChangeDateTime="12/09/2009 11:55:03">
+    <Property Name="ElementName" Value="[dbo].[Offers_BuyingHistory].[BuyingHistoryId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_BuyingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[HistoryOfferId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4b9b1556-25cd-431e-a767-a387f5a6e4dc" ChangeDateTime="12/09/2009 11:55:20">
+    <Property Name="ElementName" Value="[dbo].[Offers_BuyingHistory].[BuyingHistoryCreateDate]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_BuyingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[HistoryOfferCreateDate]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9c2f626a-399e-4641-b611-2cca3acaf32e" ChangeDateTime="12/09/2009 11:56:13">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingOnBuying].[SellingId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingOnBuying]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[SellingOfferId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f62d50e8-2357-4421-9c5f-ebe9d1be40e5" ChangeDateTime="12/09/2009 11:56:27">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingOnBuying].[BuyingId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingOnBuying]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[BuyingOfferId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="40c6d070-8044-4224-aa03-ca95c44ca89b" ChangeDateTime="12/09/2009 11:57:51">
+    <Property Name="ElementName" Value="[dbo].[Offers_BuyingHistory].[BuyingId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_BuyingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[BuyingOfferId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="319d0a7d-b8bc-411d-b259-056361ea1d9c" ChangeDateTime="12/11/2009 22:45:48">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingOnBuying]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Offers_SuggestedSellingOffers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3ba8b7bc-e009-4bee-a84a-785b3834b0f1" ChangeDateTime="12/11/2009 22:48:23">
+    <Property Name="ElementName" Value="[dbo].[Offers_SuggestedSellingOffers].[SellingOnBuyingId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SuggestedSellingOffers]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[SuggestedSellingOfferId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="50ea2e44-37b5-4c5d-8679-f1f6ffb38d48" ChangeDateTime="12/11/2009 22:50:36">
+    <Property Name="ElementName" Value="[dbo].[Offers_SuggestedSellingOffers]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Offers_SuggestedSelling]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bdf739af-17b2-4e8b-8db0-0281dbf34149" ChangeDateTime="12/11/2009 22:51:03">
+    <Property Name="ElementName" Value="[dbo].[Offers_SuggestedSelling].[SuggestedSellingOfferId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SuggestedSelling]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[SuggestedSellingId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7a2e90e9-e66e-4ec3-9e8e-f7547824a167" ChangeDateTime="12/14/2009 20:46:48">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Search]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_SearchSellingOffers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bcef83c2-f1ec-460e-aca8-e19484a83cdc" ChangeDateTime="12/16/2009 14:48:08">
+    <Property Name="ElementName" Value="[dbo].[UserRating_Feedbacks].[SellingOffersHistoryId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserRating_Feedbacks]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[HistorySellingOfferId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="58cab408-19a0-4221-aa34-8015858cca2b" ChangeDateTime="12/16/2009 14:48:42">
+    <Property Name="ElementName" Value="[dbo].[UserRating_Feedbacks].[BuyingOffersHistoryId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserRating_Feedbacks]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[HistoryBuyingOfferId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4a29df7a-ffb8-4269-954e-ffb94ad8eaed" ChangeDateTime="01/14/2010 13:47:55">
+    <Property Name="ElementName" Value="[dbo].[Cashflow_TransferParticipants].[OfferId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Cashflow_TransferParticipants]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[SellingHistoryId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f2ea658a-2d1c-4f7b-aad4-fd80b04b31dc" ChangeDateTime="01/15/2010 12:36:19">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_AddOfferToBuyingHistory]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_AddBuyingOfferToHistory]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8b1f659f-8894-4f90-9b82-ca78f37b5ab9" ChangeDateTime="01/19/2010 15:55:40">
+    <Property Name="ElementName" Value="[dbo].[BuyerStatuses]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Dictionaries_BuyerStatuses]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="31a7a5f4-fb5d-4056-82b9-d82e4a10ccf2" ChangeDateTime="01/19/2010 15:56:29">
+    <Property Name="ElementName" Value="[dbo].[Games]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Dictionaries_Games]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fedfc778-2afd-42ea-bc17-d9ba1fc82dc4" ChangeDateTime="01/19/2010 15:56:49">
+    <Property Name="ElementName" Value="[dbo].[GameServers]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Dictionaries_GameServers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f43fe915-54eb-4bc7-84d8-50b0fbcb704d" ChangeDateTime="01/19/2010 15:57:01">
+    <Property Name="ElementName" Value="[dbo].[RealMoneySources]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Dictionaries_RealMoneySources]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d773491f-1c79-48c0-9cf2-ed24ea25a504" ChangeDateTime="01/19/2010 15:57:47">
+    <Property Name="ElementName" Value="[dbo].[SellingOffers]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Offers_Selling]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="42e21f7f-d77c-4dfe-b4c3-a8508e0f3b74" ChangeDateTime="01/19/2010 15:58:23">
+    <Property Name="ElementName" Value="[dbo].[SellingOffersHistory]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Offers_SellingHistory]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d1813cf6-5fde-436f-8e4b-9e49febf3ca5" ChangeDateTime="01/19/2010 16:00:34">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffer_UpdateKey]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_UpdateSellingOfferKey]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a7c0c7ed-f328-4790-b069-0b2439b9f5d4" ChangeDateTime="01/19/2010 16:01:08">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Accept]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_AcceptSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4ea26333-ec76-4771-acf7-6e28839d653b" ChangeDateTime="01/19/2010 16:02:11">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Add]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_AddSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="df1b07f1-4773-453c-b215-1fb65c7d9ad6" ChangeDateTime="01/19/2010 16:02:43">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_CancelAccept]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_CancelAcceptedSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4dcbc770-469e-422b-bbac-1131451217d7" ChangeDateTime="01/19/2010 16:03:16">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_CancelSubmit]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_CancelSubmittedSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6e87a081-4b95-49fd-b7c5-f198dbb7007d" ChangeDateTime="01/19/2010 16:03:37">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Conflict]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_ConflictSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fb2bce3b-ae5d-4286-8001-001045c27d37" ChangeDateTime="01/19/2010 16:03:59">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_DelAccept]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_DeleteAcceptedSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="45811e55-6e05-4b10-b213-eb146cbbc2c3" ChangeDateTime="01/19/2010 16:04:17">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Delete]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_DeleteSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d5d13fee-867e-4723-b14c-a902441f42e3" ChangeDateTime="01/19/2010 16:06:18">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_DelFinish]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_DeleteFinishSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8565aa91-88b9-4892-b8f0-38b970fc6477" ChangeDateTime="01/19/2010 16:06:50">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_DelStart]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_DeleteStartSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d3e7ea78-6f3a-44fa-ba61-1163309170ae" ChangeDateTime="01/19/2010 16:07:19">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_DelSubmit]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_DeleteSubmittedSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e66e8fcc-c0c5-405d-a051-f4c5cc28e414" ChangeDateTime="01/19/2010 16:19:28">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Finish]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_FinishSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9dc1eb57-8a38-47f4-a455-28c2670b99b3" ChangeDateTime="01/19/2010 16:20:11">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Get]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetSellingOffers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="59835c39-09d5-4849-9128-f10efa35d81b" ChangeDateTime="01/19/2010 16:21:15">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_GetAll]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetAllSellingOffers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="079ca584-c98b-4acc-bdb2-ea0e0ff277ce" ChangeDateTime="01/19/2010 16:21:41">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_GetByBuyerName]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetSellingOffersByBuyerName]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="feacb13c-b877-4be0-9f6a-9e9c0ae209aa" ChangeDateTime="01/19/2010 16:22:01">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_GetById]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetSellingOfferById]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5b0b59aa-4cd6-459f-a5e0-82addcfd364f" ChangeDateTime="01/19/2010 16:22:22">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_GetBySellerName]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetSellingOffersBySellerName]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9e7b6f5b-f89b-4fd0-891b-e275e0b20d74" ChangeDateTime="01/19/2010 16:22:55">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_GetForUser]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetSellingOffersForUser]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d46b1a2c-1a41-4f99-bcbe-befe97dc8be0" ChangeDateTime="01/19/2010 16:23:42">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_GetOfferBuyers]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetSellingOfferBuyers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="276f93b6-d13c-4675-964c-5362708cbe9c" ChangeDateTime="01/19/2010 16:24:07">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Select]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_SelectSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="13ea8824-1c21-44c1-8060-2aacdf2a7b8e" ChangeDateTime="01/19/2010 16:24:25">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Submit]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_SubmitSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="21fbb7b8-7b52-42a8-a75c-529948ae5cc1" ChangeDateTime="01/19/2010 16:24:43">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Update]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_UpdateSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="06127a35-46f8-45b4-be7d-600293bc3c5b" ChangeDateTime="01/19/2010 16:25:43">
+    <Property Name="ElementName" Value="[dbo].[p_SellingOffers_Valid]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_ValidateSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c2f66b8b-cb40-496b-8c5d-283e743f1aa6" ChangeDateTime="01/19/2010 20:46:16">
+    <Property Name="ElementName" Value="[dbo].[TransactionPhases]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Dictionaries_TransactionPhases]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c7634850-4fd9-49df-a188-eb0960390c30" ChangeDateTime="01/22/2010 11:32:57">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_GetByBuyer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetSellingOffersByBuyer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b605f711-4e4a-40d2-b5f3-024e4b17c224" ChangeDateTime="01/22/2010 11:40:23">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_GetSellingOffersByBuyer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetBuyingOffersByBuyer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a3b26524-0647-40b9-b233-339ab197f608" ChangeDateTime="01/22/2010 17:08:51">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[Id]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[HistoryOfferId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="594302e6-e127-4624-9147-948c3061c33f" ChangeDateTime="01/22/2010 17:10:00">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[Date]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[HistoryOfferCreateDate]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1f719926-95ec-4119-a62b-a0f32ddc9777" ChangeDateTime="01/22/2010 17:16:36">
+    <Property Name="ElementName" Value="[dbo].[Buyers]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Offers_Buyers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5deda882-73ea-4f74-adb8-533866092a0e" ChangeDateTime="01/22/2010 21:16:22">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[Comment]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[Note]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cbb11551-271b-4ef0-9eff-c0d2172a9086" ChangeDateTime="01/23/2010 17:52:06">
+    <Property Name="ElementName" Value="[dbo].[Offers_Selling].[ProductLetancy]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_Selling]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[ProductLatency]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b6a78c91-16fc-48ed-93d7-48140aca3c07" ChangeDateTime="01/23/2010 17:52:26">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[ProductLetancy]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[ProductLatency]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0eb46956-2441-40de-b6d6-bb6bb9a13657" ChangeDateTime="01/23/2010 20:20:15">
+    <Property Name="ElementName" Value="[dbo].[p_UserRating_GetVotes]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_UserRating_GetVotesInternal]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a1bcc6f0-b40d-4cda-a6bb-261b55578cae" ChangeDateTime="01/23/2010 20:22:04">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_GetSellingOffers]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetSellingOffersInternal]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ce7f3a65-94bb-4fb7-90c5-254405197e13" ChangeDateTime="01/23/2010 20:24:24">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_AcceptSuggested]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_AcceptSuggestedOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="61f21562-84da-46cd-9792-cf85ac59b417" ChangeDateTime="01/23/2010 20:24:40">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_AcceptSuggestedOffer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_AcceptSuggestedSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c9ca36c6-2235-4be6-956f-e19cb6dd27f3" ChangeDateTime="01/23/2010 20:27:54">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_Get]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Messages_GetInternal]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="577dddba-56fb-43c6-94df-c09c2d0e458c" ChangeDateTime="01/23/2010 20:28:24">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_GetInternal]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Messages_GetMessagesInternal]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7b458230-1abe-4017-8733-b3468402b40f" ChangeDateTime="01/23/2010 20:30:29">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_Add]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Messages_AddMessage]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="84c1bc51-38ed-4a03-8056-4e472a2c0804" ChangeDateTime="01/23/2010 20:31:16">
+    <Property Name="ElementName" Value="[dbo].[p_Users_GetDynamics]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Users_GetDynamicsInternal]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="67aeaab3-f9c7-42d5-984a-92b4cd87b7c2" ChangeDateTime="01/23/2010 20:32:48">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_Delete]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Messages_DeleteMessage]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="73562cb8-e300-40b9-a1fc-28893f521d71" ChangeDateTime="01/23/2010 20:34:38">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_GetSellingOffersFromHistory]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetSellingOffersFromHistoryInternal]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5087c26e-6a86-4f0f-97ac-61a738ffbad0" ChangeDateTime="01/23/2010 20:40:30">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_GetBuyingOffers]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_GetBuyingOffersInternal]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a6902dc7-7d1b-431f-875a-45c06d36024c" ChangeDateTime="01/25/2010 14:26:49">
+    <Property Name="ElementName" Value="[dbo].[Offers_Selling].[ProductLatency]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_Selling]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[DeliveryTime]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2515e101-ad9e-4b69-b027-a3a1f12c6498" ChangeDateTime="01/25/2010 16:17:19">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[ProductLatency]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[DeliveryTime]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="383e2975-4eb0-452c-a0d3-2dc4fde71127" ChangeDateTime="05/15/2010 10:50:48">
+    <Property Name="ElementName" Value="[dbo].[Messages]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[MessageSystem_Messages]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="73477c3d-9c95-4213-b053-51212f553496" ChangeDateTime="05/15/2010 11:14:05">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_AddMessage]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_AddMessage]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0af1010d-0ded-4716-8dc2-3971696ca1d2" ChangeDateTime="05/15/2010 11:14:24">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_DeleteMessage]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_DeleteMessage]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="886dd54b-a9b9-45ce-8af0-c1981a5957e1" ChangeDateTime="05/15/2010 11:14:35">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_GetCorrespondence]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_GetCorrespondence]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="709ad2f9-81ad-4b44-8647-f41e1d9cdee1" ChangeDateTime="05/15/2010 11:14:51">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_GetMessageSenders]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_GetMessageSenders]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="072ad211-7f42-4cca-a5b8-882ab625b1a8" ChangeDateTime="05/15/2010 11:15:05">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_GetMessagesInternal]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_GetMessagesInternal]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="74020dc3-fd10-4f18-bd7e-cdde7aa927e7" ChangeDateTime="05/15/2010 11:15:17">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_ReadMessage]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_ReadMessage]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="352826fb-5eaf-407b-b614-a1b151bb3c54" ChangeDateTime="05/15/2010 11:15:27">
+    <Property Name="ElementName" Value="[dbo].[p_Messages_SearchMessages]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_SearchMessages]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d3125680-218c-4530-93a6-0df41eea2c3a" ChangeDateTime="05/18/2010 15:22:39">
+    <Property Name="ElementName" Value="[dbo].[MessageSystem_Templates]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Dictionaries_MessageTemplates]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b9570bd9-b744-4736-9e70-d6c9355b04a7" ChangeDateTime="05/18/2010 15:23:07">
+    <Property Name="ElementName" Value="[dbo].[Dictionaries_MessageTemplates].[TemplateId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dictionaries_MessageTemplates]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[MessageTemplateId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a2e03da1-e83a-49fc-8d00-0c190c1cd077" ChangeDateTime="05/19/2010 17:25:36">
+    <Property Name="ElementName" Value="[dbo].[Cashflow_TransferParticipants]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[BillingSystem_TransferParticipants]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0967c9c1-4e99-4afc-b083-29126b3970f6" ChangeDateTime="05/19/2010 17:27:34">
+    <Property Name="ElementName" Value="[dbo].[Cashflow_Transfers]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[BillingSystem_Transfers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d36263f9-1818-4bf7-b9f4-89abdd42f0c7" ChangeDateTime="07/06/2010 12:43:17">
+    <Property Name="ElementName" Value="[dbo].[Offers_Selling].[OfferId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_Selling]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[SellingId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c7799390-0eec-46b0-bdbc-43ec07335a0f" ChangeDateTime="07/06/2010 12:43:53">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[HistoryOfferId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[HistorySellingId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c59d0d74-07f0-4267-8b72-41b7a695b389" ChangeDateTime="07/06/2010 12:44:14">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[HistoryOfferCreateDate]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[HistoryCreateDate]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3b585f94-bb7f-44c4-8e1b-7239e735025f" ChangeDateTime="07/06/2010 12:44:33">
+    <Property Name="ElementName" Value="[dbo].[Offers_SuggestedSelling].[SellingOfferId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SuggestedSelling]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[SellingId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a9b53f90-5bce-428e-9eed-a17e1a14a44d" ChangeDateTime="07/06/2010 12:57:22">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[OfferId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[SellingId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7c7e7052-5bc3-41f5-8e76-b088619f13c6" ChangeDateTime="07/07/2010 14:27:43">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_AddSellingOffer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_AddSelling]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b8697b9a-5159-4545-ba9a-c2836bc35119" ChangeDateTime="07/07/2010 14:27:53">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_AddSellingOfferToHistory]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_AddSellingToHistory]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="531bbe6f-be8c-44f8-b88c-98ea3ed0b090" ChangeDateTime="07/07/2010 21:09:31">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_UpdateSellingOffer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_UpdateSelling]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="886bd009-23c2-4019-bdec-5ab4e89a72c0" ChangeDateTime="07/18/2010 14:30:48">
+    <Property Name="ElementName" Value="[dbo].[p_Cashflow_AddTransfer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_BillingSystem_AddTransfer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="75e74ee1-41e6-4668-ad31-86ba56f1e842" ChangeDateTime="07/18/2010 14:31:10">
+    <Property Name="ElementName" Value="[dbo].[p_Cashflow_CompleteTransfer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_BillingSystem_CompleteTransfer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fe4dcc91-d4d7-484c-9be8-5aaaf15539ff" ChangeDateTime="07/18/2010 14:31:30">
+    <Property Name="ElementName" Value="[dbo].[p_Cashflow_GetTransfers]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_BillingSystem_GetTransfers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="647a2939-78fd-4cf6-87e1-028dcd3fec65" ChangeDateTime="07/18/2010 14:31:47">
+    <Property Name="ElementName" Value="[dbo].[p_Cashflow_GetTransfersForUser]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_BillingSystem_GetTransfersForUser]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b616199b-d499-42ea-9849-9cb847fbad48" ChangeDateTime="07/18/2010 15:45:21">
+    <Property Name="ElementName" Value="[dbo].[p_Cashflow_CompleteTransfer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_BillingSystem_CompleteTransfer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9d304e71-5fbe-4d9b-9841-88a8b9243135" ChangeDateTime="07/28/2010 14:50:23">
+    <Property Name="ElementName" Value="[dbo].[p_Buyers_Suspend]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Buyers_Abandon]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="160a1f3c-3329-4673-b119-eecdfa249e41" ChangeDateTime="07/28/2010 14:59:03">
+    <Property Name="ElementName" Value="[dbo].[p_Buyers_Refuse]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Buyers_Refuse1]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5c28fff9-21d9-4cd8-b5af-cd01f3a37596" ChangeDateTime="07/28/2010 14:59:15">
+    <Property Name="ElementName" Value="[dbo].[p_Buyers_Abandon]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Buyers_Refuse]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c550e4d2-ebad-4a53-a368-75c43ed31950" ChangeDateTime="07/28/2010 14:59:46">
+    <Property Name="ElementName" Value="[dbo].[p_Buyers_Refuse1]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Buyers_Abandon]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="01d250b9-9ad1-4c0b-8972-1d864017c9b6" ChangeDateTime="07/28/2010 17:35:02">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_SubmitSellingOffer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_ConfirmSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5a7d4458-eac0-4a22-9c06-a61518ac43ae" ChangeDateTime="07/28/2010 17:44:14">
+    <Property Name="ElementName" Value="[dbo].[p_Offers_CancelSubmittedSellingOffer]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Offers_CancelConfirmedSellingOffer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9ac7cdd4-b12d-4c32-93de-1bb102cb9a5c" ChangeDateTime="07/31/2010 10:23:00">
+    <Property Name="ElementName" Value="[dbo].[Dictionaries_RealMoneySources].[TheirComission]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dictionaries_RealMoneySources]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[SourceComission]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0766e569-0d9e-45a5-8e87-9e57411cdda5" ChangeDateTime="07/31/2010 10:23:58">
+    <Property Name="ElementName" Value="[dbo].[Dictionaries_RealMoneySources].[SourceComission]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dictionaries_RealMoneySources]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[Comission]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d5f9ab10-7f6a-4fa4-b9da-535200a4d99e" ChangeDateTime="07/31/2010 11:36:06">
+    <Property Name="ElementName" Value="[dbo].[p_Buyers_Refuse]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_Buyers_Reject]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f9ed915e-a36c-4247-957c-2ed9bd169dc3" ChangeDateTime="07/31/2010 21:36:18">
+    <Property Name="ElementName" Value="[dbo].[BillingSystem_Transfers].[SatusModifyDate]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[BillingSystem_Transfers]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[StatusModifyDate]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a7a0ce9d-ee0e-4cbc-9aca-6ac213d660c9" ChangeDateTime="08/09/2010 15:12:35">
+    <Property Name="ElementName" Value="[dbo].[f_Cashflow_GetTransferParticipantAsXml]" />
+    <Property Name="ElementType" Value="ISql100ScalarFunction" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[f_BillingSystem_GetTransferParticipantAsXml]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d116b317-d756-4b2b-8a05-defc35d837ae" ChangeDateTime="10/13/2010 16:22:51">
+    <Property Name="ElementName" Value="[dbo].[p_MessageSystem_GetCorrespondence]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_GetConversation]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8a8cd8f4-9e63-4778-96f9-ab229a9aac42" ChangeDateTime="10/14/2010 09:41:35">
+    <Property Name="ElementName" Value="[dbo].[p_MessageSystem_GetTopMessagesOfConversations]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_GetTopOfConversationsForUser]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0467647a-34c4-4070-839a-9de3d5370a56" ChangeDateTime="10/14/2010 14:09:58">
+    <Property Name="ElementName" Value="[dbo].[p_MessageSystem_GetConversationForUser]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_GetConversation]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1b966c61-7c5c-48f6-84f2-d8f94617e60f" ChangeDateTime="10/14/2010 15:19:49">
+    <Property Name="ElementName" Value="[dbo].[p_MessageSystem_GetTopOfConversations]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_GetTopsOfConversations]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="460b86cd-a9bd-4c0d-94eb-cc0a2fa4644f" ChangeDateTime="10/15/2010 18:14:46">
+    <Property Name="ElementName" Value="[dbo].[p_MessageSystem_GetTopsOfConversations]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_GetConversations]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cdc31877-4e90-4350-8a2c-5e5232de2cab" ChangeDateTime="11/28/2010 20:23:05">
+    <Property Name="ElementName" Value="[dbo].[p_MessageSystem_ReadMessages]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_MessageSystem_ReadAll]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f60d9bb5-864c-4310-8c7c-5a74dc75208a" ChangeDateTime="11/29/2010 22:43:44">
+    <Property Name="ElementName" Value="[dbo].[UserRating_UnapprovedFeedbacks]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[UserRating_FeedbacksUnused]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="77fc9c49-354e-4d5b-8c00-27f6cc5614ba" ChangeDateTime="11/29/2010 22:44:26">
+    <Property Name="ElementName" Value="[dbo].[p_UserRating_GetUnapprovedFeedbacksForUser]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_UserRating_GetUnusedFeedbacksForUser]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ce47787-9b28-4dec-98bf-9cefcc4f25a3" ChangeDateTime="11/29/2010 22:45:28">
+    <Property Name="ElementName" Value="[dbo].[p_UserRating_AddUnapprovedFeedback]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[p_UserRating_AddUnusedFeedback]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="caf3ad0f-5661-4d1b-9319-03428489597d" ChangeDateTime="11/29/2010 22:47:23">
+    <Property Name="ElementName" Value="[dbo].[UserRating_FeedbacksUnused]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[UserRating_UnusedFeedbacks]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8de96e40-ae0d-4673-b7d4-9056dc406812" ChangeDateTime="12/08/2010 21:25:39">
+    <Property Name="ElementName" Value="[dbo].[Notification_Messages]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Notification_MessageSystem]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="57faba4f-1477-476f-a485-7301048e689d" ChangeDateTime="12/21/2010 00:54:18">
+    <Property Name="ElementName" Value="[dbo].[Dictionaries_ProductTypes]" />
+    <Property Name="ElementType" Value="ISql100Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Dictionaries_ProductCategories]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f78f4fc9-3ed8-4841-abeb-07d6ad891476" ChangeDateTime="12/21/2010 00:54:48">
+    <Property Name="ElementName" Value="[dbo].[Dictionaries_ProductCategories].[ProductTypeId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dictionaries_ProductCategories]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="[ProductCategoryId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8025b65a-c507-4b46-a56d-f98ccbf9bff7" ChangeDateTime="12/21/2010 00:55:19">
+    <Property Name="ElementName" Value="[dbo].[Offers_Buying].[ProductTypeId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_Buying]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="ProductCategoryId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a4fc6c58-8bf8-4900-9cd0-5b593b2fdc03" ChangeDateTime="12/21/2010 00:55:39">
+    <Property Name="ElementName" Value="[dbo].[Offers_Selling].[ProductTypeId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_Selling]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="ProductCategoryId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="61ac6107-4e8c-4b90-8edb-a77687211e07" ChangeDateTime="12/21/2010 00:56:00">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[ProductTypeId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="ProductCategoryId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b2aea0e9-21cc-4ec1-a49c-2fccf6b5e744" ChangeDateTime="12/21/2010 00:56:34">
+    <Property Name="ElementName" Value="[dbo].[Offers_BuyingHistory].[ProductTypeId]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_BuyingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="ProductCategoryId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c24d6263-404f-4c5b-a7df-f4b995e65d2b" ChangeDateTime="12/21/2010 13:57:26">
+    <Property Name="ElementName" Value="[dbo].[Offers_Buying].[ProductCategoryName]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_Buying]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="ProductCategoryMisc" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fb939050-f3c7-414b-9340-25393e136c8a" ChangeDateTime="12/21/2010 13:58:02">
+    <Property Name="ElementName" Value="[dbo].[Offers_BuyingHistory].[ProductCategoryName]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_BuyingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="ProductCategoryMisc" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="78f963fe-7a58-42a7-99b3-7da42434076a" ChangeDateTime="12/21/2010 13:58:42">
+    <Property Name="ElementName" Value="[dbo].[Offers_Selling].[ProductCategoryName]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_Selling]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="ProductCategoryMisc" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6a185338-3539-475b-b1fc-7c308bbb4f72" ChangeDateTime="12/21/2010 13:59:06">
+    <Property Name="ElementName" Value="[dbo].[Offers_SellingHistory].[ProductCategoryName]" />
+    <Property Name="ElementType" Value="ISql100SimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Offers_SellingHistory]" />
+    <Property Name="ParentElementType" Value="ISql100Table" />
+    <Property Name="NewName" Value="ProductCategoryMisc" />
+  </Operation>
+</Operations>

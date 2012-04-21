@@ -1,0 +1,192 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60A5CDB0-6A0C-4BD7-BADB-68115DAB98AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GT.Global</RootNamespace>
+    <AssemblyName>GT.Global</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Schema, Version=9.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application.cs" />
+    <Compile Include="BillingSystem\RealMoneySourceType.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealMoneySourceType.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillingSystem\TransferStatus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransferStatus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Caching\CacheTypes.cs" />
+    <Compile Include="Cookies\CookiesFields.cs" />
+    <Compile Include="DetailsInfo\GameInfoParams.cs" />
+    <Compile Include="DetailsInfo\GameServerInfoParams.cs" />
+    <Compile Include="DetailsInfo\UserInfoParams.cs" />
+    <Compile Include="Entities\EntityTypes.cs" />
+    <Compile Include="EventLog\EventLogSource.cs" />
+    <Compile Include="HelpParams.cs" />
+    <Compile Include="Masters\StandartMasterQueries.cs" />
+    <Compile Include="Localization\Languages.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Languages.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\Localizator.cs" />
+    <Compile Include="MessageSystem\AddMessageParams.cs" />
+    <Compile Include="MessageSystem\MessageFilterParams.cs" />
+    <Compile Include="MessageSystem\MessageSenders.cs" />
+    <Compile Include="MessageSystem\MessageTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="News\NewsInfoParams.cs" />
+    <Compile Include="Notification\UnsubscribeParams.cs" />
+    <Compile Include="Offers\BuyingOfferInfoPrams.cs" />
+    <Compile Include="Offers\EditSellingParams.cs" />
+    <Compile Include="Offers\SearchInTypes.cs" />
+    <Compile Include="Offers\SellingOfferParams.cs">
+    </Compile>
+    <Compile Include="Offers\TransactionPhase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionPhase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Offers\ViewFilterParams.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\MembershipSettings.cs" />
+    <Compile Include="Security\RolesSettings.cs" />
+    <Compile Include="UserRating\LeaveFeedbackParams.cs" />
+    <Compile Include="UserRating\FeedbackFilterParams.cs" />
+    <Compile Include="UserRating\FeedbackType.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeedbackType.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserCardParams.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BillingSystem\RealMoneySourceType.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>RealMoneySourceType.cs</LastGenOutput>
+    </None>
+    <None Include="BillingSystem\TransferStatus.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TransferStatus.cs</LastGenOutput>
+    </None>
+    <None Include="Localization\Languages.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Languages.cs</LastGenOutput>
+    </None>
+    <None Include="MessageSystem\MessageTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MessageTemplate.cs</LastGenOutput>
+    </None>
+    <None Include="Offers\TransactionPhase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TransactionPhase.cs</LastGenOutput>
+    </None>
+    <None Include="UserRating\FeedbackType.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FeedbackType.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>powershell.exe "&amp;'$(SolutionDir)BuildScripts\PreBuild.ps1' '$(SolutionDir)' 'ConfigurationName=$(ConfigurationName);TargetPath=$(TargetPath)'"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

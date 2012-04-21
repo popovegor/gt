@@ -1,0 +1,94 @@
+div#messagesFilter
+{
+  margin: 0 0 0 1.5em;
+}
+
+div#messagesFilter div.search
+{
+  float: left;
+  margin-right: 2em;
+  padding-right: 2em;
+  border-right: #b2b2b2 0.1em dashed;
+}
+
+div#messagesFilter div.search select
+{
+  width: 250px;
+}
+
+div#messagesFilter div.controls
+{
+  float: left;
+}
+
+
+div#messagesFilter dl dt
+{
+  font-weight: bold;
+}
+
+div#messagesFilter dl dd
+{
+  margin:0.3em 0 0.5em 0;
+}
+
+div#messages
+{
+	padding-top: 1em;
+	float: left;
+	width:100%;
+}
+
+div#messages table.messages
+{
+  
+}
+
+table.messages tr th.sender
+{
+  width:150px;
+}
+
+table.messages tr td.sender
+{
+  vertical-align:middle;
+}
+
+table.messages tr th.data
+{
+  width:90px;
+}
+
+table.messages tr th.message
+{
+  
+}
+
+table.messages tr td.message
+{
+  vertical-align:middle;
+  padding:0.5em 0 0.5em 0.5em;
+}
+
+table.messages tr td.message dl
+{
+}
+
+
+table.messages tr td.message dl dt
+{
+  float:left;
+  font-weight: bold;
+  padding-right:0.5em;
+  padding-bottom:0.5em;
+}
+
+table.messages tr td.message dl dd
+{
+  padding: 0 0 0.5em 0;
+}
+
+table.messages tr td.message dl dd div.actions
+{
+  float:right;
+}

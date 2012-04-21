@@ -1,0 +1,1087 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  color: #31291e;
+}
+
+form
+{
+  height: 100%;
+}
+
+html
+{
+  height: 100%;
+}
+
+body
+{
+  background: #f5f5dc none repeat scroll 0 0; /*#cac5be*/
+  font-size: /*0.8125em;*/ 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1em;
+  overflow: visible;
+  height: 100%;
+}
+
+textarea
+{
+  font-size: 1em;
+}
+
+dl dt
+{
+  font-weight: bold;
+}
+
+dl dd
+{
+  margin: 0 0 0.5em 0;
+}
+
+h1
+{
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+h2
+{
+  font-size: 1.3em;
+}
+
+*
+{
+  font-family: Verdana,sans-serif;
+}
+
+input[type="text"], select, textarea
+{
+  padding: 0.1em; /*border-top:solid 1px #44473d;*/
+}
+
+/*input[type="button"].button, input[type="submit"].button, input[type="reset"].button
+{
+  background-image:url(/App_Themes/Tutynin/Images/button.png);
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-position:center center;
+  border:none;
+}*/
+
+table, table tr, table tr td, table tbody
+{
+  border-collapse: collapse;
+  border:0px;
+}
+
+a
+{
+  color: #645A36;
+  line-height: 1.1em;
+  white-space: normal;
+}
+
+a:hover
+{
+  color: #f56e02; /*#f46e02*/
+}
+
+span.comment
+{
+  font-style: italic;
+  color: #6e6961;
+}
+
+
+div#push
+{
+  clear: both;
+  height: 65px;
+}
+
+div#footer
+{
+  height: 65px;
+  background-color: #31291e; /*border-top: solid 4px #dfc09f;*/
+  background-image: url(/App_Themes/Tutynin/Images/footer-lines.png);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+}
+
+div#footer div#footerGradient
+{
+  height: 11px;
+  width: 100%;
+  background-image: url(/App_Themes/Tutynin/Images/footer-shadow.png);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+}
+
+div#caption
+{
+  background-image: url(/App_Themes/Tutynin/Images/header-shadow.png);
+  background-position: center top;
+  background-repeat: repeat-x;
+  height: 45px;
+  width: 100%;
+}
+
+div#caption div#title
+{
+  float: left;
+  text-align: left;
+  margin: 1em 0 0 0.5em;
+}
+
+div#caption div#title span, div#caption div#breadcrumbs .currentNode
+{
+  color: #9e1307 !important;
+}
+
+div#caption div#breadcrumbs
+{
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 1.2em;
+  margin: 1em 0.5em 0 0;
+}
+
+div#wrapper
+{
+  min-width: 980px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -65px;
+}
+
+div#content
+{
+  float: left;
+  padding: 0 0 65px 0;
+  width: 100%;
+}
+
+div#content div#main
+{
+  float: none;
+  padding: 0 10px 0 10px;
+  overflow: hidden;
+}
+
+div#content div#sidebar
+{
+  float: left;
+  display: inline;
+  padding: 0 0 0 0.5em;
+  width: auto;
+}
+
+div#header
+{
+  background-color: #31291e; /*border-bottom: solid 4px #dfc09f;*/
+  background-image: url(/App_Themes/Tutynin/Images/header-center-lines.png);
+  background-position: center top;
+  background-repeat: repeat-x;
+}
+
+div#popupWrapper
+{
+  min-width: 300px;
+}
+
+div.popupHeader
+{
+  height: 80px;
+}
+
+div.standardHeader
+{
+  height: 125px;
+}
+
+div#popupTitle
+{
+  float: left;
+  background-image: url(/App_Themes/Tutynin/Images/runa-right.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+div#popupTitle h1
+{
+  color: #fc8302; /*#fdc689;*/
+  margin-top: 1.5em;
+  margin-left: 0.5em;
+  white-space: nowrap;
+  font-style: oblique;
+}
+
+div#popupBody
+{
+  margin: 0.5em 1em 0.5em 0.5em;
+}
+
+div#popupBody div.actions
+{
+  width: 100%;
+  float: left;
+  margin-top: 0.5em; /*border-top:solid 1px #44473d;   padding-top:0.5em;*/
+}
+
+div#shadow
+{
+  background-image: url(/App_Themes/Tutynin/Images/header-shadow.png);
+  background-position: center top;
+  background-repeat: repeat-x;
+  height: 10px;
+  width: 100%;
+}
+
+div#header div#headerLeft
+{
+  float: left;
+  background-image: url(/App_Themes/Tutynin/Images/runa-left.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+div#headerLeft a.pers
+{
+  position: absolute;
+  left: 17px;
+  top: 4px;
+}
+
+div#headerLeft a.gism
+{
+  position: absolute;
+  left: 160px;
+  top: 49px;
+  border: 0px;
+}
+
+div#headerLeft a.gameismoney
+{
+  position: absolute;
+  left: 192px;
+  top: 76px;
+  border: 0px;
+  text-decoration:none;
+  color:#ffffff;
+  font-size:0.85em;
+}
+
+
+div#header div.headerTop
+{
+  width: 322px;
+  height: 65px;
+}
+
+div#header div#headerRight
+{
+  float: right;
+  background-image: url(/App_Themes/Tutynin/Images/runa-right.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+div#header div#headerMenu
+{
+  /*padding:0 322px 0 322px;*/
+  overflow: visible;
+  text-align: center;
+  clear: both;
+}
+
+div#headerMenu table#menuConteiner
+{
+  text-align: center;
+  width: 100%;
+}
+
+table#menuConteiner td.centerItem
+{
+  width: 78px;
+}
+
+table#menuConteiner td a, table#menuConteiner td span
+{
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+  text-decoration: none !important;
+  color: #ffffff;
+  padding-top: 17px;
+  padding-bottom: 5px;
+  line-height: 47px;
+}
+
+table#menuConteiner td.centerItem a
+{
+  background-image: url(/App_Themes/Tutynin/Images/menu-item-center.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+table#menuConteiner td.centerItem a:hover
+{
+  background-image: url(/App_Themes/Tutynin/Images/menu-item-center-light.png) !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+table#menuConteiner td#menuLeft
+{
+  width: 92px;
+}
+
+table#menuConteiner td#menuLeft a
+{
+  background-image: url(/App_Themes/Tutynin/Images/menu-item-left.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+table#menuConteiner td#menuLeft a:hover
+{
+  background-image: url(/App_Themes/Tutynin/Images/menu-item-left-light.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+table#menuConteiner td#menuLeft a.current, table#menuConteiner td.centerItem a.current, table#menuConteiner td#menuRight a.current
+{
+  color: #fd8902;
+}
+
+
+
+table#menuConteiner td#menuLeftRuna span
+{
+  background-image: url(/App_Themes/Tutynin/Images/menu-item-left-runa.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+table#menuConteiner td#menuRight
+{
+  width: 78px;
+}
+
+table#menuConteiner td#menuRight a
+{
+  background-image: url(/App_Themes/Tutynin/Images/menu-item-right.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+table#menuConteiner td#menuRight a:hover
+{
+  background-image: url(/App_Themes/Tutynin/Images/menu-item-right-light.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+table#menuConteiner td#menuRightRuna span
+{
+  background-image: url(/App_Themes/Tutynin/Images/menu-item-right-runa.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+
+table.grid
+{
+  width: 100%;
+  border: 0px; /*background-image: url(/App_Themes/Tutynin/Images/grid-footer-right.png);   background-repeat: no-repeat;   background-position: right bottom;*/ /*background-color:#E1D9C8;*/
+}
+
+table.grid th
+{
+  text-align: left;
+  padding: 3px 10px 5px 10px;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: bold;
+  height: 26px;
+  background-image: url(/App_Themes/Tutynin/Images/grid-header-center2.png);
+  background-position: center center;
+  background-repeat: repeat-x;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+table.grid th.gridHeaderLeft
+{
+  background-image: url(/App_Themes/Tutynin/Images/grid-header-left3.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  width: 20px;
+  padding: 0;
+}
+
+table.grid td.gridItemLeft, table.grid td.gridItemRight
+{
+  padding: 0;
+  margin: 0;
+}
+
+table.grid th.gridHeaderRight
+{
+  background-image: url(/App_Themes/Tutynin/Images/grid-header-right3.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  width: 20px;
+  padding: 0;
+}
+
+
+table.grid td
+{
+  padding: 5px 10px 5px 10px;
+  text-align: left;
+}
+
+tr.gridPager td table tr td
+{
+  padding: 5px 10px 5px 10px;
+}
+
+table.grid td.gridItemLeft, table.grid td.gridItemRight
+{
+  background-color: #f5f5dc;
+}
+
+table.grid tr.gridAlternative
+{
+  background-color: #fafaea; /*#ededcc;*/ /*#ebebdb;*/ /*#e8e8e8;*/ /*#eae5c0;*/ /*background-color: #D7D2BF;*/
+}
+
+table.grid tr.gridEmpty, span.noData
+{
+  text-align: left;
+  font-size: 1.5em;
+}
+
+table.grid tr.gridEmpty td
+{
+  padding-left: 1em;
+}
+
+div#languages
+{
+  float: right;
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+ul#submenu
+{
+  list-style-image: url(/App_Themes/Tutynin/Images/submenu-item.png);
+  list-style-position: inside;
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+
+ul#submenu li.separator
+{
+  padding-top: 1em;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+div.box
+{
+  /*padding:0 1em 0 1em;*/ /*margin-bottom: 1em;*/
+  background-color: #fafaea; /*#f4f4e8;*/
+}
+
+div.box div.title
+{
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+div.box div.title div.titleInner
+{
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+div.box div.title div.titleInner div
+{
+  background-repeat: repeat-x;
+  background-position: center top;
+  margin: 0 7px 0 7px !important;
+  padding: 0 0.5em 0 0.5em;
+  font-weight: bold;
+  font-size: 0.9em;
+  height: 17px;
+  line-height:1.3em;
+}
+
+div.box div.title div.titleInner div a, div.box div.title div.titleInner div span
+{
+  color: #ffffff;
+  line-height: 1.15em;
+}
+
+div.box div.title div.titleInner div a:hover
+{
+  color: #fd8902; /*#fc8302;*/
+}
+
+div.box div.mediator
+{
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 6px;
+}
+div.box div.mediatorInner
+{
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 6px;
+}
+
+div.box div.content
+{
+  /*padding: 0 0 0 7px;   background-position: left center;   background-repeat: repeat-y;*/
+  border: solid 1px;
+  border-top: none 0px;
+  padding: 0.5em;
+}
+
+div.box div.content div.contentInner
+{
+  padding: 0 7px 0 0;
+  background-position: right center;
+  background-repeat: repeat-y;
+}
+
+div.box div.footer
+{
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 8px;
+}
+
+div.box div.footerInner
+{
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 8px;
+}
+
+div.box div.footerInner div
+{
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  white-space: nowrap;
+  height: 100%;
+  margin: 0 8px 0 8px;
+}
+
+/*brow box*/
+
+div.boxBrown div.title
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-header-left.png);
+}
+
+div.boxBrown div.title div.titleInner
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-header-right.png);
+}
+
+div.boxBrown div.title div.titleInner div
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-header-center.png);
+  color: White;
+}
+
+div.boxBrown div.mediator
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-mediator-left.png);
+}
+div.boxBrown div.mediatorInner
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-mediator-right.png);
+}
+
+div.boxBrown div.content, div.boxBrown div.content div.contentInner
+{
+  border-color: #311907;
+}
+
+div.boxBrown div.footer
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-footer-left.png);
+}
+
+div.boxBrown div.footerInner
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-footer-right.png);
+}
+
+div.boxBrown div.footerInner div
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-footer-center.png);
+}
+
+/*red box*/
+
+div.boxRed div.title
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-red-header-left.png);
+}
+
+div.boxRed div.title div.titleInner
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-red-header-right.png);
+}
+
+div.boxRed div.title div.titleInner div
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-red-header-center.png);
+}
+
+div.boxRed div.mediator
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-red-mediator-left.png);
+}
+div.boxRed div.mediatorInner
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-red-mediator-right.png);
+}
+
+div.boxRed div.content, div.boxRed div.content div.contentInner
+{
+  /*background-image: url(/App_Themes/Tutynin/Images/box-red-content-border.png);*/
+  border-color: #661111;
+}
+
+div.boxRed div.footer
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-red-footer-left.png);
+}
+
+div.boxRed div.footerInner
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-red-footer-right.png);
+}
+
+div.boxRed div.footerInner div
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-red-footer-center.png);
+}
+
+a.User
+{
+}
+
+div.fastOfferSearch
+{
+  /*width:400px;*/
+}
+
+div.fastOfferSearch div.value
+{
+}
+
+div.fastOfferSearch div.actions
+{
+  padding-top: 0.5em;
+}
+
+.textBoxWatermark
+{
+  font-style: italic;
+  color: #7D694D;
+}
+
+div.button div.conteiner input:focus
+{
+  color: #f56e02;
+}
+
+div#languages
+{
+  float: right;
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+div#headerLogin
+{
+  margin-top: 0.2em;
+  float: right;
+  width: 260px;
+}
+
+.error
+{
+  color: Red;
+}
+
+
+div.leftSide
+{
+  width: 200px;
+  float: left;
+}
+
+div.rightSide
+{
+  width: 200px;
+  float: right;
+}
+
+div#popSellers
+{
+  width: 300px;
+  float: left;
+  margin-top : 1em;
+  padding : 10px 10px 10px 10px;
+  clear : left;
+}
+
+div#popBuyers
+{
+  width: 300px;
+  float: left;
+  margin-top: 1em;
+  padding : 10px 10px 10px 10px;
+}
+
+div#dealSellers
+{
+    float: left;
+}
+
+div#dealBuyers
+{
+    float: left;
+}
+
+div#welcome
+{
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+  display: none;
+}
+
+div#copyright
+{
+  text-align: center;
+  color: White;
+  margin-top: 0.5em;
+  font-size: smaller;
+}
+
+div#banners_bottom
+{
+  float: left;
+  margin: 1em 0 0 1em;
+}
+
+div.centerContent
+{
+  margin: 0 200px 0 200px;
+  text-align: center;
+}
+
+div.centerContent div.quickActions
+{
+  text-align: center;
+}
+
+div.quickActions table
+{
+  width: 100%;
+}
+
+div.quickActions td.buy
+{
+  text-align: right;
+  background-image: url(/App_Themes/Tutynin/Images/buy.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 126px;
+  width: 50%;
+}
+
+div.quickActions td.buy a
+{
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  text-align:left;
+  text-decoration:none;
+  margin-right:3px;
+}
+
+
+div.quickActions td.buy a span
+{
+  color:#FFFFFF;
+  display:block;
+  font-size:1.5em;
+  left:25px;
+  position:relative;
+  text-align:center;
+  top:42px;
+  width:80px;
+}
+
+div.quickActions td.sell
+{
+  text-align: left;
+  background-image: url(/App_Themes/Tutynin/Images/sell.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 126px;
+  width: 50%;
+}
+
+div.quickActions td.sell a
+{
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  text-align:left;
+  text-decoration:none;
+  margin-left:3px;
+}
+
+
+div.quickActions td.sell a span
+{
+  color:#FFFFFF;
+  display:block;
+  font-size:1.5em;
+  left:93px;
+  position:relative;
+  text-align:center;
+  top:44px;
+  width:80px;
+}
+
+
+div#fastSearch
+{
+  margin-top:3em;
+}
+
+div#fastSearch div.title
+{
+   margin:0 0 10px 0;
+}
+
+div#fastSearch div.title span
+{
+  font-size:1.5em;
+}
+
+div#fastSearch div.searchValue input[type="text"]
+{
+  border: solid 1px #44473d;
+  width: 350px;
+}
+
+div.leftSide div.boxPopGames div.title *, div.rightSide div.boxPopServers div.title *, div#popSellers div.boxPopSellers div.title *, div#popBuyers div.boxPopBuyers div.title *
+{
+  color: #ffffff;
+}
+
+.requiredFieldAsterisk
+{
+  color: #c92121;
+}
+
+div.tabConteiner
+{
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+div.tabConteiner .ajax__tab_header
+{
+  font-size: 0.9em !important;
+}
+
+div.tabConteiner .ajax__tab_body
+{
+  font-size: 1em !important;
+  border: solid 1px;
+  background-color: #fafaea; /*background-position:left top;   background-repeat:no-repeat;*/
+}
+
+div.tabConteiner .ajax__tab_header .ajax__tab_active
+{
+}
+
+div.tabConteiner .ajax__tab_header .ajax__tab_outer
+{
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 17px;
+  padding-left: 8px;
+}
+
+div.tabConteiner .ajax__tab_header .ajax__tab_inner
+{
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 17px;
+  padding-right: 8px;
+  font-weight: bold;
+}
+
+div.tabConteiner .ajax__tab_header .ajax__tab_inner .ajax__tab_tab span
+{
+  line-height: 1.4em;
+}
+
+div.tabConteiner .ajax__tab_header .ajax__tab_tab
+{
+  background-repeat: repeat-x;
+  background-position: center center;
+  height: 17px;
+}
+
+div.tabConteiner .ajax__tab_body .ajax__tab_panel
+{
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+div.tabConteinerBrown .ajax__tab_header .ajax__tab_outer
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-header-left.png);
+}
+
+div.tabConteinerBrown .ajax__tab_header .ajax__tab_inner
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-header-right.png);
+}
+
+div.tabConteinerBrown .ajax__tab_header .ajax__tab_inner span
+{
+}
+
+div.tabConteinerBrown .ajax__tab_header .ajax__tab_tab
+{
+  background-image: url(/App_Themes/Tutynin/Images/box-brown-header-center.png);
+}
+
+div.tabConteinerBrown
+{
+}
+
+div.tabConteinerBrown .ajax__tab_body
+{
+  padding: 0.5em;
+  border-color: #311907; /*background-image:url(/App_Themes/Tutynin/Images/box-brown-mediator-left.png);*/
+}
+
+div.tabConteinerBrown .ajax__tab_header .ajax__tab_inner .ajax__tab_tab span
+{
+  color: #ffffff;
+  cursor: default;
+}
+
+div.tabConteinerBrown .ajax__tab_body .ajax__tab_panel
+{
+}
+
+div.tabConteinerBrown .ajax__tab_header .ajax__tab_hover .ajax__tab_tab span
+{
+  cursor:pointer;
+}
+
+/*div.tabConteinerBrown .ajax__tab_header .ajax__tab_hover .ajax__tab_tab span,*/ div.tabConteinerBrown .ajax__tab_header .ajax__tab_active .ajax__tab_inner .ajax__tab_tab span
+{
+  color: #f56e02;
+  cursor:default !important;
+}
+
+div.messageDirection
+{
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 29px;
+}
+
+div.messageDirectionIn
+{
+  background-image: url(/App_Themes/Tutynin/Images/message-arrow-right.png);
+}
+
+div.messageDirectionOut
+{
+  background-image: url(/App_Themes/Tutynin/Images/message-arrow-left.png);
+}
+
+div#errorPage
+{
+  padding: 0.5em;
+  text-align: center;
+}
+
+div#errorPage span.errorText
+{
+  font-size: 1.2em;
+  color: #9e1307;
+}
+
+.faq dt
+{
+  font-weight: bold;
+}
+
+.faq dd
+{
+  margin-bottom: 1em;
+}
+
+.faq li
+{
+  margin-left: 2em;
+}
+
+img.uploading
+{
+  height: 22px;
+}
+
+dl.edit dt
+{
+  font-weight:bold;
+  font-size:1em;
+}
+
+dl.edit dd
+{
+  margin:0.3em 0 0.8em 0;
+}
+
+div#news
+{
+  margin: 3em 3em 0 3em;
+}

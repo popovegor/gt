@@ -1,0 +1,31 @@
+<asp:Image runat="server" ImageUrl="~/App_Themes/Default/Images/Calendar_scheduleHS.png" SkinID="imgCalendarSkin" />
+
+<asp:ImageButton SkinId="ButtonSkin" runat="server" ImageUrl="~/App_Themes/Tutynin/Images/button.png" />
+
+<ajaxToolkit:ResizableControlExtender  runat="server" MaximumHeight="1000"
+    MaximumWidth="1000" MinimumHeight="300" MinimumWidth="500" 
+    HandleCssClass="ResizableControlExtenderHandle" HandleOffsetX="10" HandleOffsetY="5"
+    ResizableCssClass="ResizableControlExtenderResizable" SkinID="rceMessagesSkin"  />
+    
+    
+<%--<asp:Image SkinID="preloadMenuLeftLightSkin" runat="server" AlternateText="Left" ImageUrl="~/App_Themes/Tutynin/Images/menu/menu-item-left-light.png" />
+<asp:Image SkinID="preloadMenuRightLightSkin" runat="server" AlternateText="Right" ImageUrl="~/App_Themes/Tutynin/Images/menu/menu-item-right-light.png" />       
+<asp:Image SkinID="preloadMenuCenterLightSkin" runat="server" AlternateText="Center" ImageUrl="~/App_Themes/Tutynin/Images/menu/menu-item-center-light.png" />    
+<asp:Image SkinID="preloadMenuSellingLightSkin" runat="server" AlternateText="Selling" ImageUrl="~/App_Themes/Tutynin/Images/menu/menu-item-selling-light.png" />       
+<asp:Image SkinID="preloadMenuBuyingLightSkin" runat="server" AlternateText="Buying" ImageUrl="~/App_Themes/Tutynin/Images/menu/menu-item-buying-light.png" />    --%>
+
+<asp:HyperLink runat="server" SkinID="hplPersSkin"  CssClass="pers" ImageUrl="~/App_Themes/Tutynin/Images/header/pers-logo2.png" />
+<asp:HyperLink runat="server" SkinID="hplGisMSkin"  CssClass="gism" ImageUrl="~/App_Themes/Tutynin/Images/logo.png"/>
+<asp:HyperLink runat="server" SkinID="hplGameIsMoneySkin"  CssClass="gameismoney"/>
+<asp:Image runat="server" ImageUrl="~/App_Themes/Tutynin/Images/uploading.gif" SkinID="imgUploadingSkin" CssClass="uploading" />
+<asp:ImageButton ImageUrl="~/App_Themes/Tutynin/images/actions/delete.png" runat="server" SkinID="btnDeleteSkin" />
+
+<asp:HyperLink runat="server" SkinID="hplSellingSearchSkin" CssClass="sellingSearch entitySearch" />
+<asp:HyperLink runat="server" SkinID="hplBuyingSearchSkin" CssClass="buyingSearch entitySearch" />
+<asp:ImageButton runat="server" SkinID="btnLeaveFeedbackSkin" ImageUrl="~/App_Themes/Tutynin/Images/actions/feedback.png" />
+<asp:ImageButton runat="server" SkinID="btnReplySkin" ImageUrl="~/App_Themes/Tutynin/Images/actions/reply.png" />
+
+
+<ajaxToolkit:ValidatorCalloutExtender runat="server" SkinID="ValidatorCalloutExtenderSkin" CssClass="ajax__validatorcallout validatorCalloutExtender" />
+
+<asp:Image runat="server" ImageUrl="~/App_Themes/Tutynin/Images/users/user-card.png" SkinID="imgUserCardSkin" CssClass="card" />

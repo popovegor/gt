@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RefactoringOperation Name="Rename Refactor" MachineName="POPOVEGOR-PC" UserName="popovegor">
+	<Project>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\GT.Database.dbproj</Project>
+	<Filename>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\dbo.Offers_BuyingHistory.table.sql</Filename>
+	<ElementName>[dbo].[Offers_BuyingHistory].[ProductTypeId]</ElementName>
+	<ElementType>ISql100SimpleColumn</ElementType>
+	<ParentElementName>[dbo].[Offers_BuyingHistory]</ParentElementName>
+	<ParentElementType>ISql100Table</ParentElementType>
+	<NewName>ProductCategoryId</NewName>
+	<PropagateRefactoringOperation>
+		<SchemaObjectReferences>
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Programmability\Stored Procedures\dbo.p_Offers_AddBuyingOfferToHistory.proc.sql" ElementName="[dbo].[p_Offers_AddBuyingOfferToHistory]" ElementType="ISql100Procedure" />
+		</SchemaObjectReferences>
+		<SchemaObjectReferences />
+		<SchemaObjectReferences />
+		<ScriptReferences />
+		<UnitTestReferences />
+		<DataGeneratorReferences />
+	</PropagateRefactoringOperation>
+</RefactoringOperation>

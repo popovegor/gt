@@ -1,0 +1,32 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="PrepareUnitTest">
+
+  <!-- The $(ConnectionString) is an in-parameter -->
+
+  <Import Project="..\Dlls\SDC Tasks 2.1\Microsoft.Sdc.Common.tasks"/>
+  
+  <PropertyGroup>
+    <WebConfigFileName>web.config</WebConfigFileName>
+    <UnitTestConfigFileName>AllTests.config</UnitTestConfigFileName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <WebConfigFile Include="..\GT.Web.Site\$(WebConfigFileName)" />
+    <UnitTestConfigFile Include=".\$(UnitTestConfigFileName)" />
+  </ItemGroup>
+
+  <Target Name="PrepareUnitTest">
+    <!--delete old unit test config-->
+    <Delete Files="@(UnitTestConfigFile)" />
+    <!--copy new web config-->
+    <Copy SourceFiles="@(WebConfigFile)" DestinationFiles="@(UnitTestConfigFile)" />
+    <!--set up connection string-->
+    <XmlFile.SetAttribute
+        Path=".\$(UnitTestConfigFileName)"
+        XPath="/configuration/connectionStrings/add[@name='GT']"
+        Name="connectionString"
+        Value="$(ConnectionString)"
+        Namespaces=""
+        IgnoreNoMatchFailure="true"
+        Force="true"/>
+  </Target>
+</Project>

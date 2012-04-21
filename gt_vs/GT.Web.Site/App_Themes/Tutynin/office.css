@@ -1,0 +1,415 @@
+﻿.submenu li.purchases
+{
+  /*background-image:url(images/arrow-purchases.png);*/
+  /*background: transparent url("Images/pictograms-min.png") no-repeat scroll 0px -64px;*/
+  /*list-style-image:url(images/arrow-purchases.png);*/
+}
+
+.submenu li.sales
+{
+  /*background-image:url(images/arrow-sales.png);*/
+  /*list-style-image:url(images/arrow-sales.png);*/
+}
+
+.submenu li a.deals
+{
+  font-weight:bold;
+}
+
+.submenu li a.demands
+{
+  font-weight:bold;
+}
+
+
+table.office-block td.title-img
+{
+  padding:0.1em 1.5em 0 0;
+  vertical-align:top;
+}
+
+table.office-block td.title-img a
+{
+  background-image:url("images/pictograms.png");
+  background-position:0px 0px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  height:52px;
+  width:52px;
+  text-decoration:none !important;
+}
+
+table.office-block td.title
+{
+  vertical-align:top;
+}
+
+table.office-block td.title span, table.office-block td.title a
+{
+  font-size:1.4em;
+  font-weight:normal;
+  /*white-space:nowrap;*/
+  line-height:1.4em;
+}
+
+table.office-block td.title span a
+{
+  font-size:1em !important;
+  line-height:1.4em;
+}
+
+table.office-block td.content
+{
+}
+
+
+/*=====================    office    =========================*/
+#office
+{
+    width: 92%;
+}
+
+
+div#office div.left-side
+{
+    margin-right: 4em;
+    width: 42%;
+    float:left;
+}
+
+
+div#office div.right-side
+{
+  float: left;
+    width: 40%;
+}
+
+div#office .ls-block
+{
+ /*width:410px;*/
+  margin:0 auto; 
+}
+
+div#office div.balance-block
+{
+  /*float: left;
+    margin-right: 2em;
+    min-width: 12em;
+    width: 40%;*/
+}
+
+div#office div.sales-block
+{
+ margin-top:4em;
+}
+
+div#office div.rating-block
+{
+  margin-top:4em;
+}
+
+div#office div.purchases-block
+{
+  
+}
+
+div#office div.messages-block
+{
+  margin-top:3em;
+}
+
+div#office div.profile-block
+{
+  margin-top:3em;
+}
+
+div#office span.money, div#office span.value
+{
+  font-size:1em;
+  font-weight:bold;
+}
+
+/*=====================    office profile    =========================*/
+
+div#office div.profile-block a.title-img
+{
+   background-position:0px -523px;
+}
+
+div#office div.profile-block div.fields
+{
+  padding-top:1.2em;
+}
+
+div#office div.profile-block div.fields p
+{
+  padding-bottom:0.3em;
+  padding-top:0.3em;
+}
+
+div#office div.profile-block div.actions
+{
+  padding-top:0.5em;
+}
+
+/*=====================    office messages    =========================*/
+
+div#office div.messages-block a.title-img
+{
+  background-position:0px -418px;
+}
+
+div#office div.messages-block div.counters
+{
+  padding-top:1.7em;
+}
+
+div#office div.messages-block div.counters p
+{
+  background-position:left center;
+  background-repeat:no-repeat;
+  padding-bottom:0.3em;
+  /*padding-left:1.9em;/
+  padding-top:0.3em;
+}
+
+div#office div.messages-block div.counters p.in 
+{
+   /*background-image:url("/App_Themes/Tutynin/Images/messages/in.png");*/
+}
+
+div#office div.messages-block div.counters p.out
+{
+   /*background-image:url("/App_Themes/Tutynin/Images/messages/out.png");*/
+}
+
+/*=====================    office balance    =========================*/
+
+div#office div.balance-block a.title-img
+{
+  background-position:0px -366px;
+}
+
+
+div#office div.balance-block div.formula
+{
+  margin-top:1em;
+}
+
+div#office div.balance-block div.formula div
+{
+  float:left;
+}
+
+div#office div.balance-block div.formula div.available span.money
+{
+  color:#18b218;
+}
+
+div#office div.balance-block div.formula div.blocked span.money
+{
+  color:#ED1C24;
+}
+
+div#office div.balance-block div.actions
+{
+ margin-top:0.5em;
+ /*padding-left:2em;
+ text-align:right;*/
+ float:left;
+ clear:both;
+}
+
+
+div#office div.balance-block div.formula div.equal span, div#office div.balance-block div.formula div.minus span
+{
+  font-size:1.3em;
+  /*font-weight:bold;*/
+  line-height:1.3em;
+  padding:0 0.3em;
+}
+
+
+div#office div.balance-block div.formula span.desc 
+{
+  font-style:italic;
+  font-size:0.9em;
+}
+
+/*=====================    office rating    =========================*/
+
+div#office div.rating-block a.title-img
+{
+  background-position:0px -471px; 
+}
+
+div#office div.rating-block div
+{
+}
+
+div#office div.rating-block div.total-desc
+{
+  margin-top:2.1em;
+}
+
+div#office div.rating-block div.total
+{
+  padding-top:2.3em;
+}
+
+div#office div.rating-block p.value
+{
+  text-align:center;
+  padding-top:0.5em;
+}
+
+div#office div.rating-block p.value span
+{
+  font-weight:bold;
+  font-size:1.25em;
+  padding-left:1em;
+}
+
+div#office div.rating-block div.equal
+{
+  padding:2.7em 1em 0 1em;
+}
+
+div#office div.rating-block div.equal span
+{
+  /*background-image:url("/App_Themes/Tutynin/Images/office/equal.png");
+  background-position:center center;
+  background-repeat:no-repeat;*/
+  font-size:1.4em;
+}
+
+div#office div.rating-block div.feedbacks
+{ 
+  /*padding-top:1.4em;*/
+}
+
+div#office div.rating-block div.feedbacks p span, div#user-card dd.feedbacks p span
+{
+  /*display:inline-block;*/
+  background-position:left center;
+  background-repeat:no-repeat;
+  /*padding-bottom:0.3em;*/
+  padding-left:2em !important;
+  /*padding-top:0.3em;*/
+  display:block;
+  width:auto;
+  height:16px;
+  float:left;
+}
+
+div#office div.rating-block div.feedbacks p
+{
+  padding-bottom:0.5em;
+}
+
+div#office div.rating-block div.feedbacks p.positive
+{ 
+  padding-top:1.7em;
+}
+
+div#office div.rating-block div.feedbacks p.positive span.value, div#user-card dd.feedbacks p.positive span.value
+{
+  color:#18b218;
+  background: transparent url("Images/pictograms-min.png") no-repeat scroll 0px -104px;
+}
+
+div#office div.rating-block div.feedbacks p.negative span, div#user-card dd.feedbacks p.negative span,div#office p.conflicted span.value
+, div#user-card p.conflicted span.value
+{
+   color:#ed1c24;
+}
+
+div#office div.rating-block div.feedbacks p.negative span.value
+, div#user-card dd.feedbacks p.negative span.value
+{
+  background: transparent url("images/pictograms-min.png") no-repeat scroll 0px -64px; 
+}
+
+div#office div.rating-block div.feedbacks p.neutral, div#user-card dd.feedbacks p.neutral
+{
+   
+}
+
+div#office div.rating-block div.feedbacks p.neutral span.value, div#user-card dd.feedbacks p.neutral span.value
+{
+  color:#8a8a8a;
+  background: transparent url("Images/pictograms-min.png") no-repeat scroll 0px -84px;
+}
+
+/*=============   office purchases & sales    ==============*/
+
+div#office div.sales-block a.title-img
+{
+  background-position:0px -262px;
+}
+
+/*div#office div.purchases-block a.title,*/ 
+
+div#office div.purchases-block a.title-img
+{
+  background-position:0px -210px;
+}
+
+div#office div.purchases-block div
+{
+  /*float:left;*/
+}
+
+div#office div.purchases-block p, div#office div.sales-block p
+{
+  padding-bottom:0.5em;
+}
+
+div#office div.purchases-block p.active, div#office div.sales-block p.active
+{
+  padding-top:1.7em;
+}
+
+div#office div.purchases-block div.actions, div#office div.sales-block div.actions, div#office div.rating-block div.actions
+{
+  padding-top:0.5em;
+  /*text-align:right;*/
+}
+
+div#office .offer-add
+{
+  background: url("images/adds.png") no-repeat scroll 0 0 transparent;
+  color: #FFFFFF;
+  display: block;
+  font-weight: bold;
+  height: 23px;
+  text-align: center;
+  text-decoration: none;
+  width: 187px;
+}
+
+div#office .offer-add span
+{
+  display: block;
+  padding: 3px 0 0;
+}
+
+div#office .offer-add.buying:hover
+{
+  background-position:0 0;
+}
+
+div#office .offer-add.buying
+{
+  background-position:0 -31px;
+}
+
+div#office .offer-add.selling:hover
+{
+  background-position:0 -63px;
+}
+
+div#office .offer-add.selling
+{
+  background-position:0 -95px;
+}

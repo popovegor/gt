@@ -1,0 +1,229 @@
+﻿#menu
+{
+  float: left;
+  list-style-type: none;
+  margin: 0 !important;
+  padding-left: 0;
+  width: 100%;
+}
+
+#menu .mmi
+{
+  background-color: transparent;
+  display: block;
+  float: left;
+  text-align: left;
+  width: 20%;
+  /*height: 117px;*/
+  position: relative;
+  margin: 0 !important;
+  /*font-family: Arial;*/
+  top:77px;
+}
+
+#menu .mmi.current
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/header-footer.png") repeat-x 0px -199px;*/
+}
+
+#menu .mmi-block
+{
+  /*margin: 0 auto;    text-align: left;    width: 130px;*/
+}
+
+#menu .mmi .link, #menu .mmi.current .text
+{
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.2em;
+    letter-spacing:0.1px;
+}
+
+#menu .mmi-note
+{
+   font-size: 0.9em;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.4em;
+    margin-top: 0.3em;
+    text-align: left;
+    word-spacing: 0;
+}
+
+
+#menu .home
+{
+  width: 17%;
+}
+
+#menu .home .link
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/header/menu-pics2.gif") no-repeat 0px 2px;*/
+}
+
+#menu .home .link:hover, #menu .home .text
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/header/menu-pics2.gif") no-repeat 0px -30px;*/
+}
+
+#menu .faq
+{
+  padding:0 3em 0 0;
+  width: 23%;
+}
+
+#menu .faq .link
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/header/menu-pics2.gif") no-repeat 0px -110px;*/
+}
+
+#menu .faq .link:hover, #menu .faq .text
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/header/menu-pics2.gif") no-repeat 0px -142px;*/
+}
+
+
+#menu .selling
+{
+  padding:0 2em 0 0;
+  width: 21%;
+}
+
+#menu .selling .link
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/header/menu-pics2.gif") no-repeat 0px -189px;*/ /*color:#00cc00 !important;*/
+}
+
+
+#menu .selling .link:hover, #menu .selling .text
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/header/menu-pics2.gif") no-repeat 0px -237px;*/ /*color:#a5ee6e !important;*/
+}
+
+#menu .mmi ins
+{
+  background: url("images/header/menu-pics3.png") no-repeat scroll 0 0 transparent;
+   display: block;
+   position: absolute;
+   left:1em;
+   top: -58px;
+}
+
+#menu .buying .text ins
+, #menu .buying .link:hover ins
+{
+  background-position:-100px 0px;
+}
+
+#menu .selling .text ins
+, #menu .selling .link:hover ins
+{
+  background-position:-82px -64px;
+}
+
+#menu .faq .text ins
+, #menu .faq .link:hover ins
+{
+  background-position:-89px -128px;
+}
+
+#menu .faq ins
+{
+    background-position: 0 -128px;
+    height: 55px;
+    width: 55px;
+    top:-59px;
+}
+
+#menu .buying
+{
+  padding:0 2em 0 0;
+  width: 21%;
+}
+
+#menu .buying ins
+{
+   background-position:0px 0px;
+    height: 52px;
+    width: 44px;
+}
+
+#menu .selling ins
+{
+   background-position:0 -64px;
+    height: 52px;
+    width: 62px;
+}
+
+#menu .office .text ins
+, #menu .office .link:hover ins
+{
+  background-position:-80px -194px;
+}
+
+#menu .office ins
+{
+   background-position: 0 -194px;
+    height: 52px;
+    width: 64px;
+}
+
+#menu .office
+{
+  width: 19%;
+  margin-right:2em;
+}
+
+ul.submenu
+{
+  list-style-type: none;
+  width: 90%;
+  margin: 0 !important;
+}
+
+ul.submenu li
+{
+  margin: 0;
+  margin: 0 0 0.6em 0em;
+  font-size:1.2em !important;
+}
+
+ul.submenu li.separator
+{
+  background: none repeat scroll 0 0 transparent;
+  /*border-bottom: 1px dotted;*/
+  height: 0.3em;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0.3em 50% 0.3em 0;
+  padding: 0;
+}
+
+ul.submenu li.highlight span
+{
+  font-size: 1em;
+}
+
+ul.submenu li.current
+{
+  position: relative;
+  font-weight:bold;
+  font-size:1.25em !important;
+  font-style:normal;
+}
+
+ul.submenu li.send-message
+{
+  list-style:none url(images/msg.png) inside; 
+}
+
+.press-word-spacing
+{
+  word-spacing:-2px;
+}
+
+#menu .office .unread-messages a
+{
+  font-size: 0.8em !important;
+    line-height: 1.2em !important;
+}

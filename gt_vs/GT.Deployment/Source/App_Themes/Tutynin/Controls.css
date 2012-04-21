@@ -1,0 +1,297 @@
+﻿table.gridFeedbacks
+{
+  width: 100%;
+}
+
+table.gridFeedbacks tr td dl.feedback
+{
+  border-bottom: dashed 1px;
+  border-color: #7D694D;
+  margin-bottom: 0.5em;
+}
+
+table.gridFeedbacks tr td dl.feedback dd.comment
+{
+}
+
+table.gridFeedbacks tr td dl.feedback dd.title div.number, table.gridFeedbacks tr td dl.feedback dd.comment div.createdDate
+{
+  float: right;
+  font-style: italic;
+  font-size: 0.85em;
+  color: #7D694D;
+  padding: 0.5em;
+}
+
+table.gridFeedbacks tr td dl.feedback dt
+{
+  float: left; /*font-weight: bold;*/
+  padding-right: 0.5em;
+}
+
+.boxCorrespondence
+{
+  width: 100%;
+}
+
+.boxCorrespondence .title span
+{
+  color: #ffffff;
+}
+
+table.gridCorrespondence
+{
+  width: 100%;
+}
+
+table.gridCorrespondence tr.message
+{
+  border-bottom: dashed 1px #7D694D;
+}
+
+table.gridCorrespondence tr.message td.direction
+{
+  width: 39px;
+  padding: 0 0.5em 0 0;
+}
+
+table.gridCorrespondence tr.message td.data
+{
+  padding: 0.5em 0 0 0;
+  margin-bottom: 0.5em;
+}
+
+
+table.gridCorrespondence tr.message dl dt
+{
+  float: left; /*font-weight: bold;*/
+  padding-right: 0.5em;
+}
+
+table.gridCorrespondence tr.gridEmpty td, table.gridFeedbacks tr.gridEmpty
+{
+  font-size: 1em;
+}
+
+table.gridCorrespondence tr.message dl dd.body div.createdDate, table.gridCorrespondence tr.message dl dd.subject div.number
+{
+  float: right;
+  font-style: italic;
+  font-size: 0.85em;
+  color: #7D694D;
+}
+
+div.deleteImage
+{
+  margin: 0.5em 0 0 0;
+  display: inline;
+  vertical-align: top;
+}
+
+div.deleteImage input
+{
+  cursor: pointer;
+  vertical-align: top;
+}
+
+div.viewImage
+{
+  margin-top: 0.5em;
+}
+
+div.image
+{
+  margin: 0.5em 0 0 0;
+  display: inline;
+}
+
+div.fileUploaderContainer
+{
+  margin: 0 0 0.5em 0;
+}
+
+
+div.fileUploaderContainer span.fileUploader
+{
+  float: left;
+  margin-right: 0.5em;
+}
+
+div.fileUploaderContainer span.imageValidationMessage
+{
+  display: block;
+}
+
+/*Sign in popup*/
+div.signInPopup
+{
+  margin-top: 10px;
+  display: none;
+}
+
+div.signInPopup dl dt
+{
+  float: left;
+  width: 150px;
+}
+
+div.signInPopup dl dd.remember label
+{
+  margin-left: 0.5em;
+}
+
+div.signInPopup div.errorMessage span
+{
+  color: #ff0000;
+}
+
+div.signInPopup div.errorMessage
+{
+  display: none;
+  margin-top: 0.5em;
+}
+
+span.button
+{
+  background-image: url(/App_Themes/Tutynin/Images/button-left.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 2px;
+  display: inline-block;
+  height: 22px;
+}
+
+
+span.button span.conteiner
+{
+  background-image: url(/App_Themes/Tutynin/Images/button-right.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: inline-block;
+  padding-right: 2px;
+  height: 22px;
+}
+
+span.button span.conteiner input
+{
+  color: #ffffff;
+  background-image: url(/App_Themes/Tutynin/Images/button-center.png);
+  background-repeat: repeat-x;
+  background-position: center center;
+  border: 0px;
+  cursor: pointer;
+  height: 22px;
+  padding: 0px 5px 2px 5px;
+  font-size: 0.8125em;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.5em; /*-moz-opacity: 0;    -khtml-opacity: 0;   opacity: 0;   filter:alpha(opacity=0)*/
+}
+
+span.button span.conteiner input:hover
+{
+  color: #fd8902; /*#fc8302;*/
+}
+
+a.entitySearch
+{
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  width: 180px;
+  height: 37px;
+  font-weight: bold;
+  font-size: 0.85em;
+  line-height: 3.5em; /*cursor:pointer;*/
+  position: relative;
+}
+
+a.sellingSearch
+{
+  background-image: url(/App_Themes/Tutynin/Images/selling-search.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: right;
+  left: 3px;
+  padding-right: 20px;
+}
+
+a.buyingSearch
+{
+  background-image: url(/App_Themes/Tutynin/Images/buying-search.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding-left: 20px;
+  left: -3px;
+}
+
+a.buyingSearch:hover, a.sellingSearch:hover, a.buyingSearch:focus, a.sellingSearch:focus
+{
+  color: #fd8902;
+}
+
+/*Newsletters*/
+
+table.gridNews td.newsEntry
+{
+  padding:0.5em 0.5em 1.5em 0.5em;
+}
+
+table.newsEntry td.date
+{
+  text-align: left;
+  white-space:nowrap;
+  width:60px;
+}
+
+table.newsEntry td.date span
+{
+  text-align: left;
+  vertical-align: top;
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #7D694D;
+}
+
+table.newsEntry td.header
+{
+  text-align: left;
+}
+
+table.newsEntry td.header a
+{
+  max-width: 600px;
+  font-weight: bold;
+   text-decoration: none !important;
+  color: #31291e;
+}
+
+table.newsEntry td.header a:hover
+{
+    color: #fd8902;
+}
+
+table.newsEntry td.body
+{
+  text-align:left;
+  line-height: 1.3em;
+  padding-top:0.3em;
+}
+
+table.newsEntry td.body a.more
+{
+  font-style: italic;
+  margin-left: 0.5em;
+}
+
+div.boxNewsletter div.title span.newsTitle
+{
+  float: left;
+}
+
+div.boxNewsletter div.title a.archiveTitle
+{
+  float: right;
+}

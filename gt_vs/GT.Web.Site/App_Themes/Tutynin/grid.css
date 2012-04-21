@@ -1,0 +1,129 @@
+﻿table.grid
+{
+  border: 0px; /*background-image: url(/App_Themes/Tutynin/Images/grid-footer-right.png);   background-repeat: no-repeat;   background-position: right bottom;*/ /*background-color:#E1D9C8;*/
+}
+
+table.grid th
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/grid/header.gif") scroll right -48px repeat-x;*/
+  font-size: 1em;
+  font-weight: bold;
+  height: 20px;
+  padding: 0px 1em 0 0;
+  vertical-align: middle;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/*table.grid th.separator
+{
+  background:#745848 url(/App_Themes/Tutynin/Images/grid/header.png) scroll left -50px no-repeat;
+}*/
+
+table.grid th.grid-header-left
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/grid/header.gif") scroll 0px 0px no-repeat; /*background-position: right center;   background-repeat: no-repeat;*/
+  width: 23px;
+  padding: 0;
+}
+
+table.grid td.grid-item-left, table.grid td.grid-item-right
+{
+  padding: 0;
+  margin: 0;
+  width: 23px;
+}
+
+table.grid th.grid-header-right
+{
+  /*background: transparent url("/App_Themes/Tutynin/Images/grid/header.gif") 0px -26px no-repeat;*/
+  width: 27px;
+  padding-right: 0 !important;
+}
+
+table.grid td
+{
+  text-align: left;
+  padding-right: 1em;
+}
+
+
+table.grid
+{
+  width:100%;
+}
+
+div.messages table tr.row td, table.conversation tr.row td, table.grid tr td
+{
+  vertical-align:top;
+  padding-top:1em !important;
+  padding-bottom:1em;
+}
+
+table.grid tr.pager td[colspan]
+{
+  /*padding: 0 1em;*/
+  padding: 0 0.5em;
+}
+
+table.grid tr.pager span, table.grid tr.pager a
+{
+  padding: 0 0.5em;
+}
+
+table.grid tr.pager span
+{
+  font-weight: bold;
+}
+
+table.grid td.grid-item-left, table.grid td.grid-item-right
+{
+  /*background-color: #f6f6de;*/
+}
+
+table.grid tbody tr.grid-alternative-row
+{
+  /*background-color: #f6fff5;*/ /*#ededcc;*/ /*#ebebdb;*/ /*#e8e8e8;*/ /*#eae5c0;*/ /*background-color: #D7D2BF;*/
+}
+
+table.grid tbody tr
+{
+  /*background-color:#f9fef5;*/
+}
+
+span.noData, tr.grid-empty td
+{
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding-top: 0px !important;
+}
+
+table.key-value
+{
+  width:100%;
+}
+
+table.key-value td
+{
+  padding: 0.5em 0 1.5em;
+  vertical-align:top;
+}
+
+table.key-value td.key
+{
+  /*font-size:1em !important;*/
+  font-weight:bold;
+}
+
+table.key-value td.required
+{
+  padding-top:0.5em;
+  text-align:center;
+  width:2%;
+}
+
+table.key-value td.value
+{
+  
+}

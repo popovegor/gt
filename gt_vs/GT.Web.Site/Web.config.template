@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="loggingConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.LoggingSettings, Microsoft.Practices.EnterpriseLibrary.Logging" />
+    <section name="dataConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSettings, Microsoft.Practices.EnterpriseLibrary.Data" />
+    <section name="instrumentationConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation.Configuration.InstrumentationConfigurationSection, Microsoft.Practices.EnterpriseLibrary.Common" />
+    <section name="cachingConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Caching.Configuration.CacheManagerSettings, Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <sectionGroup name="system.web.extensions" type="System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+      <sectionGroup name="scripting" type="System.Web.Configuration.ScriptingSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+        <section name="scriptResourceHandler" type="System.Web.Configuration.ScriptingScriptResourceHandlerSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication" />
+        <sectionGroup name="webServices" type="System.Web.Configuration.ScriptingWebServicesSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+          <section name="jsonSerialization" type="System.Web.Configuration.ScriptingJsonSerializationSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="Everywhere" />
+          <section name="profileService" type="System.Web.Configuration.ScriptingProfileServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication" />
+          <section name="authenticationService" type="System.Web.Configuration.ScriptingAuthenticationServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication" />
+          <section name="roleService" type="System.Web.Configuration.ScriptingRoleServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication" />
+        </sectionGroup>
+      </sectionGroup>
+    </sectionGroup>
+    <sectionGroup name="webUIConfiguration">
+      <section name="htmlTemplateSystem" type="GT.Web.UI.Configuration.HtmlTemplateSystemSection, GT.Web.UI" />
+    </sectionGroup>
+    <section name="databaseConfiguration" type="GT.DA.DatabaseConfiguration.DatabaseSectionHandler, GT.DA" />
+    <section name="imageConfiguration" type="GT.ImageGenerator.Configuration.ImageSectionHandler, GT.ImageGenerator" />
+    <section name="smtpConfiguration" type="GT.Common.Net.Mail.SmtpConfigurationSection, GT.Common" />
+    <section name="ajaxControlConfiguration" type="GT.Ajax.Controls.Configuration.AjaxControlConfigurationSection, GT.Ajax.Controls" />
+    <section name="webMoneyConfig" type="GT.BO.Implementation.Payments.Configuration.WebMoneySectionHandler, GT.BO.Implementation"/>
+    <section name="cookiesConfiguration" type="GT.Common.Web.Cookie.CookiesConfigurationSection, GT.Common.Web"/>
+  </configSections>
+  <loggingConfiguration name="Logging Application Block" tracingEnabled="true" defaultCategory="General" logWarningsWhenNoCategoriesMatch="true">
+    <listeners>
+      <add fileName="Log\404\trace.log" rollSizeKB="10240" timeStampPattern="yyyy-MM-dd" rollFileExistsBehavior="Overwrite" rollInterval="Day" formatter="Text Formatter" header="----------------------------------------" footer="----------------------------------------" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging" traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" name="404 TraceListener" />
+      <add fileName="Log\Application_Shutdown\trace.log" rollSizeKB="10240" timeStampPattern="yyyy-MM-dd" rollFileExistsBehavior="Overwrite" rollInterval="Day" formatter="Text Formatter" header="----------------------------------------" footer="----------------------------------------" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging" traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" name="Application_Shutdown TraceListener" />
+      <add fileName="Log\Mailer\trace.log" rollSizeKB="10240" timeStampPattern="yyyy-MM-dd" rollFileExistsBehavior="Overwrite" rollInterval="Day" formatter="Text Formatter" header="----------------------------------------" footer="----------------------------------------" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging" traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" name="Email TraceListener" />
+      <add fileName="Log\trace.log" rollSizeKB="10240" timeStampPattern="yyyy-MM-dd" rollFileExistsBehavior="Overwrite" rollInterval="Day" formatter="Text Formatter" header="----------------------------------------" footer="----------------------------------------" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging" traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" name="General Text Trace Listener" />
+      <add fileName="Log\trace.xml" rollSizeKB="10240" timeStampPattern="yyyy-MM-dd" rollFileExistsBehavior="Overwrite" rollInterval="Day" formatter="Xml Formatter" header="" footer="" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging" traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" name="General XML TraceListener" />
+      <add fileName="Log\Login\trace.log" rollSizeKB="10240" timeStampPattern="yyyy-MM-dd" rollFileExistsBehavior="Overwrite" rollInterval="Day" formatter="Text Formatter" header="----------------------------------------" footer="----------------------------------------" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging" traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" name="Login TraceListener" />
+      <add fileName="Log\Register\trace.log" rollSizeKB="10240" timeStampPattern="yyyy-MM-dd" rollFileExistsBehavior="Overwrite" rollInterval="Day" formatter="Text Formatter" header="----------------------------------------" footer="----------------------------------------" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging" traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" name="Registration TraceListener" />
+      <add listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.SystemDiagnosticsTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging" traceOutputOptions="None" type="System.Diagnostics.DefaultTraceListener, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="System.Diagnostics TraceListener" initializeData="" />
+      <add name="WebMoney Trace Listener" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging" fileName="Log\webmoney\trace.log" formatter="Text Formatter" rollInterval="Month" rollSizeKB="10240" timeStampPattern="yyyy-MM-dd" rollFileExistsBehavior="Overwrite" header="----------------------------------------" footer="----------------------------------------" />
+    </listeners>
+    <formatters>
+      <add template="Timestamp: {timestamp(local)}&#xA;Title:{title}&#xA;Message: {message}&#xA;Category: {category}&#xA;Severity: {severity}&#xA;Win32ThreadId: {win32ThreadId}&#xA;Machine: {machine}&#xA;Application Data: &#xA;{dictionary({key}:{tab}{tab}{tab}{value}{newline})}" type="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter, Microsoft.Practices.EnterpriseLibrary.Logging" name="Text Formatter" />
+      <add template="&lt;LogEntry>&#xA;&lt;Timestamp>{timestamp(local)}&lt;/Timestamp>&#xA;&lt;Title>&lt;![CDATA[{title}]]>&lt;/Title>&#xA;&lt;Message>&lt;![CDATA[{message}]]>&lt;/Message>&#xA;&lt;Category>{category}&lt;/Category>&#xA;&lt;Severity>{severity}&lt;/Severity>&#xA;&lt;Machine>{machine}&lt;/Machine>&#xA;&lt;ApplicationData>&lt;![CDATA[&#xA;{dictionary({key}:{value}{newline})}&#xA;]]>&lt;/ApplicationData>&#xA;&lt;/LogEntry>" type="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter, Microsoft.Practices.EnterpriseLibrary.Logging" name="Xml Formatter" />
+    </formatters>
+    <logFilters>
+      <add categoryFilterMode="AllowAllExceptDenied" type="Microsoft.Practices.EnterpriseLibrary.Logging.Filters.CategoryFilter, Microsoft.Practices.EnterpriseLibrary.Logging" name="Category Filter" />
+    </logFilters>
+    <categorySources>
+      <add switchValue="All" name="Code">
+        <listeners>
+          <add name="General Text Trace Listener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Database">
+        <listeners>
+          <add name="General Text Trace Listener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Debug">
+        <listeners>
+          <add name="System.Diagnostics TraceListener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Email">
+        <listeners>
+          <add name="Email TraceListener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="General">
+        <listeners>
+          <add name="General Text Trace Listener" />
+          <add name="General XML TraceListener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Log404">
+        <listeners>
+          <add name="404 TraceListener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Login">
+        <listeners>
+          <add name="Login TraceListener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Registration">
+        <listeners>
+          <add name="Registration TraceListener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Shutdown">
+        <listeners>
+          <add name="Application_Shutdown TraceListener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Trace">
+        <listeners>
+          <add name="System.Diagnostics TraceListener" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="WebMoney">
+        <listeners>
+          <add name="WebMoney Trace Listener" />
+        </listeners>
+      </add>
+    </categorySources>
+    <specialSources>
+      <allEvents switchValue="All" name="All Events">
+        <listeners>
+          <add name="General Text Trace Listener" />
+          <add name="General XML TraceListener" />
+        </listeners>
+      </allEvents>
+      <notProcessed switchValue="All" name="Unprocessed Category" />
+      <errors switchValue="All" name="Logging Errors &amp; Warnings" />
+    </specialSources>
+  </loggingConfiguration>
+  <instrumentationConfiguration performanceCountersEnabled="false" eventLoggingEnabled="false" wmiEnabled="false" />
+  <connectionStrings>
+    <add name="GT" connectionString="Data Source=.\sqlexpress; Initial Catalog=GT;Integrated Security=true;user=webusr;password=webpass" providerName="System.Data.SqlClient" />
+    <!--<add name="GT" connectionString="Data Source=.\sqlexpress; Initial Catalog=GT;Integrated Security=true;user=webusr;password=webpass" providerName="System.Data.SqlClient" />-->
+  </connectionStrings>
+  <cachingConfiguration defaultCacheManager="Default Cache Manager">
+    <cacheManagers>
+      <add expirationPollFrequencyInSeconds="1800" maximumElementsInCacheBeforeScavenging="2000"
+             numberToRemoveWhenScavenging="200" backingStoreName="Null Storage"
+             type="Microsoft.Practices.EnterpriseLibrary.Caching.CacheManager, Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+             name="Default Cache Manager" />
+      <add expirationPollFrequencyInSeconds="1800" maximumElementsInCacheBeforeScavenging="500"
+            numberToRemoveWhenScavenging="200" backingStoreName="Null Storage"
+            type="Microsoft.Practices.EnterpriseLibrary.Caching.CacheManager, Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+            name="Membership Cache Manager" />
+    </cacheManagers>
+    <backingStores>
+      <add encryptionProviderName="" type="Microsoft.Practices.EnterpriseLibrary.Caching.BackingStoreImplementations.NullBackingStore, Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+        name="Null Storage" />
+    </backingStores>
+  </cachingConfiguration>
+  <webUIConfiguration>
+    <htmlTemplateSystem htmlTemplatesPath="~/HtmlTemplates" />
+  </webUIConfiguration>
+  <databaseConfiguration>
+    <databases>
+      <add name="GT" enableBroker="false" />
+    </databases>
+  </databaseConfiguration>
+  <imageConfiguration path="/ImageHandler.ashx" password="!@#%^" quality="100" storagePath="/img" />
+  <smtpConfiguration enabled="false" from="registration@gameismoney.ru" />
+  <webMoneyConfig purse="R127035984029" key="test" />
+  <cookiesConfiguration>
+    <cookies>
+      <add key="timezone" name="gt.timezone" expirationInMinutes="1440" />
+    </cookies>
+  </cookiesConfiguration>
+  <system.web>
+    <urlMappings enabled="true">
+      <add url="~/Faq.aspx" mappedUrl="~/Help/Help.aspx"/>
+    </urlMappings>
+    <globalization culture="auto" requestEncoding="UTF-8" responseEncoding="UTF-8" uiCulture="auto" />
+    <customErrors mode="RemoteOnly" defaultRedirect="/Error.aspx">
+      <error statusCode="404" redirect="/Index.aspx" />
+      <error statusCode="500" redirect="/Error.aspx" />
+    </customErrors>
+    <authentication mode="Forms">
+      <forms loginUrl="~/SignIn" protection="All" timeout="7200" defaultUrl="~/Office" name="gt.credentials" cookieless="UseDeviceProfile">
+        <credentials passwordFormat="SHA1" />
+      </forms>
+    </authentication>
+    <authorization>
+      <!--deny users="?" /-->
+    </authorization>
+    <anonymousIdentification enabled="true" />
+    <identity impersonate="true" />
+    <roleManager defaultProvider="CustomRoleProvider" cacheRolesInCookie="true" cookieName="gt.roles" enabled="true" cookieProtection="All" >
+      <providers>
+        <add connectionStringName="GT"
+				  applicationName="GT"
+				  name="CustomRoleProvider"
+				  type="GT.Web.Security.CustomRoleProvider, GT.Web.Security" />
+      </providers>
+    </roleManager>
+    <membership defaultProvider="CustomMembershipProvider">
+      <providers>
+        <clear />
+        <add connectionStringName="GT" enablePasswordRetrieval="true" enablePasswordReset="true" requiresQuestionAndAnswer="true" applicationName="GT" requiresUniqueEmail="true" passwordFormat="Clear" maxInvalidPasswordAttempts="50" minRequiredPasswordLength="1" minRequiredNonalphanumericCharacters="0" passwordAttemptWindow="10" passwordStrengthRegularExpression="" name="CustomMembershipProvider" type="GT.Web.Security.CustomMembershipProvider, GT.Web.Security" />
+      </providers>
+    </membership>
+    <profile enabled="true" defaultProvider="CustomProfileProvider" automaticSaveEnabled="false" inherits="GT.Web.Security.CustomUserProfile">
+      <providers>
+        <clear />
+        <!--<add name="GTProfileProvider" type="GT.Profile.GTProfileProvider, GT.Profile" connectionStringName="GT" updateUserProcedure="p_UserProfiles_UpSert" getUserProcedure="p_UserProfiles_Select" writeExceptionsToEventLog="true" applicationName="GT" />-->
+        <add name="CustomProfileProvider" type="GT.Web.Security.CustomProfileProvider, GT.Web.Security" connectionStringName="GT" applicationName="GT" />
+      </providers>
+    </profile>
+    <siteMap enabled="true" defaultProvider="CustomSiteMapProvider">
+      <providers>
+        <add name="CustomSiteMapProvider" type="GT.Web.UI.SiteMap.CustomSiteMapProvider" />
+      </providers>
+    </siteMap>
+    <pages buffer="false" compilationMode="Always" enableViewState="true" enableViewStateMac="true" theme="Tutynin">
+      <controls>
+        <add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <add tagPrefix="gt" namespace="GT.Ajax.Controls" assembly="GT.Ajax.Controls" />
+        <add tagPrefix="ajaxToolkit" namespace="AjaxControlToolkit" assembly="AjaxControlToolkit" />
+        <add tagPrefix="asp" namespace="System.Web.UI.WebControls" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <add tagPrefix="gt" namespace="GT.Web.UI.Controls" assembly="GT.Web.UI" />
+      </controls>
+    </pages>
+    <compilation debug="true">
+      <assemblies>
+        <add assembly="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <add assembly="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+      </assemblies>
+    </compilation>
+    <httpHandlers>
+      <remove verb="*" path="*.asmx" />
+      <add verb="*" path="*.asmx" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <add verb="*" path="*_AppService.axd" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <add verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" validate="false" />
+    </httpHandlers>
+    <httpModules>
+      <add name="ScriptModule" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <add name="AntiXssModule" type="Microsoft.Security.Application.SecurityRuntimeEngine.AntiXssModule" />
+    </httpModules>
+    <caching>
+      <outputCache enableOutputCache="true" enableFragmentCache="true" sendCacheControlHeader="true" omitVaryStar="false" />
+    </caching>
+  </system.web>
+  <location path="BillingSystem/WMResult.ashx">
+    <system.web>
+      <authorization>
+        <allow users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <system.web.extensions>
+    <scripting>
+      <webServices>
+        <authenticationService enabled="true" requireSSL="false" />
+        <profileService enabled="true" />
+      </webServices>
+    </scripting>
+  </system.web.extensions>
+  <system.net>
+    <mailSettings>
+      <smtp from="popovegor@GT.su">
+        <network host="mx.GT.su" port="25" userName="popovegor" password="imappopovegor" />
+      </smtp>
+    </mailSettings>
+  </system.net>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules>
+      <remove name="ScriptModule" />
+      <remove name="UploadHttpModule"/>
+      <add name="ScriptModule" preCondition="managedHandler" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <add name="AntiXssModule" type="Microsoft.Security.Application.SecurityRuntimeEngine.AntiXssModule" />
+    </modules>
+    <handlers>
+      <remove name="ScriptHandlerFactory" />
+      <remove name="ScriptHandlerFactoryAppServices" />
+      <remove name="ScriptResource" />
+      <remove name="WebServiceHandlerFactory-Integrated" />
+      <add name="ScriptHandlerFactory" verb="*" path="*.asmx" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <add name="ScriptHandlerFactoryAppServices" verb="*" path="*_AppService.axd" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <add name="ScriptResource" preCondition="integratedMode" verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+    </handlers>
+    <staticContent>
+      <clientCache cacheControlMode="DisableCache" />
+    </staticContent>
+    <caching enabled="false" enableKernelCache="false" />
+    <urlCompression doDynamicCompression="true" doStaticCompression="true" dynamicCompressionBeforeCache="true" />
+    <rewrite>
+      <rules>
+        <rule name="RewriteUserFriendlyUnsubscribe" enabled="true" stopProcessing="true">
+          <match url="^Unsubscribe/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Notification/Unsubscribe.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlyFeedbacks" enabled="true" stopProcessing="true">
+          <match url="^Office/Feedbacks/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="UserRating/FeedbackViewer.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlyChangeEmail" enabled="true" stopProcessing="true">
+          <match url="^Office/ChangeEmail/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Authentication/ChangeEmail.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlyChangePassword" enabled="true" stopProcessing="true">
+          <match url="^Office/ChangePassword/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Authentication/ChangePassword.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlyTrabsfers" enabled="true" stopProcessing="true">
+          <match url="^Office/Transfers/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="BillingSystem/TransferViewer.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlyBuyingManager" enabled="true" stopProcessing="true">
+          <match url="^Office/Buying/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/BuyingManager.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlySellingManager" enabled="true" stopProcessing="true">
+          <match url="^Office/Selling/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/SellingManager.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlyProfile" enabled="true" stopProcessing="true">
+          <match url="^Office/Profile$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="PersonalAccount/Profile.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlyUser" enabled="true" stopProcessing="true">
+          <match url="^Users/User/([^/]+)/([^/]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Users/User.aspx?uid={R:1}&amp;dt={R:2}" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlyBuyingAdd" enabled="true" stopProcessing="true">
+          <match url="^Office/Buying/Add$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/EditBuying.aspx" appendQueryString="false"/>
+        </rule>
+        <rule name="RewriteUserFriendlyBuyingEdit" enabled="true" stopProcessing="true">
+          <match url="^Office/Buying/Edit/([0-9]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/EditBuying.aspx?id={R:1}" appendQueryString="false"/>
+        </rule>
+        <rule name="RewriteUserFriendlySellingAdd" enabled="true" stopProcessing="true">
+          <match url="^Office/Selling/Add$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/EditSelling.aspx" appendQueryString="false"/>
+        </rule>
+        <rule name="RewriteUserFriendlySellingEdit" enabled="true" stopProcessing="true">
+          <match url="^Office/Selling/Edit/([0-9]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/EditSelling.aspx?id={R:1}" appendQueryString="false"/>
+        </rule>
+        <rule name="RewriteUserFriendlyTopUp" enabled="true" stopProcessing="true">
+          <match url="^Office/TopUp$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="BillingSystem/TopUp.aspx" appendQueryString="false"/>
+        </rule>
+        <rule name="RewriteUserFriendlyDrawOut" enabled="true" stopProcessing="true">
+          <match url="^Office/DrawOut$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="BillingSystem/DrawOut.aspx" appendQueryString="false"/>
+        </rule>
+        <rule name="RewriteUserFriendlyMessages" enabled="true" stopProcessing="true">
+          <match url="^Office/Messages/([^/]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="MessageSystem/MessageViewer2.aspx?d={R:1}" appendQueryString="false"/>
+        </rule>
+        <rule name="RewriteUserFriendlyOffice" enabled="true" stopProcessing="true">
+          <match url="^Office/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="PersonalAccount/Office.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlyConfirm" enabled="true" stopProcessing="true">
+          <match url="^Confirm/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Authentication/Confirmation.aspx" appendQueryString="true"/>
+        </rule>
+        <rule name="RewriteUserFriendlySignUp" enabled="true" stopProcessing="true">
+          <match url="^SignUp/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Authentication/SignUp.aspx" appendQueryString="true" />
+        </rule>
+        <rule name="RewriteUserFriendlySignIn" enabled="true" stopProcessing="true">
+          <match url="^SignIn/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Authentication/SignIn.aspx" appendQueryString="true" />
+        </rule>
+        <rule name="RewriteUserFriendlyBuying" enabled="true" stopProcessing="true">
+          <match url="^Buying/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/BuyingViewer.aspx" appendQueryString="true" />
+        </rule>
+        <rule name="RewriteUserFriendlySelling" enabled="true" stopProcessing="true">
+          <match url="^Selling/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/SellingViewer.aspx" appendQueryString="true" />
+        </rule>
+        <rule name="RewriteUserFriendlyRecovery" enabled="true" stopProcessing="true">
+          <match url="^Recovery/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Authentication/PasswordRecovery.aspx" />
+        </rule>
+        <rule name="RewriteUserFriendlyWantToSell" enabled="true" stopProcessing="true">
+          <match url="^Selling/WantToSell/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/WantToSell.aspx" />
+        </rule>
+        <rule name="RewriteUserFriendlyWantToBuy" enabled="true" stopProcessing="true">
+          <match url="^Buying/WantToBuy/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/WantToBuy.aspx" />
+        </rule>
+        <rule name="RewriteUserFriendlyViewSelling" enabled="true" stopProcessing="true">
+          <match url="^Selling/View/([^/]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/ViewSelling.aspx?id={R:1}" />
+        </rule>
+        <rule name="RewriteUserFriendlyViewBuying" enabled="true" stopProcessing="true">
+          <match url="^Buying/View/([^/]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Offers/ViewBuying.aspx?id={R:1}" />
+        </rule>
+        <rule name="RewriteUserFriendlyHelp" enabled="true" stopProcessing="true">
+          <match url="^Help/([^/]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Help/Help.aspx?s={R:1}" />
+        </rule>
+        <rule name="RewriteUserFriendlyGame" enabled="true" stopProcessing="true">
+          <match url="^Games/Game/([^/]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Games/Game.aspx?id={R:1}" />
+        </rule>
+        <rule name="RewriteUserFriendlyServer" enabled="true" stopProcessing="true">
+          <match url="^Servers/Server/([^/]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="Servers/Server.aspx?id={R:1}" />
+        </rule>
+        <rule name="RewriteUserFriendlyNewsArchive" enabled="true" stopProcessing="true">
+          <match url="^News/NewsArchive/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="News/NewsArchive.aspx" />
+        </rule>
+        <rule name="RewriteUserFriendlyNews" enabled="true" stopProcessing="true">
+          <match url="^News/([^/]+)/?$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="DetailsInfo/NewsInfo.aspx?NewsId={R:1}" />
+        </rule>
+        <rule name="RedirectUserFriendlyOfferInfo" enabled="true" stopProcessing="true">
+          <!--<match url="DetailsInfo/OfferInfo\.aspx[?]id=([^=&amp;]+)" />-->
+          <match url="^DetailsInfo/OfferInfo\.aspx$" />
+          <conditions>
+            <add input="{REQUEST_METHOD}" pattern="^POST$" negate="true" />
+            <add input="{QUERY_STRING}" pattern="^id=([^=&amp;]+)$" />
+          </conditions>
+          <action type="Redirect" url="Selling/View/{C:1}" appendQueryString="false" />
+        </rule>
+        <rule name="RedirectUserFriendlyBuyingOfferInfo" stopProcessing="true" enabled="true">
+          <match url="^DetailsInfo/BuyingOfferInfo\.aspx$" />
+          <conditions>
+            <add input="{REQUEST_METHOD}" pattern="^POST$" negate="true" />
+            <add input="{QUERY_STRING}" pattern="^id=([^=&amp;]+)$" />
+          </conditions>
+          <action type="Redirect" url="Buying/View/{C:1}" appendQueryString="false" />
+        </rule>
+        <rule name="RedirectUserFriendlyGameInfo" stopProcessing="true" enabled="true">
+          <match url="^DetailsInfo/GameInfo\.aspx$" />
+          <conditions>
+            <add input="{REQUEST_METHOD}" pattern="^POST$" negate="true" />
+            <add input="{QUERY_STRING}" pattern="^GameID=([^=&amp;]+)" />
+          </conditions>
+          <action type="Redirect" url="Games/Game/{C:1}" appendQueryString="false" />
+        </rule>
+        <rule name="RedirectUserFriendlyMessages" stopProcessing="true" enabled="true">
+          <match url="^MessageSystem/Messages\.aspx$" />
+          <conditions>
+            <add input="{REQUEST_METHOD}" pattern="^POST$" negate="true" />
+            <add input="{QUERY_STRING}" pattern="^d=([^=&amp;]+)$" />
+          </conditions>
+          <action type="Redirect" url="/Office/Messages/{C:1}" appendQueryString="false" />
+        </rule>
+        <rule name="RedirectUserFriendlyFaq" stopProcessing="true" enabled="true">
+          <match url="^Faq\.aspx$" />
+          <conditions>
+            <add input="{REQUEST_METHOD}" pattern="^POST$" negate="true" />
+          </conditions>
+          <action type="Redirect" url="Help/General" appendQueryString="false" />
+        </rule>
+        <rule name="RedirectUserFriendlyUserInfo" stopProcessing="true" enabled="true">
+          <match url="^DetailsInfo/UserInfo\.aspx$" />
+          <conditions>
+            <add input="{REQUEST_METHOD}" pattern="^POST$" negate="true" />
+            <add input="{QUERY_STRING}" pattern="^UserID=([^=&amp;]+)$" />
+          </conditions>
+          <action type="Redirect" url="Users/User/{C:1}" appendQueryString="false" />
+        </rule>
+        <rule name="RedirectUserFriendlyServerInfo" stopProcessing="true" enabled="true">
+          <match url="^DetailsInfo/GameServerInfo\.aspx$" />
+          <conditions>
+            <add input="{REQUEST_METHOD}" pattern="^POST$" negate="true" />
+            <add input="{QUERY_STRING}" pattern="^GameServerID=([^=&amp;]+)" />
+          </conditions>
+          <action type="Redirect" url="Servers/Server/{C:1}" appendQueryString="false" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+  <system.codedom>
+    <compilers>
+      <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CSharp.CSharpCodeProvider,System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" warningLevel="4">
+        <providerOption name="CompilerVersion" value="v3.5" />
+        <providerOption name="WarnAsError" value="false" />
+      </compiler>
+    </compilers>
+  </system.codedom>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Extensions" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Extensions.Design" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

@@ -1,0 +1,153 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/TwoColumns.master" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="GT.Web.Site.MasterPages.User" %>
+
+<%@ Import Namespace="GT.Localization.Resources" %>
+<%@ Import Namespace="GT.Web.UI.Pages" %>
+<%@ Import Namespace="GT.BO.Implementation.Users" %>
+<%@ Import Namespace="GT.Global.Users" %>
+<%@ Import Namespace="GT.Localization.Resources" %>
+<%@ Import Namespace="GT.BO.Implementation.Helpers" %>
+<%@ Import Namespace="GT.Global.UserRating" %>
+<%@ Import Namespace="GT.Web.Security" %>
+<%@ Register Src="~/Menu/Submenu.ascx" TagName="Submenu" TagPrefix="gt" %>
+<%@ Register Src="~/Menu/SubmenuItem.ascx" TagName="SubmenuItem" TagPrefix="gt" %>
+<%--<asp:Content ID="Content1" ContentPlaceHolderID="cphTitle" runat="server">
+</asp:Content>--%>
+<asp:Content ID="cntSidebar" ContentPlaceHolderID="cphSidebar" runat="server">
+  <div class="user-card-sidebar">
+    <gt:Submenu runat="server" ID="sm">
+      <Content>
+        <gt:SubmenuItem runat="server" ID="smiGeneral" NavigateUrl="<%# GetUrlForSection(UserCardParams.Data.Info) %>" Text="<%# CommonResources.Users_UserCard_Info %>" />
+        <%-- <gt:SubmenuItem runat="server" ID="smiFeedback" NavigateUrl="<%# GetUrlForSection(UserCardParams.Data.Feedbacks) %>" Text="<%# CommonResources.Users_UserCard_Feedbacks %>" />--%>
+        <gt:SubmenuItem runat="server" ID="smiConversation" NavigateUrl="<%# GetUrlForSection(UserCardParams.Data.Conversation) %>" Text="<%# CommonResources.Users_UserCard_Conversation %>" Visible="<%# IsSameUser == false %>" />
+      </Content>
+    </gt:Submenu>
+  </div>
+</asp:Content>
+<asp:Content ID="cntMain" ContentPlaceHolderID="cphContent" runat="server">
+    <div id="user-card">
+    <div class="uc-common-part">
+      <table rules="none" class="uc-title">
+        <tbody>
+          <tr>
+            <td class="uc-title-name" colspan="3">
+              <%= Info.UserName%>
+            </td>
+          </tr>
+          <tr>
+            <td class="uc-title-note" colspan="3">
+              <%= CommonResources.Users_UserCard_Name%>
+            </td>
+          </tr>
+          <tr>
+            <td class='<%= Info.IsOnline ? "uc-online" : "uc-offline"  %>'>
+              <%= Info.IsOnline ? CommonResources.Users_UserCard_OnlineStatus : CommonResources.Users_UserCard_OfflineStatus%>
+            </td>
+            <td class="uc-title-date">
+              <%= Info.LastActivityDate.UtcToLocal(CommonResources.Users_UserCard_DateFormat) %>
+            </td>
+            <td class="uc-title-date">
+              <%= Info.CreationDate.UtcToLocal(CommonResources.Users_UserCard_DateFormat) %>
+            </td>
+          </tr>
+          <tr>
+            <td class="uc-title-note">
+              <%=CommonResources.Users_UserCard_Status %>
+            </td>
+            <td class="uc-title-note">
+              <%= CommonResources.Users_UserCard_LastLoginDate %>
+            </td>
+            <td class="uc-title-note">
+              <%= CommonResources.Users_UserCard_RegisterationDate%>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <asp:ContentPlaceHolder ID="cphContent" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <%--statistics--%>
+    <div class="uc-deals-n-offers uc-stat round-corner">
+      <%--<h2><%= CommonResources.Users_UserCard_Stat %></h2>--%>
+      <%
+        var buyingUrl = string.Format("/Buying?{0}={1}"
+        , GT.Global.Offers.ViewFilterParams.UserId, Info.UserId());
+
+        var sellingUrl = string.Format("/Selling?{0}={1}"
+        , GT.Global.Offers.ViewFilterParams.UserId, Info.UserId());
+      %>
+      <span class="rc-title">
+        <%= CommonResources.Users_UserCard_Stat%></span> <ins class="rc-left-top"></ins><ins class="rc-right-top"></ins><ins class="rc-right-bottom"></ins><ins class="rc-left-bottom"></ins>
+      <div class="rc-content">
+        <dl class="uc-buying">
+          <dt><span>
+            <%= CommonResources.Users_UserCard_BuyingStat %></span> </dt>
+          <dd>
+            <table rules="none">
+              <tbody>
+                <tr>
+                  <td>
+                    <%= CommonResources.Users_UserCard_StatActive%>
+                  </td>
+                  <td>
+                    <a href="<%= buyingUrl %>" target="_self">
+                    <%= Dynamics.BuyingTotal%></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= CommonResources.Users_UserCard_StatComplete%>
+                  </td>
+                  <td>
+                    <%= Dynamics.DealsBuyerFinished %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= CommonResources.Users_UserCard_StatConflicted%>
+                  </td>
+                  <td>
+                    <%= Dynamics.DealsBuyerConflicted %>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+        </dl>
+        <dl class="uc-selling">
+          <dt><span>
+            <%= CommonResources.Users_UserCard_SellingStat %></span> </dt>
+          <dd>
+            <table rules="none">
+              <tbody>
+                <tr>
+                  <td>
+                    <%= CommonResources.Users_UserCard_StatActive%>
+                  </td>
+                  <td>
+                    <a href="<%= sellingUrl %>" target="_self">
+                    <%= Dynamics.DealsStarted %></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= CommonResources.Users_UserCard_StatComplete%>
+                  </td>
+                  <td>
+                    <%= Dynamics.DealsSellerFinished %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= CommonResources.Users_UserCard_StatConflicted%>
+                  </td>
+                  <td>
+                    <%= Dynamics.DealsSellerConflicted %>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</asp:Content>

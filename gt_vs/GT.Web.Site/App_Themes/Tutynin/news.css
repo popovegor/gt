@@ -1,0 +1,61 @@
+﻿/*Newsletters*/
+
+table.gridNews td.newsEntry
+{
+  padding:0.5em 0.5em 1.5em 0em;
+}
+
+table.newsEntry td.date
+{
+  text-align: center;
+  white-space:nowrap;
+  width:19em;
+  vertical-align:top;
+}
+
+table.newsEntry td.date span
+{
+  text-align: left;
+  vertical-align: top;
+  font-style: italic;
+  font-weight: bold;
+  font-size:1.1em;
+  word-spacing:2px;
+}
+
+table.newsEntry td.header
+{
+  text-align: left;
+  padding-right:20%;
+}
+
+table.newsEntry td.header a
+{
+  max-width: 600px;
+  font-weight: bold;
+}
+
+table.newsEntry td.body
+{
+  text-align:left;
+  padding-top:0.5em;
+  padding-right:20%;
+  line-height:1.4em;
+}
+
+table.newsEntry td.body a.more
+{
+  font-style: italic;
+  margin-left: 0.5em;
+}
+
+div.newsletters span.news-title
+{
+  float: left;
+}
+
+div.newsletters a.archive-title
+{
+  float: right;
+  line-height:1.7em;
+}

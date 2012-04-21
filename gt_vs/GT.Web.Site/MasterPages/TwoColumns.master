@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Standard.Master" AutoEventWireup="true" CodeBehind="TwoColumns.master.cs" Inherits="GT.Web.Site.MasterPages.TwoColumns" %>
+
+<%@ Register Src="~/Controls/Caption.ascx" TagName="Caption" TagPrefix="gt" %>
+<asp:Content ContentPlaceHolderID="cphTitle" runat="server" ID="cntTitle">
+  <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+    <gt:caption runat="server" id="Caption1" />
+  </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="cntContent" ContentPlaceHolderID="cphContent" runat="server">
+  <div id="sidebar">
+    <asp:ContentPlaceHolder runat="server" ID="cphSidebar" />
+  </div>
+  <div id="main">
+    <asp:ContentPlaceHolder runat="server" ID="cphContent" />
+  </div>
+</asp:Content>

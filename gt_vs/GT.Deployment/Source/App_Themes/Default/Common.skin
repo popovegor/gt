@@ -1,0 +1,7 @@
+<asp:Image runat="server" ImageUrl="~/App_Themes/Default/Images/Calendar_scheduleHS.png" SkinID="imgCalendarSkin" />
+
+<ajaxToolkit:ResizableControlExtender  runat="server" MaximumHeight="1000"
+    MaximumWidth="1000" MinimumHeight="300" MinimumWidth="500" 
+    HandleCssClass="ResizableControlExtenderHandle" HandleOffsetX="10" HandleOffsetY="5"
+    ResizableCssClass="ResizableControlExtenderResizable" SkinID="rceMessagesSkin"  />
+            

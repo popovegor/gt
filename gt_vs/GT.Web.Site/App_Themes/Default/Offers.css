@@ -1,0 +1,84 @@
+div#offersFilter
+{
+	margin: 0;
+	height:100px;
+}
+
+div#offersFilter div.searchByDictionaries
+{
+	float: left;
+}
+
+div#offersFilter div.searchByDictionaries select
+{
+	width: 250px;
+}
+div#offersFilter div.searchByValue
+{
+	float: left;
+	margin: 0 2em 0 2em;
+	padding: 0 2em 0 2em;
+	border-right: #b2b2b2 0.1em dashed;
+	border-left: #b2b2b2 0.1em dashed;
+} 
+
+div#offersFilter div.searchByValue input[type="text"]
+{
+	width: 250px;
+}
+
+div#offersFilter div.controls
+{
+	float: left;
+}
+
+div#offers
+{
+	padding-top: 1em;
+	float: left;
+	width:100%;
+}
+
+div#messages
+{
+	clear:both;
+}
+
+table.offers
+{
+}
+
+table.offers th.game, table.offers th.server
+{
+	width: 200px;
+}
+
+table.offers th.title
+{
+	/*width: 300px;*/
+}
+
+table.offers th.date
+{
+	width: 150px;
+}
+
+table.offers th.seller
+{
+	width: 100px;
+}
+
+table.offers th.buyer
+{
+	width: 80px;
+}
+
+table.offers th.price
+{
+	width: 30px;
+}
+
+table.offers th.delivery
+{
+	width:20px;
+}

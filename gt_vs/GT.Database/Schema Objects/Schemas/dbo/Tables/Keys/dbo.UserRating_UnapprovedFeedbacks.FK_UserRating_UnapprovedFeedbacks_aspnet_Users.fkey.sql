@@ -1,0 +1,5 @@
+﻿ALTER TABLE [dbo].[UserRating_UnusedFeedbacks]  WITH CHECK ADD  CONSTRAINT [FK_UserRating_UnapprovedFeedbacks_aspnet_Users] FOREIGN KEY([FromUserId])
+REFERENCES [dbo].[aspnet_Users] ([UserId])
+
+GO
+ALTER TABLE [dbo].[UserRating_UnusedFeedbacks] CHECK CONSTRAINT [FK_UserRating_UnapprovedFeedbacks_aspnet_Users]

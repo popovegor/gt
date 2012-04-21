@@ -1,0 +1,270 @@
+﻿a
+{
+  color: #3a5c7c;
+  white-space: normal;
+  /*border-bottom:1px solid #645A36;*/
+}
+
+a:hover, #upper .up-lang a:hover
+{
+  color:#ff2929;
+}
+
+div#office div.sales-block a.title:hover
+, .submenu li a:hover
+, div#office div.purchases-block a.title:hover
+, div#header div.main-menu ul li a.current
+, div#offersFilter div.offer-controls a:hover
+, div.newsletters a.archive-title:hover
+,  #homeSidebar .wants-buy:hover
+, #homeSidebar .wants-sell:hover
+, #home .o-item-more a:hover
+, #home .o-item-game-category a:hover
+/*, div#header ul#menu li a.current*/
+/*, div#home div.sell-buy div.sell div.content div.inner a:hover*/
+{
+  color: #ff2929 !important;
+}
+
+body, td, p, ul li, ol li, input, select
+, #home div.panel-inner-content span
+, #home .o-item-currency
+{
+  /*color:#5d4339;*/
+  color:#563c3e;
+}
+
+.submenu li.purchases a, div#offersFilter div.offer-controls a.buy
+, #menu .menu-item-buying
+{
+  color:#fe8508;
+}
+
+#home .so-item-price
+, #user-card .selling .info-title
+, #user-card .uc-stat-selling
+, #user-card .uc-stat .uc-selling dt
+{
+  color:#39cc39;
+}
+
+#home .o-item-more a
+{
+  color:#869baf;
+}
+
+/*#home .o-item-game-category a
+{
+  color:#53708d;
+}*/
+
+#home .o-item-date
+{
+  color:#b8adae;
+}
+
+#homeSidebar .wants-buy
+{
+color:#ef7c08;
+}
+
+/*div#office div.sales-block a.title,*/ .submenu li.sales a
+, div#offersFilter div.offer-controls a.sell
+, #homeSidebar .wants-sell
+{
+  color:#18b218;
+}
+
+#menu .menu-item-selling
+{
+  color:#00ee00;
+}
+
+#home .so-title
+{
+  background-color:#7cd05a;
+  color: #FFFFFF;
+}
+
+#home .bo-title
+{
+  background-color:#fb972a;
+  color: #FFFFFF;
+}
+
+#home .bo-item-price
+, #user-card .buying .info-title
+, #user-card .uc-stat-buying
+, #user-card .uc-stat .uc-buying dt
+{
+  color:#fb972a;
+}
+
+#homeSidebar .wants
+, #home .news dt span
+{
+  color:#563C4E;
+}
+
+#homeSidebar .top-games-title
+, #home .news dt span
+, table.grid th
+{
+  color:#ffffff;
+  background-color: #5a4850;
+}
+
+span.comment
+{
+  color: #6e6961;
+}
+
+#upper .up-sys
+{
+   color:#4b4b4b;
+   border-color:#4b4b4b;
+}
+
+#upper .up-lang a
+{
+  color:#4b4b4b;
+}
+
+div#caption,
+div.offers table.entries tr:hover td
+{
+    /*background-color: #F9F8F7;*/   
+}
+
+.category-character
+{
+  color:#af292e;
+}
+
+.category-armory
+{
+  color:#54276c;
+}
+
+.category-currency
+{
+  color:#a07d0e;
+}
+
+.category-misc
+{
+  
+}
+
+div#selling div.filter div.search div.content
+, div#selling div.filter div.add div.content
+{
+  background-color: #a5ee6e; 
+  border-color:#a5ee6e !important;
+}
+
+div#buying div.filter div.search div.content
+, div#buying div.filter div.add div.content
+{
+  background-color: #fc9b2a;
+  border-color:#fc9b2a !important;
+}
+
+table.key-value td.required
+, .sign-in .failure span
+{
+  color:#f00000;
+}
+
+#menu .mmi .link, #menu .mmi.current .text
+{
+  color:#ffffff;
+}
+
+#menu .mmi-note *
+{
+  color: #C2BDBD;
+}
+
+#menu a:hover
+, #menu .link:hover
+, #menu .current .text
+{
+  color:#feff99 !important;
+}
+
+#menu .office .unread-messages *
+{
+  color:#ff2929;
+}
+
+/*ul.submenu li.current, 
+.sign-in-cnt, 
+.guarantee
+{
+  background-color:#F7F2FF;
+}*/
+
+/*#selling table.grid.entries tr th
+{
+  background-color:#F1E9FA;
+}*/
+
+.offers table.grid.entries tr:hover td
+{
+  /*background-color:#f6fff0;*/
+  /*background-color:#fff9eb;*/
+  /*background-color:#f9f6ff;*/
+   background-color:#f8f2ff;
+}
+
+/*#buying table.grid.entries tr:hover td
+{
+  background-color:#fff9eb
+}*/
+
+/*table.grid.entries tr:hover td
+{
+  background-color:#f9f6ff
+}*/
+
+#footer, #header
+{
+   background-color:#413f3e;
+}
+
+div#sellingviewer div#actions
+, div#sellingviewer div#potential
+, div#viewbuying div#suggested
+, div#viewbuying div#actions
+{
+    background-color: #F6EFFF;
+}
+
+div#user-card .uc-title-note
+, .user-card-name .uc-title-note 
+, #user-card .uc-user-note
+, #user-card .uc-feedbacks-date
+, #user-card .uc-dialog-entry-date
+, div.messages table.in td.user p.date
+, div#feedbacks td.user p.date
+{
+  color:#948485;
+  text-transform:lowercase;
+}
+
+#user-card .uc-online
+{
+  color:#77649a;
+}
+
+#user-card .uc-stat table td
+, #user-card .uc-stat table th
+{
+  border-color:#cccccc !important;
+}
+
+#user-card .uc-feedbacks dt span
+{
+  color:#695153;
+}

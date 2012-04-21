@@ -1,0 +1,339 @@
+﻿/*===============================  user-card  =======*/
+div#user-card
+{
+}
+
+
+#user-card .uc-common-part
+{
+    display: inline-block;
+    float: left;
+    left: -2em;
+    padding: 1em 0 1.5em 2em;
+    position: relative;
+    top: -1em;
+    width: 60%;
+}
+
+.user-card-menu
+{
+  margin-top: 0em;
+}
+
+
+#user-card .uc-title
+{
+  position: relative;
+  top: 0em;
+}
+
+div#user-card .uc-title td
+, .user-card td
+{
+  padding-right:3em;
+}
+
+#user-card .uc-online
+{
+  font-style: normal;
+  font-weight:bold;
+  vertical-align:bottom;
+  padding-top:1em;
+ 
+}
+
+#user-card .uc-offline 
+{
+  font-weight:bold;
+  font-style: normal;
+  vertical-align:bottom;
+  padding-top:1em;
+}
+
+#user-card .uc-title-date
+, .user-card-name .uc-title-date
+, #user-card .uc-user-date  
+{
+  font-size:1em !important;
+  font-weight:bold;
+  vertical-align:bottom;
+  font-style:normal;
+  vertical-align:bottom;
+}
+
+div#user-card .uc-title-name
+, .user-card-name .uc-title-name
+, #user-card .uc-user-name
+{
+  margin:0 !important;
+  font-size:2em !important;
+  font-style:normal;
+  text-transform:capitalize;
+  padding-bottom:0em !important;
+  vertical-align:bottom;
+  padding-right:2em;
+  width:auto;
+  max-height:45%;
+}
+
+#user-card .uc-stat
+{
+    float: left;
+    margin-top: 1em;
+    max-width: 25em;
+    position: relative;
+    width: 30%;
+}
+
+#user-card .uc-feedbacks
+{
+  float: left;
+  margin-top: 2.5em;
+  width: 70%;
+  clear:both;
+}
+
+#user-card .uc-stat h2
+, .user-card-menu .uc-stat h2
+{
+  margin:0em 0 0em 0;
+}
+
+#user-card .uc-title-note
+{
+  padding-right:3em;
+  white-space:nowrap;
+  overflow:hidden;
+  padding-top:0.3em;
+  padding-left:0.1em;
+  font-size:0.9em !important;
+}
+
+#user-card .uc-stat-buying
+, .user-card-menu .uc-stat-buying
+{
+   float: left;
+    left: -1.4em;
+    margin-bottom: 3em;
+    margin-right: 3em;
+    min-width: 20em;
+    position: relative;
+    top: 1.5em;
+    width: 35%;
+}
+
+#user-card .uc-stat-selling
+, .user-card-menu .uc-stat-selling
+{
+  float: left;
+    left: -1.4em;
+    margin-top: 1.5em;
+    min-width: 20em;
+    position: relative;
+    width: 35%;
+}
+
+#user-card .uc-stat-selling dt span
+, #user-card .uc-stat-buying dt span
+, .user-card-menu .uc-stat dt span
+{
+  /*margin:0 1em 0 0.5em;*/
+  /*border-bottom:dotted 1px;*/
+  font-size:1em !important;
+  font-weight:bold;
+}
+
+#user-card .uc-stat-selling td
+, #user-card .uc-stat-buying td
+, .user-card-menu .uc-stat td
+, #user-card .uc-stat td
+{
+  padding:0.5em 0.5em;
+}
+
+#user-card .uc-stat dl dt
+{
+  margin:0.5em;
+}
+
+#user-card .uc-stat dl dt span
+{
+  border-bottom:dotted 1px;
+}
+
+
+#user-card .uc-stat dl.uc-selling
+{
+  margin-top:1.5em;
+}
+
+#user-card .uc-stat table
+{
+  width:100%;
+}
+
+#user-card .uc-stat-selling dd
+, #user-card .uc-stat-buying dd
+, .user-card-menu .uc-stat dd
+{
+  padding-top:0.5em;
+  padding-left:0em;
+}
+
+#user-card .uc-stat-buying table
+, #user-card .uc-stat-selling table
+, .user-card-menu .uc-stat table
+{
+  width:100%;
+}
+
+#user-card .uc-feedbacks dl
+{
+  clear: both;
+    float: left;
+    left: 0em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+#user-card .uc-feedbacks dl dd
+{
+  margin-left:0em;
+}
+
+#user-card .uc-feedbacks-user
+, #user-card .uc-feedbacks-empty
+{
+   padding: 0.5em 2em 0 0;
+    position: relative;
+    width: 30%;
+}
+
+#user-card .uc-feedbacks-empty
+{
+  margin-left:0em;
+}
+
+
+#user-card .uc-feedbacks-date
+{
+  font-size:0.9em !important;
+  text-align:left;
+  padding:0.3em 0em 0em 0em;
+}
+
+#user-card .round-corner .rc-title
+{
+  font-size:1.1em !important;
+}
+
+#user-card .uc-feedbacks-comment
+{
+  white-space:normal;
+  overflow:hidden;
+  margin:0.5em 0 0em;
+  line-height:1.4em;
+  padding-left:0.5em;
+}
+
+#user-card .uc-feedbacks ul
+{
+  list-style:none outside;
+  margin-left:0em;
+  margin-top:1em;
+}
+
+#user-card .uc-feedbacks-user ins
+{
+   background: url("images/pictograms-min.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 16px;
+    left: -3em;
+    position: absolute;
+    top: 0.2em;
+    width: 16px;
+}
+
+#user-card .uc-feedbacks-negative
+, #user-card .uc-feedbacks-positive
+, #user-card .uc-feedbacks-neutral
+, #user-card .uc-feedbacks dl
+{
+  width:100%;
+}
+
+#user-card .uc-feedback-positive ins
+{
+  background-position:0 -105px;
+}
+
+
+#user-card .uc-feedback-negative ins
+{
+  background-position:0 -65px;
+}
+
+#user-card .uc-feedback-neutral ins
+{
+  background-position:0 -85px;
+}
+
+
+
+
+#user-card .uc-feedbacks-comment
+{
+  width:70%;
+}
+
+
+#user-card .uc-conversation
+{
+ 
+    float: left;
+    margin-top: 2.5em;
+    width:70%;
+}
+
+#user-card .uc-conversation dt span
+, #user-card .uc-feedbacks dt span
+{
+  font-size:1.6em !important;
+  font-weight:normal !important;
+  line-height:1.4em !important;
+}
+
+#user-card .uc-dialog
+{
+  margin:0em 0 1em 0;
+  float:left;
+}
+
+#user-card .uc-message-new
+{
+  width:100%;
+}
+
+
+#user-card .uc-message-new dd
+{
+  margin-top:0.5em;
+}
+
+#user-card .uc-message-new textarea
+{
+  margin-top:1em;
+  width:100%;
+}
+
+#user-card .uc-message-send
+{
+  margin-top:1.5em;
+  text-align:right;
+}
+
+#user-card .uc-dialog-entry-date
+{
+   font-size:0.9em !important;
+   padding:0 !important;
+}

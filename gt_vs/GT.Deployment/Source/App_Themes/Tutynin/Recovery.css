@@ -1,0 +1,30 @@
+﻿.recoverytitle
+{
+    text-align : center;
+    font-size : large;
+    padding : 5px 10px 10px 10px;
+}
+
+.recoverylabel
+{
+    text-align : left;
+    padding : 3px 5px 3px 12px;
+    
+}
+
+.recoveryinstructions
+{
+    text-align : left;
+    padding: 5px 0 10px 12px;
+}
+
+.recoverybutton
+{
+    text-align : left;
+    margin : 5px 0px 0px 0px;
+}
+
+.recoverytextbox
+{
+    text-align : left;
+}

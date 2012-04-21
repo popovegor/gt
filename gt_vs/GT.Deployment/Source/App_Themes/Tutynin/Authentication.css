@@ -1,0 +1,258 @@
+div#signIn.page div#headerSignIn
+{
+}
+
+div#signIn.page div#alternativeHeaderSignIn
+{
+    display : none;
+}
+
+div#signIn.page div#login div.label
+{
+  margin-top: 1em;
+  font-weight:bold;
+}
+
+div#signIn.page div#login div.textbox
+{
+  margin-top: 0.5em;
+}
+
+
+div#signIn.page div#login div.textbox input[type="text"], div#signIn.page div#login div.textbox input[type="password"]
+{
+  width:200px;
+}
+
+div#signIn.page div#login div#remember
+{
+  margin-top: 0.6em;
+}
+
+div#signIn.page div#login div#remember p input[type="checkbox"]
+{
+  margin-right: 0.5em;
+}
+
+div#signIn.page div#login div#btn
+{
+  margin-top: 0.5em;
+  margin-right: 1em;
+  float: left;
+}
+
+div#signIn.page div#login div#err
+{
+  margin-top: 1em;
+}
+
+div#signIn.page div#login div#err span
+{
+  color: red;
+}
+
+div#signIn.header div#alternativeHeaderSignIn
+{
+  font-size: smaller;
+  margin-bottom: 0.5em;
+ 
+}
+
+div#signIn.header div#headerSignIn
+{
+    display : none;
+}
+
+div#signIn.header a
+{
+    color : #cb6b04;
+}
+
+div#signIn.header a:hover
+{
+    color : #fc8302;
+}
+
+div#signIn.header div#login
+{
+  width: 255px;
+  overflow: visible;
+}
+
+div#signIn.header div#login div.label
+{
+  color: White;
+  float: left;
+  font-size: smaller;
+  width: 140px;
+  height: 20px;
+}
+
+div#signIn.header div#login div.textbox
+{
+  height: 20px;
+  float: left;
+  width: 100px;
+}
+
+div#signIn.header div#login div.textbox input[type="text"]
+{
+  font-size: smaller;
+  width: 108.5px;
+  height: 9px;
+}
+
+div#signIn.header div#login div.textbox input[type="password"]
+{
+  font-size: smaller;
+  width: 110px;
+  height: 10px;
+}
+
+div#signIn.header div#login div.textbox span.requiredFieldAsterisk
+{
+  visibility: hidden;
+}
+
+div#signIn.header div#login div#remember
+{
+  text-align: right;
+  float: left;
+  font-size: smaller;
+  margin-top: 0.1em;
+  width: 120px;
+  height: 12px;
+}
+
+div#signIn.header div#login div#remember p input[type="checkbox"]
+{
+  margin-right: 0.25em;
+}
+
+div#signIn.header div#login div#remember p label
+{
+  color: White;
+}
+
+div#signIn.header div#login div#btn
+{
+  width: 130px;
+  float: left;
+  height: 12px;
+}
+
+div#signIn.header div#login div#btn input[type="submit"]
+{
+  font-size: smaller;
+}
+
+div#signIn.header div#login div#err
+{
+  margin-top: 0.15em;
+  font-size: smaller;
+  float: left;
+  width: 260px;
+  overflow: visible;
+}
+
+div#signIn.header div#login div#err span
+{
+  color: red;
+}
+
+div#signIn.header div#signOut
+{
+  text-align: right;
+  margin-top: 8em;
+  font-size: smaller;
+  width: 100%;
+}
+
+div#signIn.header div#signOut p
+{
+  color: #ffffff;
+}
+
+/*div#signIn.header a
+{
+  color: #ffffff;
+}
+
+div#signIn.header a:hover
+{
+  color: #cb4f00;
+}*/
+
+
+
+
+/*
+div#login dl
+{
+	margin-bottom:1em;
+}
+
+div#login p input[type="checkbox"]
+{
+	margin-right:0.5em;	
+}
+
+p#signUp
+{
+	margin-top:1em;
+}
+*/
+div#confirmation
+{
+  width: 60em;
+}
+
+div#confirmation dl dt
+{
+  white-space: normal !important;
+  margin-bottom: 0.5em;
+}
+
+div#confirmation div#acceptment
+{
+    text-align : justify;
+}
+
+/*
+div#signIn table, div#signIn td, div#signIn tr
+{
+	border: 0 !important;
+	padding:0;
+}
+
+div#signUp table, div#signUp tr, div#signUp td
+{
+	border-style:none !important;
+}
+*/
+div#createUser
+{
+}
+
+/*div#createUser dl dt
+{
+	margin-bottom:0.5em;
+	margin-top:0.5em;	
+}*/
+
+/*
+div.page div#login.header dl
+{
+  float:left;
+  margin:0 1em 0 0 !important;
+}
+*/
+
+div#signUp div.actions
+{
+  width: 100%;
+  float: left;
+  text-align:left;
+  margin-top: 0.5em; /*border-top:solid 1px #44473d;   padding-top:0.5em;*/
+}
+

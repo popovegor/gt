@@ -1,0 +1,53 @@
+div#topUp, div#drawOut
+{
+	margin-top:1em;	
+}
+
+div#topUp dl, div#drawOut dl
+{
+    margin-top : 1em;
+}
+
+div#topUp h2, div#drawOut h2
+{
+   font-weight: normal;
+}
+
+table.transfers
+{	
+}
+
+table.transfers tr th.from,  table.transfers tr th.to
+{
+	width:150px;
+}
+
+table.transfers tr th.amount
+{
+  width:50px;
+}
+table.transfers tr td.amount
+{
+  text-align:left;
+}
+
+table.transfers tr th.status
+{
+  width:100px;
+}
+
+table.transfers tr td.status span
+{
+  font-weight:bold;
+}
+
+table.transfers tr td.status div.date
+{
+  margin-top:0.2em;
+}
+
+
+table.transfers tr th.date
+{
+  width:100px;
+}

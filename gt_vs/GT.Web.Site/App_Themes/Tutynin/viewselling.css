@@ -1,0 +1,91 @@
+﻿div#sellingviewer
+{
+}
+
+div#sellingviewer .detailView
+{
+}
+
+div#sellingviewer .detailView td
+{
+  padding: 0.7em 0;
+}
+
+div#sellingviewer div#top
+{
+   width:100%;
+}
+
+div#sellingviewer div#actions
+{
+    float : left;
+    clear : left;
+    min-width : 40em;
+    width:60%;
+    position:relative;
+    left:-2em;
+    padding:1em 2em 1em 2em;
+    text-align:left;
+}
+
+div#sellingviewer div#potential
+{
+    float : left;
+    clear : left;
+   min-width : 40em;
+    width:60%;
+    position:relative;
+    left:-2em;
+    padding:1em 2em 0 2em;
+    margin-top:1em;
+}
+
+div#sellingviewer div#potential div.panel
+{
+    margin-top : 0.5em;
+    margin-bottom : 0.5em;
+}
+
+div#sellingviewer div#potential div#text
+{
+  font-size:1.1em;    
+  font-style:italic;
+  line-height:1.4em;
+  font-weight:normal;
+}
+
+div#sellingviewer .description
+{
+  margin: 2em 0 1em 0em;
+  float:left;
+  clear:both;
+  width: 60%;
+}
+
+div#sellingviewer .description-title
+, div#viewbuying .description-title
+{
+  font-size:1.1em;
+  font-weight:bold;
+}
+
+div#sellingviewer .description .text
+{
+  padding: 1em 0 0 0;
+}
+
+div#sellingviewer .description .image
+{
+  margin-top : 2em;
+}
+
+div#sellingviewer pre
+{
+  font-size:12px;
+  font-family:Verdana,sans-serif;
+  color:#5d4339;
+  line-height:1.4em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}

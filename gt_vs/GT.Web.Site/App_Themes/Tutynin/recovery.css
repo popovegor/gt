@@ -1,0 +1,49 @@
+﻿#recovery
+{
+  /*width:400px;
+  margin:0 auto;*/
+}
+
+#recovery .recoverytitle
+{
+    text-align : center;
+    font-size : large;
+    padding : 0.5em 0;
+}
+
+#recovery .recoverylabel
+{
+    text-align : left;
+    padding : 0.5em 0.5em 0.5em 0;
+    font-size:1.1em;
+    font-weight:bold;
+}
+
+#recovery .recoveryinstructions
+{
+    text-align : left;
+    padding: 0.5em 0;
+}
+
+#recovery .recovery-validator
+{
+  
+}
+
+#recovery .recovery-failure
+{
+  text-align:left;
+  padding:0.5em 0;
+}
+
+#recovery .recoverybutton
+{
+    text-align : left;
+    margin : 0.5em 0;
+    float:left;
+}
+
+#recovery .recoverytextbox
+{
+    text-align : left;
+}

@@ -1,0 +1,2190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Msg_OfferConfirmedTitle" xml:space="preserve">
+    <value>Offer has been confirmed</value>
+  </data>
+  <data name="Offers_EditSelling_ImageValidationMessage" xml:space="preserve">
+    <value>Only the following files can be uploaded: {0}.</value>
+  </data>
+  <data name="MasterPages_Standard_GameIsMoney" xml:space="preserve">
+    <value>Game is Money</value>
+  </data>
+  <data name="Msg_OfferComfirmedBody" xml:space="preserve">
+    <value>{0} has confirmed your offer {1}</value>
+  </data>
+  <data name="WebServices_Ajax_BuyingService_UpsertBuyingFailure" xml:space="preserve">
+    <value>Error. Please ensure that all fields are filled correctly and try again.</value>
+  </data>
+  <data name="PersonalAccount_Office_ChangeEmail" xml:space="preserve">
+    <value>Change e-mail</value>
+  </data>
+  <data name="SignInFailure" xml:space="preserve">
+    <value>Your login attempt was not successful. Please try again.</value>
+  </data>
+  <data name="PersonalAccount_Office_ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="Controls_SignIn" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="Messages_Viewer_All" xml:space="preserve">
+    <value>[All]</value>
+  </data>
+  <data name="SelectGame" xml:space="preserve">
+    <value>[Select a game]</value>
+  </data>
+  <data name="SelectServer" xml:space="preserve">
+    <value>[Select a server]</value>
+  </data>
+  <data name="LoadingGameList" xml:space="preserve">
+    <value>[Loading a game list...]</value>
+  </data>
+  <data name="LoadingServerList" xml:space="preserve">
+    <value>[Loading a server list...]</value>
+  </data>
+  <data name="DeliveryTemplate" xml:space="preserve">
+    <value>{0} days</value>
+  </data>
+  <data name="SignUpInvalidEmail" xml:space="preserve">
+    <value>This 'E-mail' is invalid.</value>
+  </data>
+  <data name="PasswordRecoveryMailSubject" xml:space="preserve">
+    <value>GameIsMoney.Ru Password Recovery</value>
+  </data>
+  <data name="RegistrationEmailSubject" xml:space="preserve">
+    <value>GameIsMoney.Com Registration</value>
+  </data>
+  <data name="ChangeEmailEmailSubject" xml:space="preserve">
+    <value>GameIsMoney.Ru Email Changing</value>
+  </data>
+  <data name="PersonalAccount_Profile_ICQ" xml:space="preserve">
+    <value>ICQ</value>
+  </data>
+  <data name="PersonalAccount_Profile_Skype" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="AddMessageNoRecipient" xml:space="preserve">
+    <value>There is no a passed recipient '{0}'.</value>
+  </data>
+  <data name="SignUpDuplicateEmail" xml:space="preserve">
+    <value>This 'E-mail' is already used.</value>
+  </data>
+  <data name="PersonalAccount_Profile_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="PersonalAccount_Office_DealsActive" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="PersonalAccount_Office_Balance" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="PersonalAccount_Office_BalanceBlocked" xml:space="preserve">
+    <value>blocked</value>
+  </data>
+  <data name="DrawOutDescription" xml:space="preserve">
+    <value>Now, you can draw out your money only at webmoney ruble purse. Other payment systems will be soon accessible.</value>
+  </data>
+  <data name="TopUpDescription" xml:space="preserve">
+    <value>Now, you can pay only in webmoney.  Other payment systems will be soon accessible.</value>
+  </data>
+  <data name="RecoveryQuestion" xml:space="preserve">
+    <value>Your Question:</value>
+  </data>
+  <data name="RecoveryAnswer" xml:space="preserve">
+    <value>Your Answer:</value>
+  </data>
+  <data name="PersonalAccount_Profile_OnSaveSuccess" xml:space="preserve">
+    <value>Your profile has been saved successfully.</value>
+  </data>
+  <data name="ChangeEmailOldMail" xml:space="preserve">
+    <value>Your previous E-mail:</value>
+  </data>
+  <data name="PersonalAccount_Office_LastMessagesForYou" xml:space="preserve">
+    <value>10 last messages for you</value>
+  </data>
+  <data name="SignUpCaptchText" xml:space="preserve">
+    <value>Enter the number shown in the image</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Correct</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>Recovery</value>
+  </data>
+  <data name="RecoveryUserNameTitle" xml:space="preserve">
+    <value>Password Recovery</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="PersonalAccount_Office_DealsTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="PersonalAccount_Office_BalanceTotal" xml:space="preserve">
+    <value>total</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="TotalBuys" xml:space="preserve">
+    <value>Total buys:</value>
+  </data>
+  <data name="TotalSells" xml:space="preserve">
+    <value>Total sells:</value>
+  </data>
+  <data name="SignedIn" xml:space="preserve">
+    <value>You are already signed in as </value>
+  </data>
+  <data name="OfferPostSelect" xml:space="preserve">
+    <value>You have chosen the buyer. Please, wait until buyer will pay.</value>
+  </data>
+  <data name="PasswordRecoveryMailBody" xml:space="preserve">
+    <value>You have been requested your login information. </value>
+  </data>
+  <data name="NoMyBuyOffers" xml:space="preserve">
+    <value>You don't participate in any offers as a buyer.</value>
+  </data>
+  <data name="NoMySellOffers" xml:space="preserve">
+    <value>You don't participate in any offers as a seller.</value>
+  </data>
+  <data name="OfferPostDecline" xml:space="preserve">
+    <value>You have refused the user.</value>
+  </data>
+  <data name="OfferPostRefuse" xml:space="preserve">
+    <value>You have refused the offer.</value>
+  </data>
+  <data name="RespondDemandMsg" xml:space="preserve">
+    <value>You have responded to the demand.</value>
+  </data>
+  <data name="OfferPostAccept" xml:space="preserve">
+    <value>You participate in this offer. You can continue if seller choose you.</value>
+  </data>
+  <data name="DemandPostAccept" xml:space="preserve">
+    <value>You have chosen the offer. Please, go to Selling Manager to continue.</value>
+  </data>
+  <data name="OfferCancelConfirmation" xml:space="preserve">
+    <value>Are you sure you want to cancel this offer?</value>
+  </data>
+  <data name="OfferSelectConfirmation" xml:space="preserve">
+    <value>Are you sure you want to select this buyer?</value>
+  </data>
+  <data name="DrawOutConfirmation" xml:space="preserve">
+    <value>Are you sure you want to draw out {0} to R{1}?</value>
+  </data>
+  <data name="WindowCloseConfirmation" xml:space="preserve">
+    <value>Are you sure you want to close the window?</value>
+  </data>
+  <data name="OfferPayConfirmation" xml:space="preserve">
+    <value>Are you sure you want to pay this offer?</value>
+  </data>
+  <data name="OfferDeclineConfirmation" xml:space="preserve">
+    <value>Are you sure you want to refuse this user?</value>
+  </data>
+  <data name="DemandDeclineConfirmation" xml:space="preserve">
+    <value>Are you sure you want to refuse this offer?</value>
+  </data>
+  <data name="OfferRefuseConfirmation" xml:space="preserve">
+    <value>Are you sure you want to refuse this offer?</value>
+  </data>
+  <data name="OfferConflictConfirmation" xml:space="preserve">
+    <value>Are you sure you want to challenge this offer?</value>
+  </data>
+  <data name="OfferSubmitConfirmation" xml:space="preserve">
+    <value>Are you sure you want to confirm that goods are got?</value>
+  </data>
+  <data name="DemandAcceptConfirmation" xml:space="preserve">
+    <value>Are you sure you want to paticipate this offer?</value>
+  </data>
+  <data name="Offers_EditSelling_DeleteImageConfirmation" xml:space="preserve">
+    <value>Are you sure you want to delete the image permanently?</value>
+  </data>
+  <data name="OfferDeleteConfirmation" xml:space="preserve">
+    <value>Are you sure you want to delete the offer?</value>
+  </data>
+  <data name="DeleteMessageConfirmation" xml:space="preserve">
+    <value>Are you sure you want to delete the message?</value>
+  </data>
+  <data name="DemandDeleteConfirmation" xml:space="preserve">
+    <value>Are you sure you want to delete this demand?</value>
+  </data>
+  <data name="OfferAcceptConfirmation" xml:space="preserve">
+    <value>Are you sure you want to participate in this offer?</value>
+  </data>
+  <data name="ChooseExisngMsg" xml:space="preserve">
+    <value>Choose an existing offer or create the new.</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="PersonalAccount_Office_DrawOut" xml:space="preserve">
+    <value>Draw out</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="UpdatedOn" xml:space="preserve">
+    <value>Updated on</value>
+  </data>
+  <data name="PersonalAccount_Office_CreatedAt" xml:space="preserve">
+    <value>Created at</value>
+  </data>
+  <data name="Controls_UserCorrespondence_CreatedAt" xml:space="preserve">
+    <value>Created at</value>
+  </data>
+  <data name="CreatedOn" xml:space="preserve">
+    <value>Created on</value>
+  </data>
+  <data name="Controls_UserFeedbacks_CreatedAt" xml:space="preserve">
+    <value>Created at</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_CreatedAt" xml:space="preserve">
+    <value>Created at</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyTransfers" xml:space="preserve">
+    <value>Money transfers</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>day(s)</value>
+  </data>
+  <data name="PersonalAccount_Office_Money" xml:space="preserve">
+    <value>Money</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_ForUser" xml:space="preserve">
+    <value>For User</value>
+  </data>
+  <data name="ChangeEmailTemplateBody" xml:space="preserve">
+    <value>To change your e-mail, please, go to the </value>
+  </data>
+  <data name="Messages_AddMessage_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="PersonalAccount_Office_AddNewDemand" xml:space="preserve">
+    <value>Add new demand</value>
+  </data>
+  <data name="PersonalAccount_Office_AddOffer" xml:space="preserve">
+    <value>Add new offer</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome to Game Is Money - the largest game trading service. Here You can buy or sell goods from your favorite games.</value>
+  </data>
+  <data name="SignInWelcome" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>Delivery</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyAvailable" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="PersonalAccount_Office_BalanceAvailable" xml:space="preserve">
+    <value>available</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_ForOthers" xml:space="preserve">
+    <value>Left for others</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyBlocked" xml:space="preserve">
+    <value>Blocked</value>
+  </data>
+  <data name="SignInForgot" xml:space="preserve">
+    <value>Forgot password?</value>
+  </data>
+  <data name="Forgot" xml:space="preserve">
+    <value>Forgot</value>
+  </data>
+  <data name="BillingSystem_TransferViewer_ComplitionDate" xml:space="preserve">
+    <value>Completed at</value>
+  </data>
+  <data name="PersonalAccount_Office_DealsFinish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Messages_AddMessage_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>Pay</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="Registred" xml:space="preserve">
+    <value>Registred:</value>
+  </data>
+  <data name="BuyingOfferNotFound" xml:space="preserve">
+    <value>Demand is not found.</value>
+  </data>
+  <data name="NoBuyingOffersFound" xml:space="preserve">
+    <value>No demands found. Change the filter options and try again.</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="Game" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="GameNotSelected" xml:space="preserve">
+    <value>The game is not selected.</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="WebServices_Ajax_SellingService_DeleteImageSuccess" xml:space="preserve">
+    <value>The image has been deleted successfully.</value>
+  </data>
+  <data name="Offers_EditSelling_Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="DetailsInfo_OfferInfo_Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="SignInSignIn" xml:space="preserve">
+    <value>or sign in below.</value>
+  </data>
+  <data name="PersonalAccount_Profile_FirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="SignUpInvalidUserName" xml:space="preserve">
+    <value>This 'UserName' is invalid.</value>
+  </data>
+  <data name="SignUpDuplicateUserName" xml:space="preserve">
+    <value>This 'UserName' is already used.</value>
+  </data>
+  <data name="SignUpUserName" xml:space="preserve">
+    <value>User name:</value>
+  </data>
+  <data name="BuyingOfferInfoTitle" xml:space="preserve">
+    <value>Deman Information</value>
+  </data>
+  <data name="UserInfoTitle" xml:space="preserve">
+    <value>User Information</value>
+  </data>
+  <data name="UserInfoUnavailable" xml:space="preserve">
+    <value>User info is unavailable.</value>
+  </data>
+  <data name="OfferInfoTitle" xml:space="preserve">
+    <value>Offer Information</value>
+  </data>
+  <data name="OfferInfoTitle1" xml:space="preserve">
+    <value>Offer Information</value>
+  </data>
+  <data name="GameServerInfoTitle" xml:space="preserve">
+    <value>Game Server Information</value>
+  </data>
+  <data name="GameServerInfoUnavailable" xml:space="preserve">
+    <value>Game server info is unavailable.</value>
+  </data>
+  <data name="GameInfoTitle" xml:space="preserve">
+    <value>Game Information</value>
+  </data>
+  <data name="GameInfoUnavailable" xml:space="preserve">
+    <value>Game info is unavailable.</value>
+  </data>
+  <data name="SearchInBuying" xml:space="preserve">
+    <value>Find demands</value>
+  </data>
+  <data name="SearchInSelling" xml:space="preserve">
+    <value>Find offers</value>
+  </data>
+  <data name="Expired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="Office" xml:space="preserve">
+    <value>Office</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_AsBuyer" xml:space="preserve">
+    <value>As a buyer</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_AsSeller" xml:space="preserve">
+    <value>As a seller</value>
+  </data>
+  <data name="DrawOutTitle" xml:space="preserve">
+    <value>How much to draw out?</value>
+  </data>
+  <data name="Chinise" xml:space="preserve">
+    <value>Chinise</value>
+  </data>
+  <data name="Key" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="UserRating_LeaveFeedback_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="PersonalAccount_Office_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Controls_UserFeedbacks_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="PersonalAccount_Office_DealsConflicted" xml:space="preserve">
+    <value>Conflicted</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Copyright © 2011 GAME IS MONEY. All rights reserved.</value>
+  </data>
+  <data name="Purse" xml:space="preserve">
+    <value>Purse</value>
+  </data>
+  <data name="IBuy" xml:space="preserve">
+    <value>I'm buying</value>
+  </data>
+  <data name="Default_Buy" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="RecoveryComplete" xml:space="preserve">
+    <value>Your login and password have been sent to your e-mail address.</value>
+  </data>
+  <data name="SignUpSending" xml:space="preserve">
+    <value>Your login and password have been sent to your e-mail address. Please, confirm it.</value>
+  </data>
+  <data name="TopBuyers" xml:space="preserve">
+    <value>Top buyers</value>
+  </data>
+  <data name="TopSellers" xml:space="preserve">
+    <value>Top sellers</value>
+  </data>
+  <data name="BestSeller" xml:space="preserve">
+    <value>Best seller:</value>
+  </data>
+  <data name="BestBuyer" xml:space="preserve">
+    <value>Best buyer:</value>
+  </data>
+  <data name="PersonalAccount_Profile_MobilePhone" xml:space="preserve">
+    <value>Mobile phone</value>
+  </data>
+  <data name="PersonalAccount_Office_MyDemands" xml:space="preserve">
+    <value>My demands</value>
+  </data>
+  <data name="IWantBuy" xml:space="preserve">
+    <value>I want to buy</value>
+  </data>
+  <data name="PersonalAccount_Office_MyDeals" xml:space="preserve">
+    <value>My deals</value>
+  </data>
+  <data name="PersonalAccount_Office_MyProfile" xml:space="preserve">
+    <value>My profile</value>
+  </data>
+  <data name="TopUpTitle" xml:space="preserve">
+    <value>How much to top up?</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="GameName" xml:space="preserve">
+    <value>Game name:</value>
+  </data>
+  <data name="Controls_UserFeedbacks_DealTitle" xml:space="preserve">
+    <value>Deal's title</value>
+  </data>
+  <data name="PersonalAccount_Office_DealTitle" xml:space="preserve">
+    <value>Deal's title</value>
+  </data>
+  <data name="GameServerName" xml:space="preserve">
+    <value>Game server name:</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Incorrect</value>
+  </data>
+  <data name="PaymentAmountError" xml:space="preserve">
+    <value>Amount is incorrect. It must be more {0}.</value>
+  </data>
+  <data name="RecoveyUserNameError" xml:space="preserve">
+    <value>Wrong UserName!</value>
+  </data>
+  <data name="SignUpCaptchaError" xml:space="preserve">
+    <value>Wrong number!</value>
+  </data>
+  <data name="RecoveryQuestionInvalid" xml:space="preserve">
+    <value>Your Answer is wrong!</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingNeutral" xml:space="preserve">
+    <value>Neutral feedbacks</value>
+  </data>
+  <data name="PasswordInvalid" xml:space="preserve">
+    <value>Password is invalid.</value>
+  </data>
+  <data name="NoUnreadMessages" xml:space="preserve">
+    <value>There are no unread messages.</value>
+  </data>
+  <data name="PersonalAccount_Office_NoLastFeedbacks" xml:space="preserve">
+    <value>No feedbacks</value>
+  </data>
+  <data name="Controls_UserFeedbacks_NoFeedbacks" xml:space="preserve">
+    <value>No feedbacks.</value>
+  </data>
+  <data name="NoFeedbacks" xml:space="preserve">
+    <value>No feedbacks.</value>
+  </data>
+  <data name="PersonalAccount_Office_NoLastMessages" xml:space="preserve">
+    <value>No messages</value>
+  </data>
+  <data name="Controls_UserCorrespondence_NoCorrespondence" xml:space="preserve">
+    <value>No messages or you are not signed in.</value>
+  </data>
+  <data name="PersonalAccount_Profile_Nickname" xml:space="preserve">
+    <value>Nickname</value>
+  </data>
+  <data name="ConfirmationDefault" xml:space="preserve">
+    <value>Not confirmed!</value>
+  </data>
+  <data name="NewDemand" xml:space="preserve">
+    <value>New demand</value>
+  </data>
+  <data name="NewOffer" xml:space="preserve">
+    <value>New offer</value>
+  </data>
+  <data name="DetailsInfo_UserInfo_NewMessage" xml:space="preserve">
+    <value>New message</value>
+  </data>
+  <data name="ChangeEmailDupError" xml:space="preserve">
+    <value>New Email is same.</value>
+  </data>
+  <data name="ChangeEmailNewMail" xml:space="preserve">
+    <value>New E-mail:</value>
+  </data>
+  <data name="ChangePasswordNewPswInvalid" xml:space="preserve">
+    <value>'New password' is invalid.</value>
+  </data>
+  <data name="ChangePasswordDupError" xml:space="preserve">
+    <value>'New password' is same.</value>
+  </data>
+  <data name="ChangePasswordNewPsw" xml:space="preserve">
+    <value>New password:</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpdateDemandTitle" xml:space="preserve">
+    <value>Update Demand</value>
+  </data>
+  <data name="UpdateOfferTitle" xml:space="preserve">
+    <value>Update Offer</value>
+  </data>
+  <data name="CurrentDealBalance" xml:space="preserve">
+    <value>Balance of current deals</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="OfferPostPay" xml:space="preserve">
+    <value>Payment was successful. Please, contact with seller through service's message system and discuss the goods transfer. Please, use the secret key from your deal in process of transfer in the game, give it to seller in the game, seller will use it for your identification. Make screenshots of transfer process in the game. Please, click "Goods gotten" button after you will receive goods.</value>
+  </data>
+  <data name="PersonalAccount_Office_Leave" xml:space="preserve">
+    <value>Leave a feedback</value>
+  </data>
+  <data name="PersonalAccount_Office_LeaveFeedback" xml:space="preserve">
+    <value>Leave a feedback</value>
+  </data>
+  <data name="DeliveryTemplate2" xml:space="preserve">
+    <value>Remains {0} days</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="Messages_Viewer_From" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="Controls_UserFeedbacks_FromBuyer" xml:space="preserve">
+    <value>From buyer</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_FromUser" xml:space="preserve">
+    <value>From User</value>
+  </data>
+  <data name="PersonalAccount_Office_FromUser" xml:space="preserve">
+    <value>From user</value>
+  </data>
+  <data name="Controls_UserFeedbacks_FromSeller" xml:space="preserve">
+    <value>From seller</value>
+  </data>
+  <data name="SignUpInvalidAnswer" xml:space="preserve">
+    <value>This 'Answer' is invalid.</value>
+  </data>
+  <data name="SignUpSecurityAnswer" xml:space="preserve">
+    <value>Security answer:</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Reply" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="AddFeedbackSuccess" xml:space="preserve">
+    <value>The feedback has been added successfully.</value>
+  </data>
+  <data name="PersonalAccount_Office_Feedbacks" xml:space="preserve">
+    <value>Feedbacks</value>
+  </data>
+  <data name="Controls_UserFeedbacks_AsBuyer" xml:space="preserve">
+    <value>Feedbacks as a buyer</value>
+  </data>
+  <data name="Controls_UserFeedbacks_AsSeller" xml:space="preserve">
+    <value>Feedbacks as a seller</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Refuse</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Messages_MessageViewer_Sender" xml:space="preserve">
+    <value>Sender</value>
+  </data>
+  <data name="PersonalAccount_Office_Sender" xml:space="preserve">
+    <value>Sender</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Sender" xml:space="preserve">
+    <value>Sender</value>
+  </data>
+  <data name="Controls_UserCorrespondence_Sender" xml:space="preserve">
+    <value>Sender</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingNegative" xml:space="preserve">
+    <value>Negative feedbacks</value>
+  </data>
+  <data name="OfficialGameSite" xml:space="preserve">
+    <value>Official game site:</value>
+  </data>
+  <data name="AddFeedbackFailure" xml:space="preserve">
+    <value>Error. Please ensure that all fields are filled correctly and try again.</value>
+  </data>
+  <data name="AddOfferFailure" xml:space="preserve">
+    <value>Error Please ensure that all fields are filled correctly and try again.</value>
+  </data>
+  <data name="UpdateOfferFailure" xml:space="preserve">
+    <value>Error. Please ensure that all fields are filled correctly and try again.</value>
+  </data>
+  <data name="PersonalAccount_Profile_OnSaveFialure" xml:space="preserve">
+    <value>Error. Please ensure that the fields are filled correctly and try again.</value>
+  </data>
+  <data name="OldDataError" xml:space="preserve">
+    <value>Error. Information is not actual. Please, refresh the page.</value>
+  </data>
+  <data name="NotEnougtMoney" xml:space="preserve">
+    <value>Error. You have not enough money.</value>
+  </data>
+  <data name="Psw" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="SignUpInvalidPassword" xml:space="preserve">
+    <value>This 'Password' is invalid.</value>
+  </data>
+  <data name="ChangePasswordComplete" xml:space="preserve">
+    <value>Password changed successfully.</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="NoTransfersFound" xml:space="preserve">
+    <value>No transfers. &lt;a href="{0}"&gt;Top up&lt;/a&gt;.</value>
+  </data>
+  <data name="Controls_UserCorrespondence_Correspondence" xml:space="preserve">
+    <value>Correspondence</value>
+  </data>
+  <data name="MasterPages_Standard_Pers" xml:space="preserve">
+    <value>Pers</value>
+  </data>
+  <data name="PaymentSuccessful" xml:space="preserve">
+    <value>Payment was successed.</value>
+  </data>
+  <data name="PaymentFail" xml:space="preserve">
+    <value>Payment was failed.</value>
+  </data>
+  <data name="SignUpConfirm" xml:space="preserve">
+    <value>Confirm password:</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Agreement</value>
+  </data>
+  <data name="ChangeEmailComplete" xml:space="preserve">
+    <value>Confirmation have been sent to your new e-mail address. Please, confirm it.</value>
+  </data>
+  <data name="RecoveryQuestionTitle" xml:space="preserve">
+    <value>Identity Confirmation</value>
+  </data>
+  <data name="TitleEmpty" xml:space="preserve">
+    <value>The 'Title' is empty.</value>
+  </data>
+  <data name="Complain" xml:space="preserve">
+    <value>Complain</value>
+  </data>
+  <data name="RecoveryMail" xml:space="preserve">
+    <value>Please, enter your E-mail:</value>
+  </data>
+  <data name="RecoveryUserNameInstruction" xml:space="preserve">
+    <value>Please, enter your User Name.</value>
+  </data>
+  <data name="RecoveryQuestionInstruction" xml:space="preserve">
+    <value>Please, enter the answer for the following question.</value>
+  </data>
+  <data name="SignUpDescription" xml:space="preserve">
+    <value>Please, fill out the form below. The fields marked with * are mandatory.</value>
+  </data>
+  <data name="OfferPostSubmit" xml:space="preserve">
+    <value>Congratulations! The deal is completed. Please, make the feedback.</value>
+  </data>
+  <data name="Messages_Viewer_Search" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="Default_FastSearchTitle" xml:space="preserve">
+    <value>Search offers to buy or demands to sell</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_ShowBody" xml:space="preserve">
+    <value>Show body</value>
+  </data>
+  <data name="Messages_Viewer_ShowBody" xml:space="preserve">
+    <value>Show body</value>
+  </data>
+  <data name="Buyer" xml:space="preserve">
+    <value>Buyer</value>
+  </data>
+  <data name="Buying" xml:space="preserve">
+    <value>Buying</value>
+  </data>
+  <data name="SignUpErrorEmptyEmail" xml:space="preserve">
+    <value>The 'E-mail' field is empty.</value>
+  </data>
+  <data name="SignUpErrorUserName" xml:space="preserve">
+    <value>The 'User name' field is empty.</value>
+  </data>
+  <data name="UserRating_LeaveFeedback_Comment_Error" xml:space="preserve">
+    <value>The 'Comment' field is empty.</value>
+  </data>
+  <data name="PurseInvalid" xml:space="preserve">
+    <value>The 'Purse' is invalid</value>
+  </data>
+  <data name="PurseEmpty" xml:space="preserve">
+    <value>The 'Purse' field is empty</value>
+  </data>
+  <data name="SignUpErrorEmptyAnswer" xml:space="preserve">
+    <value>The 'Answer' field is empty.</value>
+  </data>
+  <data name="SignUpErrorEmptyPsw" xml:space="preserve">
+    <value>The 'Password' field is empty.</value>
+  </data>
+  <data name="SignUpErrorEmptyConfirm" xml:space="preserve">
+    <value>The 'Confirm password' field is empty.</value>
+  </data>
+  <data name="Messages_AddMessage_RecipientError" xml:space="preserve">
+    <value>The 'Recipient' field is empty.</value>
+  </data>
+  <data name="SignUpErrorEmptyQuestion" xml:space="preserve">
+    <value>The 'Question' field is empty.</value>
+  </data>
+  <data name="BodyEmpty" xml:space="preserve">
+    <value>The 'Body' field is empty</value>
+  </data>
+  <data name="AmountEmpty" xml:space="preserve">
+    <value>The 'Amount' field is empty</value>
+  </data>
+  <data name="SubjectEmpty" xml:space="preserve">
+    <value>The 'Subject' field is empty.</value>
+  </data>
+  <data name="Messages_AddMessage_SubjectError" xml:space="preserve">
+    <value>The 'Subject' field is empty.</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingPositive" xml:space="preserve">
+    <value>Positive feedbacks</value>
+  </data>
+  <data name="Recipient" xml:space="preserve">
+    <value>Recipient</value>
+  </data>
+  <data name="RecipientEmpty" xml:space="preserve">
+    <value>The 'Recipient' field is empty</value>
+  </data>
+  <data name="NoRecipientsFound" xml:space="preserve">
+    <value>no recipients found</value>
+  </data>
+  <data name="Messages_AddMessage_Recipient" xml:space="preserve">
+    <value>Recipient:</value>
+  </data>
+  <data name="UserRating_LeaveFeedback_User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="PersonalAccount_Office_ToUser" xml:space="preserve">
+    <value>To user</value>
+  </data>
+  <data name="PersonalAccount_Office_LeaveFeedback_ToUser" xml:space="preserve">
+    <value>To user</value>
+  </data>
+  <data name="SignUpErrorConfirmPsw" xml:space="preserve">
+    <value>The password doesn't match the confirm password.</value>
+  </data>
+  <data name="TopUpPaymentDescription" xml:space="preserve">
+    <value>Top up GameIsMoney account</value>
+  </data>
+  <data name="PersonalAccount_Office_TopUp" xml:space="preserve">
+    <value>Top up</value>
+  </data>
+  <data name="Messages_MessageViewer_Last" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="LastVisit" xml:space="preserve">
+    <value>Last Visit:</value>
+  </data>
+  <data name="Messages_Viewer_Last" xml:space="preserve">
+    <value>Last:</value>
+  </data>
+  <data name="PersonalAccount_Office_LastFeedbacks" xml:space="preserve">
+    <value>last feedbacks</value>
+  </data>
+  <data name="PersonalAccount_Office_LastFeedbacksForYou" xml:space="preserve">
+    <value>5 last feedbacks for you</value>
+  </data>
+  <data name="PersonalAccount_Office_LastMessages" xml:space="preserve">
+    <value>last messages</value>
+  </data>
+  <data name="PotentialBuyers" xml:space="preserve">
+    <value>Potential buyers</value>
+  </data>
+  <data name="SignUpActTitle" xml:space="preserve">
+    <value>Please, read the confirmation bellow carefully.</value>
+  </data>
+  <data name="AddOfferSuccess" xml:space="preserve">
+    <value>The offer has been added successfully.</value>
+  </data>
+  <data name="OfferNotFound1" xml:space="preserve">
+    <value>Offer is not found.</value>
+  </data>
+  <data name="OfferNotFound" xml:space="preserve">
+    <value>Offer is not found.</value>
+  </data>
+  <data name="UpdateOfferSuccess" xml:space="preserve">
+    <value>The offer has been updated successfully.</value>
+  </data>
+  <data name="NoOffersFound" xml:space="preserve">
+    <value>No offers found. Change the filter options and try again.</value>
+  </data>
+  <data name="SuggestedOffer" xml:space="preserve">
+    <value>Suggested offer</value>
+  </data>
+  <data name="SuggestedOffers" xml:space="preserve">
+    <value>Suggested offers</value>
+  </data>
+  <data name="ToOffer" xml:space="preserve">
+    <value>To offer</value>
+  </data>
+  <data name="Messages_Viewer_Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="BillingSystem_TransferViewer_Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="PersonalAccount_Profile_Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="Validate" xml:space="preserve">
+    <value>Validate</value>
+  </data>
+  <data name="Seller" xml:space="preserve">
+    <value>Seller</value>
+  </data>
+  <data name="Selling" xml:space="preserve">
+    <value>Selling</value>
+  </data>
+  <data name="Default_Sell" xml:space="preserve">
+    <value>Sell</value>
+  </data>
+  <data name="Sell" xml:space="preserve">
+    <value>Sell</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="PersonalAccount_Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="RegistrationInfo" xml:space="preserve">
+    <value>Reistration Info</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="SignUpAct" xml:space="preserve">
+    <value>By enrolling and/or using GameIsMoney service, you agree that you have read and understand this Terms and Conditions and that you fully accept the following rules. GameIsMoney service reserves the right to change these Terms and Conditions without notice, and you are responsible for regularly reviewing these Terms and Conditions.</value>
+  </data>
+  <data name="EditOffer" xml:space="preserve">
+    <value>Edit offer</value>
+  </data>
+  <data name="EditDemand" xml:space="preserve">
+    <value>Edit demand</value>
+  </data>
+  <data name="PersonalAccount_Office_Rating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="Controls_UserFeedbacks_Rating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="UserRating_LeaveFeedback_Rating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_Rating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Rating:</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>RU</value>
+  </data>
+  <data name="NoCorrespondence" xml:space="preserve">
+    <value>There is no correspondence with the specified user.</value>
+  </data>
+  <data name="GameServerSite" xml:space="preserve">
+    <value>Game server site:</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Messages_Viewer_Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="OfferPostCancel" xml:space="preserve">
+    <value>Offer was restarted.</value>
+  </data>
+  <data name="OfferPostConflict" xml:space="preserve">
+    <value>Deal is going into the conflict. Please, contact with administarator.</value>
+  </data>
+  <data name="SignUpInvalidQuestion" xml:space="preserve">
+    <value>This 'Question' is invalid.</value>
+  </data>
+  <data name="SignUpSecurityQuestion" xml:space="preserve">
+    <value>Security question:</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="ServerNotSelected" xml:space="preserve">
+    <value>The server is not selected.</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>Agree</value>
+  </data>
+  <data name="ErrorMain" xml:space="preserve">
+    <value>Sorry, pardner. Please contact the administration of the site to solve this problem.</value>
+  </data>
+  <data name="SellerHasDeclineYouMsg" xml:space="preserve">
+    <value>Sorry. Seller has refused You on this offer.</value>
+  </data>
+  <data name="CreateNewAccount" xml:space="preserve">
+    <value>Create a new account</value>
+  </data>
+  <data name="CreateDemandTitle" xml:space="preserve">
+    <value>Create Demand</value>
+  </data>
+  <data name="CreateOfferTitle" xml:space="preserve">
+    <value>Create Offer</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="CreateForDemand" xml:space="preserve">
+    <value>Create for demand</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Body" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="Controls_UserCorrespondence_Body" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="PersonalAccount_Office_Body" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="AddMessageSuccess" xml:space="preserve">
+    <value>The message has been added successfully.</value>
+  </data>
+  <data name="Messages_AddMessage_BodyError" xml:space="preserve">
+    <value>The 'Body' field is empty.</value>
+  </data>
+  <data name="EmptyMessageObject" xml:space="preserve">
+    <value>The sent message object is empty.</value>
+  </data>
+  <data name="Messages_AddMessage_Body" xml:space="preserve">
+    <value>Body:</value>
+  </data>
+  <data name="PersonalAccount_Office_Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="NoMessagesFound" xml:space="preserve">
+    <value>No messages found. Change the filter options and try again.</value>
+  </data>
+  <data name="NoMessages" xml:space="preserve">
+    <value>There are no messages. Please, change the filter options and try again.</value>
+  </data>
+  <data name="PersonalAccount_Profile_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ConfirmationResultAprove" xml:space="preserve">
+    <value>Thank you for your registration confirmation! Your account has been activated, and you can now log into your &lt;a target="_self" href="{0}"&gt; Office&lt;/ a&gt;.</value>
+  </data>
+  <data name="ConfirmationResultChangeMail" xml:space="preserve">
+    <value>Thank You for confirmation. Your email has been changed to {0}.</value>
+  </data>
+  <data name="SignUpThanks" xml:space="preserve">
+    <value>Thanks for registration!</value>
+  </data>
+  <data name="RegistrationEmailBody" xml:space="preserve">
+    <value>Thank You for registration! Your login and password are below. To confirm them  go by  </value>
+  </data>
+  <data name="DeliveryTime" xml:space="preserve">
+    <value>Delivery time</value>
+  </data>
+  <data name="RegistrationEmailLink" xml:space="preserve">
+    <value>link</value>
+  </data>
+  <data name="ChangeEmailOldMailError" xml:space="preserve">
+    <value>Old E-mail is invalid.</value>
+  </data>
+  <data name="ChangePasswordOldPsw" xml:space="preserve">
+    <value>Old password:</value>
+  </data>
+  <data name="PersonalAccount_Office_StatisticsAsBuyer" xml:space="preserve">
+    <value>Statistics as a buyer</value>
+  </data>
+  <data name="PersonalAccount_Office_StatisticsAsSeller" xml:space="preserve">
+    <value>Statistics as a seller</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="BillingSystem_TransferViewer_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PersonalAccount_Office_DealStatus" xml:space="preserve">
+    <value>Deal's status</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="PersonalAccount_Profile_Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PersonalAccount_Office_Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Controls_UserCorrespondence_Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="AddMessageFieldParams" xml:space="preserve">
+    <value>The subject, body or recipient is empty.</value>
+  </data>
+  <data name="Messages_AddMessage_Subject" xml:space="preserve">
+    <value>Subject:</value>
+  </data>
+  <data name="GoodsGot" xml:space="preserve">
+    <value>Goods are got</value>
+  </data>
+  <data name="OnlyIn" xml:space="preserve">
+    <value>Only In</value>
+  </data>
+  <data name="Messages_Viewer_UnreadOnly" xml:space="preserve">
+    <value>Unread only</value>
+  </data>
+  <data name="UnreadOnly" xml:space="preserve">
+    <value>Unread only</value>
+  </data>
+  <data name="TopGames" xml:space="preserve">
+    <value>Top Games</value>
+  </data>
+  <data name="TopServers" xml:space="preserve">
+    <value>Top Servers</value>
+  </data>
+  <data name="NoProfile" xml:space="preserve">
+    <value>You don't still have your personal profile.</value>
+  </data>
+  <data name="NoMyDemands" xml:space="preserve">
+    <value>You have not any demands.</value>
+  </data>
+  <data name="DemandsNotFound" xml:space="preserve">
+    <value>No demands found.</value>
+  </data>
+  <data name="SuitableOffersMsg" xml:space="preserve">
+    <value>You don't have suitable offers. Create a new one.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Controls_SellingImageViewer_DeleteImage" xml:space="preserve">
+    <value>Delete image</value>
+  </data>
+  <data name="Messages_Viewer_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="PersonalAccount_Profile_LastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="SignUpErrorEmailFormat" xml:space="preserve">
+    <value>The 'E-mail' field is incorrect format.</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="PriceEmpty" xml:space="preserve">
+    <value>The 'Price' field is empty.</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Abandon" xml:space="preserve">
+    <value>Abandon</value>
+  </data>
+  <data name="PersonalAccount_Profile_TimeZone" xml:space="preserve">
+    <value>Time zone</value>
+  </data>
+  <data name="DrawOutFact" xml:space="preserve">
+    <value>You will get {0} wmr. ( Amount minus webmoney transfer {1}% )</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Game news</value>
+  </data>
+  <data name="MasterPages_Standard_GisM" xml:space="preserve">
+    <value>GisM</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="NewsNotFound" xml:space="preserve">
+    <value>News is not found.</value>
+  </data>
+  <data name="NoNewsFound" xml:space="preserve">
+    <value>No news found</value>
+  </data>
+  <data name="BuyingOfferInfo_SelectOffer" xml:space="preserve">
+    <value>[Select  an offer]</value>
+  </data>
+  <data name="BuyingOfferInfo_OfferNotSelect" xml:space="preserve">
+    <value>Please, select the offer.</value>
+  </data>
+  <data name="ContactWarning" xml:space="preserve">
+    <value>Any contacts (icq, skype, email, phone, etc) in this text are infringement of terms of service.</value>
+  </data>
+  <data name="Offers_ViewFilter_Buy" xml:space="preserve">
+    <value>Add your own</value>
+  </data>
+  <data name="Offers_ViewFilter_Sell" xml:space="preserve">
+    <value>Add your own</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="SignUpError" xml:space="preserve">
+    <value>An unexpected error has occured. Please try to sign up again later.</value>
+  </data>
+  <data name="AuthenticationPopup_hplToggle_SignIn" xml:space="preserve">
+    <value>Sign in.</value>
+  </data>
+  <data name="AuthenticationPopup_hplToggle_SignUp" xml:space="preserve">
+    <value>Sign up.</value>
+  </data>
+  <data name="AuthenticationPopup_lblToggle_SignIn" xml:space="preserve">
+    <value>Already have your personal account.</value>
+  </data>
+  <data name="AuthenticationPopup_lblToggle_SignUp" xml:space="preserve">
+    <value>Still no your personal account?</value>
+  </data>
+  <data name="Authentication_SignIn_AccessDenied" xml:space="preserve">
+    <value>The requested page is not available, since your account is not confirmed. To confirm your account, go to the link in the e-mail sent you after sign up.</value>
+  </data>
+  <data name="Offers_ViewFilter_CreateNewDemand" xml:space="preserve">
+    <value>Add your own demand in order to buy it from a seller.</value>
+  </data>
+  <data name="Offers_ViewFilter_CreateNewOffer" xml:space="preserve">
+    <value>Add your own offer in order to sell it to a buyer.</value>
+  </data>
+  <data name="Controls_OfferFilterPopup_Title" xml:space="preserve">
+    <value>Select a game or server</value>
+  </data>
+  <data name="Offers_SellingViewer_AddBuyingOffer" xml:space="preserve">
+    <value>If there is not any suitable offer for you then you can add your bid to buy.</value>
+  </data>
+  <data name="Offers_SellingViewer_AddSellingOffer" xml:space="preserve">
+    <value>If there is not any suitable offer for you here you can add your bid to sell.</value>
+  </data>
+  <data name="Offers_SellingViewer_Sell" xml:space="preserve">
+    <value>Sell</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="AnyGame" xml:space="preserve">
+    <value>[Any game]</value>
+  </data>
+  <data name="AnyServer" xml:space="preserve">
+    <value>[Any server]</value>
+  </data>
+  <data name="Offers_SellingViewer_Buy" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="PersonalAccount_Office_OwnBids" xml:space="preserve">
+    <value>My bids</value>
+  </data>
+  <data name="PersonalAccount_Office_OwnBuying" xml:space="preserve">
+    <value>My buying</value>
+  </data>
+  <data name="PersonalAccount_Office_OwnSelling" xml:space="preserve">
+    <value>My selling</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Conversation" xml:space="preserve">
+    <value>Conversation</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Participant" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Me" xml:space="preserve">
+    <value>Me</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_AllMessages" xml:space="preserve">
+    <value>Whole conversation</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_DateFormat" xml:space="preserve">
+    <value>dd MMM yyyy HH:mm</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_WriteNew" xml:space="preserve">
+    <value>New message</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_WithUser" xml:space="preserve">
+    <value>Conversation with user</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Wrote" xml:space="preserve">
+    <value>wrote</value>
+  </data>
+  <data name="MoneyFormat" xml:space="preserve">
+    <value>&lt;span class='money'&gt;{0:0.##}&lt;span&gt;</value>
+  </data>
+  <data name="PersonalAccount_Office_MyBalance" xml:space="preserve">
+    <value>&lt;a href="{0}" target="_self"&gt;My balance&lt;/a&gt;</value>
+  </data>
+  <data name="PersonalAccount_Office_MyRating" xml:space="preserve">
+    <value>&lt;a href="{0}" targte="_self"&gt;My rating &lt;/a&gt;</value>
+  </data>
+  <data name="PersonalAccount_Office_MyPurchases" xml:space="preserve">
+    <value>My purchases</value>
+  </data>
+  <data name="PersonalAccount_Office_MySales" xml:space="preserve">
+    <value>My sales</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingDesc" xml:space="preserve">
+    <value>Other users have left you feedback</value>
+  </data>
+  <data name="PersonalAccount_Office_PurchasesActive" xml:space="preserve">
+    <value>number of active (buying now) purchases </value>
+  </data>
+  <data name="PersonalAccount_Office_PurchasesComplete" xml:space="preserve">
+    <value>number of successfully completed purchases</value>
+  </data>
+  <data name="PersonalAccount_Office_PurchasesConflicted" xml:space="preserve">
+    <value>The number of purchases that are in conflict state</value>
+  </data>
+  <data name="PersonalAccount_Office_PurchasesNew" xml:space="preserve">
+    <value>Create new</value>
+  </data>
+  <data name="PersonalAccount_Office_SalesActive" xml:space="preserve">
+    <value>number of active (selling now) sales</value>
+  </data>
+  <data name="PersonalAccount_Office_SalesComplete" xml:space="preserve">
+    <value>number of successfully completed sales</value>
+  </data>
+  <data name="PersonalAccount_Office_SalesConflicted" xml:space="preserve">
+    <value>number of successfully completed sales</value>
+  </data>
+  <data name="PersonalAccount_Office_SalesNew" xml:space="preserve">
+    <value>Create new</value>
+  </data>
+  <data name="PersonalAccount_Office_MessagesIn" xml:space="preserve">
+    <value>incoming messages {0}</value>
+  </data>
+  <data name="PersonalAccount_Office_MessagesOut" xml:space="preserve">
+    <value>outgoing messages</value>
+  </data>
+  <data name="PersonalAccount_Office_MyMessages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="PersonalAccount_Office_Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="PersonalAccount_Office_ProfileChangeEmail" xml:space="preserve">
+    <value>Change email</value>
+  </data>
+  <data name="PersonalAccount_Office_ProfileChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="PersonalAccount_Office_ProfileEdit" xml:space="preserve">
+    <value>Edit profile</value>
+  </data>
+  <data name="PersonalAccount_Office_ProfileEmail" xml:space="preserve">
+    <value>email</value>
+  </data>
+  <data name="PersonalAccount_Office_ProfileName" xml:space="preserve">
+    <value>login name</value>
+  </data>
+  <data name="ActionFailure" xml:space="preserve">
+    <value>An unexpected error has occured. Please try later.</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>number of</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_In" xml:space="preserve">
+    <value>Incoming {0}</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_IsEmpty" xml:space="preserve">
+    <value>The message is empty.</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_New" xml:space="preserve">
+    <value>New message</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Out" xml:space="preserve">
+    <value>Outgoing</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Recipient" xml:space="preserve">
+    <value>Recipient</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="MessageSystem_MessageViewer_ShowConversation" xml:space="preserve">
+    <value>Show conversation</value>
+  </data>
+  <data name="PersonalAccount_Office_In" xml:space="preserve">
+    <value>Incoming</value>
+  </data>
+  <data name="PersonalAccount_Office_Out" xml:space="preserve">
+    <value>Outgoing</value>
+  </data>
+  <data name="Controls_UserInfo_Conversation" xml:space="preserve">
+    <value>Conversation</value>
+  </data>
+  <data name="Controls_UserInfo_Feedbacks" xml:space="preserve">
+    <value>Feedbacks</value>
+  </data>
+  <data name="Controls_UserInfo_Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Users_UserCard_Conversation" xml:space="preserve">
+    <value>Conversation</value>
+  </data>
+  <data name="Users_UserCard_Feedbacks" xml:space="preserve">
+    <value>Feedbacks</value>
+  </data>
+  <data name="Users_UserCard_Info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Users_UserCard_DateFormat" xml:space="preserve">
+    <value>dd MMM yyyy HH:mm</value>
+  </data>
+  <data name="Users_UserCard_FeedbacksNegative" xml:space="preserve">
+    <value>Negative</value>
+  </data>
+  <data name="Users_UserCard_FeedbacksNeutral" xml:space="preserve">
+    <value>Neutral</value>
+  </data>
+  <data name="Users_UserCard_FeedbacksNo" xml:space="preserve">
+    <value>No feedbacks</value>
+  </data>
+  <data name="Users_UserCard_FeedbacksPositive" xml:space="preserve">
+    <value>Positive</value>
+  </data>
+  <data name="Users_UserCard_General" xml:space="preserve">
+    <value>General information</value>
+  </data>
+  <data name="Users_UserCard_IsApproved" xml:space="preserve">
+    <value>Account is approved</value>
+  </data>
+  <data name="Users_UserCard_LastLoginDate" xml:space="preserve">
+    <value>Last login date</value>
+  </data>
+  <data name="Users_UserCard_Name" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="Users_UserCard_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Users_UserCard_OfflineStatus" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+  <data name="Users_UserCard_Status" xml:space="preserve">
+    <value>User status</value>
+  </data>
+  <data name="Users_UserCard_OnlineStatus" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="Users_UserCard_RegisterationDate" xml:space="preserve">
+    <value>Registration date</value>
+  </data>
+  <data name="Users_UserCard_RegistrationApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="Users_UserCard_RegistrationUnapproved" xml:space="preserve">
+    <value>Unapproved</value>
+  </data>
+  <data name="Users_UserCard_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Users_UserCard_Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="Users_UserCard_MessagesNo" xml:space="preserve">
+    <value>No messages</value>
+  </data>
+  <data name="Users_UserCard_NewMessage" xml:space="preserve">
+    <value>New message</value>
+  </data>
+  <data name="Offers_SellingViewer_DateFormat" xml:space="preserve">
+    <value>dd MMM yyyy HH:mm</value>
+  </data>
+  <data name="Offers_BuyingViewer_DateFormat" xml:space="preserve">
+    <value>dd MMM yyyy HH:mm</value>
+  </data>
+  <data name="PersonalAccount_Office_Menu_In" xml:space="preserve">
+    <value>Incoming messages {0}</value>
+  </data>
+  <data name="PersonalAccount_Office_Menu_Out" xml:space="preserve">
+    <value>Outgoing messages</value>
+  </data>
+  <data name="PersonalAccount_Office_Menu_Profile" xml:space="preserve">
+    <value>Edit profile</value>
+  </data>
+  <data name="Default_ContactInfo" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Default_Guarantee" xml:space="preserve">
+    <value>Your deals are protected by Game is Money</value>
+  </data>
+  <data name="Default_News_Title" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="Default_SiteDescription1" xml:space="preserve">
+    <value>Here you can buy or sell characters, accounts, game money or something else from popular MMORPG games, like World of Warcraft, Lineage 2, Aion, Allods Online, EVE Online, Perfect World. Our buyers and sellers are users like you, and "Game is Money" protects your deals (&lt;a target="_self" href="{0}"&gt;more&lt;/a&gt;).</value>
+  </data>
+  <data name="Default_SiteDescription2" xml:space="preserve">
+    <value>Post selling and buying offers about your pers, accouts, game gold, make deals and get real money, "Game is Money" will assist in it and protect you from fraud.</value>
+  </data>
+  <data name="Default_Welcome_Message" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Default_Welcome_Title" xml:space="preserve">
+    <value>Welcome to the largest game trading service</value>
+  </data>
+  <data name="Default_Email" xml:space="preserve">
+    <value>support@gameismoney.ru</value>
+  </data>
+  <data name="Default_Skype" xml:space="preserve">
+    <value>gameismoney</value>
+  </data>
+  <data name="Default_Vkontakte" xml:space="preserve">
+    <value>vk.com</value>
+  </data>
+  <data name="FailedAction" xml:space="preserve">
+    <value>An unexpected error occurred. Please ensure that you filled all fields correctly and try again.</value>
+  </data>
+  <data name="Default_ICQ" xml:space="preserve">
+    <value>icq</value>
+  </data>
+  <data name="WantToSell_FirstWay_Description" xml:space="preserve">
+    <value>Try to find a buyer for your product by searching among those already posted &lt;a href="{0}" target="_self"&gt;offers of buying&lt;/a&gt;. To view detailed information about the post - click on its name. If found in the post you are satisfied, then you can immediately proceed to sell by clicking on the corresponding button. If you have any questions about price, delivery, or even on something, you can always leave a private message to the buyer who hasposted this offer.</value>
+  </data>
+  <data name="WantToSell_FirstWay_Title" xml:space="preserve">
+    <value>The first way. &lt;a href="{0}" target="_self"&gt;Finding a buyer&lt;/a&gt; among the posted offers.</value>
+  </data>
+  <data name="WantToSell_SecondWay_Description" xml:space="preserve">
+    <value>If you have not found a suitable offer of buying, add &lt;noindex&gt;&lt;a href="{0}" target="_self"&gt;your own offer&lt;/a&gt;&lt;/noindex&gt; of selling and the buyer will find you himself.</value>
+  </data>
+  <data name="WantToSell_SecondWay_Title" xml:space="preserve">
+    <value>The second way. Posting &lt;noindex&gt;&lt;a href="{0}" target="_self"&gt;your own offer&lt;/a&gt;&lt;/noindex&gt;.</value>
+  </data>
+  <data name="WantToBuy_FirstWay_Description" xml:space="preserve">
+    <value>Try to find an intresting post among those already posted &lt;noindex&gt;&lt;a href="{0}" target="_self"&gt; offers of buying&lt;/a&gt;&lt;/noindex&gt;. To view detailed information about the post - click on its name. If found in the post you are satisfied, then you can go directly to the purchase by clicking on the corresponding button. If you have any questions about price, delivery, or even on something, you can always leave a private message to the seller who has placed this offer.</value>
+  </data>
+  <data name="WantToBuy_FirstWay_Title" xml:space="preserve">
+    <value>The first way &amp;minus; &lt;a href="{0}" target="_self"&gt;Finding a seller&lt;/a&gt; among the posted offers.</value>
+  </data>
+  <data name="WantToBuy_SecondWay_Description" xml:space="preserve">
+    <value>If you have not found a suitable offer of selling, add &lt;noindex&gt;&lt;a href="{0}" target="_self"&gt;your own offer&lt;/a&gt;&lt;/noindex&gt; of buying and the seller will find you himself.</value>
+  </data>
+  <data name="WantToBuy_SecondWay_Title" xml:space="preserve">
+    <value>The second way. Posting &lt;a href="{0}" target="_self"&gt;your own offer&lt;/a&gt;.</value>
+  </data>
+  <data name="Games_Game_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Games_Game_GameName" xml:space="preserve">
+    <value>Game name</value>
+  </data>
+  <data name="Games_Game_GameSite" xml:space="preserve">
+    <value>Official game site</value>
+  </data>
+  <data name="Games_Game_GeneralInfo" xml:space="preserve">
+    <value>General information</value>
+  </data>
+  <data name="Games_Game_PurchasesCount" xml:space="preserve">
+    <value>Number of &lt;a href="{0}" target="_self"&gt;the buying offers&lt;/a&gt;</value>
+  </data>
+  <data name="Games_Game_SalesCount" xml:space="preserve">
+    <value>Number of &lt;a href="{0}" target="_self"&gt;the selling offers&lt;/a&gt;</value>
+  </data>
+  <data name="OpenNewWindow" xml:space="preserve">
+    <value>Open in new window</value>
+  </data>
+  <data name="Servers_Server_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Servers_Server_GameName" xml:space="preserve">
+    <value>Game name</value>
+  </data>
+  <data name="Servers_Server_GeneralInfo" xml:space="preserve">
+    <value>General information</value>
+  </data>
+  <data name="Servers_Server_PurchasesCount" xml:space="preserve">
+    <value>Number of &lt;a href="{0}" target="_self"&gt;the buying offers&lt;/a&gt;</value>
+  </data>
+  <data name="Servers_Server_SalesCount" xml:space="preserve">
+    <value>Number of &lt;a href="{0}" target="_self"&gt;the selling offers&lt;/a&gt;</value>
+  </data>
+  <data name="Servers_Server_ServerName" xml:space="preserve">
+    <value>Server name</value>
+  </data>
+  <data name="Servers_Server_ServerSite" xml:space="preserve">
+    <value>Official server site</value>
+  </data>
+  <data name="SellingViewer_SendMessage" xml:space="preserve">
+    <value>Send message</value>
+  </data>
+  <data name="BillingSystem_TopUp_Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>dd MMM yyyy HH:mm</value>
+  </data>
+  <data name="SellingViewer_AcceptActionBuyer" xml:space="preserve">
+    <value>You must pay to continue. {0}</value>
+  </data>
+  <data name="SellingViewer_AcceptActionSeller" xml:space="preserve">
+    <value>You can cancel this deal.</value>
+  </data>
+  <data name="SellingViewer_AcceptNeedMoneyActionBuyer" xml:space="preserve">
+    <value>You need top up {0} RUR.</value>
+  </data>
+  <data name="SellingViewer_CancelActionBuyer" xml:space="preserve">
+    <value>You can cancel this offer.</value>
+  </data>
+  <data name="SellingViewer_ConflictAction" xml:space="preserve">
+    <value>Deal suspended. There are making investigation.</value>
+  </data>
+  <data name="SellingViewer_FinishAction" xml:space="preserve">
+    <value>Deal completed.</value>
+  </data>
+  <data name="SellingViewer_Key" xml:space="preserve">
+    <value>Unique deal key</value>
+  </data>
+  <data name="SellingViewer_StartActionBuyer" xml:space="preserve">
+    <value>You can select this offer if you interesting in it.</value>
+  </data>
+  <data name="SellingViewer_StartActionSeller" xml:space="preserve">
+    <value>Nobody interesting in your offer.</value>
+  </data>
+  <data name="SellingViewer_StartBuyersActionSeller" xml:space="preserve">
+    <value>To start the deal you must select one from Potential buyers.</value>
+  </data>
+  <data name="SellingViewer_SubmitActionBuyer" xml:space="preserve">
+    <value>Waiting for goods. Please after getting the goods, confirm it. You can complain of seller.</value>
+  </data>
+  <data name="SellingViewer_SubmitActionSeller" xml:space="preserve">
+    <value>You can cancel this deal or complain of buyer.</value>
+  </data>
+  <data name="SellingViewer_ValidateKey" xml:space="preserve">
+    <value>Please, valid unique deal key</value>
+  </data>
+  <data name="Authentication_SignIn_Failure" xml:space="preserve">
+    <value>Your login attempt was not successful. Please try again.</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="OfferPostBuyerCancel" xml:space="preserve">
+    <value>You have canceled the deal.</value>
+  </data>
+  <data name="OffersName1" xml:space="preserve">
+    <value>offers</value>
+  </data>
+  <data name="OffersName2" xml:space="preserve">
+    <value>offers</value>
+  </data>
+  <data name="OffersName3" xml:space="preserve">
+    <value>offers</value>
+  </data>
+  <data name="SellingManager_Cancel" xml:space="preserve">
+    <value>Cancel deal</value>
+  </data>
+  <data name="SellingManager_Complain" xml:space="preserve">
+    <value>Complain on buyer</value>
+  </data>
+  <data name="SellingManager_Decline" xml:space="preserve">
+    <value>Remove user from potential buyers</value>
+  </data>
+  <data name="SellingManager_Edit" xml:space="preserve">
+    <value>Edit offer</value>
+  </data>
+  <data name="SellingManager_Select" xml:space="preserve">
+    <value>Select potential buyer as buyer</value>
+  </data>
+  <data name="SellingManager_ValidateDealKey" xml:space="preserve">
+    <value>Validate deal key</value>
+  </data>
+  <data name="MainMenu_AddNewBuying" xml:space="preserve">
+    <value>Add new</value>
+  </data>
+  <data name="MainMenu_AddNewSelling" xml:space="preserve">
+    <value>Add new</value>
+  </data>
+  <data name="ViewBuying_ActionWithOffer" xml:space="preserve">
+    <value>You have offers. You can select it and start deal or decline and remove it from offers list.</value>
+  </data>
+  <data name="ViewBuying_ActionWithoutOffer" xml:space="preserve">
+    <value>You have not offers. &lt;a href="{0}" target="_self"&gt;But you can find it by yourself.&lt;/a&gt;</value>
+  </data>
+  <data name="BuyingManager_Cancel" xml:space="preserve">
+    <value>Cancel offer</value>
+  </data>
+  <data name="BuyingManager_Complain" xml:space="preserve">
+    <value>Complain of the seller</value>
+  </data>
+  <data name="BuyingManager_Complete" xml:space="preserve">
+    <value>Confirm that goods are gotten</value>
+  </data>
+  <data name="BuyingManager_Decline" xml:space="preserve">
+    <value>Decline the offer</value>
+  </data>
+  <data name="BuyingManager_Pay" xml:space="preserve">
+    <value>Pay offer</value>
+  </data>
+  <data name="BuyingManager_Select" xml:space="preserve">
+    <value>Select the offer and start deal</value>
+  </data>
+  <data name="OfferBuyerCancelConfirmation" xml:space="preserve">
+    <value>Are you sure you want to refuse this offer?</value>
+  </data>
+  <data name="SellingManager_Delete" xml:space="preserve">
+    <value>Delete offer</value>
+  </data>
+  <data name="UserRating_LeaveFeedback_Failure" xml:space="preserve">
+    <value>You cannot leave a feedback.</value>
+  </data>
+  <data name="UserRating_LeaveFeedback_Leave" xml:space="preserve">
+    <value>Leave</value>
+  </data>
+  <data name="HideManagerActionInfo" xml:space="preserve">
+    <value>Hide action info</value>
+  </data>
+  <data name="ShowManagerActionInfo" xml:space="preserve">
+    <value>Show action info</value>
+  </data>
+  <data name="UserRating_UnusedFeedbacks_NoData" xml:space="preserve">
+    <value>You cannot leave a feedback because you don't have any finish deals</value>
+  </data>
+  <data name="HideManagerStatusInfo" xml:space="preserve">
+    <value>Hide status info</value>
+  </data>
+  <data name="SellingViewer_FinishActionWithFeedbackBuyer" xml:space="preserve">
+    <value>Deal completed. You can leave a feedback about seller.</value>
+  </data>
+  <data name="SellingViewer_FinishActionWithFeedbackSeller" xml:space="preserve">
+    <value>Deal completed. You can leave a feedback about buyer.</value>
+  </data>
+  <data name="ShowManagerStatusInfo" xml:space="preserve">
+    <value>Show status info</value>
+  </data>
+  <data name="SellingManager_FeedBack" xml:space="preserve">
+    <value>Leave a feedback</value>
+  </data>
+  <data name="Help_AboutSite" xml:space="preserve">
+    <value>About this site</value>
+  </data>
+  <data name="Help_Billing" xml:space="preserve">
+    <value>Money transactions</value>
+  </data>
+  <data name="Help_HowBuy" xml:space="preserve">
+    <value>How to buy?</value>
+  </data>
+  <data name="Help_HowSell" xml:space="preserve">
+    <value>How to sell?</value>
+  </data>
+  <data name="Help_Rules" xml:space="preserve">
+    <value>Rules and agreements</value>
+  </data>
+  <data name="MainMenu_How" xml:space="preserve">
+    <value>&lt;span&gt;how to &lt;/span&gt;&lt;a href="{0}" target="_self"&gt;buy&lt;/a&gt; &lt;span&gt; or &lt;/span&gt; &lt;a href="{1}" target="_self"&gt;sell&lt;/a&gt;&lt;span&gt;?&lt;/span&gt;</value>
+  </data>
+  <data name="BuyingManager_FeedBack" xml:space="preserve">
+    <value>Leave a feedback</value>
+  </data>
+  <data name="MessagesName1" xml:space="preserve">
+    <value>messages</value>
+  </data>
+  <data name="MessagesName2" xml:space="preserve">
+    <value>messages</value>
+  </data>
+  <data name="MessagesName3" xml:space="preserve">
+    <value>messages</value>
+  </data>
+  <data name="Offers_BuyingViewer_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Offers_SellingViewer_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="HtmlTemplates_NewMessageNotification" xml:space="preserve">
+    <value>New message from the user registered on Game is Money</value>
+  </data>
+  <data name="HtmlTemplates_NewMessageNotification_Body" xml:space="preserve">
+    <value>User &lt;a href='{0}' target="_blank"&gt; {1} &lt;/ a&gt; left a private message, perhaps intrigued by one of your offers on &lt;a target = "_blank" href = "{2}" &gt; buying &lt;/ a&gt; or &lt;a href="{3}" target="_blank"&gt; selling &lt;/ a&gt;. &lt;br/&gt;Read a received message can &lt;a href='{4}' target="_blank"&gt; here &lt;/ a&gt;. &lt;br/&gt; (To view, you must first login to the site - enter your login and password.)</value>
+  </data>
+  <data name="HtmlTemplates_NoReply" xml:space="preserve">
+    <value>Do not reply this message because it was sent automatically.</value>
+  </data>
+  <data name="HtmlTemplates_Unsubscribe" xml:space="preserve">
+    <value>If you wish to unsubscribe from the mailing of notifications, go to &lt;a target="_blank" href='{0}'&gt; this link&lt;/ a&gt;.</value>
+  </data>
+  <data name="Notification_NewMessageSubject" xml:space="preserve">
+    <value>Game is Money: a new message</value>
+  </data>
+  <data name="Notification_Resubscribe" xml:space="preserve">
+    <value>You can re-enable notification by going to your &lt;a href="{0}" target="_self"&gt; profile &lt;/ a&gt; and set up the check box.</value>
+  </data>
+  <data name="Notification_Unsubscibe" xml:space="preserve">
+    <value>You have successfully unsubscribed from the mailing notifications for new messages.</value>
+  </data>
+  <data name="Offers_EmailNotification" xml:space="preserve">
+    <value>Receive notification of new messages on your e-mail</value>
+  </data>
+  <data name="Offers_Notification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="Offers_NotificationNote" xml:space="preserve">
+    <value>You can change your notification settings in &lt;a href="{0}" target="_self"&gt;your Profile&lt;/a&gt; by clicking the link in &lt;a href="{1}" targte="_self"&gt;your Office&lt;/a&gt;</value>
+  </data>
+  <data name="PersonalAccount_Profile_EmailNotification" xml:space="preserve">
+    <value>Receive notification of new messages on your e-mail</value>
+  </data>
+  <data name="PersonalAccount_Profile_Notification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="GameIsMoney" xml:space="preserve">
+    <value>Game is Money</value>
+  </data>
+  <data name="HtmlTemplates_NewMessageNotification_Body1" xml:space="preserve">
+    <value>A new message was left for you. To read a received message you need click &lt;a href='{0}' target="_blank"&gt; here &lt;/ a&gt;. &lt;br/&gt; (To view, you must first login to the site - enter your login and password.)</value>
+  </data>
+  <data name="Messages_NewMessage_Attention" xml:space="preserve">
+    <value>Communicating outside the site you risk being cheated, but your money or goods - irretrievably lost. Only use personal messages on the site.</value>
+  </data>
+  <data name="Offers_Currency" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Offers_Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Offers_ProductCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Offers_ProductCategoryNotSelected" xml:space="preserve">
+    <value>Category is not selected.</value>
+  </data>
+  <data name="Offers_SelectProductCategory" xml:space="preserve">
+    <value>[Select a category]</value>
+  </data>
+  <data name="Offers_Category" xml:space="preserve">
+    <value>category</value>
+  </data>
+  <data name="Offers_EnterProductCategory" xml:space="preserve">
+    <value>Enter your category</value>
+  </data>
+  <data name="Offers_Filter_AnyProductCategory" xml:space="preserve">
+    <value>[Any category]</value>
+  </data>
+  <data name="Offers_ProductCategoryNoEntered" xml:space="preserve">
+    <value>Product category is not entered.</value>
+  </data>
+  <data name="Offers_Deatils" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Offers_NoPrice" xml:space="preserve">
+    <value>no price</value>
+  </data>
+  <data name="Offers_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="AddSupportFeedbackSuccess" xml:space="preserve">
+    <value>Thank you for your feedback!</value>
+  </data>
+  <data name="BillingSystem_Transfer_Attention" xml:space="preserve">
+    <value>&lt;strong&gt;Attention!&lt;/strong&gt; If you for some reason can not use the payment system WebMoney, but want to enter or withdraw funds from your account, write the appropriate request to &lt;a href="mailto:support@gameismoney.ru" target="_blank"&gt; support@gameismoney.ru &lt;/ a&gt; with the subject line "operations with a personal account, in a letter to indicate the preferred method of calculation. Chance of cash in Moscow and St. Petersburg.</value>
+  </data>
+  <data name="Offers_DeatilsTooltip" xml:space="preserve">
+    <value>View details about this offer</value>
+  </data>
+  <data name="Support_Feedback_Appeal" xml:space="preserve">
+    <value>If you notice a mistake or inaccuracy in the site or have suggestions on how we can improve our services, please leave us your feedback!</value>
+  </data>
+  <data name="Support_Feedback_Email" xml:space="preserve">
+    <value>Your e-mail</value>
+  </data>
+  <data name="Support_Feedback_EmailFormat" xml:space="preserve">
+    <value>E-mail is incorrect.</value>
+  </data>
+  <data name="Support_Feedback_EmailRequired" xml:space="preserve">
+    <value>The field 'Your e-mail' is empty.</value>
+  </data>
+  <data name="Support_Feedback_EmailWatermark" xml:space="preserve">
+    <value>Your e-mail</value>
+  </data>
+  <data name="Support_Feedback_Feedback" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Support_Feedback_FeedbackRequired" xml:space="preserve">
+    <value>The field 'Message' is empty.</value>
+  </data>
+  <data name="Support_Feedback_Name" xml:space="preserve">
+    <value>Your name</value>
+  </data>
+  <data name="Support_Feedback_Promise" xml:space="preserve">
+    <value>We will respond to your feedback as soon as possible!</value>
+  </data>
+  <data name="Support_Feedback_Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Support_Feedback_Sending" xml:space="preserve">
+    <value>Sending...</value>
+  </data>
+  <data name="Support_Feedback_Title" xml:space="preserve">
+    <value>Feedback on this website</value>
+  </data>
+  <data name="WM_CheckOut" xml:space="preserve">
+    <value>Check out our certificate</value>
+  </data>
+  <data name="Offers_OffersAboutArmory" xml:space="preserve">
+    <value>{0} of armory</value>
+  </data>
+  <data name="Offers_OffersAboutCharacters" xml:space="preserve">
+    <value>{0} of characters</value>
+  </data>
+  <data name="Offers_OffersAboutCurrency" xml:space="preserve">
+    <value>{0} of game currency</value>
+  </data>
+  <data name="Offers_OffersToBuy" xml:space="preserve">
+    <value>Buying offers</value>
+  </data>
+  <data name="Offers_OffersToSell" xml:space="preserve">
+    <value>Selling offers</value>
+  </data>
+  <data name="Offers_ShowOffers" xml:space="preserve">
+    <value>show offers</value>
+  </data>
+  <data name="Offers_OffersFromMisc" xml:space="preserve">
+    <value>{0} from 'misc' category</value>
+  </data>
+  <data name="EnglishVersion" xml:space="preserve">
+    <value>English version</value>
+  </data>
+  <data name="MoreInfo" xml:space="preserve">
+    <value>More info</value>
+  </data>
+  <data name="RussianVersion" xml:space="preserve">
+    <value>Русская версия сайта</value>
+  </data>
+  <data name="Default_MoreAboutGuarantee" xml:space="preserve">
+    <value>More information about guarantee</value>
+  </data>
+  <data name="Error_Actions" xml:space="preserve">
+    <value>You can leave us your &lt;a id="feedback" href="#feedback" title="Leave us your feedback"&gt;feedback&lt;/a&gt; or immediately return to &lt;a href = "{0} "title ="Back to the previous page "&gt; the previous page&lt;/a&gt; of the site.</value>
+  </data>
+  <data name="Error_Sorry" xml:space="preserve">
+    <value>Damn sorry, but an error occurred on the site :(</value>
+  </data>
+  <data name="LogoGray" xml:space="preserve">
+    <value>The logo of Game is Money</value>
+  </data>
+  <data name="PostBuying" xml:space="preserve">
+    <value>Add buying offer</value>
+  </data>
+  <data name="PostSelling" xml:space="preserve">
+    <value>Add selling offer</value>
+  </data>
+  <data name="OurContacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Here, customers becoming happier, and the sellers happy:)</value>
+  </data>
+  <data name="VK" xml:space="preserve">
+    <value>vk.com</value>
+  </data>
+  <data name="MainMenu_ItemHelp" xml:space="preserve">
+    <value>User help</value>
+  </data>
+  <data name="Default_WantToBuy" xml:space="preserve">
+    <value>Want to buy</value>
+  </data>
+  <data name="Default_WantToSell" xml:space="preserve">
+    <value>Want to sell</value>
+  </data>
+  <data name="MainMenu_ItemBuying" xml:space="preserve">
+    <value>&lt;span class="menu-item-buying"&gt;Buying&lt;/span&gt; offers</value>
+  </data>
+  <data name="MainMenu_ItemOffice" xml:space="preserve">
+    <value>Your account</value>
+  </data>
+  <data name="MainMenu_ItemSelling" xml:space="preserve">
+    <value>&lt;span class="menu-item-selling"&gt;Selling&lt;/span&gt; offers</value>
+  </data>
+  <data name="Default_Wants" xml:space="preserve">
+    <value>Want to &lt;a href="{0}" target="_self" class="wants-sell"&gt;sell&lt;/a&gt; or &lt;a href="{1}" class="wants-buy" target="_self"&gt;buy&lt;/a&gt;</value>
+  </data>
+  <data name="NoPrice" xml:space="preserve">
+    <value>No price</value>
+  </data>
+  <data name="Users_UserCard_BuyingStat" xml:space="preserve">
+    <value>Buying</value>
+  </data>
+  <data name="Users_UserCard_SellingStat" xml:space="preserve">
+    <value>Selling</value>
+  </data>
+  <data name="Users_UserCard_Stat" xml:space="preserve">
+    <value>Offers &amp; deals</value>
+  </data>
+  <data name="Users_UserCard_StatActive" xml:space="preserve">
+    <value>Active offers</value>
+  </data>
+  <data name="Users_UserCard_StatBuying" xml:space="preserve">
+    <value>Buying</value>
+  </data>
+  <data name="Users_UserCard_StatComplete" xml:space="preserve">
+    <value>Complete deals</value>
+  </data>
+  <data name="Users_UserCard_StatConflicted" xml:space="preserve">
+    <value>Conflicted deals</value>
+  </data>
+  <data name="Users_UserCard_StatSelling" xml:space="preserve">
+    <value>Selling</value>
+  </data>
+  <data name="AllOffers" xml:space="preserve">
+    <value>All offers</value>
+  </data>
+  <data name="Offer_More" xml:space="preserve">
+    <value>Get more information about this offer</value>
+  </data>
+  <data name="ShowAllOffersToBuy" xml:space="preserve">
+    <value>View all offers to buy</value>
+  </data>
+  <data name="ShowAllOffersToSell" xml:space="preserve">
+    <value>View all offers to sell</value>
+  </data>
+  <data name="Show_Category_Offers" xml:space="preserve">
+    <value>View all offers in the category "{0}" for the game "{1}"</value>
+  </data>
+  <data name="News_Archive" xml:space="preserve">
+    <value>News archive</value>
+  </data>
+  <data name="SendMessageToBuyer" xml:space="preserve">
+    <value>Write to this buyer</value>
+  </data>
+  <data name="SendMessageToSeller" xml:space="preserve">
+    <value>Write to this seller</value>
+  </data>
+</root>

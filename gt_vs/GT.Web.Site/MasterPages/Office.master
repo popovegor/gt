@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/TwoColumns.master" AutoEventWireup="true" CodeBehind="Office.master.cs" Inherits="GT.Web.Site.MasterPages.Office" %>
+<%@ Import Namespace="GT.Global.MessageSystem" %>
+<%@ Import Namespace="GT.BO.Implementation.MessageSystem" %>
+<%@ Register Src="~/Menu/Submenu.ascx" TagName="Submenu" TagPrefix="gt" %>
+<%@ Register Src="~/Menu/SubmenuItem.ascx" TagName="SubmenuItem" TagPrefix="gt" %>
+<%@ Register Src="~/Menu/SubmenuItemSeparator.ascx" TagName="SubmenuItemSeparator" TagPrefix="gt" %>
+<asp:Content ID="cntSidebar" ContentPlaceHolderID="cphSidebar" runat="server">
+  <gt:Submenu runat="server" ID="sm">
+    <Content>
+      <gt:SubmenuItem CssClass="purchases highlight" runat="server" ID="smiBuying" NavigateUrl="/Office/Buying" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_MyPurchases %>" />
+      <gt:SubmenuItem CssClass="buy" runat="server" ID="smiBuyingAdd" NavigateUrl="/Office/Buying/Add" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_PurchasesNew %>" />
+      <gt:SubmenuItemSeparator runat="server" />
+      <gt:SubmenuItem CssClass="sales highlight" ID="smiSelling" NavigateUrl="/Office/Selling" runat="server" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_MySales %>" />
+      <gt:SubmenuItem CssClass="sell" NavigateUrl="/Office/Selling/Add" runat="server" ID="smiSellingAdd" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_SalesNew %>" />
+      <gt:SubmenuItemSeparator runat="server" />
+      <gt:SubmenuItem CssClass="highlight" NavigateUrl="/Office/Profile" runat="server" ID="smiProfile" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_Menu_Profile %>" />
+      <gt:SubmenuItem ID="smiChangePassord" NavigateUrl="/Office/ChangePassword" runat="server" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_ChangePassword %>" />
+      <gt:SubmenuItem ID="smiChangeEmail" NavigateUrl="/Office/ChangeEmail" runat="server" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_ChangeEmail %>" />
+      <gt:SubmenuItemSeparator runat="server" ID="smi" />
+      <gt:SubmenuItem CssClass="highlight" NavigateUrl="/Office/Feedbacks" runat="server" ID="feedbackViewer" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_Feedbacks %>" />
+      <gt:SubmenuItemSeparator runat="server" ID="sep2" />
+      <gt:SubmenuItem NavigateUrl='<%# string.Format("/Office/Messages/{1}", MessageFilterParams.Direction, MessageType.In.ToString() )%>' ID="smiIn" runat="server" Text='<%# string.Format(GT.Localization.Resources.CommonResources.PersonalAccount_Office_Menu_In
+      , Dynamics.MessagesUnread > 0 ? string.Format("<b>({0})</b>", Dynamics.MessagesUnread) : string.Empty) %>' />
+      <gt:SubmenuItem NavigateUrl='<%# string.Format("/Office/Messages/{1}", MessageFilterParams.Direction, MessageType.Out.ToString() )%>' ID="smiMessageOut" runat="server" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_Menu_Out %>" />
+      <gt:SubmenuItemSeparator runat="server" ID="sep3" />
+      <gt:SubmenuItem CssClass="highlight" NavigateUrl="/Office/Transfers" runat="server" ID="smiTransfers" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_MoneyTransfers %>" />
+      <gt:SubmenuItem NavigateUrl="/Office/TopUp" runat="server" ID="smiTopUp" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_TopUp %>" />
+      <gt:SubmenuItem NavigateUrl="/Office/DrawOut" runat="server" ID="smiDrawOut" Text="<%# GT.Localization.Resources.CommonResources.PersonalAccount_Office_DrawOut %>" />
+    </Content>
+  </gt:Submenu>
+</asp:Content>
+<asp:Content ID="cntContent" ContentPlaceHolderID="cphContent" runat="server">
+  <asp:ContentPlaceHolder ID="cphContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

@@ -1,0 +1,74 @@
+﻿div#server
+{
+  
+}
+
+div#server .general
+{
+  width:640px;
+}
+
+div#server .fields td 
+{
+  padding:1em 0 0 0;
+}
+
+div#server .fields td.name
+{
+  width:50%;
+  padding-right:2em;
+}
+
+div#server .fields td.value
+{
+  width:50%;
+}
+
+div#server .fields
+{
+  margin:0 0 0 9px;
+  list-style-type:none;
+}
+
+div#server .fields li
+{
+  margin:1em 0 0 0;
+}
+
+div#server .fields .value
+{
+  /*font-weight:bold;*/
+}
+
+div#server .fields .name
+{
+  font-weight:bold;
+}
+
+
+div#server .sellers
+{
+  margin:3em 0 0 0;
+  width:300px;
+  float:left;
+}
+
+div#server .buyers
+{
+  margin:3em 0 0 3em;
+  width:300px;
+  float:left;
+}
+
+div#server .description
+{
+    clear: both;
+    float: left;
+    margin: 3em 0 0;
+    width: 960px;
+}
+
+div#server .description .text
+{
+  padding:1em 0 0 0.5em;
+}

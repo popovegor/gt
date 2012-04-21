@@ -1,0 +1,82 @@
+﻿<#@ assembly name="EnvDTE" #> 
+<#@ assembly name="System.Configuration.dll" #> 
+<#@ Assembly Name="System.Core.dll" #> 
+<#@ import namespace="System" #> 
+<#@ import namespace="System.Configuration" #> 
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="System.Data.SqlClient" #>
+
+<#+ 
+
+public class ConfigurationAccessor
+{
+	public ConfigurationAccessor(IServiceProvider host)
+	{
+		EnvDTE.DTE env = (EnvDTE.DTE)host.GetService(typeof(EnvDTE.DTE));
+		
+		string configurationFilename=null;	
+		foreach(EnvDTE.Project project in env.Solution.Projects)
+		{
+			foreach (EnvDTE.ProjectItem item in project.ProjectItems)
+			{
+				if (Regex.IsMatch(item.Name,"(app|web).config",RegexOptions.IgnoreCase))
+				{
+					_project = project;
+					configurationFilename=item.get_FileNames(0);
+					break;
+				}
+			}
+			if(_project != null)
+			{
+				break;
+			}
+		}
+
+		if(string.IsNullOrEmpty(configurationFilename) == false)
+		{
+			ExeConfigurationFileMap configFile = null;
+			configFile = new ExeConfigurationFileMap();
+			configFile.ExeConfigFilename=configurationFilename;
+			_configuration = System.Configuration.ConfigurationManager.OpenMappedExeConfiguration(configFile, ConfigurationUserLevel.None);
+ 		}
+	}
+	
+	private EnvDTE.Project _project;
+	private Configuration _configuration;
+
+	public EnvDTE.Project Project
+	{
+		get { return _project; }
+	}
+
+	public EnvDTE.Properties Properties 
+	{
+		get { return _project.Properties;}
+	}
+	
+	public Configuration Configuration
+	{
+		get { return _configuration; }
+	}	
+	
+	
+	public string GtConnectionString
+	{
+		get
+		{
+			return ConnectionStrings["GT"].ConnectionString;
+		}
+	}
+
+	public  KeyValueConfigurationCollection AppSettings
+	{
+		get { return _configuration.AppSettings.Settings;}
+	}
+
+	public  ConnectionStringSettingsCollection ConnectionStrings
+	{
+		get { return _configuration.ConnectionStrings.ConnectionStrings;}
+	}
+
+}
+#>

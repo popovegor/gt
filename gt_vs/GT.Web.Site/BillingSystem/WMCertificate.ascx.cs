@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace GT.Web.Site.BillingSystem
+{
+  public partial class WMCertificate : System.Web.UI.UserControl
+  {
+    protected void Page_Load(object sender, EventArgs e)
+    {
+    }
+  }
+}

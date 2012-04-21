@@ -1,0 +1,114 @@
+﻿div#support-feedback
+{
+  display:none;
+  position:fixed;
+  left:50%;
+  top:50%;
+  overflow: hidden;
+  z-index:10001 !important;
+  width:600px;
+  margin:-200px 0 0 -300px;
+  height:420px;
+  background-color:#ffffff;
+  padding:1em;
+  border:solid 3px #da5f23;
+  border-radius:1em;
+  -moz-border-radius:1em; 
+  -webkit-border-radius:1em;
+}
+
+div#support-feedback-btn
+{
+  bottom: 70px;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  right: 0px;
+  width: 24px;
+  z-index: 1000000;
+  font-size:1.3em;
+  font-weight:bold;
+  background:transparant;
+  -display:none;
+}
+
+div#support-feedback-btn a
+{
+  text-align:right;
+  float:left;
+  display:block;
+   width:25px;
+   height:75px;
+   text-decoration:none;
+}
+
+div#support-feedback-btn a.Ru
+{
+  background:transparent url(images/support-feedback.gif) no-repeat scroll 0px 0px;
+}
+
+div#support-feedback-btn a.En
+{
+  background:transparent url(images/support-feedback.gif) no-repeat scroll 0px -80px;
+}
+
+div#support-feedback .feedback-actions
+{
+  margin-top:1em;
+}
+
+div#support-feedback .feedback-actions i
+{
+  margin-left:3em;
+  color:#da5f23;
+  float:right;
+}
+
+div#support-feedback .feedback-title
+{
+  text-align:left;
+  border-bottom: 1px solid #e45c19;
+  padding-bottom:1em; 
+}
+
+div#support-feedback .feedback-title span
+{
+   font-size:1.4em;
+   color:#da5f23;
+}
+
+div#support-feedback .feedback-title a
+{
+  background: url("images/jquery.imageZoom.png") no-repeat scroll 0px -2px transparent;
+  float: right;
+  height: 24px;
+  text-decoration: none;
+  width: 24px;
+}
+
+div#support-feedback .feedback-title a:hover
+{
+  background-position:0px -27px;
+}
+
+div#support-feedback .feedback-body
+{
+  clear:both;
+  margin-top: 1em;
+}
+
+div#support-feedback .feedback-body p
+{
+  text-align:justify;
+}
+
+div#support-feedback .key-value
+{
+  margin-top:1em;
+}
+
+div#support-feedback .key-value .key
+{
+  width:130px;
+}

@@ -1,0 +1,69 @@
+﻿#uc-stat-buying
+, #homeSidebar .top-games-title
+, #home .news dt span
+, #home .so-title
+, #home .bo-title
+/*, #user-card .rc-title
+, #user-card .uc-stat-buying dt span
+, #user-card .uc-stat-selling dt span*/
+/*, #user-card .uc-feedbacks dt span*/
+{
+  background-image: url("images/panels.png");
+  background-position: 0 0px;
+  background-repeat: repeat-x;
+  height: 20px;
+  font-style: normal;
+  line-height: 1.4em !important;
+  color:#ffffff;
+}
+
+#homeSidebar .top-games-title
+, #home .news dt span
+{
+  display:inline-block;
+  padding: 0em 5em 0 0.5em;
+}
+
+#homeSidebar .top-games-title
+, #home .news dt span
+, #user-card .uc-feedbacks dt span
+{
+  background-position:0 -56px !important;
+}
+
+#home .so-title
+, #user-card .uc-stat-selling .rc-title
+{
+  background-position:0px 0px !important; 
+}
+
+#home .bo-title
+, #user-card .uc-stat-buying .rc-title
+{
+  background-position:0px -28px !important; 
+}
+
+#home .so-title, #home .bo-title
+{
+  font-size: 1.1em !important;
+  font-weight: bold;
+  height: 20px;
+  margin: 0 10em 0 0 !important;
+  padding: 0 0.8em !important; 
+  display:block;
+}
+
+/*#user-card .rc-title
+{
+  display:inline-block;
+  width:19em;
+}*/
+
+/* #user-card .uc-feedbacks dt span
+{
+  padding: 0.1em 1em 0 0.7em;
+  display:block;
+  width:20em;
+  position:relative;
+  left:-0.5em;
+}*/

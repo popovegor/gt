@@ -1,0 +1,94 @@
+﻿div#feedbacks table.feedbacks
+{
+  width:auto;
+}
+
+div#feedbacks table.feedbacks th.user
+, div#feedbacks table.feedbacks td.user
+{
+  width:150px;
+}
+
+
+div#feedbacks table.feedbacks .comment
+{
+  width:500px;
+}
+
+/*=======================  feedbacks  ==================*/
+
+div#feedbacks
+{
+  padding:0 0 0 0;
+}
+
+div#feedbacks table.feedbacks th.rating
+{
+  padding:0 2em;
+  width:70px;
+}
+
+div#feedbacks table.feedbacks td.rating
+{
+  padding-left:2em;
+  padding-right:2em;
+  text-align:center;
+  /*vertical-align:middle !important;*/
+  width:50px;
+}
+
+div#feedbacks table.feedbacks td.rating span
+{
+  display:inline-block;
+  padding-left:1em;
+  background-position:left center;
+  background-repeat:no-repeat;
+  height:16px;
+  width:16px;
+}
+
+div#feedbacks table.feedbacks td.rating span.Negative
+{
+    background: transparent url("Images/pictograms-min.png") no-repeat scroll 0px -64px;
+}
+
+div#feedbacks table.feedbacks td.rating span.Positive
+{
+   background: transparent url("Images/pictograms-min.png") no-repeat scroll 0px -104px;
+}
+
+div#feedbacks table.feedbacks td.rating span.Neutral
+{
+  background: transparent url("Images/pictograms-min.png") no-repeat scroll 0px -84px;
+}
+
+div#feedbacks table.feedbacks td.comment
+{
+  
+}
+
+div#feedbacks table.feedbacks td
+{
+  padding-top:1.5em;
+   vertical-align:top;
+}
+
+div#leave-feedback
+{
+}
+
+div#leave-feedback span.type input[type="radio"]
+{
+  margin:0.5em 0 0 0;
+}
+
+div#leave-feedback span.type label
+{
+  margin:0 1em 0 0.2em;
+  padding-bottom:0.1em;
+}
+
+div#feedbacks td.user p.date 
+{
+  font-size:0.9em !important;
+}

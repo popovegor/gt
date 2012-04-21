@@ -1,0 +1,62 @@
+div#messagesFilter
+{
+	margin:0;
+	padding:0;
+}
+
+div#messagesFilter div.search
+{
+	float:left;
+	margin-right:2em;
+	padding-right:2em;
+	border-right:#b2b2b2 0.1em dashed;
+}
+
+div#messagesFilter div.search select
+{
+	width: 250px;
+}
+
+div#messagesFilter div.controls
+{
+	margin-top:3em;
+	float:left;
+}
+
+table.messages
+{
+	margin-top:1em;
+	min-width: 60em;
+}
+
+div.message
+{
+}
+
+div.message p.subject
+{
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	-x-system-font: none;
+	font-family: Georgia,serif;
+	font-size: 1.15em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+div.message p.sentTime
+{
+	font: italic 1em Georgia, serif;
+}
+
+div.message p.body
+{
+}
+
+div.message p.delete
+{
+	text-align:right;
+}

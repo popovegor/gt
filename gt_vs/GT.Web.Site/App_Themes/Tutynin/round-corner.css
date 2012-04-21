@@ -1,0 +1,233 @@
+﻿div.round-corner-block
+{
+  position:relative;
+  height:auto;
+  width:auto;
+}
+
+div.round-corner-block .rcb-content
+{
+  padding:1.5em;
+}
+
+div.rcb-buying
+, div.rcb-selling
+{
+  /*width:80%;
+  margin:0 auto 0 0;*/
+  max-width:450px;
+}
+
+div.rcb-buying .rcb-content
+, #user-card .uc-stat-buying .rc-content
+, .user-card-sidebar .uc-stat-buying .rc-content
+{
+  border:solid 1px #ff8100;
+}
+
+#user-card .uc-stat-buying
+{
+  position:relative;
+}
+
+#user-card .round-corner .rc-content
+{
+  padding:1.5em;
+}
+
+#user-card .uc-deals-n-offers .rc-content
+{
+  border:solid 1px #ad9fa5;
+}
+
+div.rcb-selling .rcb-content
+, #user-card .uc-stat-selling .rc-content
+, .user-card-sidebar .uc-stat-selling .rc-content
+{
+  border:solid 1px #00cc00;
+}
+
+div.round-corner-block .rcb-title
+, #user-card .round-corner .rc-title
+{
+  position:absolute;
+  background-color:#ffffff;
+  bottom:100%;
+  margin-bottom:-0.5em;
+  left:1em;
+  padding:0 0.5em;
+  font-size:1.1em;
+  font-weight:bold;
+}
+
+#user-card .round-corner .rc-title
+{
+  left:1.5em !important;
+}
+
+div.rcb-buying .rcb-title
+{
+  color:#ff8100;
+}
+
+div.rcb-selling .rcb-title
+{
+  color:#00cc00;
+}
+
+div.round-corner-block i.round-corner
+, #user-card .round-corner ins
+, .user-card-sidebar .uc-stat .round-corner ins
+{
+  background: transparent url(images/pictograms-min.png) no-repeat scroll 0px 0px;
+  height: 9px;
+  overflow: hidden;
+  position: absolute;
+  width: 9px;
+  display:block;
+}
+
+div.round-corner-block i.lt
+, .round-corner .rc-left-top
+{
+  top:0px;
+  left:0px;
+}
+
+
+div.rcb-buying i.lt
+, #user-card .uc-stat-buying .rc-left-top
+, .user-card-sidebar .uc-stat-buying .rc-left-top
+{
+  background-position: 0 -302px !important;
+}
+
+div.rcb-selling i.lt
+, #user-card .uc-stat-selling .rc-left-top
+, .user-card-sidebar .uc-stat-selling .rc-left-top
+{
+  background-position: 0 -327px !important;
+}
+
+div.round-corner-block i.rt
+, .round-corner .rc-right-top
+{
+  top:0px;
+  right:0px;
+}
+
+div.rcb-buying i.rt
+, #user-card .uc-stat-buying .rc-right-top
+, .user-card-sidebar .uc-stat-buying .rc-right-top
+{
+  background-position: -9px -302px !important;
+}
+
+div.rcb-selling i.rt
+, #user-card .uc-stat-selling .rc-right-top
+, .user-card-sidebar .uc-stat-selling .rc-right-top
+{
+  background-position: -9px -327px !important;
+}
+
+
+
+div.round-corner-block i.rb
+, .round-corner .rc-right-bottom
+{
+  bottom:0px;
+  right:0px;
+}
+
+div.rcb-buying i.rb
+,  #user-card .uc-stat-buying .rc-right-bottom
+, .user-card-sidebar .uc-stat-buying .rc-right-bottom
+{
+  background-position: -9px -311px !important;
+}
+
+div.rcb-selling i.rb
+, #user-card .uc-stat-selling .rc-right-bottom
+, .user-card-sidebar .uc-stat-selling .rc-right-bottom
+{
+  background-position: -9px -336px !important;
+}
+
+div.round-corner-block i.lb
+,  .round-corner .rc-left-bottom
+{
+  bottom:0px;
+  left:0px;
+}
+
+div.rcb-buying i.lb
+,  #user-card .uc-stat-buying .rc-left-bottom
+, .user-card-sidebar .uc-stat-buying .rc-left-bottom
+{
+  background-position: 0px -311px !important;
+}
+
+div.rcb-selling i.lb
+,  #user-card .uc-stat-selling .rc-left-bottom
+, .user-card-sidebar .uc-stat-selling .rc-left-bottom
+{
+  background-position: 0px -336px !important;
+}
+
+.rc1
+{
+  background-image: url("images/pictograms-min.png");
+    background-repeat: no-repeat;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+}
+
+
+.rc1-lt
+{
+  background-position: 0px -500px;
+  left: 0px;
+  top: 0px;
+}
+
+.rc1-rt
+{
+  background-position: -8px -500px;
+    right: 0;
+    top: 0;
+}
+
+.rc1-lb
+{
+  background-position: 0 -508px;
+    bottom: 0;
+    left: 0;
+}
+
+.rc1-rb
+{
+  background-position: -8px -508px;
+    bottom: 0;
+    right: 0;
+}
+
+#user-card .uc-deals-n-offers .rc-right-top
+{
+  background-position: -9px -355px !important;
+}
+
+#user-card .uc-deals-n-offers .rc-right-bottom
+{
+   background-position: -9px -364px !important;
+}
+
+#user-card .uc-deals-n-offers .rc-left-top
+{
+  background-position: 0 -355px !important;
+}
+
+#user-card .uc-deals-n-offers .rc-left-bottom
+{
+  background-position: 0 -364px !important;
+}

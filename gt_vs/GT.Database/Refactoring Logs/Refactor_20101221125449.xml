@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RefactoringOperation Name="Rename Refactor" MachineName="POPOVEGOR-PC" UserName="popovegor">
+	<Project>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\GT.Database.dbproj</Project>
+	<Filename>D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\dbo.Dictionaries_ProductTypes.table.sql</Filename>
+	<ElementName>[dbo].[Dictionaries_ProductCategories].[ProductTypeId]</ElementName>
+	<ElementType>ISql100SimpleColumn</ElementType>
+	<ParentElementName>[dbo].[Dictionaries_ProductCategories]</ParentElementName>
+	<ParentElementType>ISql100Table</ParentElementType>
+	<NewName>[ProductCategoryId]</NewName>
+	<PropagateRefactoringOperation>
+		<SchemaObjectReferences>
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\dbo.Dictionaries_ProductTypes.table.sql" ElementName="" ElementType="ISqlIndexedColumnSpecification" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Programmability\Stored Procedures\dbo.p_Dictionaries_GetAll.proc.sql" ElementName="[dbo].[p_Dictionaries_GetAll]" ElementType="ISql100Procedure" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\Keys\dbo.Offers_Selling.FK_Selling_ProductTypes.fkey.sql" ElementName="[dbo].[FK_Selling_ProductTypes]" ElementType="ISql90ForeignKeyConstraint" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\Keys\dbo.Offers_SellingHistory.FK_SellingHistory_ProductTypes.fkey.sql" ElementName="[dbo].[FK_SellingHistory_ProductTypes]" ElementType="ISql90ForeignKeyConstraint" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\Keys\dbo.Offers_Buying.FK_Buying_ProductTypes.fkey.sql" ElementName="[dbo].[FK_Buying_ProductTypes]" ElementType="ISql90ForeignKeyConstraint" />
+			<Reference Filename="D:\Development\Projects\SVN\gt_prj\gt\GT.Database\Schema Objects\Schemas\dbo\Tables\Keys\dbo.Offers_SellingHistory.FK_BuyingHistory_ProductTypes.fkey.sql" ElementName="[dbo].[FK_BuyingHistory_ProductTypes]" ElementType="ISql90ForeignKeyConstraint" />
+		</SchemaObjectReferences>
+		<SchemaObjectReferences />
+		<SchemaObjectReferences />
+		<ScriptReferences />
+		<UnitTestReferences />
+		<DataGeneratorReferences />
+	</PropagateRefactoringOperation>
+</RefactoringOperation>

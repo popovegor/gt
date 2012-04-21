@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebMoney.Cryptography</name>
+    </assembly>
+    <members>
+        <member name="T:WebMoney.Cryptography.Signer">
+            <summary>
+            Performs digital signature using the implementation of the RSA algorithm. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="F:WebMoney.Cryptography.Signer.VERSION_MAJOR">
+            <summary>
+            The assembly's major version number.
+            </summary>
+        </member>
+        <member name="F:WebMoney.Cryptography.Signer.VERSION_MINOR">
+            <summary>
+            The assembly's minor version number.
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.Signer.#ctor(WebMoney.Cryptography.KeeperKey)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebMoney.Cryptography.Signer"/> class.
+            </summary>
+            <param name="keeperKey">The <see cref="T:WebMoney.Cryptography.KeeperKey"/> object.</param>
+            <exception cref="T:System.ArgumentNullException">keeperKey is null.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.Signer.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebMoney.Cryptography.Signer"/> class.
+            </summary>
+            <param name="xmlKey">The XML string to use to reconstruct the <see cref="T:WebMoney.Cryptography.KeeperKey"/> object.</param>
+            <exception cref="T:System.ArgumentNullException">xmlKey is null.</exception>
+            <exception cref="T:System.FormatException">invalid string.</exception>
+            <exception cref="T:System.Security.XmlSyntaxException">invalid string syntax.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.Signer.Sign(System.String)">
+            <summary>
+            Computes the hash value of the specified string using the MD4 hash algorithm, and signs the resulting hash value.
+            </summary>
+            <param name="value">The data to be signed.</param>
+            <returns>The RSA signature for the specified data.</returns>
+            <exception cref="T:System.ArgumentNullException">value is null.</exception>
+            <exception cref="T:System.ArgumentException">The message cannot contain of the following character: \r.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.Signer.Sign(System.String,System.Boolean)">
+            <summary>
+            Computes the hash value of the specified string using the MD4 hash algorithm, and signs the resulting hash value.
+            </summary>
+            <param name="value">The data to be signed.</param>
+            <param name="randomEnable">true to use padding; otherwise, false.</param>
+            <returns>The RSA signature for the specified data.</returns>
+            <exception cref="T:System.ArgumentNullException">value is null.</exception>
+            <exception cref="T:System.ArgumentException">The message cannot contain of the following character: \r.</exception>
+        </member>
+        <member name="T:WebMoney.Cryptography.DecryptedKey">
+            <summary>
+            Represents the private key of WebMoney Keeper Classic, obtained from the backup.
+            </summary>
+        </member>
+        <member name="T:WebMoney.Cryptography.KeeperKey">
+            <summary>
+            Represents the private key of WebMoney Keeper Classic.
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.KeeperKey.#ctor(System.Byte[],System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebMoney.Cryptography.KeeperKey"/> class.
+            </summary>
+            <param name="modulus">RSA modulus.</param>
+            <param name="d">RSA private exponent.</param>
+            <exception cref="T:System.ArgumentNullException">modulus or d is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">modulus length or d length is zero.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.KeeperKey.#ctor(System.String)">
+            <summary>
+             Initializes a new instance of the <see cref="T:WebMoney.Cryptography.KeeperKey"/> class.
+            </summary>
+            <param name="xmlString">The XML string to use to reconstruct the <see cref="T:WebMoney.Cryptography.KeeperKey"/> object.</param>
+            <exception cref="T:System.ArgumentNullException">xmlString is null</exception>
+            <exception cref="T:System.FormatException">The format of xmlString is invalid.</exception>
+            <exception cref="T:System.Security.XmlSyntaxException">The syntax of xmlString is invalid.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.KeeperKey.ToString">
+            <summary>
+            Creates and returns an XML string containing the key of the current <see cref="T:WebMoney.Cryptography.KeeperKey"/> object.
+            </summary>
+            <returns>An XML string containing the key of the current <see cref="T:WebMoney.Cryptography.KeeperKey"/> object.</returns>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="P:WebMoney.Cryptography.KeeperKey.Modulus">
+            <summary>
+            RSA modulus (PUBLIC part of key).
+            </summary>
+        </member>
+        <member name="P:WebMoney.Cryptography.KeeperKey.D">
+            <summary>
+            RSA exponent (PRIVATE part of key).
+            </summary>
+        </member>
+        <member name="P:WebMoney.Cryptography.KeeperKey.KeyLength">
+            <summary>
+            Key length in bytes.
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.#ctor(System.Byte[],System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebMoney.Cryptography.DecryptedKey"/> class with the RSA modulus and RSA private exponent.
+            </summary>
+            <param name="modulus">RSA modulus.</param>
+            <param name="d">RSA private exponent.</param>
+            <exception cref="T:System.ArgumentNullException">modulus or d is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">modulus length or d length is zero.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebMoney.Cryptography.DecryptedKey"/> class.
+            </summary>
+            <param name="xmlString">The XML string to use to reconstruct the <see cref="T:WebMoney.Cryptography.KeeperKey"/> object.</param>
+            <exception cref="T:System.ArgumentNullException">xmlString is null</exception>
+            <exception cref="T:System.FormatException">The format of xmlString is invalid.</exception>
+            <exception cref="T:System.Security.XmlSyntaxException">The syntax of xmlString is invalid.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.#ctor(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebMoney.Cryptography.DecryptedKey"/> class from the backup.
+            </summary>
+            <param name="encrypted">Backup.</param>
+            <param name="id">WMID</param>
+            <param name="password">Password for the backup.</param>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.Create(WebMoney.Cryptography.KeeperKey)">
+            <summary>
+            Create a new instance of the <see cref="T:WebMoney.Cryptography.DecryptedKey"/> class with the <see cref="T:WebMoney.Cryptography.KeeperKey"/> object.
+            </summary>
+            <param name="keeperKey">The <see cref="T:WebMoney.Cryptography.KeeperKey"/> object.</param>
+            <returns>New instance of the <see cref="T:WebMoney.Cryptography.DecryptedKey"/> class.</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.Decrypt(System.Byte[],System.UInt64,System.Security.SecureString)">
+            <summary>
+            Create a new instance of the <see cref="T:WebMoney.Cryptography.DecryptedKey"/> class.
+            </summary>
+            <param name="encrypted">Backup.</param>
+            <param name="id">WMID.</param>
+            <param name="securePassword">Password for the backup.</param>
+            <returns>New instance of the <see cref="T:WebMoney.Cryptography.DecryptedKey"/> class.</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.Decrypt(System.Byte[],System.UInt64,System.Byte[])">
+            <summary>
+            Create a new instance of the <see cref="T:WebMoney.Cryptography.DecryptedKey"/> class.
+            </summary>
+            <param name="encrypted">Backup.</param>
+            <param name="id">WMID.</param>
+            <param name="password">Password for the backup.</param>
+            <returns>New instance of the <see cref="T:WebMoney.Cryptography.DecryptedKey"/> class.</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.Encrypt(System.UInt64,System.Security.SecureString)">
+            <summary>
+            Create backup of the current <see cref="T:WebMoney.Cryptography.DecryptedKey"/> object.
+            </summary>
+            <param name="id">WMID.</param>
+            <param name="securePassword">Password for the backup.</param>
+            <returns>Backup.</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.Encrypt(System.UInt64,System.Byte[])">
+            <summary>
+            Create backup of the current <see cref="T:WebMoney.Cryptography.DecryptedKey"/> object.
+            </summary>
+            <param name="id">WMID.</param>
+            <param name="password">Password for the backup.</param>
+            <returns>Backup.</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.Encrypt(System.Byte[],System.Byte[])">
+            <summary>
+            Create backup of the current <see cref="T:WebMoney.Cryptography.DecryptedKey"/> object.
+            </summary>
+            <param name="id">WMID.</param>
+            <param name="password">Password for the backup.</param>
+            <returns>Backup.</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.Encrypt(System.UInt64,System.Security.SecureString,System.Boolean)">
+            <summary>
+            Create backup of the current <see cref="T:WebMoney.Cryptography.DecryptedKey"/> object.
+            </summary>
+            <param name="id">WMID.</param>
+            <param name="securePassword">Password for the backup.</param>
+            <param name="half">false to use a half of password; otherwise, true.</param>
+            <returns>Backup.</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.Encrypt(System.UInt64,System.Byte[],System.Boolean)">
+            <summary>
+            Create backup of the current <see cref="T:WebMoney.Cryptography.DecryptedKey"/> object.
+            </summary>
+            <param name="id">WMID.</param>
+            <param name="password">Password for the backup.</param>
+            <param name="half">false to use a half of password; otherwise, true.</param>
+            <returns>Backup.</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.DecryptedKey.Encrypt(System.Byte[],System.Byte[],System.Boolean)">
+            <summary>
+            Create backup of the current <see cref="T:WebMoney.Cryptography.DecryptedKey"/> object.
+            </summary>
+            <param name="id">WMID.</param>
+            <param name="password">Password for the backup.</param>
+            <param name="half">false to use a half of password; otherwise, true.</param>
+            <returns>Backup.</returns>
+        </member>
+        <member name="T:WebMoney.Cryptography.MD4">
+            <summary>
+            Computes the MD4 hash value for the input data. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebMoney.Cryptography.MD4"></see> class.
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.Initialize">
+            <summary>
+            Initializes an instance of MD4.
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.ComputeHash(System.String)">
+            <summary>
+            Computes the hash value for the specified string.
+            </summary>
+            <param name="value">The input to compute the hash code for.</param>
+            <returns>The computed hash code.</returns>
+            <exception cref="T:System.ArgumentNullException">value is null.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.ComputeHash(System.String,System.Text.Encoding)">
+            <summary>
+            Computes the hash value for the specified string.
+            </summary>
+            <param name="value">The input to compute the hash code for.</param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> that specifies the hashed scheme.</param>
+            <returns>The computed hash code.</returns>
+            <exception cref="T:System.ArgumentNullException">value is null.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.ComputeUInt32Hash(System.String)">
+            <summary>
+            Computes the hash value for the specified string.
+            </summary>
+            <param name="value">The input to compute the hash code for.</param>
+            <returns>The computed hash code.</returns>
+            <exception cref="T:System.ArgumentNullException">value is null.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.ComputeUInt32Hash(System.String,System.Text.Encoding)">
+            <summary>
+            Computes the hash value for the specified string.
+            </summary>
+            <param name="value">The input to compute the hash code for.</param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> that specifies the hashed scheme.</param>
+            <returns>The computed hash code.</returns>
+            <exception cref="T:System.ArgumentNullException">value is null.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.ComputeHash(System.Byte[])">
+            <summary>
+            Computes the hash value for the specified byte array.
+            </summary>
+            <param name="array">The input to compute the hash code for.</param>
+            <returns>The computed hash code.</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.ComputeHash(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Computes the hash value for the specified region of the specified byte array.
+            </summary>
+            <param name="array">The input to compute the hash code for.</param>
+            <param name="offset">The offset into the byte array from which to begin using data.</param>
+            <param name="count">The number of bytes in the array to use as data.</param>
+            <returns>The computed hash code.</returns>
+            <exception cref="T:System.ArgumentNullException">array is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">array is empty or invalid count.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.ComputeUInt32Hash(System.Byte[])">
+            <summary>
+            Computes the hash value for the specified region of the specified byte array.
+            </summary>
+            <param name="array">The input to compute the hash code for.</param>
+            <returns>The computed hash code.</returns>
+            <exception cref="T:System.ArgumentNullException">array is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">array is empty.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.ComputeUInt32Hash(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Computes the hash value for the specified region of the specified byte array.
+            </summary>
+            <param name="array">The input to compute the hash code for.</param>
+            <param name="offset">The offset into the byte array from which to begin using data.</param>
+            <param name="count">The number of bytes in the array to use as data.</param>
+            <returns>The computed hash code.</returns>
+            <exception cref="T:System.ArgumentNullException">array is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">array is empty or invalid count.</exception>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.Clear">
+            <summary>
+            Releases all resources used by the <see cref="T:WebMoney.Cryptography.MD4"></see> class.
+            </summary>
+        </member>
+    </members>
+</doc>

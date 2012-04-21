@@ -1,0 +1,899 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Messages_Viewer_All" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="SelectGame" xml:space="preserve">
+    <value>[选择游戏]</value>
+  </data>
+  <data name="SelectServer" xml:space="preserve">
+    <value>[选择一个服务器]</value>
+  </data>
+  <data name="LoadingGameList" xml:space="preserve">
+    <value>[载入游戏列表...]</value>
+  </data>
+  <data name="LoadingServerList" xml:space="preserve">
+    <value>[加载服务器列表…]</value>
+  </data>
+  <data name="DeliveryTemplate" xml:space="preserve">
+    <value>{0} 日子</value>
+  </data>
+  <data name="SignUpInvalidEmail" xml:space="preserve">
+    <value>这'电子邮件'已被使用。</value>
+  </data>
+  <data name="PasswordRecoveryMailSubject" xml:space="preserve">
+    <value>GameIsMoney.Ru  密码恢复</value>
+  </data>
+  <data name="RegistrationEmailSubject" xml:space="preserve">
+    <value>GameIsMoney.Ru 注册</value>
+  </data>
+  <data name="ChangeEmailEmailSubject" xml:space="preserve">
+    <value>GameIsMoney.Ru 改变 E-mail</value>
+  </data>
+  <data name="PersonalAccount_Profile_ICQ" xml:space="preserve">
+    <value>ICQ:</value>
+  </data>
+  <data name="PersonalAccount_Profile_Skype" xml:space="preserve">
+    <value>Skype:</value>
+  </data>
+  <data name="AddMessageNoRecipient" xml:space="preserve">
+    <value>没有一个通过收件人'{0}'。</value>
+  </data>
+  <data name="SignUpDuplicateEmail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PersonalAccount_Profile_Address" xml:space="preserve">
+    <value>地址：</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英文</value>
+  </data>
+  <data name="PersonalAccount_Office_Balance" xml:space="preserve">
+    <value>平衡</value>
+  </data>
+  <data name="RecoveryQuestion" xml:space="preserve">
+    <value>您的问题：</value>
+  </data>
+  <data name="RecoveryAnswer" xml:space="preserve">
+    <value>您的答案：</value>
+  </data>
+  <data name="ChangeEmailOldMail" xml:space="preserve">
+    <value>你的积极电子邮件：</value>
+  </data>
+  <data name="PersonalAccount_Office_LastMessagesForYou" xml:space="preserve">
+    <value>10你最后的邮件</value>
+  </data>
+  <data name="SignUpCaptchText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>正确</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>复苏</value>
+  </data>
+  <data name="RecoveryUserNameTitle" xml:space="preserve">
+    <value>密码恢复</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>都</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_All" xml:space="preserve">
+    <value>更新日期：</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingTotal" xml:space="preserve">
+    <value>总</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyTotal" xml:space="preserve">
+    <value>总</value>
+  </data>
+  <data name="TotalBuys" xml:space="preserve">
+    <value>用户名：</value>
+  </data>
+  <data name="TotalSells" xml:space="preserve">
+    <value>地位</value>
+  </data>
+  <data name="SignedIn" xml:space="preserve">
+    <value>您已经登录为</value>
+  </data>
+  <data name="PasswordRecoveryMailBody" xml:space="preserve">
+    <value>您已被要求登录信息</value>
+  </data>
+  <data name="RespondDemandMsg" xml:space="preserve">
+    <value>你必须对请求做出回应。</value>
+  </data>
+  <data name="WindowCloseConfirmation" xml:space="preserve">
+    <value>您确定要关闭的窗口？</value>
+  </data>
+  <data name="OfferDeleteConfirmation" xml:space="preserve">
+    <value>你确定要删除报价？</value>
+  </data>
+  <data name="DeleteMessageConfirmation" xml:space="preserve">
+    <value>你确定要删除该邮件？</value>
+  </data>
+  <data name="ChooseExisngMsg" xml:space="preserve">
+    <value>选择现有的要约或创建新的</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>登出</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_Date" xml:space="preserve">
+    <value>用户信息</value>
+  </data>
+  <data name="UpdatedOn" xml:space="preserve">
+    <value> 拟议中的交易</value>
+  </data>
+  <data name="CreatedOn" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value> 日子</value>
+  </data>
+  <data name="PersonalAccount_Office_Money" xml:space="preserve">
+    <value>钱</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_ForUser" xml:space="preserve">
+    <value>对于用户</value>
+  </data>
+  <data name="ChangeEmailTemplateBody" xml:space="preserve">
+    <value>若要变更您的电子邮件，请前往</value>
+  </data>
+  <data name="Messages_AddMessage_Add" xml:space="preserve">
+    <value>加</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>加</value>
+  </data>
+  <data name="SignInWelcome" xml:space="preserve">
+    <value>欢迎您！注册</value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>交货</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyAvailable" xml:space="preserve">
+    <value>可用的</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_ForOthers" xml:space="preserve">
+    <value>新增建议</value>
+  </data>
+  <data name="PersonalAccount_Office_MoneyBlocked" xml:space="preserve">
+    <value>封锁</value>
+  </data>
+  <data name="SignInForgot" xml:space="preserve">
+    <value>忘记密码</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Messages_AddMessage_Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>付款</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>记得</value>
+  </data>
+  <data name="Registred" xml:space="preserve">
+    <value>注册日期：</value>
+  </data>
+  <data name="BuyingOfferNotFound" xml:space="preserve">
+    <value>需求是没有找到。</value>
+  </data>
+  <data name="NoBuyingOffersFound" xml:space="preserve">
+    <value>申请将不被发现。更改设置搜索过滤器，然后再试一次。</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="Game" xml:space="preserve">
+    <value>游戏</value>
+  </data>
+  <data name="GameNotSelected" xml:space="preserve">
+    <value>游戏未选中。</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>改变</value>
+  </data>
+  <data name="SignInSignIn" xml:space="preserve">
+    <value>或登录以下</value>
+  </data>
+  <data name="PersonalAccount_Profile_FirstName" xml:space="preserve">
+    <value>名称：</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>共有购买：</value>
+  </data>
+  <data name="SignUpInvalidUserName" xml:space="preserve">
+    <value>在'电子邮件'字段是不正确的格式。</value>
+  </data>
+  <data name="SignUpDuplicateUserName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SignUpUserName" xml:space="preserve">
+    <value>在'问题'字段是空的。</value>
+  </data>
+  <data name="BuyingOfferInfoTitle" xml:space="preserve">
+    <value>需求信息</value>
+  </data>
+  <data name="UserInfoTitle" xml:space="preserve">
+    <value>谁</value>
+  </data>
+  <data name="UserInfoUnavailable" xml:space="preserve">
+    <value>为了提供</value>
+  </data>
+  <data name="OfferInfoTitle" xml:space="preserve">
+    <value>建议的有关信息</value>
+  </data>
+  <data name="GameServerInfoTitle" xml:space="preserve">
+    <value>服务器信息</value>
+  </data>
+  <data name="GameServerInfoUnavailable" xml:space="preserve">
+    <value>服务器信息不可用。</value>
+  </data>
+  <data name="GameInfoTitle" xml:space="preserve">
+    <value>游戏信息</value>
+  </data>
+  <data name="GameInfoUnavailable" xml:space="preserve">
+    <value>游戏信息不可用。</value>
+  </data>
+  <data name="Expired" xml:space="preserve">
+    <value>到期</value>
+  </data>
+  <data name="Office" xml:space="preserve">
+    <value>Office</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_AsBuyer" xml:space="preserve">
+    <value>作为买家</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_AsSeller" xml:space="preserve">
+    <value>作为卖家</value>
+  </data>
+  <data name="Chinise" xml:space="preserve">
+    <value>Chinise</value>
+  </data>
+  <data name="Key" xml:space="preserve">
+    <value>关键</value>
+  </data>
+  <data name="UserRating_AddFeedback_Comment" xml:space="preserve">
+    <value>总销售：</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_Comment" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>您的登录名和密码被发送到您的电子邮件地址。请证实。</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value> Copyright © 2011 GAME IS MONEY. 保留所有权利。</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>购买</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="RecoveryComplete" xml:space="preserve">
+    <value>您的用户名和密码被发送到您和电子邮件地址。</value>
+  </data>
+  <data name="SignUpSending" xml:space="preserve">
+    <value>在'电子邮件'字段是空的。
+</value>
+  </data>
+  <data name="BestSeller" xml:space="preserve">
+    <value>畅销书</value>
+  </data>
+  <data name="BestBuyer" xml:space="preserve">
+    <value>最好的买家：</value>
+  </data>
+  <data name="PersonalAccount_Profile_MobilePhone" xml:space="preserve">
+    <value>移动电话：</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>安全答案：</value>
+  </data>
+  <data name="GameName" xml:space="preserve">
+    <value>游戏名称：</value>
+  </data>
+  <data name="GameServerName" xml:space="preserve">
+    <value>服务器名称：</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>不正确</value>
+  </data>
+  <data name="RecoveyUserNameError" xml:space="preserve">
+    <value>错误的用户名！</value>
+  </data>
+  <data name="SignUpCaptchaError" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RecoveryQuestionInvalid" xml:space="preserve">
+    <value>你的答案是错的！</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingNeutral" xml:space="preserve">
+    <value>中立</value>
+  </data>
+  <data name="PasswordInvalid" xml:space="preserve">
+    <value>密码是无效的。</value>
+  </data>
+  <data name="NoUnreadMessages" xml:space="preserve">
+    <value>有没有未读邮件</value>
+  </data>
+  <data name="NoFeedbacks" xml:space="preserve">
+    <value>没有反馈</value>
+  </data>
+  <data name="PersonalAccount_Profile_Nickname" xml:space="preserve">
+    <value>昵称：</value>
+  </data>
+  <data name="ConfirmationDefault" xml:space="preserve">
+    <value>不确认！</value>
+  </data>
+  <data name="ChangeEmailDupError" xml:space="preserve">
+    <value>新的电子邮件是相同的</value>
+  </data>
+  <data name="ChangeEmailNewMail" xml:space="preserve">
+    <value>新的电子邮件</value>
+  </data>
+  <data name="ChangePasswordNewPswInvalid" xml:space="preserve">
+    <value>新密码'是无效的。</value>
+  </data>
+  <data name="ChangePasswordDupError" xml:space="preserve">
+    <value>新密码'是一样的。</value>
+  </data>
+  <data name="ChangePasswordNewPsw" xml:space="preserve">
+    <value>新密码：</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>在'标题'字段是空的。</value>
+  </data>
+  <data name="UpdateDemandTitle" xml:space="preserve">
+    <value>拟议的交易</value>
+  </data>
+  <data name="UpdateOfferTitle" xml:space="preserve">
+    <value>在'标题'是空的。</value>
+  </data>
+  <data name="CurrentDealBalance" xml:space="preserve">
+    <value>目前的交易余额</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="DeliveryTemplate2" xml:space="preserve">
+    <value>遗迹 {0} 天</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="Messages_Viewer_From" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_FromUser" xml:space="preserve">
+    <value>从用户</value>
+  </data>
+  <data name="SignUpInvalidAnswer" xml:space="preserve">
+    <value>请填写下面的字段。标有“*”是必需的</value>
+  </data>
+  <data name="SignUpSecurityAnswer" xml:space="preserve">
+    <value>在'答案'字段是空的。</value>
+  </data>
+  <data name="AddFeedbackSuccess" xml:space="preserve">
+    <value>该意见已经添加成功。</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>下降</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingNegative" xml:space="preserve">
+    <value>负</value>
+  </data>
+  <data name="OfficialGameSite" xml:space="preserve">
+    <value>官方游戏网站：</value>
+  </data>
+  <data name="AddFeedbackFailure" xml:space="preserve">
+    <value>在'添加'方法已经达到了一个错误。请确保所有字段都填写正确，再试一次。</value>
+  </data>
+  <data name="AddOfferFailure" xml:space="preserve">
+    <value>在'添加'方法已达到了一个错误。请确保所有字段都填写正确，再试一次。</value>
+  </data>
+  <data name="UpdateOfferFailure" xml:space="preserve">
+    <value>您没有适当的优惠。创建一个新的。</value>
+  </data>
+  <data name="OldDataError" xml:space="preserve">
+    <value>错误。信息是不实际的。请刷新页面。</value>
+  </data>
+  <data name="NotEnougtMoney" xml:space="preserve">
+    <value>错误。您没有足够的钱。</value>
+  </data>
+  <data name="Psw" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="SignUpInvalidPassword" xml:space="preserve">
+    <value>这个'用户名'已被使用。</value>
+  </data>
+  <data name="ChangePasswordComplete" xml:space="preserve">
+    <value>密码更改成功。
+</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码：</value>
+  </data>
+  <data name="NoTransfersFound" xml:space="preserve">
+    <value>汇款是找不到</value>
+  </data>
+  <data name="SignUpConfirm" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>证实礼</value>
+  </data>
+  <data name="ChangeEmailComplete" xml:space="preserve">
+    <value>确认已发送到您的新电子邮件地址。请证实。</value>
+  </data>
+  <data name="RecoveryQuestionTitle" xml:space="preserve">
+    <value>身份确认</value>
+  </data>
+  <data name="TitleEmpty" xml:space="preserve">
+    <value>安全问题：</value>
+  </data>
+  <data name="Complain" xml:space="preserve">
+    <value>抱怨</value>
+  </data>
+  <data name="RecoveryMail" xml:space="preserve">
+    <value>请输入您的电子邮件：</value>
+  </data>
+  <data name="RecoveryUserNameInstruction" xml:space="preserve">
+    <value>请输入您的用户名</value>
+  </data>
+  <data name="RecoveryQuestionInstruction" xml:space="preserve">
+    <value>请输入下列问题的答案</value>
+  </data>
+  <data name="SignUpDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Messages_Viewer_Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Messages_Viewer_ShowBody" xml:space="preserve">
+    <value>查看留言</value>
+  </data>
+  <data name="Buyer" xml:space="preserve">
+    <value>买家</value>
+  </data>
+  <data name="Buying" xml:space="preserve">
+    <value>购买</value>
+  </data>
+  <data name="SignUpErrorEmptyEmail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SignUpErrorUserName" xml:space="preserve">
+    <value>确认密码：</value>
+  </data>
+  <data name="UserRating_AddFeedback_Comment_Error" xml:space="preserve">
+    <value>只有未读</value>
+  </data>
+  <data name="SignUpErrorEmptyAnswer" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SignUpErrorEmptyPsw" xml:space="preserve">
+    <value>错号码了！</value>
+  </data>
+  <data name="SignUpErrorEmptyConfirm" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Messages_AddMessage_RecipientError" xml:space="preserve">
+    <value>在'收件人'字段为空</value>
+  </data>
+  <data name="SignUpErrorEmptyQuestion" xml:space="preserve">
+    <value>从输入图片号码：</value>
+  </data>
+  <data name="BodyEmpty" xml:space="preserve">
+    <value>在'短信'字段为空</value>
+  </data>
+  <data name="SubjectEmpty" xml:space="preserve">
+    <value>这'电子邮件'是无效的。</value>
+  </data>
+  <data name="Messages_AddMessage_SubjectError" xml:space="preserve">
+    <value>在'标题'字段是空的。</value>
+  </data>
+  <data name="PersonalAccount_Office_RatingPositive" xml:space="preserve">
+    <value>积极</value>
+  </data>
+  <data name="Recipient" xml:space="preserve">
+    <value>接受者</value>
+  </data>
+  <data name="RecipientEmpty" xml:space="preserve">
+    <value>在'收件人'字段为空</value>
+  </data>
+  <data name="NoRecipientsFound" xml:space="preserve">
+    <value>没有找到收件人</value>
+  </data>
+  <data name="Messages_AddMessage_Recipient" xml:space="preserve">
+    <value>收件人</value>
+  </data>
+  <data name="UserRating_AddFeedback_User" xml:space="preserve">
+    <value>更新需求</value>
+  </data>
+  <data name="SignUpErrorConfirmPsw" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>最后</value>
+  </data>
+  <data name="LastVisit" xml:space="preserve">
+    <value>上次访问：</value>
+  </data>
+  <data name="Messages_Viewer_Last" xml:space="preserve">
+    <value>最后：</value>
+  </data>
+  <data name="PersonalAccount_Office_LastFeedbacks" xml:space="preserve">
+    <value>5最后反馈</value>
+  </data>
+  <data name="PersonalAccount_Office_LastFeedbacksForYou" xml:space="preserve">
+    <value>最后5个评论您</value>
+  </data>
+  <data name="PersonalAccount_Office_LastMessages" xml:space="preserve">
+    <value>10最后的邮件</value>
+  </data>
+  <data name="PotentialBuyers" xml:space="preserve">
+    <value>潜在买家</value>
+  </data>
+  <data name="SignUpActTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AddOfferSuccess" xml:space="preserve">
+    <value>这一提议已经添加成功</value>
+  </data>
+  <data name="OfferNotFound" xml:space="preserve">
+    <value>优惠没有找到</value>
+  </data>
+  <data name="UpdateOfferSuccess" xml:space="preserve">
+    <value>标题。</value>
+  </data>
+  <data name="NoOffersFound" xml:space="preserve">
+    <value>没有提供资料。更改设置的搜索过滤器，然后再试一次</value>
+  </data>
+  <data name="SuggestedOffer" xml:space="preserve">
+    <value>这'密码'是无效的。</value>
+  </data>
+  <data name="SuggestedOffers" xml:space="preserve">
+    <value>这个'问题'是无效的。</value>
+  </data>
+  <data name="ToOffer" xml:space="preserve">
+    <value>感谢您注册！</value>
+  </data>
+  <data name="Messages_Viewer_Apply" xml:space="preserve">
+    <value>申请</value>
+  </data>
+  <data name="PersonalAccount_Profile_Note" xml:space="preserve">
+    <value>注意：</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>接受</value>
+  </data>
+  <data name="Validate" xml:space="preserve">
+    <value>验证</value>
+  </data>
+  <data name="Seller" xml:space="preserve">
+    <value>卖家</value>
+  </data>
+  <data name="Selling" xml:space="preserve">
+    <value>销售</value>
+  </data>
+  <data name="Sell" xml:space="preserve">
+    <value>出售</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="PersonalAccount_Profile" xml:space="preserve">
+    <value>剖面</value>
+  </data>
+  <data name="RegistrationInfo" xml:space="preserve">
+    <value>注册信息</value>
+  </data>
+  <data name="PersonalAccount_Office_Rating" xml:space="preserve">
+    <value>等级</value>
+  </data>
+  <data name="UserRating_AddFeedback_Rating" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="UserRating_FeedbackViewer_Rating" xml:space="preserve">
+    <value>等级</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>评分：</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>俄语</value>
+  </data>
+  <data name="NoCorrespondence" xml:space="preserve">
+    <value>有了这个用户通信不存在</value>
+  </data>
+  <data name="GameServerSite" xml:space="preserve">
+    <value>服务器的网站：</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>复位</value>
+  </data>
+  <data name="Messages_Viewer_Reset" xml:space="preserve">
+    <value>复位</value>
+  </data>
+  <data name="SignUpInvalidQuestion" xml:space="preserve">
+    <value>密码不匹配确认密码。</value>
+  </data>
+  <data name="SignUpSecurityQuestion" xml:space="preserve">
+    <value>在'确认密码'字段是空的。</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="ServerNotSelected" xml:space="preserve">
+    <value>该服务器是未选中。</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>同意</value>
+  </data>
+  <data name="ErrorMain" xml:space="preserve">
+    <value>抱歉。请联络该网站的政府，要解决这个问题。</value>
+  </data>
+  <data name="SellerHasDeclineYouMsg" xml:space="preserve">
+    <value>抱歉。卖方拒绝对这个给你。</value>
+  </data>
+  <data name="CreateDemandTitle" xml:space="preserve">
+    <value>创建应用程序</value>
+  </data>
+  <data name="CreateOfferTitle" xml:space="preserve">
+    <value>创建提供</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="CreateForDemand" xml:space="preserve">
+    <value>创造需求</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>短信</value>
+  </data>
+  <data name="AddMessageSuccess" xml:space="preserve">
+    <value>该邮件已被添加成功</value>
+  </data>
+  <data name="Messages_AddMessage_BodyError" xml:space="preserve">
+    <value>在'短信'字段为空</value>
+  </data>
+  <data name="EmptyMessageObject" xml:space="preserve">
+    <value>发送的邮件对象是空的。</value>
+  </data>
+  <data name="Messages_AddMessage_Body" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="NoMessagesFound" xml:space="preserve">
+    <value>信件未找到。更改设置搜索过滤器，然后再试一次</value>
+  </data>
+  <data name="NoMessages" xml:space="preserve">
+    <value>有没有消息。请更换过滤器的设置，然后再试一次</value>
+  </data>
+  <data name="PersonalAccount_Profile_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="ConfirmationResultAprove" xml:space="preserve">
+    <value>感谢您进行确认。您的帐户已批准！</value>
+  </data>
+  <data name="ConfirmationResultChangeMail" xml:space="preserve">
+    <value>感谢您进行确认。您的电子邮件已改为 {0}。</value>
+  </data>
+  <data name="SignUpThanks" xml:space="preserve">
+    <value>在'密码'字段是空的。</value>
+  </data>
+  <data name="RegistrationEmailBody" xml:space="preserve">
+    <value>感谢您注册！您的登录名和密码如下。为了证实他们去了</value>
+  </data>
+  <data name="DeliveryTime" xml:space="preserve">
+    <value>交货时间</value>
+  </data>
+  <data name="RegistrationEmailLink" xml:space="preserve">
+    <value>链接</value>
+  </data>
+  <data name="ChangeEmailOldMailError" xml:space="preserve">
+    <value>旧电子邮件是无效的</value>
+  </data>
+  <data name="ChangePasswordOldPsw" xml:space="preserve">
+    <value>旧的密码：</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>在'用户名'字段是空的。</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="PersonalAccount_Profile_Phone" xml:space="preserve">
+    <value>电话：</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>这个'回答'是无效的。</value>
+  </data>
+  <data name="AddMessageFieldParams" xml:space="preserve">
+    <value>利息消息或收件人未选中。</value>
+  </data>
+  <data name="Messages_AddMessage_Subject" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="GoodsGot" xml:space="preserve">
+    <value>商品是得到了</value>
+  </data>
+  <data name="OnlyIn" xml:space="preserve">
+    <value>只有在</value>
+  </data>
+  <data name="Messages_Viewer_UnreadOnly" xml:space="preserve">
+    <value>只有未读</value>
+  </data>
+  <data name="UnreadOnly" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="NoProfile" xml:space="preserve">
+    <value>你还不是你的个人档案</value>
+  </data>
+  <data name="SuitableOffersMsg" xml:space="preserve">
+    <value>这个'用户名'是无效的.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Messages_Viewer_Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="PersonalAccount_Profile_LastName" xml:space="preserve">
+    <value>名称：</value>
+  </data>
+  <data name="SignUpErrorEmailFormat" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="PriceEmpty" xml:space="preserve">
+    <value>价格'字段是空的。</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>常问问题</value>
+  </data>
+</root>

@@ -1,0 +1,97 @@
+.boxRating
+{
+  width: 175px;
+  margin-left:1em;
+  margin-bottom:1em;
+  float:left;
+}
+
+.boxBalance
+{
+  width: 175px;
+  margin-bottom:1em;
+  float:left;
+}
+
+.boxDeals
+{
+  width: 185px;
+  margin-bottom:1em;
+  margin-left:1em;
+  float:left;
+}
+
+.boxLastFeedbacks, .boxUnapprovedFeedbacks, .boxLastMessages
+{
+  clear:left;
+  margin-top:1em;
+  width:100%;
+}
+
+.boxBalance dl
+{
+  height:78px;
+}
+
+.boxRating dl, .boxDeals dl
+{
+}
+
+table.gridLastMessages tr td dl.message, table.gridLastFeedbacks tr td dl.feedback, table.gridUnapprovedFeedbacks tr td dl.feedback
+{
+  border-bottom:dashed 1px;
+  border-color:#7D694D;
+  margin-bottom:0.5em;
+}
+
+div.boxBalance dl dt, div.boxRating dl dt, div.boxDeals dl dt
+{
+  float: left;
+  padding-right: 0.5em;
+}
+
+div.boxBalance dl dd, div.boxRating dl dd, div.boxDeals dl dd
+{
+  text-align:right;
+}
+
+table.gridLastMessages tr td dl.message dt, table.gridLastFeedbacks tr td dl.feedback dt, table.gridUnapprovedFeedbacks tr td dl.feedback dt
+{
+  float: left;
+  padding-right: 0.5em;
+}
+
+table.gridLastMessages tr td dl.message dd, table.gridLastFeedbacks tr td dl.feedback dd, table.gridUnapprovedFeedbacks tr td dl.feedback dd
+{
+  /*padding: 0 0 .5em 0;*/
+}
+
+table.gridLastMessages, table.gridLastFeedbacks, table.gridUnapprovedFeedbacks
+{
+  width:100%;
+}
+
+table.gridLastMessages tr td dl.message dd.sender div.createdDate, table.gridLastFeedbacks tr td dl.feedback dd.comment div.createdDate,
+table.gridLastMessages tr td dl.message dd.subject div.number, table.gridLastFeedbacks tr td dl.feedback dd.title div.number, table.gridUnapprovedFeedbacks tr td dl.feedback dd.title div.number
+{
+  float:right;
+  font-style:italic;
+  font-size:0.85em;
+  color:#7D694D;
+}
+
+table.gridUnapprovedFeedbacks tr td dl.feedback dd.status div.leave
+{
+  float:right;
+  
+}
+
+table.gridLastMessages tr.gridEmpty td, table.gridLastFeedbacks tr.gridEmpty td
+{
+  font-size:1em;
+}
+
+ul#submenu li a#myDeals, ul#submenu li a#myDemands
+{
+  font-weight:bold;
+}

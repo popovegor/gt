@@ -1,0 +1,82 @@
+﻿dl#contact-info 
+{
+  width:100%;
+}
+
+dl#contact-info dd
+{
+  margin:1em 0.5em;
+}
+
+dl#contact-info ul
+{
+  list-style-type:none;
+}
+
+dl#contact-info dd div
+{
+  padding-bottom:0.5em;
+}
+
+dl#contact-info dd .icq
+{
+  /*float:left;
+  padding-right:1.5em;*/
+}
+
+
+dl#contact-info dd .skype
+{
+  /*float:left;
+  padding-right:1.5em;*/
+}
+
+dl#contact-info dd .e-mail
+{
+  /*clear:both;*/
+}
+
+dl#contact-info .icq img
+{
+  float:left;
+  padding-right:5px;
+}
+
+/*dl#contact-info .icq a
+{
+  
+  display:block;
+   height:20px;
+}*/
+
+
+dl#contact-info .skype a
+{
+  background: transparent url("Images/pictograms-min.png") no-repeat scroll 0px -170px;
+  padding-left:24px;
+  display:inline-block;
+  height:20px;
+  width:auto;
+}
+
+dl#contact-info .e-mail a
+{
+  background: transparent url("Images/pictograms-min.png") no-repeat scroll 0px -191px;
+  padding-left:24px;
+  display:inline-block;
+  height:20px;
+}
+
+dl#contact-info .vk a
+{
+  background: transparent url("Images/pictograms-min.png") no-repeat scroll 0px -213px;
+  padding-left:24px;
+  display:inline-block;
+  height:20px;
+  white-space:nowrap;
+}
+
+dl#contact-info .webmoney
+{
+  clear:both;
+}
